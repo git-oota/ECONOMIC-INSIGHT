@@ -1,0 +1,47 @@
+[
+  {
+    "id": "20260110_085302",
+    "date": "2026-01-10",
+    "titles": {
+      "ja": "大手銀行が預金金利を引き上げ：私達の生活はどう変わるのか",
+      "en": "Major Banks Raise Deposit Interest Rates: How Our Lives Will Change"
+    },
+    "contents": {
+      "ja": "今日、日本経済新聞をはじめとする主要各紙は、国内の大手銀行が普通預金の金利を0.2%に引き上げると一斉に報じました。これは約20年ぶりの高水準です。私達の多くは、これまで「銀行にお金を預けても増えない」という時代を長く過ごしてきました。しかし、日本銀行の政策転換により、ようやく「金利のある世界」が本格的に到来しました。私達は、ただお金を貯めるだけでなく、物価の上昇（インフレ）から資産を守るために、賢くお金を管理する知恵が求められています。金利が上がることは、貯金がある人にはプラスですが、家を建てるためのローンを借りる人には負担増となります。私達は今、経済の大きな転換点に立っています。",
+      "en": "Today, major newspapers including the Nikkei reported that Japan's largest banks will raise their ordinary deposit interest rates to 0.2%. This marks the highest level in about 20 years. For a long time, many of us have lived through an era where 'money doesn't grow even if you keep it in the bank.' However, due to the Bank of Japan's policy shift, a 'world with interest rates' has finally arrived in earnest. We are now required to have the wisdom to manage our money wisely, not just to save, but to protect our assets from rising prices (inflation). While rising interest rates are a plus for those with savings, they increase the burden for those borrowing loans to build houses. We now stand at a major turning point in the economy."
+    },
+    "mermaid": "graph TD\n    A[日本銀行 / Bank of Japan] -->|政策変更 / Policy Change| B[大手銀行 / Major Banks]\n    B -->|預金金利アップ / Higher Deposit Rates| C[私達の貯金が増える / Our Savings Grow]\n    B -->|ローン金利アップ / Higher Loan Rates| D[借り入れ負担が増える / Borrowing Costs Rise]\n    C --> E[私達の暮らしの変化 / Changes in Our Lives]\n    D --> E",
+    "glossary": [
+      {
+        "term": {
+          "ja": "金利（きんり）",
+          "en": "Interest Rate"
+        },
+        "def": {
+          "ja": "お金を貸したり借りたりする時につく「レンタル料」のようなものです。預金なら銀行から貰えるお金、ローンなら銀行に払うお金を指します。",
+          "en": "Like a 'rental fee' for borrowing or lending money. For deposits, it's money you receive from the bank; for loans, it's money you pay to the bank."
+        }
+      },
+      {
+        "term": {
+          "ja": "インフレ（インフレーション）",
+          "en": "Inflation"
+        },
+        "def": {
+          "ja": "世の中のモノやサービスの値段が全体的に上がることです。お金の価値が相対的に下がってしまう状態を指します。",
+          "en": "A general increase in the prices of goods and services. It means the relative value of money is decreasing."
+        }
+      },
+      {
+        "term": {
+          "ja": "日本銀行（にっぽんぎんこう）",
+          "en": "Bank of Japan (BOJ)"
+        },
+        "def": {
+          "ja": "「銀行の銀行」と呼ばれる、日本で唯一お札を発行できる特別な銀行です。日本の景気を調整する役割を持っています。",
+          "en": "Known as the 'bank for banks,' it is the only bank in Japan that can issue banknotes. It plays a role in regulating Japan's economy."
+        }
+      }
+    ]
+  }
+]
