@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECONOMIC INSIGHT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <nav class="bg-black text-white p-4 flex justify-between">
+        <h1 class="font-black italic">ECONOMIC INSIGHT</h1>
+        <div>
+            <select id="langSet" class="bg-gray-800 text-xs p-1" onchange="render()">
+                <option value="ja">日本語</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </nav>
+
+    <div class="flex border-b border-gray-300 bg-white">
+        <button class="px-6 py-3 border-b-2 border-blue-600 font-bold">News</button>
+        <button class="px-6 py-3 text-gray-400" disabled>More (Soon)</button>
+    </div>
+
+    <main id="app" class="max-w-4xl mx-auto py-10 px-6">
+        <p>Loading latest intelligence...</p>
+    </main>
+
+    <script>
+        let articles = [];
+        async function loadData() {
+            // キャッシュを回避するためにクエリパラメータを付与
+            const res = await fetch('./data.json?v=' + Date.now());
+            articles = await res.json();
+            render();
+        }
+
+        function render() {
+            const lang = document.getElementById('langSet').value;
+            const data = articles[0]; // 最新の記事
+            if(!data) return;
+
+            document.getElementById('app').innerHTML = `
+                <div class="mb-2 text-blue-600 font-bold">${data.date}</div>
+                <h2 class="text-4xl font-black mb-8">${data.titles[lang]}</h2>
+                <div class="prose max-w-none mb-10">${data.contents[lang].replace(/\n/g, '<br>')}</div>
+                <pre class="mermaid">${data.mermaid}</pre>
+                <div class="mt-10 p-4 bg-blue-50 rounded">
+                    <h3 class="font-bold border-b border-blue-200 mb-2">Glossary</h3>
+                    ${data.glossary.map(g => `<div><strong>${g.term[lang]}</strong>: ${g.def[lang]}</div>`).join('')}
+                </div>
+            `;
+            mermaid.init();
+        }
+        loadData();
+    </script>
+</body>
+</html>
