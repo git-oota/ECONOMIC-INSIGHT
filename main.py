@@ -2,34 +2,27 @@ import os
 import json
 import re
 from datetime import datetime, timezone, timedelta
-import google.generativeai as genai
+from google import genai  # 新しいライブラリを使用
 
 # 日本時間の設定
 JST = timezone(timedelta(hours=+9), 'JST')
 NOW = datetime.now(JST)
 TODAY = NOW.strftime("%Y-%m-%d")
-# 同日更新を可能にするため、IDに「秒」まで含める
 UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
-# Gemini設定
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+# Geminiクライアントの初期化
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def generate_content():
-    # Google検索を有効にして、正確なニュースを取得
-    model = genai.GenerativeModel(
-        model_name='gemini-3-flash-preview',
-        tools=[{'google_search_retrieval': {}}]
-    )
-    
     prompt = f"""
     今日（{TODAY}）の日本の主要ニュース（日経新聞、朝日新聞、読売新聞などで報じられた経済・社会ニュース）を1つ選定し、分析記事を書いてください。
     
     ## 執筆ルール
-    1. 「ブルームバーグ」や「エディトリアル・ボード」という言葉は絶対に使わないでください。
+    1. 「ブルームバーグ」や「エディトリアル・ボート」という言葉は厳禁です。
     2. 主語は「私達」としてください。
-    3. 専門用語（パラダイム、サプライチェーン等）は、中学生でもわかるよう平易な解説を日・英両方で作成してください。
-    4. 記事の内容に基づいたMermaid図解（フローチャート等）を作成してください。
-    5. 出力は必ず以下のJSON形式のみとしてください。
+    3. 専門用語は中学生にもわかるよう日・英両方で解説。
+    4. Mermaid図解を含めてください。
+    5. 必ず以下のJSON形式で出力してください。
 
     ## 出力形式 (JSON)
     {{
@@ -47,14 +40,20 @@ def generate_content():
     }}
     """
     
-    response = model.generate_content(prompt)
-    # JSON部分のみを抽出
+    # ツール名を 'google_search' に修正
+    response = client.models.generate_content(
+        model='gemini-3-flash-preview', # 最新モデルを推奨
+        contents=prompt,
+        config={
+            'tools': [{'google_search': {}}] 
+        }
+    )
+    
+    # JSON部分の抽出
     res_text = re.search(r'\{.*\}', response.text, re.DOTALL).group()
     return json.loads(res_text)
 
-# main関数の最後の方、try-exceptの部分を以下のように書き換えてください
 def main():
-    # try:  <-- 削除
     data = generate_content()
     data_path = 'docs/data.json'
     
@@ -63,6 +62,7 @@ def main():
         with open(data_path, 'r', encoding='utf-8') as f:
             history = json.load(f)
     
+    # 同日の更新も履歴に残す（IDで識別）
     history.insert(0, data)
     os.makedirs('docs', exist_ok=True)
     
@@ -70,8 +70,6 @@ def main():
         json.dump(history[:50], f, ensure_ascii=False, indent=2)
             
     print(f"Success: {data['titles']['ja']}")
-    # except Exception as e:  <-- 削除
-    #     print(f"Error: {e}") <-- 削除
 
 if __name__ == "__main__":
     main()
