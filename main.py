@@ -52,30 +52,26 @@ def generate_content():
     res_text = re.search(r'\{.*\}', response.text, re.DOTALL).group()
     return json.loads(res_text)
 
+# main関数の最後の方、try-exceptの部分を以下のように書き換えてください
 def main():
-    try:
-        data = generate_content()
-        data_path = 'docs/data.json'
-        
-        # 既存データの読み込み
-        history = []
-        if os.path.exists(data_path):
-            with open(data_path, 'r', encoding='utf-8') as f:
-                history = json.load(f)
-        
-        # 新しいデータを先頭に追加（同日の重複はIDで識別）
-        history.insert(0, data)
-        
-        # docsフォルダがない場合は作成
-        os.makedirs('docs', exist_ok=True)
-        
-        # 保存（最新50件）
-        with open(data_path, 'w', encoding='utf-8') as f:
-            json.dump(history[:50], f, ensure_ascii=False, indent=2)
+    # try:  <-- 削除
+    data = generate_content()
+    data_path = 'docs/data.json'
+    
+    history = []
+    if os.path.exists(data_path):
+        with open(data_path, 'r', encoding='utf-8') as f:
+            history = json.load(f)
+    
+    history.insert(0, data)
+    os.makedirs('docs', exist_ok=True)
+    
+    with open(data_path, 'w', encoding='utf-8') as f:
+        json.dump(history[:50], f, ensure_ascii=False, indent=2)
             
-        print(f"Success: {data['titles']['ja']}")
-    except Exception as e:
-        print(f"Error: {e}")
+    print(f"Success: {data['titles']['ja']}")
+    # except Exception as e:  <-- 削除
+    #     print(f"Error: {e}") <-- 削除
 
 if __name__ == "__main__":
     main()
