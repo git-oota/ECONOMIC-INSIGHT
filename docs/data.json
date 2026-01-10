@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "id": "20260110_221401",
+    "date": "2026-01-10",
+    "titles": {
+      "ja": "分析レポート生成エラー",
+      "en": "Analysis Generation Error"
+    },
+    "contents": {
+      "ja": "エラーが発生しました：400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Manually set deadline 1s is too short. Minimum allowed deadline is 10s.', 'status': 'INVALID_ARGUMENT'}}",
+      "en": "Error occurred: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Manually set deadline 1s is too short. Minimum allowed deadline is 10s.', 'status': 'INVALID_ARGUMENT'}}"
+    },
+    "mermaid": {
+      "ja": "graph TD;Error",
+      "en": "graph TD;Error"
+    },
+    "glossary": []
+  }
+]
