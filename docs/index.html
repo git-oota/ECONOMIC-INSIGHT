@@ -1,13 +1,73 @@
 function render() {
     const lang = document.getElementById('langSet').value;
     const contentArea = document.getElementById('content-area');
+    const archiveList = document.getElementById('archive-list');
     
+    // 1. データが空の場合のハンドリング
     if (articles.length === 0) {
-        contentArea.innerHTML = '<p class="text-center text-slate-500 py-20">記事がまだありません。Actionsを実行して記事を生成してください。</p>';
+        contentArea.innerHTML = `
+            <div class="flex flex-col items-center justify-center py-20 text-slate-500">
+                <div class="text-6xl mb-4">📝</div>
+                <p class="text-lg font-bold">記事がまだありません</p>
+                <p class="text-sm">GitHub Actionsを実行して、最初の分析を生成してください。</p>
+            </div>`;
+        if(archiveList) archiveList.innerHTML = "";
         return;
     }
 
     const data = articles[currentIndex];
     if(!data) return;
 
-    // ...以下、前回の描画ロジックと同じ...
+    // 2. 本文内の用語を自動でクリック可能（<span>タグ）に置換
+    let htmlBody = data.contents[lang].replace(/\n/g, '<br>');
+    if (data.glossary && data.glossary.length > 0) {
+        data.glossary.forEach(item => {
+            const term = item.term[lang];
+            const def = item.def[lang];
+            // 本文中の用語を正規表現で検索し、ハイライト用のタグに置き換え
+            const regex = new RegExp(term, 'g');
+            htmlBody = htmlBody.replace(regex, 
+                `<span class="glossary-term" onclick="showGlossary('${term}', '${def}')">${term}</span>`
+            );
+        });
+    }
+
+    // 3. メインコンテンツの描画
+    contentArea.innerHTML = `
+        <div class="text-blue-600 font-bold mb-2 tracking-widest">${data.date}</div>
+        <h2 class="text-3xl md:text-4xl font-black mb-10 leading-tight">${data.titles[lang]}</h2>
+        <div class="prose max-w-none text-lg leading-relaxed mb-12 text-slate-700">
+            ${htmlBody}
+        </div>
+        <div class="my-12 p-6 md:p-8 bg-slate-50 border border-slate-200 rounded-2xl shadow-inner">
+            <h3 class="font-bold text-xl mb-6 flex items-center">
+                <span class="mr-2">📊</span>
+                ${lang === 'ja' ? '構造分析チャート' : 'Strategic Flow'}
+            </h3>
+            <pre class="mermaid flex justify-center">${data.mermaid[lang]}</pre>
+        </div>
+    `;
+
+    // 4. アーカイブリストの更新（現在読んでいる記事を強調）
+    if (archiveList) {
+        const archiveHtml = articles.map((art, idx) => `
+            <div onclick="changeArticle(${idx})" 
+                 class="archive-item p-4 bg-white rounded-xl shadow-sm border-2 flex justify-between items-center 
+                 ${idx === currentIndex ? 'border-blue-500 bg-blue-50' : 'border-transparent'}">
+                <div class="overflow-hidden">
+                    <div class="text-xs text-slate-400 font-mono mb-1">${art.date}</div>
+                    <div class="font-bold text-slate-800 truncate">${art.titles[lang]}</div>
+                </div>
+                <span class="text-blue-500 font-bold ml-2">→</span>
+            </div>
+        `).join('');
+        archiveList.innerHTML = archiveHtml;
+    }
+
+    // 5. Mermaidチャートの再レンダリングをトリガー
+    if (window.mermaid) {
+        mermaid.run({
+            nodes: document.querySelectorAll('.mermaid'),
+        });
+    }
+}
