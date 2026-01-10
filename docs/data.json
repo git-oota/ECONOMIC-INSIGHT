@@ -1,5 +1,39 @@
 [
   {
+    "id": "20260110_093015",
+    "date": "2026-01-10",
+    "titles": {
+      "ja": "円相場が158円台に急落、私達の暮らしを直撃する「政治と金利」の行方",
+      "en": "Yen Plunges to 158 Range: How Political Shifts and Interest Rates Impact Our Daily Lives"
+    },
+    "contents": {
+      "ja": "今日、私達は為替市場で1ドル＝158円台まで円安が進んだという衝撃的なニュースを耳にしました。これは、高市首相が今月下旬の通常国会冒頭で「衆議院の解散」を検討しているという報道がきっかけです。政治が大きく動く可能性が出てきたことで、今後さらにお金が使われ、物価が上がるのではないかという予想から「円」が売られました。\n\n私達にとってこのニュースが重要なのは、円安が「インフレ（物価高）」をさらに進める恐れがあるからです。海外から輸入するエネルギーや食品の値段が上がれば、私達の家計は苦しくなります。また、これに対抗するために日本銀行がさらに「金利」を上げれば、今月から大手銀行が引き上げを始めたばかりの「住宅ローン」の返済額もさらに増えるかもしれません。私達は、政治の動きが自分達の財布にどう繋がっているのか、これまで以上に注意深く見守る必要があります。",
+      "en": "Today, we were struck by the news that the Yen has plummeted to the 158 range against the Dollar. This shift was triggered by reports that Prime Minister Takaichi is considering a 'Dissolution of the House of Representatives' at the start of the ordinary Diet session later this month. This potential political upheaval led investors to sell the Yen, anticipating that aggressive government spending might further fuel price increases.\n\nThis news is vital for us because a weaker Yen threatens to accelerate 'Inflation' (rising prices). If the costs of imported energy and food rise, our household budgets will feel the squeeze. Furthermore, if the Bank of Japan raises 'Interest Rates' to counter this, the repayment amounts for 'Mortgages'—which major banks already began raising this month—could increase even further. We must keep a close watch on how these political maneuvers directly connect to our own wallets."
+    },
+    "mermaid": {
+      "ja": "graph TD;\n    A[首相の解散検討報道] -->|先行きが不安になる| B[円が売られる/円安];\n    B -->|輸入コストが上がる| C[私達が買う商品の値上げ];\n    C -->|物価上昇を抑えたい| D[日本銀行が金利を上げる];\n    D -->|利息が増える| E[私達の住宅ローンの負担増];\n    D -->|利息が増える| F[私達の預金利息の増加];",
+      "en": "graph TD;\n    A[Reports of Diet Dissolution] -->|Market Uncertainty| B[Yen Sold / Weak Yen];\n    B -->|Higher Import Costs| C[Rising Prices of Goods We Buy];\n    C -->|Counteracting Inflation| D[BoJ Raises Interest Rates];\n    D -->|Higher Interest| E[Increase in Our Mortgage Burdens];\n    D -->|Higher Interest| F[Increase in Our Savings Interest];"
+    },
+    "glossary": [
+      {
+        "term": "円安 (Depreciation of the Yen)",
+        "explanation": "日本の「円」の価値が、外国の「ドル」などに対して低くなることです。海外旅行が高くなったり、輸入するガソリン代が上がったりします。 / A situation where the value of the Japanese Yen decreases against other currencies like the Dollar. It makes overseas travel more expensive and pushes up the price of imported goods like gasoline."
+      },
+      {
+        "term": "衆議院の解散 (Dissolution of the House of Representatives)",
+        "explanation": "衆議院議員全員の任期を途中で終了させ、国民の意見を問うために選挙を行うことです。 / Ending the terms of all members of the House of Representatives early to hold a general election and consult the public's will."
+      },
+      {
+        "term": "インフレ (Inflation / Consumer Price Index)",
+        "explanation": "物の値段が全体的に上がり、お金の価値が下がることです。昨日まで100円だったリンゴが110円になるような状態を指します。 / A general increase in prices and a fall in the purchasing value of money. For example, an apple that cost 100 yen yesterday becoming 110 yen today."
+      },
+      {
+        "term": "金利 (Interest Rate)",
+        "explanation": "銀行からお金を借りる時に払う「レンタル料」や、預ける時にもらえる「お礼」の割合のことです。 / The percentage charged for borrowing money or earned for saving money at a bank."
+      }
+    ]
+  },
+  {
     "id": "20260110_091210",
     "date": "2026-01-10",
     "titles": {
