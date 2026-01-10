@@ -17,8 +17,8 @@ client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 def generate_content():
     print(f"[{datetime.now()}] ニュース分析を開始（JSON Mode）...")
     
-    # プロンプトを極限までシンプルにし、JSON構造を指示
-prompt = f"""
+    # 1. プロンプトの定義（ここでの字下げは文字列の中身として扱われます）
+    prompt = f"""
     【役割】
     あなたは冷静沈着なシニア経済アナリストとして、今日（{TODAY}）の日本の主要経済ニュースを1つ選定し、多角的な分析コラムを執筆してください。
 
@@ -42,11 +42,10 @@ prompt = f"""
     "glossary"は、本文で使用した難解な用語を3〜5個含める配列形式とすること。
     """
 
+    # 2. ここから下の try: の位置が prompt と同じ垂直線上にある必要があります
     try:
-        # 1sエラーを避けるため http_options を使わず、1.5-flash で実行
-        # response_mime_type を指定することで JSON 形式を強制
         response = client.models.generate_content(
-            model='gemini-3-flash-preview',
+            model='gemini-1.5-flash',
             contents=prompt,
             config=types.GenerateContentConfig(
                 tools=[{'google_search': {}}],
@@ -55,26 +54,13 @@ prompt = f"""
             )
         )
         
-        # JSONとして直接ロード（JSON Modeなので response.text がそのままJSONになる）
         data = json.loads(response.text)
-        
-        # データの整合性チェック
-        if 'titles' not in data:
-            # 万が一JSON Modeが不完全だった場合の抽出バックアップ
-            match = re.search(r'\{.*\}', response.text, re.DOTALL)
-            data = json.loads(match.group())
-
-        # IDと日付を強制セット
         data["id"] = UPDATE_ID
         data["date"] = TODAY
-        
         return data
 
     except Exception as e:
         print(f"[{datetime.now()}] APIエラー詳細: {e}")
-        # 予期せぬエラー時のためのデバッグ出力
-        if 'response' in locals():
-            print(f"Raw response: {response.text[:500]}")
         raise e
 
 def main():
