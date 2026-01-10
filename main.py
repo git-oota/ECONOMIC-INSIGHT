@@ -50,10 +50,10 @@ def generate_content():
     response = client.models.generate_content(
         model='gemini-2.0-flash',
         contents=prompt,
-        config={{
-            'tools': [{{'google_search': {{}}}}],
-            'temperature': 0.1  # 創造性を抑え、事実への忠実度を高める
-        }}
+        config={
+            'tools': [{'google_search': {}}], # 波括弧を1つずつにする
+            'temperature': 0.1
+        }
     )
     
     res_text = re.search(r'\{.*\}', response.text, re.DOTALL).group()
