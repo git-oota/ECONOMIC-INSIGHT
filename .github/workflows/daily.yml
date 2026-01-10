@@ -18,16 +18,19 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -U google-genai
-      - name: Run script
+          pip install -U google-genai  # 最新版をインストール
+          
+      - name: Run python main.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python main.py
+
       - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add docs/data.json
-          git commit -m "Update Economic Intelligence [skip ci]" || echo "No changes to commit"
-          git pull --rebase origin main  # 競合回避の重要ポイント
+          git commit -m "Reset and Update Analysis [skip ci]" || echo "No changes"
+          git pull --rebase origin main  # 競合回避
           git push origin main
+          
