@@ -5,21 +5,41 @@ from datetime import datetime, timezone, timedelta
 from google import genai
 from google.genai import types
 
-# 日本時間の設定
 JST = timezone(timedelta(hours=+9), 'JST')
 NOW = datetime.now(JST)
 TODAY = NOW.strftime("%Y-%m-%d")
 UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
-# クライアント初期化（タイムアウト設定を完全に削除してデフォルトに任せる）
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def generate_content():
     print(f"[{datetime.now()}] ニュース分析を開始（JSON Mode）...")
     
-    # プロンプトは変更なし（そのまま使用）
+    # プロンプトはご希望の「中学生向け解説」を維持し、
+    # 最後に「キー名を間違えないで」という一言だけ添えています。
     prompt = f"""
-    （ここにあなたの現在のプロンプトをそのまま入れてください）
+    【役割】
+    あなたは「世界一わかりやすい経済ニュース」を執筆するシニアアナリストです。
+    今日（{TODAY}）の日本の主要ニュース（例：高市首相の衆院解散検討など）を1つ選び、事実の分析と「背景知識の習得」を両立させたコラムを執筆してください。
+
+    【記事の構成指示：contents内に必ず含めること】
+    1. 【事実の概要】：今、何が起きているのかを簡潔に。
+    2. 【専門的分析】：円安や金利、市場への影響をプロの視点で。
+    3. 【徹底解説：なぜ？の背景】：中学生でもわかるように以下の点を解説。
+       - 「衆議院の解散」とは何か（例：ゲームのリセットや比喩を使って）。
+       - 首相はなぜ今、解散したいのか（目的）。
+       - それによって誰が、どんな得をする可能性があるのか。
+    4. 【私達への影響】：私達の生活にどう関係するか。
+
+    【執筆ルール】
+    - 主語は「私達」とし、親しみやすくも知的なトーンで。
+    - 「：」（コロン）の使用は厳禁。
+    - 難しい用語（解散、信任、財政出動など）は必ずglossaryに含める。
+
+    【出力形式】
+    以下のキーを持つJSONのみを出力（JSON Mode）。
+    keys: "id", "date", "titles", "contents", "mermaid", "glossary"
+    ※重要：必ず複数形の "titles" を使用してください。
     """
 
     try:
@@ -33,30 +53,29 @@ def generate_content():
             )
         )
         
-        # --- ここから修正：解析を堅牢にする ---
-        res_text = response.text.strip()
-        
-        # もしMarkdownのコードブロック（```json）が含まれていたら削除
-        res_text = re.sub(r'^```json\s*', '', res_text)
-        res_text = re.sub(r'\s*```$', '', res_text)
-        
-        # 正規表現で最初と最後の { } を探し、その中身だけを抽出
-        match = re.search(r'\{.*\}', res_text, re.DOTALL)
-        if match:
-            data = json.loads(match.group())
-        else:
-            # それでもダメな場合は、文字列そのものを評価
-            data = json.loads(res_text)
+        # JSON抽出
+        res_text = re.search(r'\{.*\}', response.text, re.DOTALL).group()
+        data = json.loads(res_text)
 
-        # IDと日付をここで確実にセット（AI側の欠落対策）
+        # --- SE的補完ロジック：AIのキー名ミスを自動修正 ---
+        # titles がなければ title を探す
+        if 'titles' not in data and 'title' in data:
+            data['titles'] = data['title']
+        
+        # 必須キーが欠けている場合の最小限のダミーデータ
+        required_keys = ['titles', 'contents', 'mermaid', 'glossary']
+        for key in required_keys:
+            if key not in data:
+                data[key] = {"ja": "データ取得エラー", "en": "Data Error"} if key != 'glossary' else []
+
         data["id"] = UPDATE_ID
         data["date"] = TODAY
-        
         return data
 
     except Exception as e:
-        print(f"[{datetime.now()}] 解析エラー発生。返却されたテキスト：")
-        print(response.text[:500]) # ログに冒頭500文字を出力して原因特定
+        print(f"解析エラー詳細: {e}")
+        # 失敗時にAIが何を返したかログに残す
+        if 'response' in locals(): print(f"Raw: {response.text[:500]}")
         raise e
 
 def main():
@@ -64,14 +83,23 @@ def main():
     try:
         new_data = generate_content()
         
-        # リセット上書き（アーカイブを消して1件目からやり直す）
-        history = [new_data]
+        history = []
+        if os.path.exists(data_path):
+            with open(data_path, 'r', encoding='utf-8') as f:
+                try:
+                    history = json.load(f)
+                    if not isinstance(history, list): history = []
+                except: history = []
         
+        history.insert(0, new_data)
         os.makedirs('docs', exist_ok=True)
         with open(data_path, 'w', encoding='utf-8') as f:
-            json.dump(history, f, ensure_ascii=False, indent=2)
+            json.dump(history[:50], f, ensure_ascii=False, indent=2)
                 
-        print(f"成功: {new_data['titles']['ja']} を作成しました。")
+        # タイトル表示時も安全にアクセス
+        display_title = new_data.get('titles', {}).get('ja', 'No Title')
+        print(f"Success: {display_title}")
+
     except Exception as e:
         print(f"Main Error: {e}")
         exit(1)
