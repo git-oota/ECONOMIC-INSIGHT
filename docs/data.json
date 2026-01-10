@@ -1,5 +1,83 @@
 [
   {
+    "id": "20260110_100119",
+    "date": "2026-01-10",
+    "titles": {
+      "ja": "CES 2026の閉幕とアンビエントAI経済の胎動",
+      "en": "Conclusion of CES 2026 and the Emergence of the Ambient AI Economy"
+    },
+    "contents": {
+      "ja": "私達はラスベガスで開催されたCES 2026の閉幕を受け、技術革新が実体経済に及ぼす影響を多角的に分析しています。今回の展示会ではアンビエントAIという概念が主流となり、生活空間のあらゆるデバイスに知能が分散配置される潮流が鮮明となりました。これに伴い、半導体需要は従来のクラウド集中型からエッジ側での高度な推論処理へとシフトしており、私達は供給網の構造的な変容を予見しています。特に台湾積体電路製造が発表した記録的な収益は、AIインフラへの投資が依然として強固であることを裏付けています。しかし、特定のプラットフォーマーによる技術の寡占化が進む中で、私達は市場の健全な競争環境が損なわれるリスクを懸念せざるを得ません。資本集約的な開発競争が激化する一方で、地政学的リスクを背景とした関税障壁の構築は、コストプッシュ型のインフレを誘発する懸念材料です。私達は、技術の進歩がもたらす生産性の向上と、マクロ経済の安定性の均衡を慎重に見極める局面にあると考えています。",
+      "en": "We are conducting a multifaceted analysis of the impact of technological innovation on the real economy following the conclusion of CES 2026 in Las Vegas. At this exhibition, the concept of Ambient AI became mainstream, making the trend of intelligence being distributed across all devices in living spaces clear. Along with this, semiconductor demand is shifting from traditional cloud-centralized models toward advanced inference processing on the edge, and we foresee a structural transformation of the supply chain. In particular, the record revenues reported by Taiwan Semiconductor Manufacturing Company confirm that investment in AI infrastructure remains robust. However, as the oligopoly of technology by specific platformers progresses, we cannot help but worry about the risk of a healthy competitive environment being compromised. While capital-intensive development competition intensifies, the construction of tariff barriers against the backdrop of geopolitical risks is a concern that could trigger cost-push inflation. We believe we are at a stage where we must carefully assess the balance between productivity gains brought by technological progress and macroeconomic stability."
+    },
+    "mermaid": {
+      "ja": "graph TD; A[CES 2026閉幕] --> B[アンビエントAIの普及]; B --> C[エッジ半導体需要の増大]; C --> D[供給網の再編と地政学的リスク]; D --> E[マクロ経済の安定性への影響];",
+      "en": "graph TD; A[CES 2026 Conclusion] --> B[Spread of Ambient AI]; B --> C[Increased Edge Chip Demand]; C --> D[Supply Chain Shift and Risks]; D --> E[Impact on Macro Stability];"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "アンビエントAI",
+          "en": "Ambient AI"
+        },
+        "def": {
+          "ja": "生活環境に溶け込み意識せずに利用できる人工知能のこと",
+          "en": "AI integrated into the environment for seamless use"
+        }
+      },
+      {
+        "term": {
+          "ja": "供給網",
+          "en": "supply chain"
+        },
+        "def": {
+          "ja": "原材料の調達から製品が届くまでの全工程の流れ",
+          "en": "The entire process from raw materials to final product"
+        }
+      },
+      {
+        "term": {
+          "ja": "寡占化",
+          "en": "oligopoly"
+        },
+        "def": {
+          "ja": "少数の大企業が市場の大部分を支配してしまう状態",
+          "en": "A state where a few large firms dominate the market"
+        }
+      },
+      {
+        "term": {
+          "ja": "資本集約的な",
+          "en": "capital-intensive"
+        },
+        "def": {
+          "ja": "設備や研究開発に多額の資金投入が必要な産業の形態",
+          "en": "Industries requiring large financial investments"
+        }
+      },
+      {
+        "term": {
+          "ja": "地政学的リスク",
+          "en": "geopolitical risks"
+        },
+        "def": {
+          "ja": "特定地域の政治的緊張が経済に与える不確実性のこと",
+          "en": "Economic uncertainty caused by political tensions"
+        }
+      },
+      {
+        "term": {
+          "ja": "コストプッシュ型",
+          "en": "cost-push"
+        },
+        "def": {
+          "ja": "原材料費や輸送費の上昇が原因で物価が上がること",
+          "en": "Inflation caused by rising production and supply costs"
+        }
+      }
+    ]
+  },
+  {
     "id": "20260110_095453",
     "date": "2026-01-10",
     "titles": {
