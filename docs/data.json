@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "20260110_124935",
+    "date": "2026-01-10",
+    "titles": {
+      "ja": "日本の長期金利が27年ぶり高水準の2.1パーセントに到達、日銀の利上げ継続示唆で市場に緊張",
+      "en": "Japan's Long-term Interest Rate Hits 27-Year High of 2.1 Percent as BOJ Signals Further Hikes"
+    },
+    "contents": {
+      "ja": "私達は、日本の金融市場が歴史的な転換点を迎えていることを強く実感しています。2026年1月10日、日本の長期金利の指標となる10年物国債の利回りが2.1パーセントを超え、1999年以来約27年ぶりの高水準を記録しました。この急激な上昇の背景には、日本銀行の植田和男総裁が昨年末に政策金利を0.75パーセントに引き上げたことに加え、年明けの挨拶でさらなる利上げの可能性を強く示唆したことがあります。私達の経済は、長年続いたデフレから完全に脱却し、賃金と物価が共に上昇する好循環に入りつつあると評価されています。しかし、金利の上昇は私達の生活に直接的な影響を及ぼします。住宅ローンの返済負担が増えることや、企業の借入コストが増大して設備投資が抑制されるといった課題も突きつけています。\nまた、為替市場では高市総裁による衆議院解散の検討報道を受け、政治的な先行き不透明感から円安が加速し、1ドル158円台を記録しました。私達は、金利のある世界への適応という新たな局面において、家計や企業の財務戦略を根本から再考する必要に迫られています。これまでの低金利に慣れきった社会構造が、高い金利水準に耐えられるかどうかが今後の大きな焦点となります。私達は、政府や日銀の動向を注視し、変化する経済環境に柔軟に対応していく姿勢が求められています。さらに、中国による日本産食品への検疫強化といった経済的な圧力も強まっており、輸出企業にとっては厳しい状況が続いています。私達は、国内の金利動向だけでなく、国際的な地政学リスクが日本経済に与える影響についても、これまで以上に敏感にならなければなりません。この新しい時代の荒波を乗り越えるために、私達一人ひとりが経済の仕組みを正しく理解し、賢い選択をしていくことが不可欠です。",
+      "en": "We are witnessing a historic turning point in Japan's financial markets. On January 10, 2026, the yield on 10-year Japanese government bonds, a benchmark for long-term interest rates, exceeded 2.1 percent, marking its highest level in approximately 27 years since 1999. This surge follows Bank of Japan Governor Kazuo Ueda's decision to raise the policy interest rate to 0.75 percent late last year, coupled with his strong signals for further hikes during New Year's addresses. We see our economy transitioning from long-term deflation into a virtuous cycle of rising wages and prices. However, rising rates present challenges such as increased mortgage burdens and higher corporate borrowing costs.\nIn the currency market, the yen weakened to the 158 range per dollar following reports that Prime Minister Takaichi is considering dissolving the House of Representatives. We must now adapt our financial strategies for households and businesses to this new era of positive interest rates. The focus moving forward will be whether our social structure, long accustomed to low rates, can withstand higher interest levels. We need to closely monitor the actions of the government and the BOJ while remaining flexible to the changing economic environment. Furthermore, economic pressures such as China's tightened inspections on Japanese food products continue to pose difficulties for exporters. We must become more sensitive to how international geopolitical risks affect the Japanese economy. To navigate the waves of this new era, it is essential for each of us to correctly understand economic mechanisms and make wise choices."
+    },
+    "mermaid": {
+      "ja": "graph TD; A[日本銀行の利上げ 0.75パーセント] --> B[長期金利の上昇 2.1パーセント]; B --> C[住宅ローンや企業の借入コスト増]; A --> D[物価と賃金の好循環への期待]; E[政治的不透明感 高市首相の解散検討] --> F[円安進行 1ドル158円];",
+      "en": "graph TD; A[BOJ Rate Hike to 0.75 Percent] --> B[Long-term Rate Rise to 2.1 Percent]; B --> C[Higher Mortgage and Borrowing Costs]; A --> D[Expectations for Wage-Price Virtuous Cycle]; E[Political Uncertainty PM Takaichi] --> F[Yen Depreciation 158 JPY];"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "長期金利",
+          "en": "Long-term Interest Rate"
+        },
+        "def": {
+          "ja": "1年を超える長い期間お金を借りる時の利子の割合です。住宅ローンの金利などに影響します。",
+          "en": "The interest rate for borrowing money over a long period exceeding one year. It affects mortgage rates and other loans."
+        }
+      },
+      {
+        "term": {
+          "ja": "日本銀行",
+          "en": "Bank of Japan"
+        },
+        "def": {
+          "ja": "日本の中央銀行で、お金の量を調節したり物価を安定させたりする役割を持っています。",
+          "en": "The central bank of Japan, responsible for adjusting the money supply and maintaining price stability."
+        }
+      },
+      {
+        "term": {
+          "ja": "円安",
+          "en": "Yen Depreciation"
+        },
+        "def": {
+          "ja": "他の国の通貨に対して日本円の価値が下がることです。輸入品が高くなる原因になります。",
+          "en": "A decrease in the value of the Japanese yen compared to other currencies. It causes imported goods to become more expensive."
+        }
+      }
+    ]
+  }
+]
