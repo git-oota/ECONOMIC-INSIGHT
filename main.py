@@ -14,40 +14,48 @@ UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def generate_content():
+    # 検索ツールを確実に機能させ、事実に基づかせるための指示
     prompt = f"""
-    今日（{TODAY}）の日本の主要ニュース（日経新聞、朝日新聞、読売新聞などで報じられた経済・社会ニュース）を1つ選定し、分析記事を書いてください。
-    
-    ## 執筆ルール
-    1. 「ブルームバーグ」や「エディトリアル・ボート」という言葉は厳禁です。
-    2. 主語は「私達」としてください。
-    3. 専門用語は中学生にもわかるよう日・英両方で解説。
-    4. Mermaid図解を含めてください。
-    5. 必ず以下のJSON形式で出力してください。
+    【最優先指示】
+    1. Google検索ツールを使用して、今日（{TODAY}）または直近24時間以内に、日本経済新聞、朝日新聞、読売新聞などの信頼できる日本のメディアが実際に報じた「経済・社会・テクノロジー」に関するニュースを検索してください。
+    2. 検索結果に存在しない出来事、架空の数値（「40%の企業が導入」など）、未来予測を「今日起きたニュース」として捏造することは厳禁です。
+    3. 複数の検索結果から、最も投資価値や分析価値の高いトピックを1つ選定してください。
 
-    ## 出力形式 (JSON)
+    ## 執筆ルール
+    - 主語は「私達」とし、プロフェッショナルな経済分析コラムにリライトしてください。
+    - 出典元の新聞社名は伏せてください。
+    - 構造分析チャート（mermaid）は、日本語と英語の両方で作成してください。
+
+    ## 出力形式 (JSONのみ)
     {{
       "id": "{UPDATE_ID}",
       "date": "{TODAY}",
-      "titles": {{ "ja": "..", "en": ".." }},
-      "contents": {{ "ja": "..", "en": ".." }},
+      "titles": {{ "ja": "日本語タイトル", "en": "English Title" }},
+      "contents": {{ "ja": "日本語本文（改行は\\n）", "en": "English Content" }},
       "mermaid": {{ 
-        "ja": "graph TD; ...（日本語の図解）", 
-        "en": "graph TD; ...（英語の図解）" 
+        "ja": "graph TD; ...（日本語の図解データ）", 
+        "en": "graph TD; ...（英語の図解データ）" 
       }},
-      "glossary": [...]
+      "glossary": [
+        {{ 
+          "term": {{ "ja": "用語名", "en": "Term" }}, 
+          "def": {{ "ja": "日本語解説", "en": "English definition" }} 
+        }}
+      ]
     }}
     """
     
-    # ツール名を 'google_search' に修正
+    # モデル設定（より厳格に事実に基づかせるため、温度パラメーターを低めに設定することもありますが
+    # google-genaiのデフォルトでも検索ツールがあれば精度は上がります）
     response = client.models.generate_content(
-        model='gemini-3-flash-preview', # 最新モデルを推奨
+        model='gemini-2.0-flash',
         contents=prompt,
-        config={
-            'tools': [{'google_search': {}}] 
-        }
+        config={{
+            'tools': [{{'google_search': {{}}}}],
+            'temperature': 0.1  # 創造性を抑え、事実への忠実度を高める
+        }}
     )
     
-    # JSON部分の抽出
     res_text = re.search(r'\{.*\}', response.text, re.DOTALL).group()
     return json.loads(res_text)
 
