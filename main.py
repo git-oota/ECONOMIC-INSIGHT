@@ -12,56 +12,56 @@ TODAY = NOW.strftime("%Y-%m-%d")
 UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
 # Geminiクライアントの初期化
-# タイムアウトをここではなく、個別のリクエスト時に設定します
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+# 型定義(types.HttpOptions)を明示的に使い、10秒未満のデフォルト値を上書きします
+client = genai.Client(
+    api_key=os.environ["GEMINI_API_KEY"],
+    http_options=types.HttpOptions(timeout=600000) # ミリ秒指定が必要な場合を考慮し、十分な数値を確保
+)
 
 def generate_content():
+    # 検索の負荷を下げるため、ソースを日経とロイターに限定
     prompt = f"""
-    【最優先指示：事実性の徹底と検索プロセス】
-    1. Google検索を使用し、今日（{TODAY}）の日本経済新聞、ロイター、ブルームバーグから主要な経済ニュースを1つ選定してください。
-    2. 複数のメディアで報じられている事実のみを扱い、数値の捏造は厳禁です。
+    【最優先指示】
+    1. Google検索を使用し、今日（{TODAY}）の日本経済新聞またはロイターから、最も重要な経済・テックニュースを1つ選んでください。
+    2. 事実に基づき、捏造は厳禁です。
 
     【執筆ルール】
-    - 主語は「私達」とし、プロフェッショナルな経済分析コラムを作成してください。
-    - 「：」（コロン）の使用は厳禁です。
-    - 中学生には難しい専門用語を3〜5個含めてください。
+    - 主語は「私達」とし、プロフェッショナルなコラムを作成。
+    - 「：」（コロン）の使用は厳禁。
+    - 中学生には難しい専門用語を3個程度含める。
 
     【アウトプット形式 (JSONのみ)】
-    以下の構造のJSONのみを出力してください。
     {{
       "id": "{UPDATE_ID}",
       "date": "{TODAY}",
       "titles": {{ "ja": "タイトル", "en": "Title" }},
-      "contents": {{ "ja": "本文（1000文字程度）", "en": "Content" }},
+      "contents": {{ "ja": "本文", "en": "Content" }},
       "mermaid": {{ "ja": "graph TD;...", "en": "graph TD;..." }},
       "glossary": [
-        {{ 
-          "term": {{ "ja": "用語名", "en": "Term" }}, 
-          "def": {{ "ja": "解説", "en": "Definition" }} 
-        }}
+        {{ "term": {{ "ja": "用語名", "en": "Term" }}, "def": {{ "ja": "解説", "en": "Definition" }} }}
       ]
     }}
     """
     
     try:
-        # 1sエラーを回避するため、リクエスト時にhttp_optionsを指定
-        # モデル名も安定版の 'gemini-2.0-flash' に固定します
+        # モデル名は安定性の高い gemini-3-flash-preview または 2.0-flash を使用
         response = client.models.generate_content(
             model='gemini-3-flash-preview',
             contents=prompt,
             config=types.GenerateContentConfig(
-                tools=[{'google_search': {}}],
-                temperature=0.1,
-                http_options={'timeout': 600} # ここで10分(600s)を確実に確保
+                tools=[types.Tool(google_search=types.GoogleSearch())],
+                temperature=0.1
             )
         )
         
-        # レスポンスからJSONを抽出
+        if not response.text:
+            raise ValueError("Empty response from API")
+
         res_text = re.search(r'\{.*\}', response.text, re.DOTALL).group()
         return json.loads(res_text)
 
     except Exception as e:
-        print(f"APIエラー: {e}")
+        print(f"API Error Details: {e}")
         raise e
 
 def main():
@@ -69,17 +69,16 @@ def main():
         data = generate_content()
         data_path = 'docs/data.json'
         
-        # 「既存の記事を消して再作成」するため、履歴を読み込まず新規リストを作成
-        # ※蓄積したい場合は、一度実行した後にこの部分を「読み込み式」に戻します
-        history = [data] 
+        # 【リセット実行】既存の履歴を読み込まず、今回の1件だけで上書き
+        history = [data]
         
         os.makedirs('docs', exist_ok=True)
         with open(data_path, 'w', encoding='utf-8') as f:
             json.dump(history, f, ensure_ascii=False, indent=2)
                 
-        print(f"Success: {data['titles']['ja']} を新規作成しました。")
+        print(f"Success: {data['titles']['ja']} を作成しました。")
     except Exception as e:
-        print(f"実行失敗: {e}")
+        print(f"Final Error: {e}")
         exit(1)
 
 if __name__ == "__main__":
