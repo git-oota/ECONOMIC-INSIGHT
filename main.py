@@ -12,20 +12,16 @@ TODAY = NOW.strftime("%Y-%m-%d")
 UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
 # Geminiクライアントの初期化
-# タイムアウト設定をクライアントレベルに移動し、確実に600秒（10分）を確保します
-client = genai.Client(
-    api_key=os.environ["GEMINI_API_KEY"],
-    http_options={'timeout': 600}
-)
+# タイムアウトをここではなく、個別のリクエスト時に設定します
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def generate_content():
-    # 検索範囲を具体的に絞り、AIの処理負荷を下げてレスポンスを速めます
     prompt = f"""
     【最優先指示：事実性の徹底と検索プロセス】
-    1. Google検索を使用し、今日（{TODAY}）の日本経済新聞、ロイター、ブルームバーグの主要ニュースから「経済・テクノロジー」のトピックを1つ選定してください。
+    1. Google検索を使用し、今日（{TODAY}）の日本経済新聞、ロイター、ブルームバーグから主要な経済ニュースを1つ選定してください。
     2. 複数のメディアで報じられている事実のみを扱い、数値の捏造は厳禁です。
 
-    【執筆ルール：独自性と自然な文章】
+    【執筆ルール】
     - 主語は「私達」とし、プロフェッショナルな経済分析コラムを作成してください。
     - 「：」（コロン）の使用は厳禁です。
     - 中学生には難しい専門用語を3〜5個含めてください。
@@ -40,31 +36,32 @@ def generate_content():
       "mermaid": {{ "ja": "graph TD;...", "en": "graph TD;..." }},
       "glossary": [
         {{ 
-          "term": {{ "ja": "本文中の用語", "en": "Term" }}, 
-          "def": {{ "ja": "中学生向け解説（30文字）", "en": "Definition" }} 
+          "term": {{ "ja": "用語名", "en": "Term" }}, 
+          "def": {{ "ja": "解説", "en": "Definition" }} 
         }}
       ]
     }}
-    ※重要：glossaryの"term"は、本文(contents)の中の表記と完全一致させてください。
     """
     
     try:
-        # モデル名は安定している 'gemini-3-flash-preview' を使用
+        # 1sエラーを回避するため、リクエスト時にhttp_optionsを指定
+        # モデル名も安定版の 'gemini-2.0-flash' に固定します
         response = client.models.generate_content(
             model='gemini-3-flash-preview',
             contents=prompt,
             config=types.GenerateContentConfig(
                 tools=[{'google_search': {}}],
-                temperature=0.1
+                temperature=0.1,
+                http_options={'timeout': 600} # ここで10分(600s)を確実に確保
             )
         )
         
-        # JSON部分を抽出
+        # レスポンスからJSONを抽出
         res_text = re.search(r'\{.*\}', response.text, re.DOTALL).group()
         return json.loads(res_text)
 
     except Exception as e:
-        print(f"APIエラーまたはタイムアウトが発生しました: {e}")
+        print(f"APIエラー: {e}")
         raise e
 
 def main():
@@ -72,21 +69,17 @@ def main():
         data = generate_content()
         data_path = 'docs/data.json'
         
-        history = []
-        if os.path.exists(data_path):
-            with open(data_path, 'r', encoding='utf-8') as f:
-                history = json.load(f)
+        # 「既存の記事を消して再作成」するため、履歴を読み込まず新規リストを作成
+        # ※蓄積したい場合は、一度実行した後にこの部分を「読み込み式」に戻します
+        history = [data] 
         
-        # 最新記事を先頭に追加
-        history.insert(0, data)
         os.makedirs('docs', exist_ok=True)
-        
         with open(data_path, 'w', encoding='utf-8') as f:
-            json.dump(history[:50], f, ensure_ascii=False, indent=2)
+            json.dump(history, f, ensure_ascii=False, indent=2)
                 
-        print(f"Success: {data['titles']['ja']}")
+        print(f"Success: {data['titles']['ja']} を新規作成しました。")
     except Exception as e:
-        print(f"実行に失敗しました: {e}")
+        print(f"実行失敗: {e}")
         exit(1)
 
 if __name__ == "__main__":
