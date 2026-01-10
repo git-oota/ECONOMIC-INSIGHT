@@ -30,13 +30,11 @@ def generate_content():
       "date": "{TODAY}",
       "titles": {{ "ja": "..", "en": ".." }},
       "contents": {{ "ja": "..", "en": ".." }},
-      "mermaid": "graph TD; ...",
-      "glossary": [
-        {{ 
-          "term": {{ "ja": "用語名", "en": "Term" }}, 
-          "def": {{ "ja": "日本語解説", "en": "English definition" }} 
-        }}
-      ]
+      "mermaid": {{ 
+        "ja": "graph TD; ...（日本語の図解）", 
+        "en": "graph TD; ...（英語の図解）" 
+      }},
+      "glossary": [...]
     }}
     """
     
