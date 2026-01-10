@@ -1,50 +1,56 @@
 [
   {
-    "id": "20260110_130642",
+    "id": "20260110_132021",
     "date": "2026-01-10",
     "titles": {
-      "ja": "円安加速、1ドル158円台へ：高市首相の衆院解散検討報道と「サナエノミクス」への期待",
-      "en": "Yen Weakens to 158 Level: Speculation on PM Takaichi's Snap Election and 'Sanaenomics' Expectations"
+      "ja": "家計を襲う二重の重圧 — 円安インフレと金利上昇の負の連鎖",
+      "en": "Double Pressure on Households — The Negative Spiral of Yen-Driven Inflation and Rising Interest Rates"
     },
     "contents": {
-      "ja": "2026年1月10日のニューヨーク外国為替市場で、円相場は一時1ドル＝158円台まで下落し、約1年ぶりの安値を記録しました。この背景には、高市早苗首相が1月下旬の通常国会冒頭で衆議院を解散し、2月に総選挙を行う検討に入ったとの報道があります。市場では、選挙を控えて高市政権が掲げる積極財政政策、いわゆる「サナエノミクス」が一段と強化されるとの見方が強まりました。財政赤字の拡大懸念と日米金利差の継続が意識され、円売り・ドル買いが加速しています。日経平均株価は輸出関連株の買い支えがある一方、輸入コスト増によるインフレ再燃への警戒感も広がっており、日本経済は「強い財政」と「通貨安」のジレンマに直面しています。",
-      "en": "On January 10, 2026, the Japanese yen plummeted to the 158 level against the U.S. dollar in the New York foreign exchange market, marking its lowest point in approximately a year. This depreciation was triggered by reports that Prime Minister Sanae Takaichi is considering dissolving the House of Representatives at the start of the ordinary Diet session in late January, with a general election likely in February. Investors are increasingly betting on an intensification of 'Sanaenomics'—the Prime Minister's signature proactive fiscal policy—ahead of the election. Concerns over an expanding fiscal deficit and the persistence of the interest rate gap between Japan and the U.S. have accelerated yen selling. While the Nikkei 225 finds support from export-oriented stocks, there is growing caution regarding resurgent inflation driven by higher import costs, placing the Japanese economy in a dilemma between fiscal stimulus and currency weakness."
+      "ja": "私達は今、極めて厳しい経済の分岐点に立たされています。円安が止まらないことで海外から輸入するエネルギーや食品の価格が上がり続けており、これは私達の生活を直接圧迫するコストプッシュ型のインフレを招いています。この状況は単なる物価高にとどまらず、私達が本来持っている購買力を根底から削り取る構造的な危機です。一方で、物価を抑えるために金利を上げれば、住宅ローンを抱える家庭や、資金繰りに苦しむ中小企業に直接的な返済の圧力がのしかかります。政府には積極的な財政出動を求める声がありますが、それは国の借金をさらに増やし、財政規律を失わせるリスクを伴います。市場は景気対策を望みながらも、借金が増えることでさらに円の価値が下がることを恐れるというジレンマに陥っています。私達の家計は、物価高と金利上昇という二つの壁に挟まれており、これまでの常識が通用しない局面を迎えているのです。",
+      "en": "We are currently standing at an extremely critical economic crossroads. The persistent depreciation of the yen continues to drive up the prices of imported energy and food, leading to cost-push inflation that directly pressures our daily lives. This situation is not merely a price hike but a structural crisis that fundamentally erodes our inherent purchasing power. On the other hand, if interest rates are raised to curb inflation, direct repayment pressure will weigh on households with mortgages and small businesses struggling with cash flow. While there are calls for the government to engage in proactive fiscal spending, this carries the risk of increasing national debt and undermining fiscal discipline. The market is caught in a dilemma, desiring economic stimulus while fearing that increased debt will further devalue the yen. Our households are facing the double pressure of high prices and rising interest rates, entering a phase where conventional wisdom no longer applies."
     },
     "mermaid": {
-      "ja": "graph TD\n    A[衆院解散・総選挙の報道] --> B[積極財政への期待拡大]\n    B --> C[サナエノミクスの強化]\n    C --> D[財政赤字拡大の懸念]\n    D --> E[円安の進行 1ドル158円]\n    E --> F[輸出企業の収益改善]\n    E --> G[輸入物価上昇・インフレ懸念]\n    F --> H[株価の下支え]\n    G --> I[実質賃金への下押し圧力]",
-      "en": "graph TD\n    A[Reports of Snap Election] --> B[Expectations for Fiscal Expansion]\n    B --> C[Reinforcement of Sanaenomics]\n    C --> D[Concerns over Fiscal Deficit]\n    D --> E[Yen Depreciation USD/JPY 158]\n    E --> F[Improved Export Earnings]\n    E --> G[Rising Import Prices & Inflation Fears]\n    F --> H[Stock Market Support]\n    G --> I[Downward Pressure on Real Wages]"
+      "ja": "graph TD\n  A[円安の継続] --> B[輸入コストの増大]\n  B --> C[家計の購買力低下]\n  C --> D[消費の冷え込み]\n  E[金利の引き上げ] --> F[ローン返済の負担増]\n  F --> D\n  G[積極財政への期待] --> H[財政規律の懸念]\n  H --> A",
+      "en": "graph TD\n  A[Continued Yen Weakness] --> B[Increased Import Costs]\n  B --> C[Decreased Household Purchasing Power]\n  C --> D[Stagnant Consumption]\n  E[Interest Rate Hikes] --> F[Increased Mortgage Burden]\n  F --> D\n  G[Expectations for Fiscal Stimulus] --> H[Concerns over Fiscal Discipline]\n  H --> A"
     },
-    "glossary": [
-      {
-        "term": {
-          "ja": "サナエノミクス",
-          "en": "Sanaenomics"
+    "glossary": {
+      "ja": [
+        {
+          "term": "コストプッシュ・インフレ",
+          "description": "原材料や燃料などの輸入価格が上がることで、無理やり物価が押し上げられる現象を指します"
         },
-        "def": {
-          "ja": "高市早苗首相が提唱する、積極的な財政出動と戦略的な成長投資を柱とした経済政策の通称。",
-          "en": "A nickname for the economic policies advocated by PM Sanae Takaichi, centered on proactive fiscal spending and strategic investment for growth."
-        }
-      },
-      {
-        "term": {
-          "ja": "衆議院解散",
-          "en": "Dissolution of the House of Representatives"
+        {
+          "term": "購買力",
+          "description": "自分たちが持っているお金で、実際にどれだけの物やサービスを買うことができるかという能力のことです"
         },
-        "def": {
-          "ja": "任期満了前に衆議院議員の資格を失わせること。内閣総理大臣の専権事項とされ、事実上の総選挙の合図となる。",
-          "en": "The termination of the tenure of all members of the lower house before their term ends, typically initiated by the Prime Minister as a precursor to a general election."
-        }
-      },
-      {
-        "term": {
-          "ja": "積極財政",
-          "en": "Fiscal Expansion / Proactive Fiscal Policy"
+        {
+          "term": "財政規律",
+          "description": "国が借金を増やしすぎないように、収入と支出のバランスを適切に保とうとするルールのことです"
         },
-        "def": {
-          "ja": "政府支出を増やしたり減税を行ったりすることで、景気を刺激しようとする政策手法。",
-          "en": "A policy approach aimed at stimulating the economy by increasing government spending or implementing tax cuts."
+        {
+          "term": "ジレンマ",
+          "description": "二つの選択肢の間で板挟みになり、どちらを選んでも困った結果が予想される難しい状態を言います"
         }
-      }
-    ]
+      ],
+      "en": [
+        {
+          "term": "Cost-push inflation",
+          "description": "A phenomenon where prices are forced up due to rising costs of raw materials and fuel imports"
+        },
+        {
+          "term": "Purchasing power",
+          "description": "The actual ability to buy goods and services with the money one possesses"
+        },
+        {
+          "term": "Fiscal discipline",
+          "description": "The rule of maintaining a proper balance between government income and spending to avoid excessive debt"
+        },
+        {
+          "term": "Dilemma",
+          "description": "A difficult situation where one is caught between two choices, both of which may lead to problematic results"
+        }
+      ]
+    }
   }
 ]
