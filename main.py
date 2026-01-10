@@ -17,37 +17,11 @@ client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 def generate_content():
     print(f"[{datetime.now()}] ニュース分析を開始（JSON Mode）...")
     
-    # 1. プロンプトの定義（ここでの字下げは文字列の中身として扱われます）
+    # プロンプトは変更なし（そのまま使用）
     prompt = f"""
-    【役割】
-    あなたは「世界一わかりやすい経済ニュース」を執筆するシニアアナリストです。
-    今日（{TODAY}）の日本の主要ニュース（例：高市首相の衆院解散検討など）を1つ選び、事実の分析と「背景知識の習得」を両立させたコラムを執筆してください。
-
-    【記事の構成指示：contents内に必ず含めること】
-    1. 【事実の概要】：今、何が起きているのかを簡潔に。
-    2. 【専門的分析】：円安や金利、市場への影響をプロの視点で。
-    3. 【徹底解説：なぜ？の背景】：中学生でもわかるように以下の点を解説してください。
-       - 「衆議院の解散」とは何か（例：ゲームのリセットや、比喩を使って）。
-       - 首相はなぜ今、解散したいのか（目的）。
-       - それによって誰が、どんな得をする可能性があるのか。
-    4. 【私達への影響】：私達の生活にどう関係するか。
-
-    【制約（タイムアウト回避のため）】
-    - 検索は主要な3サイト程度に留め、迅速に出力してください。
-    - 全体の文字数は日本語で1000〜1200文字程度にまとめてください。
-
-    【執筆ルール】
-    - 主語は「私達」とし、親しみやすくも知的なトーンで。
-    - 「：」（コロン）の使用は厳禁。
-    - 難しい用語（解散、信任、財政出動など）は必ずglossaryに含める。
-
-    【出力形式】
-    以下のキーを持つJSONのみを出力（JSON Mode）。
-    keys: "id", "date", "titles", "contents", "mermaid", "glossary"
-    ※mermaidは「解散から総選挙、新政権発足までの流れ」を図解してください。
+    （ここにあなたの現在のプロンプトをそのまま入れてください）
     """
 
-    # 2. ここから下の try: の位置が prompt と同じ垂直線上にある必要があります
     try:
         response = client.models.generate_content(
             model='gemini-3-flash-preview',
@@ -59,13 +33,30 @@ def generate_content():
             )
         )
         
-        data = json.loads(response.text)
+        # --- ここから修正：解析を堅牢にする ---
+        res_text = response.text.strip()
+        
+        # もしMarkdownのコードブロック（```json）が含まれていたら削除
+        res_text = re.sub(r'^```json\s*', '', res_text)
+        res_text = re.sub(r'\s*```$', '', res_text)
+        
+        # 正規表現で最初と最後の { } を探し、その中身だけを抽出
+        match = re.search(r'\{.*\}', res_text, re.DOTALL)
+        if match:
+            data = json.loads(match.group())
+        else:
+            # それでもダメな場合は、文字列そのものを評価
+            data = json.loads(res_text)
+
+        # IDと日付をここで確実にセット（AI側の欠落対策）
         data["id"] = UPDATE_ID
         data["date"] = TODAY
+        
         return data
 
     except Exception as e:
-        print(f"[{datetime.now()}] APIエラー詳細: {e}")
+        print(f"[{datetime.now()}] 解析エラー発生。返却されたテキスト：")
+        print(response.text[:500]) # ログに冒頭500文字を出力して原因特定
         raise e
 
 def main():
