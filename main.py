@@ -3,7 +3,7 @@ import json
 import re
 from datetime import datetime, timezone, timedelta
 from google import genai
-from google.genai import types # タイムアウト設定に必要
+from google.genai import types
 
 # 日本時間の設定
 JST = timezone(timedelta(hours=+9), 'JST')
@@ -12,19 +12,23 @@ TODAY = NOW.strftime("%Y-%m-%d")
 UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
 # Geminiクライアントの初期化
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+# タイムアウト設定をクライアントレベルに移動し、確実に600秒（10分）を確保します
+client = genai.Client(
+    api_key=os.environ["GEMINI_API_KEY"],
+    http_options={'timeout': 600}
+)
 
 def generate_content():
+    # 検索範囲を具体的に絞り、AIの処理負荷を下げてレスポンスを速めます
     prompt = f"""
     【最優先指示：事実性の徹底と検索プロセス】
-    1. Google検索を使用し、今日（{TODAY}）または直近24時間以内に、日本経済新聞、朝日新聞、読売新聞、ロイター、ブルームバーグ等の信頼できるメディアが実際に報じた「経済・社会・テクノロジー」のニュースを複数検索してください。
-    2. 検索されたニュースが「複数のメディアで共通して報じられている事実」であることを確認してください。
-    3. 存在しない数値や未来予測を「既成事実」として扱うことは厳禁です。
+    1. Google検索を使用し、今日（{TODAY}）の日本経済新聞、ロイター、ブルームバーグの主要ニュースから「経済・テクノロジー」のトピックを1つ選定してください。
+    2. 複数のメディアで報じられている事実のみを扱い、数値の捏造は厳禁です。
 
     【執筆ルール：独自性と自然な文章】
     - 主語は「私達」とし、プロフェッショナルな経済分析コラムを作成してください。
-    - 「：」（コロン）の使用を一切禁止します。
-    - 中学生には難しい専門用語を本文中に含めてください。
+    - 「：」（コロン）の使用は厳禁です。
+    - 中学生には難しい専門用語を3〜5個含めてください。
 
     【アウトプット形式 (JSONのみ)】
     以下の構造のJSONのみを出力してください。
@@ -32,30 +36,27 @@ def generate_content():
       "id": "{UPDATE_ID}",
       "date": "{TODAY}",
       "titles": {{ "ja": "タイトル", "en": "Title" }},
-      "contents": {{ "ja": "本文", "en": "Content" }},
+      "contents": {{ "ja": "本文（1000文字程度）", "en": "Content" }},
       "mermaid": {{ "ja": "graph TD;...", "en": "graph TD;..." }},
       "glossary": [
         {{ 
           "term": {{ "ja": "本文中の用語", "en": "Term" }}, 
-          "def": {{ "ja": "日本語解説", "en": "Definition" }} 
+          "def": {{ "ja": "中学生向け解説（30文字）", "en": "Definition" }} 
         }}
       ]
     }}
     ※重要：glossaryの"term"は、本文(contents)の中の表記と完全一致させてください。
     """
     
-    # 検索を伴う重い処理のため、タイムアウトを10分(600s)に設定
-    config = {
-        'tools': [{'google_search': {}}],
-        'temperature': 0.1,
-        'http_options': {'timeout': 600} 
-    }
-
     try:
+        # モデル名は安定している 'gemini-3-flash-preview' を使用
         response = client.models.generate_content(
-            model='gemini-3-flash-preview', # 安定版の名称に変更
+            model='gemini-3-flash-preview',
             contents=prompt,
-            config=config
+            config=types.GenerateContentConfig(
+                tools=[{'google_search': {}}],
+                temperature=0.1
+            )
         )
         
         # JSON部分を抽出
@@ -76,6 +77,7 @@ def main():
             with open(data_path, 'r', encoding='utf-8') as f:
                 history = json.load(f)
         
+        # 最新記事を先頭に追加
         history.insert(0, data)
         os.makedirs('docs', exist_ok=True)
         
