@@ -79,10 +79,15 @@
         function render() {
             const lang = document.getElementById('langSet').value;
             const contentArea = document.getElementById('content-area');
-            const archiveList = document.getElementById('archive-list');
             
-            if (articles.length === 0) {
-                contentArea.innerHTML = '<div class="text-center py-20 text-slate-400">記事がまだありません。</div>';
+            // 記事がない、または最新がエラーの場合の処理
+            if (articles.length === 0 || articles[currentIndex].titles.ja === "分析レポート生成エラー") {
+                contentArea.innerHTML = `
+                    <div class="text-center py-20">
+                        <div class="text-5xl mb-4">⚙️</div>
+                        <h3 class="text-xl font-bold text-slate-400">最新ニュースを分析中です</h3>
+                        <p class="text-sm text-slate-400 mt-2">数分後に再度読み込んでください。</p>
+                    </div>`;
                 return;
             }
 
