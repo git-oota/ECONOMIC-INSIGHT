@@ -58,7 +58,7 @@ def generate_content():
     # モデル設定（より厳格に事実に基づかせるため、温度パラメーターを低めに設定することもありますが
     # google-genaiのデフォルトでも検索ツールがあれば精度は上がります）
     response = client.models.generate_content(
-        model='gemini-2.0-flash',
+        model='gemini-3-flash-preview',
         contents=prompt,
         config={
             'tools': [{'google_search': {}}], # 波括弧を1つずつにする
