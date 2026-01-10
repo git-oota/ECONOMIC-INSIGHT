@@ -37,38 +37,29 @@
             render();
         }
 
+        // index.html の render 関数内を修正
         function render() {
             const lang = document.getElementById('langSet').value;
-            const data = articles[0]; // 最新の記事を表示
+            const data = articles[0];
             if(!data) return;
-
+        
             const contentHtml = `
-                <div class="text-blue-600 font-bold tracking-widest mb-2 uppercase text-sm">${data.date}</div>
-                <h2 class="text-4xl md:text-5xl font-black mb-10 leading-tight">${data.titles[lang]}</h2>
-                
-                <div class="prose prose-lg max-w-none mb-12 leading-relaxed text-slate-700">
-                    ${data.contents[lang].replace(/\n/g, '<br>')}
-                </div>
-
+                <div class="text-blue-600 font-bold mb-2">${data.date}</div>
+                <h2 class="text-4xl font-black mb-10">${data.titles[lang]}</h2>
+                <div class="prose mb-12">${data.contents[lang].replace(/\n/g, '<br>')}</div>
+        
                 <div class="my-12 p-6 bg-slate-100 rounded-xl">
-                    <h3 class="font-bold mb-4 flex items-center">📊 構造分析チャート</h3>
-                    <pre class="mermaid">${data.mermaid}</pre>
+                    <h3 class="font-bold mb-4">📊 ${lang === 'ja' ? '構造分析チャート' : 'Structural Analysis'}</h3>
+                    <pre class="mermaid">${data.mermaid[lang]}</pre>
                 </div>
-
-                <div class="mt-12">
-                    <h3 class="text-xl font-bold border-l-4 border-blue-600 pl-3 mb-6">Glossary / 用語解説</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        ${data.glossary.map(g => `
-                            <div class="p-4 border border-slate-200 rounded-lg">
-                                <span class="font-bold text-blue-700">${g.term[lang]}</span>: 
-                                <span class="text-sm text-slate-600">${g.def[lang]}</span>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
+                ...
             `;
             document.getElementById('content-area').innerHTML = contentHtml;
-            mermaid.init(undefined, ".mermaid");
+            
+            // 重要：Mermaidを再描画させる
+            mermaid.run({
+                nodes: document.querySelectorAll('.mermaid'),
+            });
         }
         loadData();
     </script>
