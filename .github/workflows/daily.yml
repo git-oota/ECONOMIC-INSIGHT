@@ -27,6 +27,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add docs/data.json  # index.htmlではなくdata.jsonを監視
-          git commit -m "Update intelligence: $(date)" || echo "No changes"
-          git push
+          git add docs/data.json
+          git commit -m "Update Economic Intelligence [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin main  # 競合回避の重要ポイント
+          git push origin main
