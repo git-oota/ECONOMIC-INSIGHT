@@ -1,5 +1,53 @@
 [
   {
+    "id": "20260110_094026",
+    "date": "2026-01-10",
+    "titles": {
+      "ja": "衆院解散報道で円が急落、積極財政への警戒感が背景に",
+      "en": "Yen Plummets on Snap Election News, Fueled by Concerns Over Expansionary Fiscal Policy"
+    },
+    "contents": {
+      "ja": "私達は、昨今の外国為替市場における円相場の急落について分析しました。9日のニューヨーク市場では、一時1ドル＝158円台まで円安が進み、これは昨年1月上旬以来、約1年ぶりの水準です。\n\nこの円安の背景には、高市早苗首相が通常国会冒頭で衆議院を解散する検討に入ったという報道があります。市場では、高市首相が総選挙で勝利し、政権基盤を固めることで、積極的な財政政策を推進するとの見方が強まっています。この積極財政への期待と同時に、財政の持続可能性に対する不透明感から、円売りが加速したと考えられます。\n\nまた、同日に発表された米国の雇用統計も円安に拍車をかけました。失業率は4.4％、非農業部門の雇用者数は前月比5万人増と、いずれも市場予想を下回る結果となりました。この結果は、米連邦準備理事会（FRB）が利下げを急ぐ必要はないとの見方を強め、円売り・ドル買いの動きを誘発しました。\n\n今後の市場の動向については、高市内閣の政策運営や、日銀の金融政策、海外経済の動向など、様々な要因が複雑に絡み合って変動していくと考えられます。引き続き、注意深く市場の動きを注視していく必要がありそうです。",
+      "en": "We have analyzed the recent sharp decline in the yen in the foreign exchange market. On January 9th, in the New York market, the yen depreciated to the 158 yen level against the dollar, the lowest in approximately one year since early January of last year.\n\nBehind this depreciation is the news that Prime Minister Sanae Takaichi is considering dissolving the House of Representatives at the beginning of the ordinary Diet session. The market is increasingly anticipating that Prime Minister Takaichi will win the general election and solidify her administration, thereby promoting an aggressive fiscal policy. Along with this expectation of aggressive fiscal policy, concerns about fiscal sustainability have accelerated the selling of the yen.\n\nAlso contributing to the yen's decline was the U.S. employment statistics released on the same day. The unemployment rate was 4.4%, and the number of non-farm jobs increased by 50,000 from the previous month, both of which were below market expectations. This result strengthened the view that the U.S. Federal Reserve (FRB) does not need to rush to cut interest rates, triggering a sell-yen, buy-dollar movement.\n\nAs for future market trends, various factors such as the Takaichi cabinet's policy management, the Bank of Japan's monetary policy, and overseas economic trends are expected to be intricately intertwined and fluctuate. It seems necessary to continue to carefully monitor market movements."
+    },
+    "mermaid": {
+      "ja": "graph TD;\n    A[衆院解散報道] --> B(積極財政政策への期待);\n    A --> C(財政への不透明感);\n    B --> D{円売り};\n    C --> D;\n    E[米雇用統計] --> F(FRBの利下げ観測後退);\n    F --> D;\n    D --> G[円安進行];",
+      "en": "graph TD;\n    A[Snap Election News] --> B(Expectations for Expansionary Fiscal Policy);\n    A --> C(Fiscal Uncertainty);\n    B --> D{Yen Selling};\n    C --> D;\n    E[US Employment Statistics] --> F(Reduced Expectations of FRB Rate Cuts);\n    F --> D;\n    D --> G[Yen Depreciation];"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "積極財政",
+          "en": "Expansionary Fiscal Policy"
+        },
+        "def": {
+          "ja": "政府が景気刺激のために行う、歳出拡大や減税などの政策。",
+          "en": "Government policies such as increased spending and tax cuts to stimulate the economy."
+        }
+      },
+      {
+        "term": {
+          "ja": "円売り",
+          "en": "Yen Selling"
+        },
+        "def": {
+          "ja": "投資家が円を売って外貨を買う行動。円の価値が下がる要因となる。",
+          "en": "The act of investors selling yen and buying foreign currency, which causes the value of the yen to fall."
+        }
+      },
+      {
+        "term": {
+          "ja": "米連邦準備理事会（FRB）",
+          "en": "U.S. Federal Reserve (FRB)"
+        },
+        "def": {
+          "ja": "米国の金融政策を決定する中央銀行。",
+          "en": "The central bank that determines U.S. monetary policy."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260110_093015",
     "date": "2026-01-10",
     "titles": {
