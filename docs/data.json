@@ -1,5 +1,43 @@
 [
   {
+    "id": "20260110_095453",
+    "date": "2026-01-10",
+    "titles": {
+      "ja": "政治の季節とAIの深化が交錯する2026年初頭の日本経済 ―― 円安再燃と株価最高値圏の背景を探る",
+      "en": "The Intersection of Political Season and AI Evolution in Early 2026 — Analyzing the Resurgence of Yen Weakness and Record Stock Levels"
+    },
+    "contents": {
+      "ja": "私達（The Japan Insight編集部）は、2026年1月10日現在の日米金融・政治情勢が極めて重要な転換点にあると見ています。主要各紙の報道を総合すると、米国で発表された12月の雇用統計は失業率が4.4パーセントと市場予想を上回る改善を見せた一方で、非農業部門の雇用者数は5万人増に留まり、労働市場の混合的なシグナルが示されました。これに先立ち、トランプ大統領がSNS上で統計の一部を事前に示唆したことが市場の波紋を広げています。一方、国内では高市首相が衆議院の解散・総選挙を検討しているとの報が駆け巡り、政治的な不透明感から円相場は1ドル158円台と約1年ぶりの安値を記録しました。しかし、株式市場ではファーストリテイリングの好決算や中国による輸出規制への懸念後退を受け、日経平均株価が5万2000円に迫る勢いを見せています。\n\n為替市場での円安再燃の背景には、高市政権による積極的な財政出動への期待と、解散総選挙に伴う政治空白への警戒感が混在しています。複数のメディアが伝えるところによれば、市場参加者は「高市トレード」とも呼ぶべき円売り・株買いの動きを強めており、これが日米金利差の縮小期待を打ち消す形となりました。また、テクノロジー面ではラスベガスで開催中のCES 2026において、エヌビディアが提唱する「フィジカルAI」構想が大きな注目を集めています。これはAIがデジタル空間を超えて物理的なロボティクスや製造現場を支配する時代の到来を予感させるものであり、日本の精密機器や半導体関連株への再評価につながっています。\n\n今後の展望について、私達は日本経済において「政治のボラティリティ」と「実体経済の堅調さ」の乖離が鮮明になると分析しています。2月に予定される総選挙の結果次第では、日本銀行の追加利上げペースに影響が及ぶ可能性も否定できません。しかし、企業の稼ぐ力は着実に向上しており、特にAIの実装が進む製造業の競争力回復は本物と言えるでしょう。投資家は目先の為替変動に一喜一憂することなく、フィジカルAIに象徴される次世代の産業構造の変化を注視すべきです。政治の動乱を乗り越えた先に、真の成長軌道が見えてくると私達は確信しています。",
+      "en": "We (The Japan Insight Editorial Team) observe that the financial and political landscapes of Japan and the U.S. are reaching a significant pivot point as of January 10, 2026. According to a synthesis of reports from major media outlets, the U.S. employment statistics for December showed an improvement in the unemployment rate to 4.4 percent, surpassing market expectations. However, non-farm payrolls grew by only 50,000, presenting a mixed signal for the labor market. Prior to the official release, President Trump's pre-emptive hints on social media caused a stir in the markets. Domestically, reports that Prime Minister Takaichi is considering a dissolution of the House of Representatives for a general election have sent the yen to a one-year low in the 158-yen range due to political uncertainty. Conversely, the stock market saw the Nikkei 225 approach the 52,000 level, bolstered by strong earnings from Fast Retailing and easing concerns over Chinese export restrictions.\n\nThe resurgence of yen weakness is driven by a mix of expectations for aggressive fiscal expansion under the Takaichi administration and caution regarding the political vacuum accompanying a general election. As reported by multiple sources, market participants are intensifying \"Takaichi trades\" characterized by yen selling and stock buying, which has effectively offset expectations for a narrowing interest rate gap between Japan and the U.S. On the technology front, NVIDIA's \"Physical AI\" vision, unveiled at the ongoing CES 2026 in Las Vegas, has garnered significant attention. This vision heralds an era where AI transcends digital spaces to dominate physical robotics and manufacturing, leading to a re-evaluation of Japanese precision equipment and semiconductor-related stocks.\n\nLooking ahead, we analyze that the divergence between political volatility and fundamental economic strength will become increasingly distinct in the Japanese economy. Depending on the outcome of the general election scheduled for February, there is a possibility that the pace of the Bank of Japan's additional rate hikes could be affected. However, corporate earning power is steadily improving, and the recovery in competitiveness within the manufacturing sector, particularly through AI implementation, appears genuine. Investors should look beyond immediate currency fluctuations and focus on the structural shifts in industry symbolized by Physical AI. We are confident that a true growth trajectory will emerge once the current political turbulence is navigated."
+    },
+    "mermaid": {
+      "ja": "graph TD; A[米雇用統計の混合シグナル] --> B[ドルの底堅さ]; C[高市政権の解散検討報道] --> D[円安の加速と政治リスク]; E[企業決算とAIへの期待] --> F[日経平均の最高値圏維持]; B --> D; D --> F;",
+      "en": "graph TD; A[Mixed US Jobs Data] --> B[Dollar Resilience]; C[Takaichi Election Reports] --> D[Yen Weakness and Political Risk]; E[Corporate Earnings and AI Hopes] --> F[Nikkei Near Record Highs]; B --> D; D --> F;"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "フィジカルAI",
+          "en": "Physical AI"
+        },
+        "def": {
+          "ja": "AIがロボットや製造装置などの物理的実体と融合し、現実世界で自律的に動作する技術を指します。",
+          "en": "A technology where AI integrates with physical entities like robots and manufacturing equipment to operate autonomously in the real world."
+        }
+      },
+      {
+        "term": {
+          "ja": "高市トレード",
+          "en": "Takaichi Trade"
+        },
+        "def": {
+          "ja": "高市首相の経済政策や政治動向を背景とした、円売りや日本株買いを中心とする市場の投資行動を指します。",
+          "en": "Market investment behavior characterized by yen selling and Japanese stock buying based on PM Takaichi's economic policies and political moves."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260110_094026",
     "date": "2026-01-10",
     "titles": {
