@@ -3,48 +3,79 @@ import json
 import re
 from datetime import datetime, timezone, timedelta
 from google import genai
-# typesのインポートを削除し、極力シンプルにします
 
 JST = timezone(timedelta(hours=+9), 'JST')
 NOW = datetime.now(JST)
 TODAY = NOW.strftime("%Y-%m-%d")
+UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
-# クライアント初期化（タイムアウト設定をあえて空にします）
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def generate_content():
-    # 検索の負荷を最小限にするため、プロンプトをさらに簡潔に
-    prompt = f"今日（{TODAY}）の日本の主要な経済ニュースを1つ選び、日本語と英語でコラムを書いて。JSON形式で出力して。"
+    # プロンプトでJSONのキー名を強調し、構造を強制します
+    prompt = f"""
+    【最優先指示】
+    1. Google検索を使用し、今日（{TODAY}）の日本の主要な経済ニュースを1つ選定してください。
+    2. 以下のJSON構造のみを出力してください。挨拶や説明文は一切不要です。
+
+    ## 出力JSON形式
+    {{
+      "id": "{UPDATE_ID}",
+      "date": "{TODAY}",
+      "titles": {{ "ja": "日本語タイトル", "en": "English Title" }},
+      "contents": {{ "ja": "日本語本文(1000文字程度、改行は\\n)", "en": "English Content" }},
+      "mermaid": {{ "ja": "graph TD;...", "en": "graph TD;..." }},
+      "glossary": [
+        {{ "term": {{ "ja": "用語名", "en": "Term" }}, "def": {{ "ja": "解説", "en": "Definition" }} }}
+      ]
+    }}
+
+    ## 執筆ルール
+    - 主語は「私達」とする。
+    - 「：」（コロン）の使用は厳禁。
+    - 中学生にもわかる用語解説を3個含める。
+    """
 
     try:
-        # 1sエラーを回避するため、configを最小限の辞書形式にします
-        # モデルを最も安定している1.5-flashに変更
         response = client.models.generate_content(
             model='gemini-3-flash-preview', 
             contents=prompt,
             config={
                 'tools': [{'google_search': {}}],
                 'temperature': 0.1
-                # http_options を完全に削除
             }
         )
         
-        if not response.text:
-            raise ValueError("APIからの応答が空です")
+        # デバッグ用：APIの生の応答をログに出力（Actionsのログで確認可能）
+        print("--- Raw API Response ---")
+        print(response.text)
+        print("------------------------")
 
-        res_text = re.search(r'\{.*\}', response.text, re.DOTALL).group()
-        return json.loads(res_text)
+        # JSONの抽出ロジックを強化
+        match = re.search(r'\{.*\}', response.text, re.DOTALL)
+        if not match:
+            raise ValueError("JSON形式のデータが見つかりませんでした。")
+        
+        res_text = match.group()
+        data = json.loads(res_text)
+
+        # 必須キーの存在チェック
+        required_keys = ['titles', 'contents', 'mermaid', 'glossary']
+        for key in required_keys:
+            if key not in data:
+                raise KeyError(f"JSONに必須キー '{key}' が不足しています。")
+        
+        return data
 
     except Exception as e:
-        print(f"API Error: {e}")
+        print(f"解析エラーの詳細: {e}")
         raise e
 
 def main():
+    data_path = 'docs/data.json'
     try:
         data = generate_content()
-        data_path = 'docs/data.json'
-        
-        # 常に最新1件で上書き（リセット）
+        # リセット上書き
         history = [data]
         
         os.makedirs('docs', exist_ok=True)
