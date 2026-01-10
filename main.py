@@ -45,7 +45,7 @@ def generate_content():
     # 2. ここから下の try: の位置が prompt と同じ垂直線上にある必要があります
     try:
         response = client.models.generate_content(
-            model='gemini-1.5-flash',
+            model='gemini-3-flash-preview',
             contents=prompt,
             config=types.GenerateContentConfig(
                 tools=[{'google_search': {}}],
