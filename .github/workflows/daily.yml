@@ -26,12 +26,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          # ファイルが存在する場合のみ add する設定
-          if [ -f docs/data.json ]; then
-            git add docs/data.json
-            git commit -m "Update news: $(date)" || echo "No changes to commit"
-            git push
-          else
-            echo "Error: docs/data.json not found."
-            exit 1
-          fi
+          git add docs/data.json  # index.htmlではなくdata.jsonを監視
+          git commit -m "Update intelligence: $(date)" || echo "No changes"
+          git push
