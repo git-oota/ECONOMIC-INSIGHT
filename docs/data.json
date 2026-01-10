@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "20260110_123020",
+    "date": "2026-01-10",
+    "titles": {
+      "ja": "日米が主導する次世代投資戦略の転換点",
+      "en": "A Turning Point in Japan-U.S. Strategic Investment Strategy"
+    },
+    "contents": {
+      "ja": "私達は、2026年1月10日に実施された日米政府による戦略的投資イニシアティブの会合を、技術覇権の行方を左右する重大な転換点であると確信しています。今回の協議では、直前に閉幕したCES 2026の主要テーマでもあった「エージェンティックAI」や次世代半導体の安定供給に向けた具体的な協力体制が議論されました。私達が直面する複雑な国際情勢下において、サプライチェーンの強靭化は国家の存立に関わる喫緊の課題です。特に自律的な意思決定を行うAIエージェントの社会実装は、生産性向上を目指す日本経済にとって不可欠な要素となるでしょう。私達は、経済安全保障の強化を通じた日米の結束が、持続可能な成長を実現するための強固な基盤になると分析しています。",
+      "en": "We believe that the meeting of the Japan-U.S. Strategic Investment Initiative held on January 10, 2026, represents a critical turning point that will determine the future of technological hegemony. During the discussions, both governments addressed specific cooperative frameworks for Agentic AI—a central theme at the recently concluded CES 2026—and the stable supply of next-generation semiconductors. In the complex international landscape we face, enhancing supply chain resilience has become an urgent issue directly linked to national interests. In particular, the social implementation of AI agents capable of autonomous decision-making will be an indispensable element for the Japanese economy as it strives for higher productivity. We analyze that the solidarity between Japan and the U.S. through the strengthening of economic security will provide a robust foundation for achieving sustainable growth."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[日米戦略的投資イニシアティブ] --> B[次世代半導体の共同開発]\n    A --> C[エージェンティックAIの社会実装]\n    B --> D[サプライチェーンの強靭化]\n    C --> E[生産性の向上]\n    D --> F[経済安全保障の確立]\n    E --> F",
+      "en": "graph TD\n    A[Japan-U.S. Strategic Investment Initiative] --> B[Joint Development of Next-Gen Semiconductors]\n    A --> C[Social Implementation of Agentic AI]\n    B --> D[Supply Chain Resilience]\n    C --> E[Productivity Improvement]\n    D --> F[Establishment of Economic Security]\n    E --> F"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "エージェンティックAI",
+          "en": "Agentic AI"
+        },
+        "def": {
+          "ja": "人間の細かな指示を待たずに自ら目標を達成するための手順を考え実行する高度な人工知能を指します",
+          "en": "Refers to advanced artificial intelligence that autonomously determines and executes the steps necessary to achieve a goal without constant human intervention."
+        }
+      },
+      {
+        "term": {
+          "ja": "サプライチェーンの強靭化",
+          "en": "Supply Chain Resilience"
+        },
+        "def": {
+          "ja": "災害や政治的混乱などの予期せぬ事態が起きても部品や製品の供給が途絶えないように供給網を強化する取り組みです",
+          "en": "Efforts to strengthen supply networks to ensure that the delivery of parts and products is not interrupted even during unexpected events like disasters or political turmoil."
+        }
+      },
+      {
+        "term": {
+          "ja": "経済安全保障",
+          "en": "Economic Security"
+        },
+        "def": {
+          "ja": "重要な技術や物資の確保を通じて国家の安全を経済的な側面から守るという考え方です",
+          "en": "The concept of protecting a nation's safety from an economic perspective by securing critical technologies and essential resources."
+        }
+      }
+    ]
+  }
+]
