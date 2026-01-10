@@ -5,34 +5,49 @@ from datetime import datetime, timezone, timedelta
 from google import genai
 from google.genai import types
 
+# 1. 環境設定（2026年JST）
 JST = timezone(timedelta(hours=+9), 'JST')
 NOW = datetime.now(JST)
 TODAY = NOW.strftime("%Y-%m-%d")
 UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+# 2. クライアント初期化
+# 1sエラーを回避するため、クライアント作成時にタイムアウトを10分(600s)に固定
+client = genai.Client(
+    api_key=os.environ["GEMINI_API_KEY"],
+    http_options={'timeout': 600}
+)
 
 def generate_content():
-    print(f"[{datetime.now()}] 分析開始...")
+    print(f"[{datetime.now()}] ニュース分析を開始（2026年モード）...")
     
-    # プロンプト（内容は変えず、最後にフォーマットの念押しを追加）
+    # プロンプト：事実 + 中学生向け解説 + 二重の圧力
     prompt = f"""
-    【指示】
-    今日（{TODAY}）の日本の主要経済ニュース（高市首相の解散検討など）を1つ選び、以下のJSON形式で出力してください。
+    【役割】
+    あなたは「世界一わかりやすい経済ニュース」を執筆するシニアアナリストです。
+    今日（{TODAY}）の日本の主要ニュース（例：高市首相の衆院解散検討など）を1つ選び、事実の分析と「背景知識の習得」を両立させたコラムを執筆してください。
 
-    【内容】
-    1. 事実：ニュースの概要。
-    2. 解説：中学生向けに「なぜ解散するのか」「誰が得するのか」を、ゲームや比喩を使ってわかりやすく説明。
-    3. 分析：円安と金利上昇が私達の生活に与える影響。
+    【記事の構成（contents内に含める）】
+    1. 【事実の概要】：今、何が起きているのかを簡潔に。
+    2. 【専門的分析】：円安や金利、市場への影響をプロの視点で。
+    3. 【徹底解説：なぜ？の背景】：中学生でもわかるように以下を解説。
+       - 「衆議院の解散」とは何か（ゲームのリセットや、クラス替えのような比喩で）。
+       - 首相はなぜ今、解散したいのか（目的）。
+       - それによって誰が、どんな得をする可能性があるのか。
+    4. 【私達への影響】：円安と金利上昇の「二重の圧力」が私達の生活にどう関係するか。
 
-    【出力ルール（厳守）】
-    - 出力は必ず以下のJSONのみ。前後の説明文や ```json などの枠は一切禁止。
-    - キー名は必ず複数形の "titles", "contents" とすること。
-    - keys: "id", "date", "titles", "contents", "mermaid", "glossary"
-    - タイムアウトを避けるため、検索は日経新聞などの主要1〜2サイトに絞り、迅速に回答してください。
+    【ルール】
+    - 主語は「私達」。「：」（コロン）は使用厳禁。
+    - 難しい用語（解散、信任、財政出動など）は必ずglossaryに含める。
+    - タイムアウトを避けるため、1000文字程度で迅速に回答すること。
+
+    【出力形式】
+    必ず以下のキーを持つJSONのみを出力（JSON Mode）。
+    keys: "id", "date", "titles", "contents", "mermaid", "glossary"
     """
 
     try:
+        # 安定性と速度を重視し 1.5-flash を使用
         response = client.models.generate_content(
             model='gemini-3-flash-preview',
             contents=prompt,
@@ -43,59 +58,81 @@ def generate_content():
             )
         )
         
-        # --- ここから強化：文字列からJSONを抽出して必ず辞書にする ---
+        # --- 堅牢なパース処理 ---
         res_text = response.text.strip()
-        match = re.search(r'\{.*\}', res_text, re.DOTALL)
+        # Markdownの枠を削除
+        res_text = re.sub(r'^```json\s*', '', res_text)
+        res_text = re.sub(r'\s*```$', '', res_text)
         
-        if match:
-            data = json.loads(match.group())
-        else:
-            data = json.loads(res_text)
+        # JSON部分を抽出
+        match = re.search(r'\{.*\}', res_text, re.DOTALL)
+        if not match:
+            raise ValueError("JSON形式が見つかりませんでした。")
+        
+        data = json.loads(match.group())
 
-        # 万が一、結果がリストや文字列だった場合に辞書へ強制変換
+        # もし戻り値がリストや文字列だった場合のガード
         if not isinstance(data, dict):
-            print(f"警告: AIが辞書を返しませんでした。型: {type(data)}")
-            data = {"titles": {"ja": str(data), "en": "Error"}, "contents": {"ja": str(data), "en": "Error"}}
+            raise ValueError("返却データが辞書形式ではありません。")
 
-        # 足りないキーを補完（KeyError対策）
-        data["id"] = data.get("id", UPDATE_ID)
-        data["date"] = data.get("date", TODAY)
-        if "titles" not in data and "title" in data: data["titles"] = data["title"]
-        if "glossary" not in data: data["glossary"] = []
-        if "mermaid" not in data: data["mermaid"] = {"ja": "graph TD;A-->B", "en": "graph TD;A-->B"}
+        # --- キーのゆらぎ補完ロジック ---
+        # AIが単数形(title)で返しても複数形(titles)に変換
+        for key in ['titles', 'contents']:
+            single_key = key[:-1] # title, content
+            if key not in data and single_key in data:
+                data[key] = data[single_key]
+        
+        # 必須キーのデフォルト補完（KeyError防止）
+        default_val = {"ja": "データなし", "en": "No Data"}
+        data["titles"] = data.get("titles", default_val)
+        data["contents"] = data.get("contents", default_val)
+        data["mermaid"] = data.get("mermaid", {"ja": "graph TD;A-->B", "en": "graph TD;A-->B"})
+        data["glossary"] = data.get("glossary", [])
+        
+        # 固定値のセット
+        data["id"] = UPDATE_ID
+        data["date"] = TODAY
 
-        return data # 確実に辞書(dict)を返す
+        return data
 
     except Exception as e:
-        print(f"API解析エラー: {e}")
-        # 最低限の構造を持つ辞書を返してmainを落とさない
-        return {"titles": {"ja": "分析エラー", "en": "Error"}, "contents": {"ja": str(e), "en": str(e)}, "glossary": []}
+        print(f"生成エラー: {e}")
+        # 最終手段：エラー内容を記事として返す（システムを止めない）
+        return {
+            "id": UPDATE_ID, "date": TODAY,
+            "titles": {"ja": "分析レポート生成エラー", "en": "Analysis Generation Error"},
+            "contents": {"ja": f"エラーが発生しました：{str(e)}", "en": f"Error occurred: {str(e)}"},
+            "mermaid": {"ja": "graph TD;Error", "en": "graph TD;Error"},
+            "glossary": []
+        }
 
 def main():
     data_path = 'docs/data.json'
     try:
-        # 戻り値が確実に辞書であることを想定
-        new_data = generate_content()
+        # 新しい記事を取得
+        new_article = generate_content()
         
-        if not isinstance(new_data, dict):
-            print("Fatal Error: generate_content did not return a dictionary")
-            exit(1)
-
+        # 既存データの読み込み
         history = []
         if os.path.exists(data_path):
             with open(data_path, 'r', encoding='utf-8') as f:
                 try:
                     history = json.load(f)
-                except: history = []
+                    if not isinstance(history, list): history = []
+                except:
+                    history = []
         
-        history.insert(0, new_data)
+        # 先頭に追加して最大50件
+        history.insert(0, new_article)
+        
+        # 保存実行（docsフォルダがない場合も考慮）
         os.makedirs('docs', exist_ok=True)
         with open(data_path, 'w', encoding='utf-8') as f:
             json.dump(history[:50], f, ensure_ascii=False, indent=2)
-        
-        # 安全なアクセス
-        title_ja = new_data.get('titles', {}).get('ja', 'Untitled')
-        print(f"✅ Success: {title_ja}")
+                
+        # 成功ログ
+        success_title = new_article.get('titles', {}).get('ja', 'Untitled')
+        print(f"✅ Success: {success_title}")
 
     except Exception as e:
         print(f"❌ Main Error: {e}")
