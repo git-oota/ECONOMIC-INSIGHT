@@ -1,5 +1,33 @@
 [
   {
+    "id": "20260110-01",
+    "date": "2026-01-10",
+    "titles": {
+      "ja": "高市首相、衆議院解散を検討：私たちの暮らしと経済のゆくえ",
+      "en": "PM Takaichi Considers Dissolving the Diet: The Future of Our Lives and Economy"
+    },
+    "contents": {
+      "ja": "1.【事実】2026年1月10日、高市首相は衆議院の解散を検討していることを明らかにしました。これは、自身の経済政策に対する国民の信を問うための大きな決断です。\n\n2.【解説】解散をゲームに例えると「リセットボタン」を押すようなものです。今のチーム（内閣）が有利なうちに、国民から「これからも任せるよ！」という合格点をもらい、自分たちのやりたい政策をスムーズに進めやすくするのが狙いです。これに勝てば、首相はより強い力で政治を行えます。\n\n3.【分析】今、日本では「円安」で輸入品が高くなり、「金利」が上がって銀行の利息が増える一方で、住宅ローンの負担も増え始めています。この選挙の結果次第で、物価を抑えるのか、それとも景気を優先するのかの方針が決まります。私たちの「お小遣いで買えるものの値段」や「将来の生活」に直結する大切な局面です。",
+      "en": "1. [Fact] On January 10, 2026, PM Takaichi revealed she is considering dissolving the House of Representatives. This is a major decision to seek a public mandate for her economic policies.\n\n2. [Explanation] Think of dissolution as pressing a \"reset button\" in a video game. The government wants to get a \"thumbs up\" from the people while they feel they have the advantage, making it easier to push their preferred policies forward. Winning the election gives the PM stronger authority.\n\n3. [Analysis] Currently, Japan is facing a \"weak yen\" making imports expensive, and \"rising interest rates\" which increase savings returns but also hike mortgage burdens. The election outcome will decide whether the focus is on controlling prices or boosting the economy. This directly affects the price of things we buy and our future financial stability."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市首相の解散検討] --> B{総選挙の実施}\n    B --> C[国民の審判]\n    C --> D[新政権の経済政策]\n    D --> E[物価・金利への影響]\n    E --> F[私たちの生活]",
+      "en": "graph TD\n    A[PM Takaichi Considers Dissolution] --> B{General Election}\n    B --> C[Public Mandate]\n    C --> D[New Economic Policy]\n    D --> E[Impact on Prices/Rates]\n    E --> F[Our Daily Lives]"
+    },
+    "glossary": {
+      "ja": {
+        "衆議院解散": "任期満了前に議員全員の身分を失わせ、総選挙を行うこと。",
+        "円安": "日本円の価値が下がり、外国の製品を買う時に多くのお金が必要になること。",
+        "金利": "お金を貸し借りする際の手数料。上がると預金利息が増えるが、借金の返済も増える。"
+      },
+      "en": {
+        "Dissolution of the Diet": "Terminating the membership of all House representatives before their term ends to hold a general election.",
+        "Weak Yen": "A decrease in the value of the yen, making foreign goods more expensive to buy.",
+        "Interest Rates": "The cost of borrowing money. When they rise, savings earn more, but loans become more expensive."
+      }
+    }
+  },
+  {
     "id": "20260110-takaichi-dissolution-analysis",
     "date": "2026-01-10",
     "titles": {
