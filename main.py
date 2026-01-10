@@ -11,89 +11,70 @@ NOW = datetime.now(JST)
 TODAY = NOW.strftime("%Y-%m-%d")
 UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
-# クライアント初期化（タイムアウトをクライアントレベルで設定）
-client = genai.Client(
-    api_key=os.environ["GEMINI_API_KEY"],
-    http_options={'timeout': 600}
-)
+# クライアント初期化（タイムアウト設定を完全に削除してデフォルトに任せる）
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def generate_content():
-    print(f"[{datetime.now()}] ニュース検索と記事生成を開始します...")
+    print(f"[{datetime.now()}] ニュース分析を開始（JSON Mode）...")
     
+    # プロンプトを極限までシンプルにし、JSON構造を指示
     prompt = f"""
-    【最優先指示】
-    1. Google検索を使用し、今日（{TODAY}）の日本経済新聞、ロイター、ブルームバーグから、最も重要な経済・テクノロジーニュースを1つ選定してください。
-    2. 以下のJSON構造のみを出力してください。
-
-    ## 出力JSON形式
-    {{
-      "id": "{UPDATE_ID}",
-      "date": "{TODAY}",
-      "titles": {{ "ja": "タイトル", "en": "Title" }},
-      "contents": {{ "ja": "本文(改行は\\n)", "en": "Content" }},
-      "mermaid": {{ "ja": "graph TD;...", "en": "graph TD;..." }},
-      "glossary": [
-        {{ "term": {{ "ja": "用語名", "en": "Term" }}, "def": {{ "ja": "解説", "en": "Definition" }} }}
-      ]
-    }}
-
-    ## 執筆ルール
-    - 主語は「私達」とし、プロフェッショナルなコラムを作成。
-    - 「：」（コロン）の使用は一切厳禁。
-    - 中学生にもわかる用語解説（glossary）を3〜5個含める。
+    今日の日本の主要経済ニュースを1つ選び、日本語と英語で分析コラムを書いてください。
+    出力は必ず以下のキーを持つJSON形式にしてください。
+    keys: "id", "date", "titles", "contents", "mermaid", "glossary"
+    
+    titlesとcontentsとmermaidとglossaryは、それぞれ "ja" と "en" の子要素を持ってください。
+    "glossary"は [{{ "term": {{"ja":..,"en":..}}, "def": {{"ja":..,"en":..}} }}] の配列です。
     """
 
     try:
-        # 1sエラー回避のため、1.5-flashを使用し、明示的にツールを設定
+        # 1sエラーを避けるため http_options を使わず、1.5-flash で実行
+        # response_mime_type を指定することで JSON 形式を強制
         response = client.models.generate_content(
             model='gemini-3-flash-preview',
             contents=prompt,
             config=types.GenerateContentConfig(
                 tools=[{'google_search': {}}],
+                response_mime_type='application/json',
                 temperature=0.1
             )
         )
         
-        # API応答のログ（Actionsで確認可能）
-        print("--- API Response ---")
-        print(response.text)
-        print("--------------------")
-
-        # JSON抽出
-        match = re.search(r'\{.*\}', response.text, re.DOTALL)
-        if not match:
-            raise ValueError("JSON形式のデータが見つかりませんでした。")
+        # JSONとして直接ロード（JSON Modeなので response.text がそのままJSONになる）
+        data = json.loads(response.text)
         
-        data = json.loads(match.group())
+        # データの整合性チェック
+        if 'titles' not in data:
+            # 万が一JSON Modeが不完全だった場合の抽出バックアップ
+            match = re.search(r'\{.*\}', response.text, re.DOTALL)
+            data = json.loads(match.group())
+
+        # IDと日付を強制セット
+        data["id"] = UPDATE_ID
+        data["date"] = TODAY
+        
         return data
 
     except Exception as e:
-        print(f"生成エラー: {e}")
+        print(f"[{datetime.now()}] APIエラー詳細: {e}")
+        # 予期せぬエラー時のためのデバッグ出力
+        if 'response' in locals():
+            print(f"Raw response: {response.text[:500]}")
         raise e
 
 def main():
     data_path = 'docs/data.json'
     try:
-        new_article = generate_content()
+        new_data = generate_content()
         
-        # 既存データの読み込み（アーカイブ化）
-        history = []
-        if os.path.exists(data_path):
-            with open(data_path, 'r', encoding='utf-8') as f:
-                try:
-                    history = json.load(f)
-                    if not isinstance(history, list): history = []
-                except:
-                    history = []
-        
-        # 先頭に追加して最大50件保持
-        history.insert(0, new_article)
+        # リセット上書き（アーカイブを消して1件目からやり直す）
+        history = [new_data]
         
         os.makedirs('docs', exist_ok=True)
         with open(data_path, 'w', encoding='utf-8') as f:
-            json.dump(history[:50], f, ensure_ascii=False, indent=2)
+            json.dump(history, f, ensure_ascii=False, indent=2)
                 
-        print(f"Success: {new_article['titles']['ja']} を保存しました。")
+        print(f"成功: {new_data['titles']['ja']} を作成しました。")
     except Exception as e:
         print(f"Main Error: {e}")
         exit(1)
