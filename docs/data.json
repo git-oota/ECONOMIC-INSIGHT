@@ -1,28 +1,28 @@
 [
   {
-    "id": "20260110_125517",
+    "id": "20260110_130642",
     "date": "2026-01-10",
     "titles": {
-      "ja": "衆院解散の検討報道により円安が158円台まで進行しました",
-      "en": "Yen Weakens to 158 Level Following Reports of Lower House Dissolution"
+      "ja": "円安加速、1ドル158円台へ：高市首相の衆院解散検討報道と「サナエノミクス」への期待",
+      "en": "Yen Weakens to 158 Level: Speculation on PM Takaichi's Snap Election and 'Sanaenomics' Expectations"
     },
     "contents": {
-      "ja": "私達は今日、日本の政治と経済が大きく動き出したニュースに注目しています。為替市場において円相場が急落し、1ドル158円台を記録しました。これは約1年ぶりの円安水準となります。この背景には、高市早苗首相が今月23日に召集予定の通常国会冒頭で衆議院を解散し、総選挙を行う検討に入ったという報道があります。\n私達は、この政治的な動きが経済に与える影響を慎重に分析しています。選挙が行われるとなれば、政府が景気対策のために積極的な財政出動を行うとの期待が高まります。一方で、市場では先行きの不透明感も強まっており、それが円を売ってドルを買う動きにつながったと私達は考えています。\nまた、日本銀行の植田総裁が金融引き締めに前向きな姿勢を崩していないことも、経済全体の緊張感を高めています。私達は、長期金利の指標となる10年物国債の利回りが2.1パーセントを超えるという、約27年ぶりの事態を目の当たりにしています。私達の生活において、物価の上昇を抑えるための利上げと、景気を支えるための財政政策のバランスが非常に重要な局面を迎えています。\n円安の進行は、私達が輸入製品を購入する際の価格上昇を招く恐れがあります。私達の家計においては、電気代やガス代、そして食料品の価格が再び上昇するのではないかという不安が募ります。円安は海外からの輸入コストを押し上げるため、私達の財布を直接的に圧迫する要因となります。私達は、政府がどのような物価高対策を打ち出すのか、そして選挙を通じてどのような経済ビジョンが示されるのかを厳しくチェックしていく必要があります。\n私達は、今後の政治日程や日本銀行の追加利上げのタイミングを注視していきます。選挙の結果が日本の経済政策にどのような変化をもたらすのか、そして私達の暮らしがどのように変わっていくのか、私達はこれからも関心を持って見守り続けたいと考えています。",
-      "en": "We are focusing today on news that Japan's politics and economy have begun to move significantly. In the foreign exchange market, the yen plummeted, reaching the 158 yen per dollar level. This is the weakest level for the yen in about a year. Behind this is a report that Prime Minister Sanae Takaichi has begun considering dissolving the House of Representatives at the beginning of the ordinary Diet session scheduled to be convened on the 23rd of this month to hold a general election.\nWe are carefully analyzing the impact of this political movement on the economy. If an election is held, expectations will rise that the government will implement active fiscal spending for economic measures. On the other hand, uncertainty about the future is also strengthening in the market, and we believe that this led to the movement of selling yen and buying dollars.\nIn addition, the fact that Bank of Japan Governor Ueda has not abandoned his positive stance toward monetary tightening is also increasing tension in the economy as a whole. We are witnessing a situation where the yield on 10-year Japanese government bonds, a benchmark for long-term interest rates, exceeds 2.1 percent, the first time in about 27 years. In our lives, we have reached a very important phase in the balance between interest rate hikes to curb price increases and fiscal policies to support the economy.\nThe weakening of the yen may lead to price increases when we purchase imported products. In our households, there are growing concerns that the prices of electricity, gas, and food products may rise again. Since a weak yen pushes up the cost of imports from overseas, it becomes a factor that directly pressures our wallets. We need to strictly check what kind of measures against high prices the government will propose and what kind of economic vision will be shown through the election.\nWe will keep a close eye on the future political schedule and the timing of additional interest rate hikes by the Bank of Japan. We intend to continue to watch with interest how the election results will bring changes to Japan's economic policies and how our lives will change."
+      "ja": "2026年1月10日のニューヨーク外国為替市場で、円相場は一時1ドル＝158円台まで下落し、約1年ぶりの安値を記録しました。この背景には、高市早苗首相が1月下旬の通常国会冒頭で衆議院を解散し、2月に総選挙を行う検討に入ったとの報道があります。市場では、選挙を控えて高市政権が掲げる積極財政政策、いわゆる「サナエノミクス」が一段と強化されるとの見方が強まりました。財政赤字の拡大懸念と日米金利差の継続が意識され、円売り・ドル買いが加速しています。日経平均株価は輸出関連株の買い支えがある一方、輸入コスト増によるインフレ再燃への警戒感も広がっており、日本経済は「強い財政」と「通貨安」のジレンマに直面しています。",
+      "en": "On January 10, 2026, the Japanese yen plummeted to the 158 level against the U.S. dollar in the New York foreign exchange market, marking its lowest point in approximately a year. This depreciation was triggered by reports that Prime Minister Sanae Takaichi is considering dissolving the House of Representatives at the start of the ordinary Diet session in late January, with a general election likely in February. Investors are increasingly betting on an intensification of 'Sanaenomics'—the Prime Minister's signature proactive fiscal policy—ahead of the election. Concerns over an expanding fiscal deficit and the persistence of the interest rate gap between Japan and the U.S. have accelerated yen selling. While the Nikkei 225 finds support from export-oriented stocks, there is growing caution regarding resurgent inflation driven by higher import costs, placing the Japanese economy in a dilemma between fiscal stimulus and currency weakness."
     },
     "mermaid": {
-      "ja": "graph TD;A[高市首相が解散を検討] --> B[政治の先行き不透明感];A --> C[積極財政への期待];B --> D[円売りドル買いの加速];C --> D;D --> E[1ドル158円台の円安];E --> F[輸入物価の上昇懸念]",
-      "en": "graph TD;A[PM Takaichi Considers Dissolution] --> B[Political Uncertainty];A --> C[Expectations for Fiscal Spending];B --> D[Accelerated Yen Selling];C --> D;D --> E[Yen Weakens to 158 Level];E --> F[Concerns over Rising Import Prices]"
+      "ja": "graph TD\n    A[衆院解散・総選挙の報道] --> B[積極財政への期待拡大]\n    B --> C[サナエノミクスの強化]\n    C --> D[財政赤字拡大の懸念]\n    D --> E[円安の進行 1ドル158円]\n    E --> F[輸出企業の収益改善]\n    E --> G[輸入物価上昇・インフレ懸念]\n    F --> H[株価の下支え]\n    G --> I[実質賃金への下押し圧力]",
+      "en": "graph TD\n    A[Reports of Snap Election] --> B[Expectations for Fiscal Expansion]\n    B --> C[Reinforcement of Sanaenomics]\n    C --> D[Concerns over Fiscal Deficit]\n    D --> E[Yen Depreciation USD/JPY 158]\n    E --> F[Improved Export Earnings]\n    E --> G[Rising Import Prices & Inflation Fears]\n    F --> H[Stock Market Support]\n    G --> I[Downward Pressure on Real Wages]"
     },
     "glossary": [
       {
         "term": {
-          "ja": "円安",
-          "en": "Weak Yen"
+          "ja": "サナエノミクス",
+          "en": "Sanaenomics"
         },
         "def": {
-          "ja": "外国のお金に対して日本のお金の価値が下がってしまうことです",
-          "en": "A situation where the value of the Japanese yen decreases relative to foreign currencies"
+          "ja": "高市早苗首相が提唱する、積極的な財政出動と戦略的な成長投資を柱とした経済政策の通称。",
+          "en": "A nickname for the economic policies advocated by PM Sanae Takaichi, centered on proactive fiscal spending and strategic investment for growth."
         }
       },
       {
@@ -31,18 +31,18 @@
           "en": "Dissolution of the House of Representatives"
         },
         "def": {
-          "ja": "任期が終わる前に衆議院議員全員の身分を失わせることで選挙を行って国民の意見を問うことです",
-          "en": "The act of ending the term of all members of the House of Representatives early to hold an election and seek the public's opinion"
+          "ja": "任期満了前に衆議院議員の資格を失わせること。内閣総理大臣の専権事項とされ、事実上の総選挙の合図となる。",
+          "en": "The termination of the tenure of all members of the lower house before their term ends, typically initiated by the Prime Minister as a precursor to a general election."
         }
       },
       {
         "term": {
-          "ja": "財政出動",
-          "en": "Fiscal Spending"
+          "ja": "積極財政",
+          "en": "Fiscal Expansion / Proactive Fiscal Policy"
         },
         "def": {
-          "ja": "国が公共事業や支援金などにお金を使って景気を良くしようとすることです",
-          "en": "The government spending money on public works or subsidies to stimulate the economy"
+          "ja": "政府支出を増やしたり減税を行ったりすることで、景気を刺激しようとする政策手法。",
+          "en": "A policy approach aimed at stimulating the economy by increasing government spending or implementing tax cuts."
         }
       }
     ]
