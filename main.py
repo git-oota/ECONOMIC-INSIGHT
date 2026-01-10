@@ -11,24 +11,17 @@ NOW = datetime.now(JST)
 TODAY = NOW.strftime("%Y-%m-%d")
 UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
-# 2. クライアント初期化（タイムアウトバグ回避のため設定なし）
+# 2. クライアント初期化
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def generate_content():
-    print(f"[{datetime.now()}] ニュース分析を開始（2026年モード）...")
+    print(f"[{datetime.now()}] ニュース分析を開始...")
     
     prompt = f"""
-    今日（{TODAY}）の日本の主要経済ニュースを1つ選び、中学生でもわかる「解説付き」のコラムを書いてください。
-    
-    【構成】
-    1. 事実：今何が起きているか。
-    2. 解説：なぜ解散するのか、誰が得するのか（比喩を使って）。
-    3. 分析：円安と金利上昇が私達の生活にどう響くか。
-
-    【出力ルール】
-    - 出力は必ず以下のJSON形式のみ（前後の説明文やMarkdown枠は禁止）。
-    - keys: "id", "date", "titles", "contents", "mermaid", "glossary"
-    - タイムアウトを避けるため、1000文字程度で簡潔に回答してください。
+    今日（{TODAY}）の日本の主要経済ニュースを1つ選び、中学生でもわかる解説付きのコラムを書いてください。
+    【構成】事実概要、中学生向け解説（解散の比喩など）、生活への影響
+    【出力】必ず以下のキーを持つJSONのみを出力（Markdown枠は禁止）
+    keys: "id", "date", "titles", "contents", "mermaid", "glossary"
     """
 
     try:
@@ -42,47 +35,42 @@ def generate_content():
             )
         )
         
-        # --- 堅牢なパース処理 ---
+        # --- 堅牢なパースロジック ---
         res_text = response.text.strip()
-        
-        # 1. 最初の { と 最後の } の間を抽出（余計な文字を排除）
+        # 最初の { と 最後の } を抽出
         match = re.search(r'\{.*\}', res_text, re.DOTALL)
-        if match:
-            raw_json = match.group()
-            data = json.loads(raw_json)
-        else:
-            # JSONが見つからない場合は例外を投げて except ブロックへ
-            raise ValueError("No JSON found in response")
-
-        # 2. もし data が辞書でない（文字列など）場合は辞書へ強制変換
-        if not isinstance(data, dict):
-            data = {
-                "titles": {"ja": str(data), "en": "Analysis Error"},
-                "contents": {"ja": "データの形式が正しくありませんでした。", "en": "Data format error."}
-            }
-
-        # 3. 必須キーの補完とゆらぎ吸収
-        for key in ['titles', 'contents']:
-            if key not in data and key[:-1] in data: # title -> titles
-                data[key] = data[key[:-1]]
         
-        # 4. デフォルト値のセット
+        if match:
+            data = json.loads(match.group())
+        else:
+            # 文字列しか返ってこなかった場合、ここで辞書に無理やり入れる
+            raise ValueError(f"JSON not found in response: {res_text[:100]}")
+
+        # 万が一 data がリストや文字列だった場合に辞書へ強制変換
+        if not isinstance(data, dict):
+            data = {"titles": {"ja": str(data)}}
+
+        # キーの補完（KeyError防止）
         data["id"] = UPDATE_ID
         data["date"] = TODAY
-        data.setdefault("titles", {"ja": "無題", "en": "Untitled"})
+        if "titles" not in data and "title" in data: data["titles"] = data["title"]
+        if "contents" not in data and "content" in data: data["contents"] = data["content"]
+        
+        # 必須構造の保証
+        data.setdefault("titles", {"ja": "分析レポート", "en": "Analysis Report"})
         data.setdefault("contents", {"ja": "本文なし", "en": "No content"})
-        data.setdefault("mermaid", {"ja": "graph TD;Error", "en": "graph TD;Error"})
+        data.setdefault("mermaid", {"ja": "graph TD;A-->B", "en": "graph TD;A-->B"})
         data.setdefault("glossary", [])
 
-        return data
+        return data # 必ず辞書を返す
 
     except Exception as e:
-        print(f"生成エラー: {e}")
-        # 万が一の際も、必ず「辞書」を返す
+        print(f"API解析エラー: {e}")
+        # 【重要】エラー時も「辞書」を返すことで、main()での 'str' エラーを物理的に防ぐ
         return {
             "id": UPDATE_ID, "date": TODAY,
-            "titles": {"ja": "分析レポート生成エラー", "en": "Generation Error"},
-            "contents": {"ja": f"エラー: {str(e)}", "en": f"Error: {str(e)}"},
+            "titles": {"ja": "生成エラー", "en": "Generation Error"},
+            "contents": {"ja": f"エラー内容: {str(e)}", "en": f"Error: {str(e)}"},
             "mermaid": {"ja": "graph TD;Error", "en": "graph TD;Error"},
             "glossary": []
         }
@@ -90,10 +78,10 @@ def generate_content():
 def main():
     data_path = 'docs/data.json'
     try:
-        # generate_content は必ず辞書(dict)を返すよう設計されています
+        # 1. 記事生成（この時点で new_article は確実に辞書であることが保証される）
         new_article = generate_content()
         
-        # 既存データの読み込み
+        # 2. 既存データの読み込み
         history = []
         if os.path.exists(data_path):
             with open(data_path, 'r', encoding='utf-8') as f:
@@ -103,17 +91,17 @@ def main():
                 except:
                     history = []
         
-        # 先頭に追加
+        # 3. 先頭に追加
         history.insert(0, new_article)
         
-        # 保存
+        # 4. 保存
         os.makedirs('docs', exist_ok=True)
         with open(data_path, 'w', encoding='utf-8') as f:
             json.dump(history[:50], f, ensure_ascii=False, indent=2)
                 
-        # 成功ログ（ここでも get を使い安全にアクセス）
-        success_title = new_article.get('titles', {}).get('ja', 'Untitled')
-        print(f"✅ Success: {success_title}")
+        # 5. 安全な表示（.get() を使用）
+        title_ja = new_article.get('titles', {}).get('ja', 'Untitled')
+        print(f"✅ Success: {title_ja}")
 
     except Exception as e:
         print(f"❌ Main Error: {e}")
