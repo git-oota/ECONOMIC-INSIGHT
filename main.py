@@ -13,10 +13,7 @@ UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
 # 2. クライアント初期化
 # 1sエラーを回避するため、クライアント作成時にタイムアウトを10分(600s)に固定
-client = genai.Client(
-    api_key=os.environ["GEMINI_API_KEY"],
-    http_options={'timeout': 600}
-)
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def generate_content():
     print(f"[{datetime.now()}] ニュース分析を開始（2026年モード）...")
