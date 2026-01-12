@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "20260112_112531",
+    "date": "2026-01-12",
+    "titles": {
+      "ja": "ついに始まった！「デジタル円」で私たちの生活はどう変わる？",
+      "en": "It's Finally Here! How the 'Digital Yen' Will Change Our Lives"
+    },
+    "contents": {
+      "ja": "2026年1月12日、日本銀行は「デジタル円」の本格的な実証実験を特定の地域で開始しました。これは、私たちが普段使っているお札や硬貨と同じ価値を持つ「デジタルの現金」です。\n\n「PayPayなどのキャッシュレス決済と何が違うの？」と思うかもしれません。大きな違いは、民間企業ではなく国（日本銀行）が直接発行する点です。そのため、もし民間の決済会社にトラブルがあっても、デジタル円は現金と同じように信頼して使えます。また、将来的にはインターネットがつながらない災害時でも、スマホをかざすだけで支払いができる仕組みを目指しています。手数料が安くなることで、お店側にもメリットがあり、私たちの買い物をもっと便利にしてくれる一歩になりそうです。",
+      "en": "On January 12, 2026, the Bank of Japan launched a full-scale pilot program for the 'Digital Yen' in specific regions. This is 'digital cash' that holds the exact same value as the physical bills and coins we use every day.\n\nYou might wonder, 'How is this different from cashless payments like PayPay?' The major difference is that it is issued directly by the nation's central bank (Bank of Japan) rather than a private company. This means that even if a private payment provider faces issues, the Digital Yen remains as reliable as physical cash. Furthermore, it aims to allow payments simply by tapping a smartphone even during disasters when the internet is down. With lower transaction fees, it also benefits shop owners, marking a significant step toward making our shopping experience more convenient."
+    },
+    "mermaid": {
+      "ja": "graph TD;\n    A[日本銀行] -->|発行| B(デジタル円);\n    B --> C{利用者};\n    C -->|支払い| D[お店];\n    D -->|信頼性が高い| A;\n    C -.->|ネット不要を目指す| D;",
+      "en": "graph TD;\n    A[Bank of Japan] -->|Issue| B(Digital Yen);\n    B --> C{Users};\n    C -->|Payment| D[Shops];\n    D -->|High Reliability| A;\n    C -.->|Offline capability| D;"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "デジタル円",
+          "en": "Digital Yen"
+        },
+        "def": {
+          "ja": "日本銀行が発行するデジタルの形をしたお金。お札や硬貨と同じ価値がある。",
+          "en": "A digital form of currency issued by the Bank of Japan, holding the same value as physical banknotes and coins."
+        }
+      },
+      {
+        "term": {
+          "ja": "日本銀行",
+          "en": "Bank of Japan"
+        },
+        "def": {
+          "ja": "日本の中央銀行。お金を発行したり、物価を安定させたりする役割を持つ「銀行の銀行」。",
+          "en": "The central bank of Japan, responsible for issuing currency and stabilizing prices; often called the 'bank of banks'."
+        }
+      },
+      {
+        "term": {
+          "ja": "実証実験",
+          "en": "Pilot Program / Proof of Concept"
+        },
+        "def": {
+          "ja": "新しい仕組みが実際にうまく動くかどうか、限られた範囲で試してみること。",
+          "en": "A small-scale experiment to test whether a new system or idea works effectively in the real world."
+        }
+      }
+    ]
+  }
+]
