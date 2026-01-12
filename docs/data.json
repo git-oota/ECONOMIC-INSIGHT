@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "20260112_120316",
+    "date": "2026-01-12",
+    "titles": {
+      "ja": "日銀が金利を1.0%に引き上げ！私たちの生活はどう変わる？",
+      "en": "Bank of Japan Raises Interest Rate to 1.0%: How Will Our Lives Change?"
+    },
+    "contents": {
+      "ja": "日本銀行（日銀）は今日、政策金利を1.0%に引き上げることを決めました。これは約20年ぶりの高い水準です。\nこれまでは「お金を借りやすくして景気を良くする」ために金利を低く抑えてきましたが、物価の上昇が続いているため、景気が過熱しすぎないようブレーキをかけることにしたのです。\n金利が上がると、銀行に預けているお金の利息が増えるという嬉しい面もあります。一方で、家を買うための住宅ローンの返済額が増えたり、企業が新しい工場を建てるためのお金を借りにくくなったりする面もあります。私たちの生活や日本経済の形が大きく変わる節目になりそうです。",
+      "en": "The Bank of Japan (BoJ) decided today to raise its policy interest rate to 1.0%, the highest level in about 20 years.\nPreviously, interest rates were kept low to make borrowing easier and stimulate the economy. However, with prices continuing to rise, the BoJ decided to apply the brakes to prevent the economy from overheating.\nWhile higher rates mean more interest earned on bank savings, they also lead to higher mortgage payments for homebuyers and make it more difficult for companies to borrow money for new projects. This marks a major turning point for our daily lives and the Japanese economy."
+    },
+    "mermaid": {
+      "ja": "graph TD\nA[日銀が金利を上げる]\nA --> B[銀行の預金利息が増える]\nA --> C[ローンの返済額が増える]\nB --> D[貯金する人が増える]\nC --> E[買い物や投資が慎重になる]\nD --> F[物価の上昇が落ち着く]\nE --> F",
+      "en": "graph TD\nA[BoJ Raises Interest Rates]\nA --> B[Bank Deposit Interest Increases]\nA --> C[Loan Repayments Increase]\nB --> D[More People Save Money]\nC --> E[Spending and Investment Slow Down]\nD --> F[Price Inflation Stabilizes]\nE --> F"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "日本銀行（日銀）",
+          "en": "Bank of Japan (BoJ)"
+        },
+        "def": {
+          "ja": "日本の中央銀行。お札を発行したり、景気を調整するために金利を決めたりする「銀行の銀行」です。",
+          "en": "The central bank of Japan. It issues banknotes and sets interest rates to stabilize the economy, acting as the 'bank for banks.'"
+        }
+      },
+      {
+        "term": {
+          "ja": "政策金利",
+          "en": "Policy Interest Rate"
+        },
+        "def": {
+          "ja": "中央銀行が、世の中の景気や物価をコントロールするために設定する短期的な金利の目標値のことです。",
+          "en": "A short-term interest rate target set by a central bank to control the country's economy and inflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "利息（利子）",
+          "en": "Interest"
+        },
+        "def": {
+          "ja": "お金を貸したり預けたりした時に、その対価として受け取ったり支払ったりするお金のことです。",
+          "en": "The money paid by a borrower to a lender or earned by a depositor as a reward for using the money."
+        }
+      }
+    ]
+  }
+]
