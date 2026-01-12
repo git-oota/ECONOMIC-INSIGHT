@@ -1,5 +1,43 @@
 [
   {
+    "id": "20260112_215341",
+    "date": "2026-01-12",
+    "titles": {
+      "ja": "【経済指標】直近の市場動向",
+      "en": "[Economic Indicators] Recent Market Trends"
+    },
+    "contents": {
+      "ja": "【ニュースの事実】\n日本の株式市場では、景気の先行きに対する期待から、株価が変動しやすい状況が続いています。また、外国為替市場では円安の傾向が見られ、海外から輸入するエネルギーや食品の価格に影響を与えています。本日は「成人の日」の祝日のため、国内の主要な取引所は休みですが、世界的な経済の動きに合わせた調整が続いています。\n\n【中学生への解説】\n「株価」というのは、日本にあるたくさんの会社の「元気のよさ」を数字にした成績表のようなものです。これが高いと、会社が儲かっていて世の中が明るいサインになります。一方、「円安」は日本の「円」の価値が他国の通貨に対して下がっている状態で、海外からお菓子やガソリンを買うときに、今までよりたくさんのお金が必要になってしまうことを意味します。\n\n【生活への影響】\n株価が上がると、将来みんなの家計が潤ったり、新しい仕事が増えたりする可能性があります。一方で、円安で物の値段（物価）が上がると、普段買っている商品の価格が上がり、家計を圧迫することもあります。世界のお金の動きは、私たちの毎日の生活や将来の選択肢に深く関わっています。",
+      "en": "In the Japanese market, stock prices remain volatile due to expectations for the economic outlook. The yen continues to show a weakening trend, affecting the prices of imported goods. As today is a public holiday in Japan, major domestic exchanges are closed, but the market continues to adjust in line with global economic trends. For students, stock prices are like a 'report card' for companies, while a weak yen means imported goods become more expensive. These trends directly impact household costs and future economic opportunities."
+    },
+    "mermaid": {
+      "ja": "graph TD\nA[世界経済の動き] --> B[日本の株価・為替が変化]\nB --> C[輸入品の値段が上がる]\nC --> D[家計や生活に影響]",
+      "en": "graph TD\nA[Global Economic Trends] --> B[Changes in Stock & FX]\nB --> C[Import Prices Rise]\nC --> D[Impact on Daily Life]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "株価",
+          "en": "Stock Price"
+        },
+        "def": {
+          "ja": "会社の価値を数字で表したもの。景気の良さを測る目安になります。",
+          "en": "The price of a company's shares, used as an indicator of economic health."
+        }
+      },
+      {
+        "term": {
+          "ja": "円安",
+          "en": "Weak Yen"
+        },
+        "def": {
+          "ja": "他の国の通貨に対して、日本円の価値が下がること。輸入品が高くなります。",
+          "en": "A situation where the value of the yen decreases against other currencies, making imports more expensive."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260112_122031",
     "date": "2026-01-12",
     "titles": {
