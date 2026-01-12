@@ -1,5 +1,53 @@
 [
   {
+    "id": "20260113_062245",
+    "date": "2026-01-13",
+    "titles": {
+      "ja": "日本の海で「お宝」探し？レアアース掘削と株価の動き",
+      "en": "Searching for \"Treasure\" in Japanese Waters: Rare Earth Drilling and Market Trends"
+    },
+    "contents": {
+      "ja": "【ニュースの事実】\n2026年1月12日、日本の探査船「ちきゅう」が、南鳥島沖の海底にある「レアアース」という貴重な資源を掘り出す試験のために出発しました。レアアースはスマートフォンや電気自動車（EV）を作るのに欠かせない材料ですが、現在は多くを外国からの輸入に頼っています。一方、日本の株価は2026年に入ってから史上最高値を更新するなど勢いがありますが、為替市場では円安（1ドル＝158円台）が進んでおり、輸入品の値上がりが心配されています。\n\n【解説】\nレアアースの掘削は、自分たちの庭で「宝探し」をするようなものです。今までお店（外国）でしか買えなかった大切な材料を自分の家（日本）で見つけられれば、お店が急に値上げしたり売ってくれなくなったりしても困りません。これを「経済安全保障」と呼びます。また、株価が上がっているのは日本の会社が世界から応援されている証拠ですが、円安はお小遣いで買える海外のお菓子が少なくなってしまうような状態を指します。\n\n【生活への影響】\n日本で資源が取れるようになれば、将来的にハイテク製品が安く安定して手に入るようになるかもしれません。一方で、今の円安は家計にとって、電気代や食べ物の値段が上がる原因になります。世の中の動きが、自分の持ち物の値段にどうつながっているか注目してみましょう。",
+      "en": "On January 12, 2026, the Japanese research vessel 'Chikyu' set sail to test-drill for rare earth elements near Minami-Torishima. These materials are vital for smartphones and EVs, and domestic production would enhance Japan's economic security. Meanwhile, the Japanese stock market remains strong, hitting record highs, though the Yen has weakened to around 158 per dollar, raising concerns about the rising cost of imported goods and energy."
+    },
+    "mermaid": {
+      "ja": "graph TD\nA[海底の資源を掘る]-->B[外国に頼らず材料を確保]\nB-->C[日本の産業が強くなる]\nD[円安が進む]-->E[輸入品が高くなる]\nE-->F[生活費への影響]",
+      "en": "graph TD\nA[Drilling Seabed Resources]-->B[Securing Materials Domestically]\nB-->C[Strengthening Japan's Industry]\nD[Yen Weakens]-->E[Import Prices Rise]\nE-->F[Impact on Living Costs]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "レアアース",
+          "en": "Rare Earth"
+        },
+        "def": {
+          "ja": "スマートフォンなどのハイテク製品を作るのに欠かせない、貴重な金属の総称です。",
+          "en": "A group of rare metals essential for manufacturing high-tech products like smartphones and EVs."
+        }
+      },
+      {
+        "term": {
+          "ja": "経済安全保障",
+          "en": "Economic Security"
+        },
+        "def": {
+          "ja": "大切な材料やエネルギーを自分たちで確保し、国の経済や国民の生活を守ることです。",
+          "en": "Ensuring the supply of critical materials and energy to protect a nation's economy and its people's livelihoods."
+        }
+      },
+      {
+        "term": {
+          "ja": "円安",
+          "en": "Weak Yen"
+        },
+        "def": {
+          "ja": "外国の通貨（ドルなど）に対して、日本円の価値が下がること。輸入品が高くなります。",
+          "en": "A situation where the value of the Yen decreases against other currencies, making imports more expensive."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260112_220155",
     "date": "2026-01-12",
     "titles": {
