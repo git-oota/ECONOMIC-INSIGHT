@@ -19,9 +19,21 @@ def generate_content():
     
     prompt = f"""
     今日（{TODAY}）の日本の主要経済ニュースを1つ選び、中学生でもわかる解説付きのコラムを書いてください。
-    【構成】事実概要、中学生向け解説（解散の比喩など）、生活への影響
-    【出力】必ず以下のキーを持つJSONのみを出力（Markdown枠は禁止）
-    keys: "id", "date", "titles", "contents", "mermaid", "glossary"
+    【出力形式】
+    以下の構造のJSONのみを返してください。
+    {{
+      "id": "{UPDATE_ID}",
+      "date": "{TODAY}",
+      "titles": {{ "ja": "日本語タイトル", "en": "English Title" }},
+      "contents": {{ "ja": "日本語本文(改行は\\n)", "en": "English content" }},
+      "mermaid": {{ "ja": "graph TD;...", "en": "graph TD;..." }},
+      "glossary": [
+        {{
+          "term": {{ "ja": "用語", "en": "Term" }},
+          "def": {{ "ja": "解説", "en": "Definition" }}
+        }}
+      ]
+    }}
     """
 
     try:
