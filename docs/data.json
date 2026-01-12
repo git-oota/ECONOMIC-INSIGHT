@@ -1,5 +1,43 @@
 [
   {
+    "id": "20260112_220155",
+    "date": "2026-01-12",
+    "titles": {
+      "ja": "物価の上昇と「お給料」のゆくえ",
+      "en": "Rising Prices and the Future of Wages"
+    },
+    "contents": {
+      "ja": "【ニュースの事実】\n2026年が始まり、日本の経済は大きな転換点を迎えています。政府は、今年の経済成長率を3.4％、働く人の実質的な給料の伸びを1.3％と予測し、物価の上昇に負けないくらいの賃上げを目指す方針を示しました。一方で、外国の通貨に対して日本のお金の価値が下がる「円安」が進んでおり、1ドルが158円前後で取引されています。これにより、海外から輸入するエネルギーや食品の値段が上がりやすくなっています。\n\n【解説】\n世の中の物の値段が上がることを「インフレ」と言います。例えば、今まで100円で買えたノートが110円になると、同じお金で買えるものが減ってしまいます。これを防ぐには、お家の人からもらう「お小遣い」にあたる「お給料」を、110円以上に増やす必要があります。今、日本中の多くの会社で「物価が上がった分、お給料もしっかり上げよう」という話し合いが行われており、これが成功すれば、私たちの生活はより豊かになります。\n\n【生活への影響】\nお給料が物価よりもたくさん上がれば、生活に余裕が生まれ、新しいものを買ったり旅行に行ったりしやすくなります。しかし、円安の影響で電気代や輸入食品の価格が上がり続けると、家計の負担が増えてしまいます。これからの数ヶ月、社会全体でお給料がどれくらい増えるのかが、日本の景気を良くするための重要な鍵となります。",
+      "en": "As 2026 begins, the Japanese government aims for a 3.4% GDP growth rate and a 1.3% increase in real wages to outpace inflation. Currently, the Yen is weakening, trading at around 158 yen per US dollar, which makes imported goods like energy and food more expensive. The key focus for the economy is whether wage hikes can successfully offset the rising cost of living, ensuring that households have more purchasing power to stimulate further economic growth."
+    },
+    "mermaid": {
+      "ja": "graph TD\nA[物価が上がる] --> B[生活費が増える]\nB --> C[お給料を上げる動き]\nC --> D[自由に使えるお金が増える]\nD --> E[景気が良くなる]",
+      "en": "graph TD\nA[Prices Rise] --> B[Cost of Living Increases]\nB --> C[Wage Hike Movements]\nC --> D[Disposable Income Increases]\nD --> E[Economy Improves]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "実質賃金",
+          "en": "Real Wages"
+        },
+        "def": {
+          "ja": "受け取る給料の金額から、物価の上昇分を差し引いた、実際に買える物の量で表した給料の価値のこと。",
+          "en": "Wages adjusted for inflation, representing the actual purchasing power of one's income."
+        }
+      },
+      {
+        "term": {
+          "ja": "円安",
+          "en": "Weak Yen"
+        },
+        "def": {
+          "ja": "他国の通貨（ドルなど）に対して、日本円の価値が下がること。輸入品が高くなる原因になります。",
+          "en": "A situation where the value of the Japanese Yen decreases against other currencies, making imports more expensive."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260112_215341",
     "date": "2026-01-12",
     "titles": {
