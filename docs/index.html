@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECONOMIC INSIGHT</title>
-    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
-    <script src="[https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js](https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js)"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <style>
-        @import url('[https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap](https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap)');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
         body { font-family: 'Noto Sans JP', sans-serif; }
         .glossary-term { border-bottom: 2px dotted #2563eb; cursor: pointer; color: #2563eb; font-weight: bold; }
         #glossary-footer {
@@ -19,10 +19,10 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 pb-32">
-    <nav class="bg-black text-white p-6 sticky top-0 z-50 shadow-xl">
+    <nav class="bg-black text-white p-6 sticky top-0 z-50">
         <div class="max-w-5xl mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-black italic cursor-pointer" onclick="location.reload()">ECONOMIC INSIGHT</h1>
-            <select id="langSet" class="bg-slate-800 text-sm rounded px-3 py-1" onchange="render()">
+            <select id="langSet" class="bg-slate-800 text-sm rounded px-3 py-1 outline-none" onchange="render()">
                 <option value="ja">日本語</option>
                 <option value="en">English</option>
             </select>
@@ -31,7 +31,7 @@
 
     <main class="max-w-4xl mx-auto py-12 px-6">
         <article id="content-area" class="bg-white shadow-sm p-8 md:p-12 rounded-3xl mb-16 min-h-[400px]">
-            <p id="loading-text" class="text-center text-slate-400 pt-20 animate-pulse">分析データをロード中...</p>
+            <p id="loading-msg" class="text-center text-slate-400 pt-20 animate-pulse">分析データをロード中...</p>
         </article>
         <section>
             <h3 class="text-xl font-black mb-8 text-slate-800 uppercase tracking-wider">Archives</h3>
@@ -41,8 +41,8 @@
 
     <div id="glossary-footer" class="translate-y-full">
         <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <div>
-                <h4 id="footer-term" class="text-blue-400 font-bold text-xs mb-1">GLOSSARY</h4>
+            <div id="glossary-content">
+                <h4 id="footer-term" class="text-blue-400 font-bold text-xs mb-1 uppercase">GLOSSARY</h4>
                 <p id="footer-def" class="text-white text-base"></p>
             </div>
             <button onclick="closeGlossary()" class="text-slate-400 text-4xl">&times;</button>
@@ -53,17 +53,21 @@
         let articles = [];
         let currentIndex = 0;
 
-        // Mermaidの初期設定
-        mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+        // Mermaid初期化
+        if (window.mermaid) {
+            mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+        }
 
         async function loadData() {
             try {
                 const res = await fetch('./data.json?t=' + Date.now());
-                if (!res.ok) throw new Error("JSON読み込み失敗");
+                if (!res.ok) throw new Error("JSONファイルが見つかりません。");
                 articles = await res.json();
                 render();
             } catch (e) {
-                document.getElementById('content-area').innerHTML = `<div class="text-red-500 text-center py-20">${e.message}</div>`;
+                console.error(e);
+                document.getElementById('content-area').innerHTML = 
+                    `<div class="text-red-500 text-center py-20 font-bold">エラーが発生しました: ${e.message}</div>`;
             }
         }
 
@@ -72,48 +76,68 @@
             const contentArea = document.getElementById('content-area');
             const archiveList = document.getElementById('archive-list');
             
-            if (!articles || articles.length === 0) return;
+            if (!articles || articles.length === 0) {
+                contentArea.innerHTML = `<p class="text-center py-20">記事がありません。</p>`;
+                return;
+            }
 
             const data = articles[currentIndex];
-            let htmlBody = (data.contents[lang] || "").replace(/\n/g, '<br>');
+            
+            // 各項目の安全な取得（存在しない場合のデフォルト値）
+            const dateStr = data.date || "Unknown Date";
+            const titleStr = (data.titles && data.titles[lang]) ? data.titles[lang] : "Untitled";
+            const contentStr = (data.contents && data.contents[lang]) ? data.contents[lang] : "本文なし";
+            const mermaidStr = (data.mermaid && data.mermaid[lang]) ? data.mermaid[lang] : "";
+            
+            let htmlBody = contentStr.replace(/\n/g, '<br>');
 
-            if (data.glossary) {
+            // 用語置換
+            if (data.glossary && Array.isArray(data.glossary)) {
                 data.glossary.forEach(item => {
-                    const term = item.term[lang];
-                    const def = item.def[lang];
-                    const regex = new RegExp(term, 'g');
-                    htmlBody = htmlBody.replace(regex, `<span class="glossary-term" onclick="showGlossary('${term}', '${def}')">${term}</span>`);
+                    const t = item.term ? item.term[lang] : null;
+                    const d = item.def ? item.def[lang] : null;
+                    if (t && d) {
+                        const regex = new RegExp(t, 'g');
+                        htmlBody = htmlBody.replace(regex, `<span class="glossary-term" onclick="showGlossary('${t}', '${d}')">${t}</span>`);
+                    }
                 });
             }
 
+            // メイン描画
             contentArea.innerHTML = `
-                <div class="text-blue-600 font-black mb-4 text-sm">${data.date}</div>
-                <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight">${data.titles[lang]}</h2>
+                <div class="text-blue-600 font-black mb-4 text-sm">${dateStr}</div>
+                <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight">${titleStr}</h2>
                 <div class="prose prose-lg max-w-none text-slate-700 mb-16">${htmlBody}</div>
                 <div class="my-12 p-8 bg-slate-50 border rounded-3xl overflow-x-auto">
-                    <h3 class="font-black text-sm mb-8 text-slate-400 uppercase">Visual Flow</h3>
-                    <div class="mermaid-container flex justify-center">
-                        <pre class="mermaid">${data.mermaid[lang]}</pre>
+                    <h3 class="font-black text-sm mb-8 text-slate-400 uppercase">Visual Insights</h3>
+                    <div class="mermaid-box flex justify-center">
+                        <pre class="mermaid">${mermaidStr}</pre>
                     </div>
                 </div>
             `;
 
-            archiveList.innerHTML = articles.map((art, idx) => `
+            // アーカイブ描画
+            archiveList.innerHTML = articles.map((art, idx) => {
+                const t = (art.titles && art.titles[lang]) ? art.titles[lang] : "Untitled";
+                return `
                 <div onclick="changeArticle(${idx})" class="p-5 bg-white rounded-2xl border hover:border-blue-500 cursor-pointer transition-all ${idx === currentIndex ? 'ring-2 ring-blue-500' : ''}">
-                    <div class="text-[10px] text-slate-400 font-bold">${art.date}</div>
-                    <div class="font-black text-slate-800 truncate text-sm">${art.titles[lang]}</div>
-                </div>
-            `).join('');
+                    <div class="text-[10px] text-slate-400 font-bold">${art.date || ""}</div>
+                    <div class="font-black text-slate-800 truncate text-sm">${t}</div>
+                </div>`;
+            }).join('');
 
-            // 【重要】Mermaidの再描画処理
+            // Mermaid再描画
             setTimeout(() => {
-                const mermaidElement = document.querySelector('.mermaid');
-                if (mermaidElement && window.mermaid) {
-                    // data-processed属性を削除しないと再描画されない
-                    mermaidElement.removeAttribute('data-processed');
-                    mermaid.run({ nodes: [mermaidElement] });
+                const el = document.querySelector('.mermaid');
+                if (el && window.mermaid && mermaidStr) {
+                    try {
+                        el.removeAttribute('data-processed');
+                        mermaid.run({ nodes: [el] });
+                    } catch (e) {
+                        console.error("Mermaid error:", e);
+                    }
                 }
-            }, 50);
+            }, 100);
         }
 
         function changeArticle(i) { currentIndex = i; render(); window.scrollTo({top:0, behavior:'smooth'}); }
