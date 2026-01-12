@@ -15,20 +15,16 @@ client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 def generate_content():
     print(f"[{datetime.now()}] ニュース分析を開始...")
     
-    # プロンプトの修正：Mermaidの文法をより厳密に指示
     prompt = f"""
     今日（{TODAY}）の日本の主要経済ニュースを1つ選び、中学生向け解説コラムを書いてください。
-    必ず以下のJSON形式で出力してください。Markdownの枠(```json)は不要です。
+    必ず以下のJSON形式のみで出力してください。
 
     {{
       "id": "{UPDATE_ID}",
       "date": "{TODAY}",
       "titles": {{ "ja": "タイトル", "en": "Title" }},
-      "contents": {{ "ja": "本文(改行は\\n)", "en": "Content" }},
-      "mermaid": {{ 
-        "ja": "graph TD\\nA-->B\\nB-->C", 
-        "en": "graph TD\\nA-->B\\nB-->C" 
-      }},
+      "contents": {{ "ja": "本文", "en": "Content" }},
+      "mermaid": {{ "ja": "graph TD\\nA-->B", "en": "graph TD\\nA-->B" }},
       "glossary": [
         {{
           "term": {{ "ja": "用語", "en": "Term" }},
@@ -36,7 +32,6 @@ def generate_content():
         }}
       ]
     }}
-    ※Mermaid内ではセミコロンを使用せず、改行(\\n)で繋いでください。
     """
 
     try:
@@ -51,11 +46,11 @@ def generate_content():
         )
         return json.loads(response.text)
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"API Error: {e}")
         return {
             "id": UPDATE_ID, "date": TODAY,
-            "titles": {"ja": "生成エラー", "en": "Error"},
-            "contents": {"ja": str(e), "en": str(e)},
+            "titles": {"ja": "分析エラー", "en": "Error"},
+            "contents": {"ja": "現在データを生成できません。", "en": "Error."},
             "mermaid": {"ja": "graph TD\nError", "en": "graph TD\nError"},
             "glossary": []
         }
@@ -64,17 +59,22 @@ def main():
     data_path = 'docs/data.json'
     new_article = generate_content()
     
+    # 既存データの読み込み
     history = []
     if os.path.exists(data_path):
         with open(data_path, 'r', encoding='utf-8') as f:
-            try: history = json.load(f)
-            except: history = []
+            try:
+                history = json.load(f)
+                if not isinstance(history, list): history = []
+            except:
+                history = []
     
+    # 新しい記事を追加して保存（最大50件）
     history.insert(0, new_article)
     os.makedirs('docs', exist_ok=True)
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:50], f, ensure_ascii=False, indent=2)
-    print(f"✅ Success: {new_article['titles']['ja']}")
+    print(f"✅ Success: {new_article.get('titles', {}).get('ja', 'No Title')}")
 
 if __name__ == "__main__":
     main()
