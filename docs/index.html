@@ -1,145 +1,62 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECONOMIC INSIGHT</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
-        body { font-family: 'Noto Sans JP', sans-serif; }
-        .glossary-term { border-bottom: 2px dotted #2563eb; cursor: pointer; color: #2563eb; font-weight: bold; }
-        #glossary-footer {
-            position: fixed; bottom: 0; left: 0; width: 100%;
-            background: rgba(15, 23, 42, 0.95); color: white; padding: 1.5rem;
-            transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            z-index: 1000; backdrop-filter: blur(10px);
-        }
-        #glossary-footer.active { transform: translateY(0); }
-        .archive-item { cursor: pointer; transition: all 0.2s; border: 1px solid #e2e8f0; }
-        .archive-item:hover { border-color: #2563eb; background: #f8fafc; transform: translateY(-2px); }
-    </style>
-</head>
-<body class="bg-slate-50 text-slate-900 pb-32">
-    <nav class="bg-black text-white p-6 shadow-2xl sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-black italic tracking-tighter cursor-pointer" onclick="changeArticle(0)">ECONOMIC INSIGHT</h1>
-            <select id="langSet" class="bg-slate-800 text-sm border-none rounded px-3 py-1 outline-none" onchange="render()">
-                <option value="ja">日本語</option>
-                <option value="en">English</option>
-            </select>
-        </div>
-    </nav>
-
-    <main class="max-w-4xl mx-auto py-12 px-6">
-        <article id="content-area" class="bg-white shadow-sm p-8 md:p-12 rounded-3xl mb-16 min-h-[400px]">
-            <p class="text-center text-slate-400 pt-20 animate-pulse">分析データをロード中...</p>
-        </article>
-
-        <section>
-            <h3 class="text-xl font-black mb-8 flex items-center text-slate-800 uppercase tracking-wider">
-                <span class="mr-3 bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full text-xs">A</span>
-                Past Analysis Archives
-            </h3>
-            <div id="archive-list" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
-        </section>
-    </main>
-
-    <div id="glossary-footer">
-        <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <div>
-                <h4 id="footer-term" class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-1">GLOSSARY</h4>
-                <p id="footer-def" class="text-white text-base font-medium"></p>
-            </div>
-            <button onclick="closeGlossary()" class="text-slate-400 text-4xl hover:text-white ml-4">&times;</button>
-        </div>
-    </div>
-
-    <script>
-        let articles = [];
-        let currentIndex = 0;
-
-        async function loadData() {
-            try {
-                const res = await fetch('./data.json?t=' + Date.now());
-                articles = await res.json();
-                render();
-            } catch (e) {
-                document.getElementById('content-area').innerHTML = "データの読み取りに失敗しました。";
-            }
-        }
-
-        function changeArticle(index) {
-            currentIndex = index;
-            render();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+// index.html の <script> 内、render関数付近を修正
 
         function render() {
             const lang = document.getElementById('langSet').value;
             const contentArea = document.getElementById('content-area');
-            
-            // 記事がない、または最新がエラーの場合の処理
-            if (articles.length === 0 || articles[currentIndex].titles.ja === "分析レポート生成エラー") {
-                contentArea.innerHTML = `
-                    <div class="text-center py-20">
-                        <div class="text-5xl mb-4">⚙️</div>
-                        <h3 class="text-xl font-bold text-slate-400">最新ニュースを分析中です</h3>
-                        <p class="text-sm text-slate-400 mt-2">数分後に再度読み込んでください。</p>
-                    </div>`;
+            const archiveList = document.getElementById('archive-list'); // ★追加：これがないとエラーになります
+
+            if (articles.length === 0) {
+                contentArea.innerHTML = `<p class="text-center">データがありません</p>`;
                 return;
             }
 
             const data = articles[currentIndex];
             
-            // 安全な用語置換（長い単語から順に処理）
-            let htmlBody = data.contents[lang].replace(/\n/g, '<br>');
-            if (data.glossary) {
+            // 本文の取得（存在しない場合のフォールバック）
+            let contentText = (data.contents && data.contents[lang]) ? data.contents[lang] : "Content not available";
+            let htmlBody = contentText.replace(/\n/g, '<br>');
+
+            // 用語解説の置換処理
+            if (data.glossary && Array.isArray(data.glossary)) {
+                // 長い単語から順に置換（短い単語が長い単語の一部である場合の誤作動防止）
                 const sortedGlossary = [...data.glossary].sort((a, b) => b.term[lang].length - a.term[lang].length);
+                
                 sortedGlossary.forEach(item => {
                     const term = item.term[lang];
                     const def = item.def[lang];
-                    const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                    const regex = new RegExp(escapedTerm, 'g');
+                    const regex = new RegExp(term, 'g');
                     htmlBody = htmlBody.replace(regex, `<span class="glossary-term" onclick="showGlossary('${term}', '${def}')">${term}</span>`);
                 });
             }
 
+            // タイトルなどの流し込み
+            const title = (data.titles && data.titles[lang]) ? data.titles[lang] : "No Title";
+
             contentArea.innerHTML = `
-                <div class="text-blue-600 font-black mb-4 tracking-tighter text-sm uppercase">${data.date}</div>
-                <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight tracking-tighter">${data.titles[lang]}</h2>
+                <div class="text-blue-600 font-black mb-4 text-sm uppercase">${data.date}</div>
+                <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight">${title}</h2>
                 <div class="prose prose-lg max-w-none text-slate-700 leading-relaxed mb-16">${htmlBody}</div>
-                <div class="my-12 p-8 bg-slate-50 border border-slate-100 rounded-3xl shadow-inner">
-                    <h3 class="font-black text-sm mb-8 uppercase tracking-widest text-slate-400">Visual Insights</h3>
-                    <pre class="mermaid flex justify-center">${data.mermaid[lang]}</pre>
+                <div class="my-12 p-8 bg-slate-50 border border-slate-100 rounded-3xl">
+                    <h3 class="font-black text-sm mb-8 uppercase text-slate-400">Visual Insights</h3>
+                    <pre class="mermaid flex justify-center">${data.mermaid[lang] || ""}</pre>
                 </div>
             `;
 
-            archiveList.innerHTML = articles.map((art, idx) => `
+            // アーカイブリストの更新
+            archiveList.innerHTML = articles.map((art, idx) => {
+                const artTitle = (art.titles && art.titles[lang]) ? art.titles[lang] : "Untitled";
+                return `
                 <div onclick="changeArticle(${idx})" class="archive-item p-5 bg-white rounded-2xl shadow-sm flex justify-between items-center ${idx === currentIndex ? 'ring-2 ring-blue-500' : ''}">
                     <div class="overflow-hidden">
                         <div class="text-[10px] text-slate-400 font-bold mb-1">${art.date}</div>
-                        <div class="font-black text-slate-800 truncate text-sm uppercase">${art.titles[lang]}</div>
+                        <div class="font-black text-slate-800 truncate text-sm uppercase">${artTitle}</div>
                     </div>
                     <span class="text-blue-500 font-black ml-4">→</span>
-                </div>
-            `).join('');
+                </div>`;
+            }).join('');
 
-            if (window.mermaid) mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+            if (window.mermaid) {
+                mermaid.contentLoaded(); // mermaidのリロード
+                mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
+            }
         }
-
-        function showGlossary(term, def) {
-            document.getElementById('footer-term').innerText = term;
-            document.getElementById('footer-def').innerText = def;
-            document.getElementById('glossary-footer').classList.add('active');
-        }
-
-        function closeGlossary() {
-            document.getElementById('glossary-footer').classList.remove('active');
-        }
-
-        loadData();
-    </script>
-</body>
-</html>
