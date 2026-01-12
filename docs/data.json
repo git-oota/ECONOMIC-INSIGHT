@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "20260112_115254",
+    "date": "2026-01-12",
+    "titles": {
+      "ja": "米ウーバーが日本に3000億円投資！「自動運転タクシー」で移動が変わる？",
+      "en": "Uber Invests 300 Billion Yen in Japan! Will Autonomous Taxis Change How We Move?"
+    },
+    "contents": {
+      "ja": "2026年1月12日、世界最大の配車サービス「ウーバー」が、日本に今後5年間で3000億円以上の巨額投資を行うことが分かりました。一番の注目は、AIがハンドルを握る「自動運転タクシー」の本格導入です。\n現在、日本のタクシー業界では運転手不足が大きな問題になっています。ウーバーはこの問題を解決するため、アメリカで成功している自動運転技術を日本にも持ち込もうとしています。日本のライバル企業「GO」も負けじと新しいサービスを準備しており、これからタクシーの乗り方や料金が大きく変わるかもしれません。\n中学生の皆さんが大人になる頃には、「タクシーを呼んだら無人の車が迎えに来る」のが当たり前の景色になっているかもしれませんね。",
+      "en": "On January 12, 2026, it was revealed that Uber, the world's largest ride-hailing service, plans to invest over 300 billion yen in Japan over the next five years. The main focus is the full-scale introduction of 'autonomous taxis' driven by AI.\nCurrently, the Japanese taxi industry faces a serious shortage of drivers. To solve this, Uber aims to bring its successful self-driving technology from the U.S. to Japan. With the Japanese rival 'GO' also preparing new services, the way we ride and pay for taxis could change significantly. By the time you middle school students grow up, seeing an empty car arrive when you call a taxi might be a perfectly normal sight."
+    },
+    "mermaid": {
+      "ja": "graph TD; A[ウーバーが3000億円投資] --> B[自動運転タクシーの導入]; B --> C[運転手不足の解消]; B --> D[国内企業GOとの競争激化]; C --> E[移動がより便利で安くなる]; D --> E;",
+      "en": "graph TD; A[Uber Invests 300B Yen] --> B[Intro of Autonomous Taxis]; B --> C[Solving Driver Shortages]; B --> D[Intense Rivalry with 'GO']; C --> E[Travel Becomes Cheaper & Easier]; D --> E;"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "投資",
+          "en": "Investment"
+        },
+        "def": {
+          "ja": "将来もっと大きな利益を得るために、事業にお金をつぎ込むこと。",
+          "en": "Putting money into a business or project to earn a profit in the future."
+        }
+      },
+      {
+        "term": {
+          "ja": "自動運転",
+          "en": "Autonomous Driving"
+        },
+        "def": {
+          "ja": "人間が操作しなくても、AIやセンサーを使って車が自分で走る技術。",
+          "en": "Technology that allows a vehicle to drive itself using AI and sensors without human operation."
+        }
+      },
+      {
+        "term": {
+          "ja": "配車サービス",
+          "en": "Ride-hailing Service"
+        },
+        "def": {
+          "ja": "スマホアプリを使って、今いる場所に車を呼ぶことができるサービス。",
+          "en": "A service that allows you to call a car to your location using a smartphone app."
+        }
+      }
+    ]
+  }
+]
