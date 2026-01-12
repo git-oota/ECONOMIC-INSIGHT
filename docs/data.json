@@ -1,5 +1,43 @@
 [
   {
+    "id": "20260112_122031",
+    "date": "2026-01-12",
+    "titles": {
+      "ja": "1ドル158円の円安と私たちの暮らし：物価高にどう向き合う？",
+      "en": "The 158 Yen Exchange Rate and Our Lives: Facing Rising Prices"
+    },
+    "contents": {
+      "ja": "【ニュースの事実】\n2026年1月12日、為替市場では1ドル＝158円台まで円安が進んでいます。これは約1年ぶりの水準です。背景には、日本の政治の動きやアメリカの経済状況が関係しています。一方で、最新のデータでは働く人の「実質賃金（物価の影響を考えたお給料の力）」が11か月連続でマイナスとなっており、お給料の上がり方が物価の上昇に追いついていない厳しい状況が続いています。\n\n【中学生への解説】\n「円安」というのは、外国のお金に対して「円」の価値が下がることです。例えば、海外から輸入しているハンバーガーの材料が1ドルのとき、1ドル＝100円なら100円で買えますが、158円になると158円払わないと買えなくなります。お小遣いが増えても、それ以上に買うものの値段が上がってしまうと、結局買えるものが減ってしまいます。今の日本は、まさにこの「お財布の力が弱まっている」状態にあります。\n\n【生活への影響】\nこれから、電気代やガソリン代、そして輸入食品の値段がさらに上がる可能性があります。一方で、日本の製品を海外に売る会社にとっては利益が出やすくなるという良い面もあります。皆さんが将来働くときには、ただお給料の金額を見るだけでなく、世の中の物価がどう動いているかにも注目することが、自分たちの生活を守るためにとても大切になります。",
+      "en": "As of January 12, 2026, the Japanese yen has weakened to the 158 yen per dollar level, a one-year low. This is driven by domestic political shifts and U.S. economic trends. Meanwhile, 'real wages'—the actual purchasing power of earnings—have declined for 11 consecutive months, meaning price hikes are outpacing pay raises. For students, this is like having your allowance increase slightly while the price of your favorite snacks doubles, leaving you able to buy less than before. This trend may lead to higher costs for electricity and imported food, though it benefits Japanese companies selling goods abroad."
+    },
+    "mermaid": {
+      "ja": "graph TD\nA[円安が進む 1ドル158円]-->B[輸入コストが上がる]\nB-->C[お店の商品の値段が上がる]\nC-->D[お給料の伸びが追いつかない]\nD-->E[生活が苦しく感じる]",
+      "en": "graph TD\nA[Weak Yen 158 JPY/USD]-->B[Higher Import Costs]\nB-->C[Consumer Prices Rise]\nC-->D[Wages Lag Behind Inflation]\nD-->E[Decreased Purchasing Power]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "円安",
+          "en": "Weak Yen"
+        },
+        "def": {
+          "ja": "日本円の価値が他国の通貨（ドルなど）に対して下がること。輸入品が高くなる原因になります。",
+          "en": "A situation where the value of the Japanese yen decreases against other currencies, making imports more expensive."
+        }
+      },
+      {
+        "term": {
+          "ja": "実質賃金",
+          "en": "Real Wages"
+        },
+        "def": {
+          "ja": "受け取ったお給料で、実際にどれだけの物が買えるかを表す数字。物価が上がるとこの数字は下がります。",
+          "en": "Wages adjusted for inflation, representing the actual amount of goods and services that can be purchased."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260112_121417",
     "date": "2026-01-12",
     "titles": {
