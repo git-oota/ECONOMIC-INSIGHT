@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "20260112_120734",
+    "date": "2026-01-12",
+    "titles": {
+      "ja": "「デジタル円」の実証実験が新ステージへ！私たちのお金はどう変わる？",
+      "en": "Digital Yen Pilot Enters New Stage: How Will Our Money Change?"
+    },
+    "contents": {
+      "ja": "2026年1月12日、日本銀行は「デジタル円（CBDC）」の実証実験をさらに一歩進め、民間企業との連携を強化すると発表しました。デジタル円とは、私たちが使っている1万円札や千円札と同じ価値を、スマホなどのデータとして持つ「国が発行するデジタルのお金」のことです。PayPayなどの民間キャッシュレス決済との違いは、国が直接価値を保証しているため、どんなお店でも使えたり、災害時に電波がなくても支払いができたりすることを目指している点です。お金の形が変わることで、日本の経済がより便利でスムーズになることが期待されています。",
+      "en": "On January 12, 2026, the Bank of Japan announced that it will advance its 'Digital Yen (CBDC)' pilot program to a new stage, strengthening cooperation with private companies. The Digital Yen is a 'government-issued digital currency' that holds the same value as physical 10,000-yen or 1,000-yen notes but exists as data on smartphones. Unlike private cashless services like PayPay, the Digital Yen is backed directly by the government. It aims to be accepted everywhere and potentially usable offline during disasters. This shift in the form of money is expected to make the Japanese economy more convenient and efficient."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[日本銀行] -->|発行| B(デジタル円)\n    B --> C{メリット}\n    C --> D[スマホで簡単決済]\n    C --> E[災害時でも使える可能性]\n    C --> F[お店の手数料が安くなる]",
+      "en": "graph TD\n    A[Bank of Japan] -->|Issue| B(Digital Yen)\n    B --> C{Benefits}\n    C --> D[Easy Smartphone Payments]\n    C --> E[Potential Offline Use]\n    C --> F[Lower Fees for Shops]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "デジタル円 (CBDC)",
+          "en": "Digital Yen (CBDC)"
+        },
+        "def": {
+          "ja": "中央銀行（日本銀行）が発行するデジタル形式のお金のこと。中央銀行デジタル通貨とも呼ばれます。",
+          "en": "A digital form of currency issued by a central bank (Bank of Japan). Also known as Central Bank Digital Currency."
+        }
+      },
+      {
+        "term": {
+          "ja": "日本銀行",
+          "en": "Bank of Japan"
+        },
+        "def": {
+          "ja": "日本の中央銀行で、「お金の発行」「物価の安定」「金融システムの維持」を役割としています。",
+          "en": "The central bank of Japan, responsible for issuing currency, maintaining price stability, and ensuring the financial system's stability."
+        }
+      },
+      {
+        "term": {
+          "ja": "実証実験",
+          "en": "Pilot Program / Proof of Concept"
+        },
+        "def": {
+          "ja": "新しい仕組みが実際にうまく動くかどうか、本番前に試してみること。",
+          "en": "A trial conducted to see if a new system or idea works effectively before full-scale implementation."
+        }
+      }
+    ]
+  }
+]
