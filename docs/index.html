@@ -19,7 +19,7 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 pb-32">
-    <nav class="bg-black text-white p-6 sticky top-0 z-50">
+    <nav class="bg-black text-white p-6 sticky top-0 z-50 shadow-xl">
         <div class="max-w-5xl mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-black italic cursor-pointer" onclick="location.reload()">ECONOMIC INSIGHT</h1>
             <select id="langSet" class="bg-slate-800 text-sm rounded px-3 py-1" onchange="render()">
@@ -53,15 +53,17 @@
         let articles = [];
         let currentIndex = 0;
 
+        // Mermaidの初期設定
+        mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+
         async function loadData() {
             try {
-                // 同じフォルダにある data.json を読み込む
                 const res = await fetch('./data.json?t=' + Date.now());
-                if (!res.ok) throw new Error("JSONファイルが見つかりません。main.pyを実行して生成してください。");
+                if (!res.ok) throw new Error("JSON読み込み失敗");
                 articles = await res.json();
                 render();
             } catch (e) {
-                document.getElementById('content-area').innerHTML = `<div class="text-red-500 font-bold text-center py-20">エラー: ${e.message}</div>`;
+                document.getElementById('content-area').innerHTML = `<div class="text-red-500 text-center py-20">${e.message}</div>`;
             }
         }
 
@@ -70,15 +72,11 @@
             const contentArea = document.getElementById('content-area');
             const archiveList = document.getElementById('archive-list');
             
-            if (!articles || articles.length === 0) {
-                contentArea.innerHTML = `<p class="text-center py-20 text-slate-400">表示できる記事がありません。</p>`;
-                return;
-            }
+            if (!articles || articles.length === 0) return;
 
             const data = articles[currentIndex];
             let htmlBody = (data.contents[lang] || "").replace(/\n/g, '<br>');
 
-            // 用語解説の置換
             if (data.glossary) {
                 data.glossary.forEach(item => {
                     const term = item.term[lang];
@@ -92,9 +90,11 @@
                 <div class="text-blue-600 font-black mb-4 text-sm">${data.date}</div>
                 <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight">${data.titles[lang]}</h2>
                 <div class="prose prose-lg max-w-none text-slate-700 mb-16">${htmlBody}</div>
-                <div class="my-12 p-8 bg-slate-50 border rounded-3xl">
+                <div class="my-12 p-8 bg-slate-50 border rounded-3xl overflow-x-auto">
                     <h3 class="font-black text-sm mb-8 text-slate-400 uppercase">Visual Flow</h3>
-                    <pre class="mermaid flex justify-center">${data.mermaid[lang]}</pre>
+                    <div class="mermaid-container flex justify-center">
+                        <pre class="mermaid">${data.mermaid[lang]}</pre>
+                    </div>
                 </div>
             `;
 
@@ -105,10 +105,15 @@
                 </div>
             `).join('');
 
-            if (window.mermaid) {
-                mermaid.initialize({ startOnLoad: true });
-                mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
-            }
+            // 【重要】Mermaidの再描画処理
+            setTimeout(() => {
+                const mermaidElement = document.querySelector('.mermaid');
+                if (mermaidElement && window.mermaid) {
+                    // data-processed属性を削除しないと再描画されない
+                    mermaidElement.removeAttribute('data-processed');
+                    mermaid.run({ nodes: [mermaidElement] });
+                }
+            }, 50);
         }
 
         function changeArticle(i) { currentIndex = i; render(); window.scrollTo({top:0, behavior:'smooth'}); }
