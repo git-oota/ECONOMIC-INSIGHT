@@ -1,5 +1,43 @@
 [
   {
+    "id": "20260112_121417",
+    "date": "2026-01-12",
+    "titles": {
+      "ja": "「デジタル円」がついに本格始動！お財布の形が変わる未来",
+      "en": "Digital Yen Officially Launches: The Future of Your Wallet"
+    },
+    "contents": {
+      "ja": "【ニュースの事実】\n日本で「デジタル円」の本格的な運用が始まりました。これは中央銀行が発行する新しい形式のお金で、これまでの紙幣や硬貨と同じ価値を持ちながら、スマートフォンなどで直接やり取りができる仕組みです。主要なコンビニや公共交通機関での支払いに対応し、現金を持ち歩かなくても生活できる環境が整えられました。\n\n【中学生への解説】\nこれを学校の「購買部」で例えてみましょう。今までは、お昼休みにお弁当を買うとき、100円玉や500円玉を握りしめて行っていましたよね。これが「現金」です。一方で、特定のゲーム内だけで使える「専用コイン」が、今の民間企業の電子マネーに近い存在です。今回の「デジタル円」は、学校全体、さらには街中のどのお店でも共通で使える「公式デジタルチケット」がスマホに入ったようなものです。偽物の心配がなく、誰とでも一瞬でお金の受け渡しができるのが特徴です。\n\n【生活への影響】\n皆さんが将来アルバイトをしたり、会社で働いたりする際、お給料が銀行振込ではなく、直接スマホの「デジタル円ウォレット」に振り込まれるようになるかもしれません。また、お小遣いの管理もアプリで自動的に行えるようになり、何にいくら使ったかがすぐ分かるようになります。一方で、スマホを失くしたり、電池が切れたりした時の対策を考えるなど、デジタル時代ならではの「お金の守り方」を身につけることが重要になります。",
+      "en": "The 'Digital Yen' has officially entered full-scale operation in Japan. This is a new form of currency issued by the central bank, holding the same value as physical bills and coins but transferable directly via smartphones. It is now accepted at major convenience stores and for public transportation. For students, imagine an 'Official School Token' that works in every shop and can be sent to friends instantly. In the future, your part-time job wages might be paid directly to your digital wallet. While it makes managing money easier, learning how to protect your digital assets will become a vital skill."
+    },
+    "mermaid": {
+      "ja": "graph TD\nA[中央銀行がデジタル円を発行] --> B[スマホで直接支払い可能に]\nB --> C[現金を持ち歩かない生活]\nC --> D[お給料の受け取りや管理が便利に]",
+      "en": "graph TD\nA[Central Bank issues Digital Yen] --> B[Direct payment via smartphone]\nB --> C[Cashless lifestyle]\nC --> D[Easier salary payments and management]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "デジタル円",
+          "en": "Digital Yen"
+        },
+        "def": {
+          "ja": "日本の中央銀行が発行する、デジタル形式の新しいお金のこと。CBDCとも呼ばれる。",
+          "en": "A digital form of currency issued by the central bank of Japan, also known as CBDC."
+        }
+      },
+      {
+        "term": {
+          "ja": "中央銀行",
+          "en": "Central Bank"
+        },
+        "def": {
+          "ja": "国のお金の量を調節したり、銀行にお金を貸したりする「銀行の銀行」。日本では日本銀行のこと。",
+          "en": "The institution that manages a country's currency and monetary policy; in Japan, it is the Bank of Japan."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260112_120734",
     "date": "2026-01-12",
     "titles": {
