@@ -1,5 +1,53 @@
 [
   {
+    "id": "20260114_062246",
+    "date": "2026-01-14",
+    "titles": {
+      "ja": "日経平均株価が史上最高値を更新、5万3000円台に",
+      "en": "Nikkei Stock Average Hits Historic High Above 53,000 Yen"
+    },
+    "contents": {
+      "ja": "【ニュースの事実】\n2026年1月13日の東京株式市場で、日経平均株価が前日より1,600円以上も値上がりし、5万3,549円という史上最高値を記録しました。これは、政府が衆議院を解散して総選挙を行うのではないかという観測が強まり、新しい経済政策への期待から投資家が積極的に株を買ったためです。また、外国為替市場で1ドル＝159円台まで円安が進んだことも、海外で製品を売る日本の大きな企業の業績を後押しすると期待され、株価を押し上げる要因となりました。\n\n【解説】\n例えば、学校の行事で「これからもっと楽しいルールができるかもしれない」という噂が流れると、みんなのやる気が一気に上がるのに似ています。投資家という「経済の応援団」が、日本の将来がもっと良くなることを期待して、企業の応援券である「株」をたくさん買ったことで、その値段が過去最高の記録を塗り替えました。\n\n【生活への影響】\n株価が上がることは日本の経済が元気であるサインですが、一方で「円安」が進むと、海外から輸入するガソリンや食べ物の値段が上がってしまいます。家計にとっては、買い物で支払うお金が増える可能性があるため、生活費の負担が重くなるかもしれません。世の中の動きが、自分たちの買うものの値段や将来の仕事にどうつながるのかを考えることが大切になります。",
+      "en": "On January 13, 2026, the Nikkei Stock Average surged by over 1,600 yen, reaching a historic high of 53,549 yen. This rally was driven by expectations of a snap election and potential new economic policies. Additionally, the yen weakened to nearly 160 per dollar, boosting export-oriented companies. While high stock prices indicate economic optimism, the weak yen may lead to higher costs for imported goods, impacting household budgets. Understanding these global financial trends is essential for navigating future economic changes."
+    },
+    "mermaid": {
+      "ja": "graph TD\nA[選挙への期待] --> B[新しい政策への関心]\nB --> C[株を買う動きが加速]\nC --> D[株価が史上最高値を更新]\nE[円安の進行] --> F[輸出企業の利益増加期待]\nF --> C\nE --> G[輸入製品の値上がり]\nG --> H[家計の負担増]",
+      "en": "graph TD\nA[Election Expectations] --> B[Interest in New Policies]\nB --> C[Accelerated Stock Buying]\nC --> D[Record High Stock Prices]\nE[Weak Yen] --> F[Higher Export Profits]\nF --> C\nE --> G[Higher Import Costs]\nG --> H[Household Burden]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "日経平均株価",
+          "en": "Nikkei Stock Average"
+        },
+        "def": {
+          "ja": "日本を代表する225社の株価を平均した、日本の景気を測るための指標。",
+          "en": "An index representing the average stock price of 225 leading Japanese companies, used to gauge the economy."
+        }
+      },
+      {
+        "term": {
+          "ja": "円安",
+          "en": "Weak Yen"
+        },
+        "def": {
+          "ja": "他の国の通貨（ドルなど）に対して、円の価値が下がること。輸出には有利ですが、輸入には不利になります。",
+          "en": "A situation where the value of the yen decreases against other currencies, benefiting exports but making imports more expensive."
+        }
+      },
+      {
+        "term": {
+          "ja": "衆議院の解散",
+          "en": "Dissolution of the House of Representatives"
+        },
+        "def": {
+          "ja": "任期が終わる前に議員全員の身分を失わせること。その後、国民が新しい議員を選ぶ総選挙が行われます。",
+          "en": "Ending the term of all house members early, followed by a general election to choose new representatives."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260113_062245",
     "date": "2026-01-13",
     "titles": {
