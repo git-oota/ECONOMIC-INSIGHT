@@ -107,6 +107,12 @@
                 labelArchives.innerText = "Archives";
                 labelRateLink.innerText = "Understanding Interest Rates"; // 追記（英語名）
             }
+
+            // リンク先URLに言語パラメータ (?lang=ja または ?lang=en) を追加する
+            const rateLink = document.querySelector('a[href*="rate.html"]');
+            if (rateLink) {
+                rateLink.href = `context/rate.html?lang=${lang}`;
+            }
                     
             const contentArea = document.getElementById('content-area');
             const archiveList = document.getElementById('archive-list');
