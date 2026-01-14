@@ -107,7 +107,7 @@
                 labelRateLink.innerText = "Understanding Interest Rates";
             }
 
-            // リンク先URLに言語パラメータを追加
+            // ★言語設定をリンクに引き継ぐ
             const rateLink = document.querySelector('a[href*="rate.html"]');
             if (rateLink) {
                 rateLink.href = `context/rate.html?lang=${lang}`;
