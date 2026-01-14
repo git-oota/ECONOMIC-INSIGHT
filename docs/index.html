@@ -78,9 +78,16 @@
                 if (!res.ok) throw new Error("JSONファイルが見つかりません。");
                 articles = await res.json();
 
-                // ★追加：戻ってきた時にURLパラメータから言語を復元する
+                // 言語判定ロジック：URLパラメータを優先し、なければブラウザ言語を確認
                 const params = new URLSearchParams(window.location.search);
-                const initialLang = params.get('lang');
+                let initialLang = params.get('lang');
+
+                if (!initialLang) {
+                    const browserLang = navigator.language || navigator.userLanguage;
+                    // 日本語(ja)以外はすべてデフォルトで英語(en)にする
+                    initialLang = browserLang.startsWith('ja') ? 'ja' : 'en';
+                }
+
                 if (initialLang === 'en' || initialLang === 'ja') {
                     document.getElementById('langSet').value = initialLang;
                 }
@@ -111,7 +118,7 @@
                 labelRateLink.innerText = "Understanding Interest Rates";
             }
 
-            // ★修正：cconstをconstに修正し、リンクに言語情報を付与
+            // リンクに言語情報を付与
             const rateLink = document.querySelector('a[href*="rate.html"]');
             if (rateLink) {
                 rateLink.href = `context/rate.html?lang=${lang}`;
