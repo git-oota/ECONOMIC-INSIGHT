@@ -18,7 +18,6 @@
     </style>
 </head>
 <body class="antialiased">
-
     <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 px-4 py-3">
         <div class="max-w-5xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-4">
@@ -46,53 +45,15 @@
     <main class="max-w-4xl mx-auto px-4 py-8">
         <div class="slide-container">
             <div id="slide-1" class="slide active"><div class="text-center"><h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-8 leading-tight" data-i18n="s1_title">お金の価値は<br><span class="text-blue-600">「金利」</span>と<span class="text-orange-500">「為替」</span>で決まる</h1><p data-i18n="s1_desc" class="text-gray-500">経済のナゾを解き明かそう。</p></div></div>
-            <div id="slide-2" class="slide"><h2 class="text-3xl font-black mb-6"><i class="ph ph-bank text-blue-600"></i> <span data-i18n="s2_header">金利 ＝ お金のレンタル料</span></h2><p data-i18n="s2_body" class="bg-white p-8 rounded-3xl shadow-sm">銀行にお金を預けることは、銀行に「貸す」ということです。そのお礼が利子、割合が金利です。</p></div>
-            <div id="slide-3" class="slide"><h2 class="text-3xl font-black mb-6 text-orange-600"><i class="ph ph-trend-up"></i> <span data-i18n="s3_header">インフレ ＝ 物価の上昇</span></h2><div class="bg-white p-8 rounded-3xl shadow-sm"><input type="range" id="inf-range" min="0" max="10" step="0.5" value="3" class="w-full h-2 mb-8 bg-orange-200 rounded-lg appearance-none"><div class="flex justify-around text-center"><div><div class="bg-gray-300 w-16 h-20 rounded-t-lg mx-auto"></div><p class="text-xs text-gray-400" data-i18n="s3_last">去年: 100円</p></div><div><i class="ph ph-hamburger text-4xl text-orange-500 mb-2"></i><div id="inf-bar" class="bg-orange-500 w-16 h-24 rounded-t-lg mx-auto"></div><p class="text-xs font-bold mt-2 text-orange-600"><span data-i18n="s3_this">今年:</span> <span id="inf-price">103</span><span data-i18n="yen">円</span></p></div></div></div></div>
+            <div id="slide-2" class="slide"><h2 class="text-3xl font-black mb-6"><i class="ph ph-bank text-blue-600"></i> <span data-i18n="s2_header">金利 ＝ お金のレンタル料</span></h2><p data-i18n="s2_body" class="bg-white p-8 rounded-3xl shadow-sm border">銀行にお金を預けることは、銀行に「貸す」ということです。そのお礼が利子、割合が金利です。</p></div>
+            <div id="slide-3" class="slide"><h2 class="text-3xl font-black mb-6 text-orange-600"><i class="ph ph-trend-up"></i> <span data-i18n="s3_header">インフレ ＝ 物価の上昇</span></h2><div class="bg-white p-8 rounded-3xl shadow-sm border text-center"><input type="range" id="inf-range" min="0" max="10" step="0.5" value="3" class="w-full h-2 mb-8 bg-orange-200 rounded-lg appearance-none"><div class="flex justify-around items-end h-32"><div><div class="bg-gray-300 w-16 h-20 rounded-t-lg mx-auto"></div><p class="text-[10px] text-gray-400" data-i18n="s3_last">去年: 100円</p></div><div><i class="ph ph-hamburger text-4xl text-orange-500 mb-2"></i><div id="inf-bar" class="bg-orange-500 w-16 h-24 rounded-t-lg mx-auto"></div><p class="text-xs font-bold mt-2 text-orange-600"><span data-i18n="s3_this">今年:</span> <span id="inf-price">103</span><span data-i18n="yen">円</span></p></div></div></div></div>
             <div id="slide-4" class="slide"><h2 class="text-3xl font-black mb-6 text-green-600"><i class="ph ph-math-operations"></i> <span data-i18n="s4_header">実質金利の計算</span></h2><div class="bg-gray-900 text-white p-8 rounded-3xl shadow-2xl text-center"><div class="flex justify-center gap-4 text-xl mb-8"><span class="text-blue-400" data-i18n="s4_n">名目</span><span>−</span><span class="text-orange-400" data-i18n="s4_i">インフレ</span><span>＝</span><span class="text-green-400 underline" data-i18n="s4_r">実質</span></div><div class="text-5xl font-black text-red-500" id="calc-res">-2.5%</div></div></div>
-            <div id="slide-5" class="slide"><h2 class="text-3xl font-black mb-6"><i class="ph ph-chart-bar text-blue-600"></i> <span data-i18n="s5_header">日本の現状</span></h2><div class="bg-white p-8 rounded-3xl shadow-sm"><div class="chart-box"><canvas id="japanChart"></canvas></div></div></div>
-
-            <div id="slide-6" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-blue-600"><i class="ph ph-currency-dollar"></i> <span data-i18n="s6_header">為替と円安・円高</span></h2>
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 text-center">
-                    <p class="text-lg mb-10 text-left text-gray-700" data-i18n="s6_body">為替とはお金の「交換レート」です。</p>
-                    <div class="grid grid-cols-2 gap-8">
-                        <div class="p-6 bg-red-50 rounded-2xl border border-red-100"><h4 class="font-black text-red-600 text-xl mb-2" data-i18n="s6_weak">円安</h4><p class="text-2xl font-black">1$=150円</p></div>
-                        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100"><h4 class="font-black text-blue-600 text-xl mb-2" data-i18n="s6_strong">円高</h4><p class="text-2xl font-black">1$=100円</p></div>
-                    </div>
-                </div>
-            </div>
-            <div id="slide-7" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-red-600"><i class="ph ph-arrows-left-right"></i> <span data-i18n="s7_header">なぜ「円安」なの？</span></h2>
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 text-center">
-                    <p class="text-lg mb-8 text-gray-700" data-i18n="s7_body">最大の理由は、日本とアメリカの「金利の差」です。</p>
-                    <div class="flex items-center justify-between bg-gray-50 p-8 rounded-3xl">
-                        <div>JAPAN<br>0.25%</div>
-                        <div class="flex-grow flex flex-col items-center mx-6"><div class="w-full h-1 bg-blue-200 relative"><div class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-blue-600 rounded-full animate-ping"></div></div><p class="text-[10px] mt-4 font-black text-blue-600" data-i18n="s7_move">お金が移動！</p></div>
-                        <div class="text-blue-600 font-bold">USA<br>5.0%</div>
-                    </div>
-                </div>
-            </div>
-            <div id="slide-8" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-orange-600"><i class="ph ph-shopping-bag"></i> <span data-i18n="s8_header">生活への影響</span></h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-red-50 p-6 rounded-3xl border border-red-100 text-sm space-y-2"><h4 class="font-bold text-red-600 mb-2" data-i18n="s8_bad">困ること</h4><p data-i18n="s8_b1">・輸入品、ガソリン高騰</p><p data-i18n="s8_b2">・iPhoneなどの値上がり</p></div>
-                    <div class="bg-green-50 p-6 rounded-3xl border border-green-100 text-sm space-y-2"><h4 class="font-bold text-green-600 mb-2" data-i18n="s8_good">良いこと</h4><p data-i18n="s8_g1">・輸出企業の利益増</p><p data-i18n="s8_g2">・外国人観光客の増加</p></div>
-                </div>
-            </div>
-            <div id="slide-9" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-blue-600"><i class="ph ph-buildings"></i> <span data-i18n="s9_header">各国の考え方</span></h2>
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 space-y-4 text-xs">
-                    <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100"><h5 class="font-bold mb-1">USA (FRB)</h5><p data-i18n="s9_usa">「物価高は敵！金利を上げて、インフレを抑える！」</p></div>
-                    <div class="p-4 bg-red-50 rounded-2xl border border-red-100"><h5 class="font-bold mb-1">JAPAN (BoJ)</h5><p data-i18n="s9_jp">「急な金利増はローンが大変。慎重に上げたい。」</p></div>
-                </div>
-            </div>
-            <div id="slide-10" class="slide">
-                <div class="bg-blue-600 text-white rounded-3xl p-12 shadow-2xl text-center">
-                    <h2 class="text-4xl font-black mb-8" data-i18n="s10_title">学びを未来へ</h2>
-                    <p class="text-blue-100 mb-12" data-i18n="s10_desc">お金の仕組みを知ることは、自分を守る第一歩です。</p>
-                    <div class="flex gap-4 justify-center"><button onclick="changeSlide(-9)" class="bg-blue-500 px-8 py-3 rounded-full font-bold">Restart</button><a href="../index.html" id="bottom-home" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold shadow-lg" data-i18n="s10_home">Home</a></div>
-                </div>
-            </div>
+            <div id="slide-5" class="slide"><h2 class="text-3xl font-black mb-6"><i class="ph ph-chart-bar text-blue-600"></i> <span data-i18n="s5_header">日本の現状</span></h2><div class="bg-white p-8 rounded-3xl shadow-sm border"><div class="chart-box"><canvas id="japanChart"></canvas></div></div></div>
+            <div id="slide-6" class="slide"><h2 class="text-3xl font-black mb-8 text-blue-600"><i class="ph ph-currency-dollar"></i> <span data-i18n="s6_header">為替と円安・円高</span></h2><div class="bg-white rounded-3xl p-8 shadow-sm border text-center"><p class="text-lg mb-10 text-left text-gray-700" data-i18n="s6_body">為替とはお金の「交換レート」です。</p><div class="grid grid-cols-2 gap-8"><div class="p-6 bg-red-50 rounded-2xl border-2 border-red-100"><h4 class="font-black text-red-600 text-xl mb-2" data-i18n="s6_weak">円安</h4><p class="text-2xl font-black">1$=150円</p></div><div class="p-6 bg-blue-50 rounded-2xl border-2 border-blue-100"><h4 class="font-black text-blue-600 text-xl mb-2" data-i18n="s6_strong">円高</h4><p class="text-2xl font-black">1$=100円</p></div></div></div></div>
+            <div id="slide-7" class="slide"><h2 class="text-3xl font-black mb-8 text-red-600"><i class="ph ph-arrows-left-right"></i> <span data-i18n="s7_header">なぜ「円安」なの？</span></h2><div class="bg-white rounded-3xl p-8 shadow-sm border text-center"><p class="text-lg mb-8 text-gray-700" data-i18n="s7_body">最大の理由は、日本とアメリカの「金利の差」です。</p><div class="flex items-center justify-between bg-gray-50 p-8 rounded-3xl"><div>JAPAN<br>0.25%</div><div class="flex-grow flex flex-col items-center mx-6"><div class="w-full h-1 bg-blue-200 relative"><div class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-blue-600 rounded-full animate-ping"></div></div><p class="text-[10px] mt-4 font-black text-blue-600" data-i18n="s7_move">お金が移動！</p></div><div class="text-blue-600 font-bold">USA<br>5.0%</div></div></div></div>
+            <div id="slide-8" class="slide"><h2 class="text-3xl font-black mb-8 text-orange-600"><i class="ph ph-shopping-bag"></i> <span data-i18n="s8_header">生活への影響</span></h2><div class="grid grid-cols-2 gap-4"><div class="bg-red-50 p-6 rounded-3xl border border-red-100 text-sm space-y-2"><h4 class="font-bold text-red-600 mb-2" data-i18n="s8_bad">困ること</h4><p data-i18n="s8_b1">・輸入品、ガソリン高騰</p><p data-i18n="s8_b2">・iPhoneなどの値上がり</p></div><div class="bg-green-50 p-6 rounded-3xl border border-green-100 text-sm space-y-2"><h4 class="font-bold text-green-600 mb-2" data-i18n="s8_good">良いこと</h4><p data-i18n="s8_g1">・輸出企業の利益増</p><p data-i18n="s8_g2">・外国人観光客の増加</p></div></div></div>
+            <div id="slide-9" class="slide"><h2 class="text-3xl font-black mb-8 text-blue-600"><i class="ph ph-buildings"></i> <span data-i18n="s9_header">各国の考え方</span></h2><div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 space-y-4 text-xs"><div class="p-4 bg-blue-50 rounded-2xl border border-blue-100"><h5 class="font-bold mb-1">USA (FRB)</h5><p data-i18n="s9_usa">「物価高は敵！金利を上げて、インフレを抑える！」</p></div><div class="p-4 bg-red-50 rounded-2xl border border-red-100"><h5 class="font-bold mb-1">JAPAN (BoJ)</h5><p data-i18n="s9_jp">「急な金利増はローンが大変。慎重に上げたい。」</p></div></div></div>
+            <div id="slide-10" class="slide"><div class="bg-blue-600 text-white rounded-3xl p-12 shadow-2xl text-center"><h2 class="text-4xl font-black mb-8" data-i18n="s10_title">学びを未来へ</h2><p class="text-blue-100 mb-12" data-i18n="s10_desc">お金の仕組みを知ることは、自分を守る第一歩です。</p><div class="flex gap-4 justify-center"><button onclick="changeSlide(-9)" class="bg-blue-500 px-8 py-3 rounded-full font-bold">Restart</button><a href="../index.html" id="bottom-home" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold shadow-lg" data-i18n="s10_home">Home</a></div></div></div>
         </div>
     </main>
 
