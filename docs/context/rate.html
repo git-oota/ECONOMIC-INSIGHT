@@ -55,26 +55,25 @@
             <div id="slide-2" class="slide">
                 <h2 class="text-3xl font-black mb-8 flex items-center gap-3"><i class="ph ph-globe-hemisphere-east text-blue-600 text-4xl"></i> <span data-i18n="s2_header">金利が高い国、低い国</span></h2>
                 <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 space-y-6">
-                    <p class="text-lg leading-relaxed font-medium" data-i18n="s2_intro">国によって金利が違うのはなぜ？「先進国」と「発展途上国」という視点で見てみましょう。</p>
+                    <p class="text-lg leading-relaxed font-medium" data-i18n="s2_intro">国によって金利が違うのはなぜ？</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
-                            <h4 class="font-black text-blue-700 text-lg mb-3" data-i18n="s2_developed_title">先進国（例：日本、ドイツ）</h4>
-                            <p class="text-sm leading-relaxed" data-i18n="s2_developed_body">経済がすでに成熟し、安定しています。急な成長は見込めないため、企業がお金を借りやすいよう金利は低く抑えられる傾向があります。</p>
+                            <h4 class="font-black text-blue-700 text-lg mb-3" data-i18n="s2_developed_title">先進国</h4>
+                            <p class="text-sm leading-relaxed" data-i18n="s2_developed_body">経済が安定。金利は低く抑えられやすい傾向があります。</p>
                         </div>
                         <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
-                            <h4 class="font-black text-red-700 text-lg mb-3" data-i18n="s2_emerging_title">発展途上国（例：ブラジル、トルコ）</h4>
-                            <p class="text-sm leading-relaxed" data-i18n="s2_emerging_body">これから急激に成長しようとしている国です。世界から建設資金などを集めるため、高い利子を約束してお金を呼び込みます。</p>
+                            <h4 class="font-black text-red-700 text-lg mb-3" data-i18n="s2_emerging_title">発展途上国</h4>
+                            <p class="text-sm leading-relaxed" data-i18n="s2_emerging_body">成長資金を集めるため、高い利子を約束してお金を呼び込みます。</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div id="slide-3" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-orange-600"><i class="ph ph-trend-up text-4xl"></i> <span data-i18n="s3_header">インフレ ＝ 前年度からの物価上昇率</span></h2>
+                <h2 class="text-3xl font-black mb-8 text-orange-600"><i class="ph ph-trend-up text-4xl"></i> <span data-i18n="s3_header">インフレ率の仕組み</span></h2>
                 <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100">
-                    <p class="text-lg mb-8 leading-relaxed text-gray-700" data-i18n="s3_body">インフレ率3％とは、<strong>「去年100円だったものが今年は103円になった」</strong>という、1年間の物価の変化のスピードを表します。</p>
+                    <p class="text-lg mb-8 leading-relaxed text-gray-700" data-i18n="s3_body">インフレ率3％とは、「去年100円だったものが今年は103円になった」というスピードを表します。</p>
                     <div class="bg-orange-50 p-10 rounded-3xl text-center border-2 border-orange-100">
-                        <label class="block font-black text-orange-700 mb-6 uppercase tracking-tighter" data-i18n="s3_label">物価上昇シミュレーター（前年度比）</label>
                         <input type="range" id="inf-range" min="0" max="20" step="1" value="3" class="w-full h-3 bg-orange-200 rounded-lg appearance-none mb-12">
                         <div class="flex justify-around items-end h-32">
                             <div class="text-center">
@@ -92,146 +91,85 @@
             </div>
 
             <div id="slide-4" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-green-600"><i class="ph ph-car-profile text-4xl"></i> <span data-i18n="s4_header">「実質金利」貯金の罠を見抜こう</span></h2>
+                <h2 class="text-3xl font-black mb-8 text-green-600"><i class="ph ph-car-profile text-4xl"></i> <span data-i18n="s4_header">「実質金利」貯金の罠</span></h2>
                 <div class="bg-gray-900 text-white rounded-[2.5rem] p-10 shadow-2xl space-y-8">
-                    <p class="text-gray-400 leading-relaxed" data-i18n="s4_body">銀行にお金を預けて数字が増えても、物の値段がそれ以上に上がると、買えるものが減ってしまいます。これを預ける人の視点で見てみましょう。</p>
-                    <div class="bg-gray-800 p-8 rounded-3xl border border-gray-700 relative overflow-hidden">
-                        <div class="absolute top-0 right-0 p-4 opacity-10"><i class="ph ph-car text-9xl"></i></div>
-                        <h4 class="text-blue-400 font-black mb-6 flex items-center gap-2 text-xl" data-i18n="s4_example_title">Case: 100万円の車を買いたい</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center relative z-10">
-                            <div class="p-6 bg-gray-900/80 rounded-2xl border border-blue-500/30">
-                                <p class="text-xs text-gray-500 font-bold mb-2" data-i18n="s4_saving">1年間の貯金 (金利 2%)</p>
-                                <p class="text-4xl font-black text-blue-400">102<span class="text-sm">万円</span></p>
-                            </div>
-                            <div class="p-6 bg-gray-900/80 rounded-2xl border border-orange-500/30">
-                                <p class="text-xs text-gray-500 font-bold mb-2" data-i18n="s4_price">車の値段 (インフレ 5%)</p>
-                                <p class="text-4xl font-black text-orange-400">105<span class="text-sm">万円</span></p>
-                            </div>
+                    <p class="text-gray-400 leading-relaxed" data-i18n="s4_body">物の値段が上がると、買えるものが減ってしまいます。</p>
+                    <div class="bg-gray-800 p-8 rounded-3xl border border-gray-700 text-center">
+                        <div class="grid grid-cols-2 gap-8">
+                            <div><p class="text-xs text-gray-500" data-i18n="s4_saving">貯金 (2%)</p><p class="text-3xl font-black text-blue-400">102万円</p></div>
+                            <div><p class="text-xs text-gray-500" data-i18n="s4_price">車の値上 (5%)</p><p class="text-3xl font-black text-orange-400">105万円</p></div>
                         </div>
-                        <div class="mt-8 bg-red-600/20 border border-red-500/50 p-4 rounded-xl text-center">
-                            <p class="text-red-400 font-black text-lg" data-i18n="s4_result"><i class="ph ph-warning-circle"></i> お金は増えたのに、車が買えなくなった！</p>
-                            <p class="text-xs text-gray-400 mt-1" data-i18n="s4_real_val">これが「実質金利マイナス」の恐ろしさです。</p>
+                        <div class="mt-8 bg-red-600/20 p-4 rounded-xl">
+                            <p class="text-red-400 font-black" data-i18n="s4_result">お金は増えたのに、車が買えない！</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div id="slide-5" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-blue-600"><i class="ph ph-shield-star text-4xl"></i> <span data-i18n="s5_header">自分の資産を守る「防衛策」</span></h2>
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 space-y-6">
-                    <p class="text-lg leading-relaxed text-gray-700" data-i18n="s5_body">実質金利がマイナスの時代、ただ現金を持っているだけでは価値が削られます。</p>
-                    <div class="chart-box">
+                <h2 class="text-3xl font-black mb-8 text-blue-600"><i class="ph ph-shield-star text-4xl"></i> <span data-i18n="s5_header">資産を守る防衛策</span></h2>
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                    <div class="chart-box mb-6">
                         <canvas id="japanChart"></canvas>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
-                        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
-                            <h4 class="font-black text-blue-800 text-lg mb-2" data-i18n="s5_inv_title">投資信託</h4>
-                            <p class="text-xs leading-relaxed" data-i18n="s5_inv_body">世界中に分散投資。世界経済の成長に合わせて価値を守ります。</p>
-                        </div>
-                        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
-                            <h4 class="font-black text-green-800 text-lg mb-2" data-i18n="s5_stock_title">個別株式</h4>
-                            <p class="text-xs leading-relaxed" data-i18n="s5_stock_body">物価が上がる時、会社の売上も増えるため、株の価値も上がりやすい性質があります。</p>
-                        </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-blue-50 rounded-xl border border-blue-100"><h4 class="font-black text-blue-800" data-i18n="s5_inv_title">投資信託</h4><p class="text-xs" data-i18n="s5_inv_body">世界に分散して価値を守る。</p></div>
+                        <div class="p-4 bg-green-50 rounded-xl border border-green-100"><h4 class="font-black text-green-800" data-i18n="s5_stock_title">個別株式</h4><p class="text-xs" data-i18n="s5_stock_body">インフレに強い資産。</p></div>
                     </div>
                 </div>
             </div>
 
             <div id="slide-6" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-blue-600"><i class="ph ph-whale text-4xl"></i> <span data-i18n="s6_header">為替を動かす「クジラ」たちの正体</span></h2>
-                <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 space-y-6 text-sm">
-                    <p class="text-lg leading-relaxed font-bold" data-i18n="s6_body">為替レート（円高・円安）は、巨大な力を持つ「クジラ」たちが動かしています。</p>
+                <h2 class="text-3xl font-black mb-8 text-blue-600"><i class="ph ph-whale text-4xl"></i> <span data-i18n="s6_header">為替を動かす「クジラ」</span></h2>
+                <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 space-y-6">
                     <div class="space-y-4">
-                        <div class="flex items-center gap-5 p-5 bg-blue-50 rounded-2xl border border-blue-100">
-                            <div class="text-4xl">🏢</div>
-                            <div class="flex-1">
-                                <h4 class="font-black text-blue-900" data-i18n="s6_whale1_title">中央銀行</h4>
-                                <p data-i18n="s6_whale1_body">日銀やアメリカのFRB。金利を決める支配者です。</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-5 p-5 bg-red-50 rounded-2xl border border-red-100">
-                            <div class="text-4xl">🦈</div>
-                            <div class="flex-1">
-                                <h4 class="font-black text-red-900" data-i18n="s6_whale2_title">ヘッジファンド</h4>
-                                <p data-i18n="s6_whale2_body">儲けるために最も有利な通貨へ一気に資金を移動させます。</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-gray-900 text-gray-300 rounded-2xl text-center italic">
-                        <p data-i18n="s6_motive">クジラの思考：「わずかな金利差でも、数兆円動かせば一気に数百億円儲かるぞ！」</p>
+                        <div class="flex items-center gap-4 p-4 bg-blue-50 rounded-2xl"><div class="text-3xl">🏢</div><div><h4 class="font-black text-blue-900" data-i18n="s6_whale1_title">中央銀行</h4><p class="text-xs" data-i18n="s6_whale1_body">金利を決めるルールメーカー。</p></div></div>
+                        <div class="flex items-center gap-4 p-4 bg-red-50 rounded-2xl"><div class="text-3xl">🦈</div><div><h4 class="font-black text-red-900" data-i18n="s6_whale2_title">ヘッジファンド</h4><p class="text-xs" data-i18n="s6_whale2_body">有利な通貨へ一気に資金を移動。</p></div></div>
                     </div>
                 </div>
             </div>
 
             <div id="slide-7" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-blue-600"><i class="ph ph-flag-usa text-4xl"></i> <span data-i18n="s7_header">金利への「日米の最新の考え方」</span></h2>
-                <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 space-y-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
-                        <div class="p-6 bg-blue-50 rounded-2xl border-t-8 border-blue-500">
-                            <h5 class="font-black text-blue-800 text-lg mb-2 uppercase">USA (FRB)</h5>
-                            <p class="font-bold text-blue-600 mb-2" data-i18n="s7_usa_focus">景気を冷やさない（金利の正常化）</p>
-                            <p class="leading-relaxed text-xs" data-i18n="s7_usa_body">インフレが落ち着き、現在は利下げサイクルへ。トランプ政権も成長のために低金利を好む傾向にあります。</p>
+                <h2 class="text-3xl font-black mb-8 text-blue-600"><i class="ph ph-flag-usa text-4xl"></i> <span data-i18n="s7_header">金利への最新スタンス</span></h2>
+                <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="p-4 bg-blue-50 rounded-xl border-t-4 border-blue-500">
+                            <h5 class="font-black text-blue-800">USA (FRB)</h5>
+                            <p class="text-xs mt-2" data-i18n="s7_usa_body">利下げにより景気と成長を支えるフェーズに入っています。</p>
                         </div>
-                        <div class="p-6 bg-red-50 rounded-2xl border-t-8 border-red-500">
-                            <h5 class="font-black text-red-800 text-lg mb-2 uppercase">JAPAN (BoJ)</h5>
-                            <p class="font-bold text-red-600 mb-2" data-i18n="s7_jp_focus">円安と物価高のバランスに悩む</p>
-                            <p class="leading-relaxed text-xs" data-i18n="s7_jp_body">あまりに金利が低いと円安が進みすぎるため、慎重に金利を上げようと調整しています。</p>
+                        <div class="p-4 bg-red-50 rounded-xl border-t-4 border-red-500">
+                            <h5 class="font-black text-red-800">JAPAN (BoJ)</h5>
+                            <p class="text-xs mt-2" data-i18n="s7_jp_body">円安を止めるため、慎重に金利を上げる調整をしています。</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div id="slide-8" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-green-600"><i class="ph ph-wave-sine text-4xl"></i> <span data-i18n="s8_header">リスクとは「振り幅」のこと</span></h2>
-                <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 space-y-6">
-                    <p class="text-lg leading-relaxed" data-i18n="s8_body">投資のリスクは単なる損ではなく、価格の「振り幅」を指します。</p>
-                    <div class="flex flex-col md:flex-row gap-6 items-center">
-                        <div class="flex-1 space-y-4">
-                            <div class="p-4 bg-green-50 rounded-xl border-l-4 border-green-500">
-                                <h5 class="font-black text-green-800" data-i18n="s8_long_title">長期的な視点</h5>
-                                <p class="text-xs" data-i18n="s8_long_body">20年単位で見れば、経済の波は成長と共に上に移動してきました。</p>
-                            </div>
-                            <div class="p-4 bg-orange-50 rounded-xl border-l-4 border-orange-500">
-                                <h5 class="font-black text-orange-800" data-i18n="s8_no_inv_title">投資しないリスク</h5>
-                                <p class="text-xs" data-i18n="s8_no_inv_body">現金のみで持つことは、インフレで自分の購買力を減らし続けるリスクです。</p>
-                            </div>
-                        </div>
-                    </div>
+                <h2 class="text-3xl font-black mb-8 text-green-600"><i class="ph ph-wave-sine text-4xl"></i> <span data-i18n="s8_header">リスクは「振り幅」</span></h2>
+                <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 space-y-4">
+                    <div class="p-4 bg-green-50 rounded-xl"><h5 class="font-black" data-i18n="s8_long_title">長期的な視点</h5><p class="text-xs" data-i18n="s8_long_body">20年で見れば経済は右肩上がり。</p></div>
+                    <div class="p-4 bg-orange-50 rounded-xl"><h5 class="font-black" data-i18n="s8_no_inv_title">投資しないリスク</h5><p class="text-xs" data-i18n="s8_no_inv_body">現金の価値が目減りし続けるリスク。</p></div>
                 </div>
             </div>
 
             <div id="slide-9" class="slide">
-                <h2 class="text-3xl font-black mb-8 text-indigo-600"><i class="ph ph-arrows-left-right text-4xl"></i> <span data-i18n="s9_header">なぜ「金利」で「為替」が動くの？</span></h2>
-                <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100">
-                    <div class="flex flex-col items-center justify-center space-y-8 py-4">
-                        <div class="flex items-center gap-12">
-                            <div class="text-center">
-                                <div class="bg-blue-600 text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl font-black mb-2 mx-auto">＄</div>
-                                <p class="font-bold text-blue-700" data-i18n="s9_high">金利が高い国</p>
-                                <p class="text-xs" data-i18n="s9_high_desc">預けると儲かる！</p>
-                            </div>
-                            <i class="ph ph-arrow-fat-left text-5xl text-gray-300 animate-pulse"></i>
-                            <div class="text-center">
-                                <div class="bg-red-500 text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl font-black mb-2 mx-auto">¥</div>
-                                <p class="font-bold text-red-700" data-i18n="s9_low">金利が低い国</p>
-                                <p class="text-xs" data-i18n="s9_low_desc">預けても増えない…</p>
-                            </div>
-                        </div>
-                        <div class="bg-indigo-50 p-6 rounded-2xl border border-indigo-100 w-full text-center">
-                            <p class="text-indigo-900 font-black text-xl mb-2" data-i18n="s9_result_title">結論：お金は「金利が高い方」へ流れる！</p>
-                            <p class="text-sm text-indigo-700" data-i18n="s9_result_body">みんなが「円」を売って「ドル」を買うから、ドルの価値が上がり（ドル高）、円の価値が下がる（円安）んだね。</p>
-                        </div>
+                <h2 class="text-3xl font-black mb-8 text-indigo-600"><i class="ph ph-arrows-left-right text-4xl"></i> <span data-i18n="s9_header">なぜ「金利」で「為替」が動く？</span></h2>
+                <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 text-center">
+                    <div class="flex items-center justify-center gap-8 mb-8">
+                        <div><div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-2">＄</div><p class="text-xs font-bold" data-i18n="s9_high">金利が高い</p></div>
+                        <i class="ph ph-arrow-fat-left text-3xl text-gray-300"></i>
+                        <div><div class="bg-red-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-2">¥</div><p class="text-xs font-bold" data-i18n="s9_low">金利が低い</p></div>
                     </div>
+                    <p class="bg-indigo-50 p-4 rounded-xl text-indigo-900 font-black" data-i18n="s9_result_body">お金は金利が高い方へ流れるため、円が売られドルが買われます（円安）。</p>
                 </div>
             </div>
 
             <div id="slide-10" class="slide text-center">
-                <div class="bg-blue-600 text-white rounded-[3rem] p-16 shadow-2xl space-y-12">
-                    <h2 class="text-5xl font-black tracking-tight" data-i18n="s10_title">学びを未来へ</h2>
-                    <p class="text-blue-100 text-lg leading-relaxed font-medium" data-i18n="s10_desc">お金の仕組みを知ることは、自分と大切な人を守る最強の武器になります。<br>今日学んだことを、これからのニュースを見る時のヒントにしてください。</p>
-                    <div class="flex flex-col sm:flex-row gap-6 justify-center pt-8">
-                        <button onclick="changeSlide(-(totalSlides-1))" class="bg-blue-500 hover:bg-blue-400 text-white px-10 py-4 rounded-full font-black text-lg transition-all border-b-4 border-blue-700 active:translate-y-1 active:border-b-0 shadow-lg">RESTART</button>
-                        <a href="../index.html" id="bottom-home" class="bg-white hover:bg-gray-50 text-blue-600 px-10 py-4 rounded-full font-black text-lg transition-all border-b-4 border-gray-200 active:translate-y-1 active:border-b-0 shadow-lg" data-i18n="s10_home">Back Home</a>
-                    </div>
+                <div class="bg-blue-600 text-white rounded-[3rem] p-16 shadow-2xl">
+                    <h2 class="text-5xl font-black mb-8" data-i18n="s10_title">学びを未来へ</h2>
+                    <p class="text-blue-100 mb-12" data-i18n="s10_desc">お金の仕組みは、自分を守る武器になります。</p>
+                    <button onclick="changeSlide(-(totalSlides-1))" class="bg-blue-500 px-10 py-4 rounded-full font-black text-lg shadow-lg">RESTART</button>
                 </div>
             </div>
         </div>
@@ -241,27 +179,27 @@
         const i18n = {
             ja: {
                 nav_home: "TOP", nav_title: "経済セミナー", s1_tag: "集中講義", s1_title: "お金の価値は<br><span class='text-blue-600'>「金利」</span>と<span class='text-orange-500'>「為替」</span>で決まる", s1_desc: "「100円」は明日も同じ価値でしょうか？<br>中学生のうちに知っておきたい、世界を動かすお金のルール。",
-                s2_header: "金利が高い国、低い国", s2_intro: "国によって金利が違うのはなぜ？「先進国」と「発展途上国」という視点で見てみましょう。", s2_developed_title: "先進国（例：日本、ドイツ）", s2_developed_body: "経済が安定し成熟している国。金利は低く抑えられやすい傾向があります。", s2_emerging_title: "発展途上国（例：トルコなど）", s2_emerging_body: "急成長中の国。世界からお金を呼び込むため、高い金利を約束します。",
-                s3_header: "インフレ ＝ 前年度からの物価上昇率", s3_body: "インフレ率3％とは、「去年100円だったものが今年は103円になった」という、1年間の変化のスピードを表します。", s3_label: "物価上昇シミュレーター（前年度比）", s3_last_year: "去年: 100円", s3_this_year: "今年:", yen: "円",
-                s4_header: "「実質金利」貯金の罠を見抜こう", s4_body: "銀行にお金を預けて数字が増えても、物の値段がそれ以上に上がると、買えるものが減ってしまいます。", s4_example_title: "Case: 100万円の車を買いたい", s4_saving: "1年間の貯金 (金利 2%)", s4_price: "車の値段 (インフレ 5%)", s4_result: "貯金は増えたのに、車が買えなくなった！", s4_real_val: "これが「実質金利マイナス」の恐ろしさです。",
-                s5_header: "自分の資産を守る「防衛策」", s5_body: "ただ現金を持っているだけでは価値が削られます。賢い国民がとっている防衛策を紹介します。", s5_inv_title: "投資信託", s5_inv_body: "世界中に分散投資。世界全体の成長に合わせて価値を守ります。", s5_stock_title: "個別株式", s5_stock_body: "物価が上がる時、株の価値も上がりやすい性質があります。",
-                s6_header: "為替を動かす「クジラ」たちの正体", s6_body: "為替レート（円高・円安）は、巨大な力を持つ「クジラ」たちが動かしています。", s6_whale1_title: "中央銀行", s6_whale1_body: "日銀やアメリカのFRB。金利を決める支配者です。", s6_whale2_title: "ヘッジファンド", s6_whale2_body: "投資のプロ集団。儲けるために有利な通貨へ一気に資金を移動させます。", s6_motive: "クジラの思考：「わずかな金利差でも、数兆円動かせば一瞬で数百億円の利益になるぞ！」",
-                s7_header: "金利への「日米の最新の考え方」", s7_usa_focus: "景気を冷やさない（金利の正常化）", s7_usa_body: "以前はインフレ退治に必死でしたが、今は景気との両立を目指して利下げ段階に。トランプ政権も低金利を好みます。", s7_jp_focus: "円安と物価高のバランスに悩む", s7_jp_body: "日本は極端な円安を止めるため、慎重に金利を上げようとする難しい調整をしています。",
-                s8_header: "リスクとは「振り幅」のこと", s8_body: "投資のリスクは単なる損ではなく、価格の「振り幅」を指します。", s8_long_title: "長期的な視点", s8_long_body: "20年単位で見れば、経済の波は成長と共に上に移動してきました。", s8_no_inv_title: "投資しないリスク", s8_no_inv_body: "現金のみで持つことは、インフレで自分の購買力を減らし続けるリスクです。",
-                s9_header: "なぜ「金利」で「為替」が動くの？", s9_high: "金利が高い国（米）", s9_high_desc: "預けると儲かる！", s9_low: "金利が低い国（日）", s9_low_desc: "預けても増えない…", s9_result_title: "結論：お金は「金利が高い方」へ流れる！", s9_result_body: "みんなが「円」を売って「ドル」を買うから、ドルの価値が上がり（ドル高）、円の価値が下がる（円安）んだね。",
-                s10_title: "学びを未来へ", s10_desc: "お金の仕組みを知ることは、自分と大切な人を守る最強の武器になります。", s10_home: "Back Home"
+                s2_header: "金利が高い国、低い国", s2_intro: "国によって金利が違うのはなぜ？", s2_developed_title: "先進国", s2_developed_body: "経済が安定。金利は低く抑えられやすい傾向があります。", s2_emerging_title: "発展途上国", s2_emerging_body: "成長資金を集めるため、高い利子を約束してお金を呼び込みます。",
+                s3_header: "インフレ率の仕組み", s3_body: "インフレ率3％とは、「去年100円だったものが今年は103円になった」というスピードを表します。", s3_last_year: "去年: 100円", yen: "円",
+                s4_header: "「実質金利」貯金の罠", s4_body: "物の値段が上がると、買えるものが減ってしまいます。", s4_saving: "貯金 (2%)", s4_price: "車の値上 (5%)", s4_result: "お金は増えたのに、車が買えない！",
+                s5_header: "資産を守る防衛策", s5_body: "ただ現金を持っているだけでは価値が削られます。", s5_inv_title: "投資信託", s5_inv_body: "世界に分散して価値を守る。", s5_stock_title: "個別株式", s5_stock_body: "インフレに強い資産。",
+                s6_header: "為替を動かす「クジラ」", s6_whale1_title: "中央銀行", s6_whale1_body: "金利を決めるルールメーカー。", s6_whale2_title: "ヘッジファンド", s6_whale2_body: "有利な通貨へ一気に資金を移動。",
+                s7_header: "金利への最新スタンス", s7_usa_body: "利下げにより景気と成長を支えるフェーズに入っています。トランプ政権も低金利を好む傾向にあります。", s7_jp_body: "円安を止めるため、慎重に金利を上げる難しい調整をしています。",
+                s8_header: "リスクは「振り幅」", s8_long_title: "長期的な視点", s8_long_body: "20年で見れば経済は右肩上がり。", s8_no_inv_title: "投資しないリスク", s8_no_inv_body: "現金の価値が目減りし続けるリスク。",
+                s9_header: "なぜ「金利」で「為替」が動く？", s9_high: "金利が高い（米）", s9_low: "金利が低い（日）", s9_result_body: "お金は金利が高い方へ流れるため、円が売られドルが買われます（円安）。",
+                s10_title: "学びを未来へ", s10_desc: "お金の仕組みは、自分を守る武器になります。", s10_home: "Back Home"
             },
             en: {
-                nav_home: "HOME", nav_title: "ECON SEMINAR", s1_tag: "Special Lecture", s1_title: "Money Value is set by<br><span class='text-blue-600'>Interest</span> & <span class='text-orange-500'>Forex</span>", s1_desc: "Is '100 Yen' worth the same tomorrow?<br>Learn the master rules that move the world.",
-                s2_header: "High Rate vs Low Rate Nations", s2_intro: "Why do rates differ? Let's look through 'Developed' vs 'Emerging' views.", s2_developed_title: "Developed (e.g., Japan, Germany)", s2_developed_body: "Mature and stable economies. Rates tend to be kept low.", s2_emerging_title: "Emerging (e.g., Turkey, Brazil)", s2_emerging_body: "Fast-growing nations. They offer high rates to attract capital.",
-                s3_header: "Inflation = Rising Price Rate (YoY)", s3_body: "An inflation rate of 3% means 'what cost 100 last year now costs 103'.", s3_label: "Price Increase Simulator (YoY)", s3_last_year: "Last Year: 100", s3_this_year: "This Year:", yen: "Yen",
-                s4_header: "The Trap: 'Real Interest Rate'", s4_body: "Even if your balance increases, you lose money if prices rise faster.", s4_example_title: "Case: Buying a 1M Yen Car", s4_saving: "1yr Savings (2% Int.)", s4_price: "Car Price (5% Inf.)", s4_result: "Savings grew, but you can't buy the car!", s4_real_val: "This is the 'Negative Real Rate' trap.",
-                s5_header: "Strategies to Protect Assets", s5_body: "Holding cash alone erodes value. Here is how smart people defend wealth.", s5_inv_title: "Index Funds", s5_inv_body: "Global diversification. Protects money aligned with world growth.", s5_stock_title: "Individual Stocks", s5_stock_body: "Stocks tend to hedge against inflation as company values rise.",
-                s6_header: "FX Market Movers: 'The Whales'", s6_body: "Exchange rates are moved by institutions with enormous power.", s6_whale1_title: "Central Banks", s6_whale1_body: "The Fed or BoJ. They are the rule-makers of interest rates.", s6_whale2_title: "Hedge Funds", s6_whale2_body: "Profit-seeking pros moving trillions to high-profit currencies.", s6_motive: "Whale Logic: 'Moving trillions to high-rate nations earns us billions instantly!'",
-                s7_header: "Japan vs USA: Latest Strategies", s7_usa_focus: "Maintaining Growth (Rate Normalization)", s7_usa_body: "Fed is cutting rates to balance growth. Trump also favors lower rates.", s7_jp_focus: "Balancing Weak Yen & Inflation", s7_jp_body: "Japan is carefully raising rates to prevent the Yen from getting too weak.",
-                s8_header: "Risk is 'Volatility'", s8_body: "Risk is not just losing money, but the 'range' of price movements.", s8_long_title: "Long-term View", s8_long_body: "Economies have grown over 20-year periods despite recessions.", s8_no_inv_title: "Risk of Not Investing", s8_no_inv_body: "Holding only cash erodes purchasing power, which is a high risk.",
-                s9_header: "Why do Rates move Forex?", s9_high: "High Rate Nation (USA)", s9_high_desc: "More profit for savers!", s9_low: "Low Rate Nation (JP)", s9_low_desc: "Hardly any profit...", s9_result_title: "Conclusion: Money flows to Higher Rates!", s9_result_body: "As people sell Yen to buy Dollars, the Dollar gains value (Strong Dollar) while the Yen loses (Weak Yen).",
-                s10_title: "Learn for Future", s10_desc: "Understanding money is the strongest weapon to protect your loved ones.", s10_home: "Back Home"
+                nav_home: "HOME", nav_title: "ECON SEMINAR", s1_tag: "SPECIAL", s1_title: "Value of Money: <br><span class='text-blue-600'>Rates</span> & <span class='text-orange-500'>Forex</span>", s1_desc: "Is '100 Yen' worth the same tomorrow?<br>Learn the master rules that move the world.",
+                s2_header: "High vs Low Rate Nations", s2_intro: "Why do rates differ by nation?", s2_developed_title: "Developed", s2_developed_body: "Stable economies. Rates tend to be kept low for borrowers.", s2_emerging_title: "Emerging", s2_emerging_body: "Growth-focused. They offer high rates to attract global capital.",
+                s3_header: "How Inflation Works", s3_body: "A 3% rate means what cost 100 last year now costs 103.", s3_last_year: "Last Year: 100", yen: "Yen",
+                s4_header: "The 'Real Rate' Trap", s4_body: "If prices rise faster than savings, your purchasing power drops.", s4_saving: "Savings (2%)", s4_price: "Car Price (5%)", s4_result: "Money grew, but you can't buy the car!",
+                s5_header: "Protecting Your Assets", s5_body: "Holding cash alone erodes your wealth over time.", s5_inv_title: "Index Funds", s5_inv_body: "Global diversification to protect value.", s5_stock_title: "Individual Stocks", s5_stock_body: "Asset class that tends to hedge inflation.",
+                s6_header: "FX 'Whales'", s6_whale1_title: "Central Banks", s6_whale1_body: "The Fed or BoJ. They are the rule-makers.", s6_whale2_title: "Hedge Funds", s6_whale2_body: "Moving trillions to the most profitable currencies.",
+                s7_header: "Latest Strategies", s7_usa_body: "US is cutting rates to balance growth. Trump admin also favors lower rates.", s7_jp_body: "Japan is carefully raising rates to prevent the Yen from getting too weak.",
+                s8_header: "Risk is 'Volatility'", s8_long_title: "Long-term View", s8_long_body: "Economies have grown over 20-year periods despite recessions.", s8_no_inv_title: "Risk of Not Investing", s8_no_inv_body: "The risk of your purchasing power eroding with cash only.",
+                s9_header: "Why do Rates move Forex?", s9_high: "High Rate (USA)", s9_low: "Low Rate (JP)", s9_result_body: "Money flows to higher returns, so Yen is sold for Dollars (Weak Yen).",
+                s10_title: "Learn for Future", s10_desc: "Understanding money is your strongest weapon for the future.", s10_home: "Back Home"
             }
         };
 
@@ -290,20 +228,8 @@
             document.getElementById('progress').style.width = `${(currentSlide / totalSlides) * 100}%`;
             document.getElementById('prev-btn').disabled = currentSlide === 1;
             document.getElementById('next-btn').disabled = currentSlide === totalSlides;
-            if (currentSlide === 5) {
-                // DOMが描画されるのを少し待ってからチャートを初期化
-                setTimeout(renderChart, 10);
-            }
+            if (currentSlide === 5) setTimeout(renderChart, 10);
         }
-
-        document.getElementById('prev-btn').onclick = () => changeSlide(-1);
-        document.getElementById('next-btn').onclick = () => changeSlide(1);
-
-        document.getElementById('inf-range').oninput = (e) => {
-            const val = parseFloat(e.target.value);
-            document.getElementById('inf-price').innerText = Math.round(100 * (1 + val/100));
-            document.getElementById('inf-bar').style.height = (24 + (val * 4)) + 'px';
-        };
 
         function renderChart(forceUpdate = false) {
             const canvas = document.getElementById('japanChart');
@@ -311,9 +237,7 @@
             const ctx = canvas.getContext('2d');
             const lang = document.getElementById('langSet').value;
             const labels = lang === 'ja' ? ['銀行金利', 'インフレ率', '実質利回り'] : ['Int. Rate', 'Inflation', 'Real Yield'];
-            
             if (chartInstance) chartInstance.destroy();
-            
             chartInstance = new Chart(ctx, { 
                 type: 'bar', 
                 data: { labels: labels, datasets: [{ data: [0.25, 3.0, -2.75], backgroundColor: ['#3b82f6', '#f97316', '#ef4444'], borderRadius: 12 }] }, 
@@ -321,9 +245,29 @@
             });
         }
 
+        // 自動言語判別ロジック
         window.onload = () => {
+            const params = new URLSearchParams(window.location.search);
+            let initialLang = params.get('lang');
+
+            if (!initialLang) {
+                // ブラウザの言語を確認
+                const browserLang = navigator.language || navigator.userLanguage;
+                // 日本語(ja)以外はすべてデフォルトで英語(en)にする
+                initialLang = browserLang.startsWith('ja') ? 'ja' : 'en';
+            }
+
+            document.getElementById('langSet').value = initialLang;
             updateSlide();
             toggleLanguage();
+        };
+
+        document.getElementById('prev-btn').onclick = () => changeSlide(-1);
+        document.getElementById('next-btn').onclick = () => changeSlide(1);
+        document.getElementById('inf-range').oninput = (e) => {
+            const val = parseFloat(e.target.value);
+            document.getElementById('inf-price').innerText = Math.round(100 * (1 + val/100));
+            document.getElementById('inf-bar').style.height = (24 + (val * 4)) + 'px';
         };
     </script>
 </body>
