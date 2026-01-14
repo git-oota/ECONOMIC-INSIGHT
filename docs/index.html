@@ -109,7 +109,7 @@
             }
 
             // リンク先URLに言語パラメータ (?lang=ja または ?lang=en) を追加する
-            cconst rateLink = document.querySelector('a[href*="rate.html"]');
+            const rateLink = document.querySelector('a[href*="rate.html"]');
             if (rateLink) {
                 rateLink.href = `context/rate.html?lang=${lang}`;
             }
