@@ -62,9 +62,10 @@
                     <p class="text-lg text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed" data-i18n="s1_desc">
                         「100円」は明日も同じ価値でしょうか？<br>ニュースで話題の経済のナゾを解き明かそう。
                     </p>
-                    <div class="text-blue-400 font-bold text-sm animate-pulse">
-                         <i class="ph ph-arrow-fat-up"></i> <span data-i18n="s1_nav_hint">右上のボタンで進んでね</span>
-                    </div>
+                    <button onclick="changeSlide(1)" class="inline-flex items-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-full font-black hover:scale-105 transition-transform shadow-xl">
+                        <span data-i18n="s1_start">クリックしてスタート</span>
+                        <i class="ph ph-play-circle text-2xl"></i>
+                    </button>
                 </div>
             </div>
 
@@ -173,50 +174,65 @@
             </div>
 
             <div id="slide-7" class="slide">
-                <h2 class="text-3xl font-black mb-8 flex items-center gap-3">
-                    <i class="ph ph-arrows-left-right text-blue-600"></i> <span data-i18n="s7_header">なぜ「円安」なの？</span>
+                <h2 class="text-3xl font-black mb-8 flex items-center gap-3 text-red-600">
+                    <i class="ph ph-arrows-left-right"></i> <span data-i18n="s7_header">なぜ「円安」なの？</span>
                 </h2>
                 <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                    <p class="text-lg mb-8" data-i18n="s7_body">日本とアメリカの「金利差」が原因です。</p>
-                    <div class="flex justify-between items-center bg-gray-50 p-8 rounded-3xl">
-                        <div class="text-center font-bold"><p class="text-xs text-gray-400">JAPAN</p><p class="text-xl">0.25%</p></div>
-                        <div class="flex-grow flex flex-col items-center mx-4">
-                            <div class="w-full h-1 bg-blue-200 relative"><div class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-blue-600 rounded-full animate-ping"></div></div>
-                            <p class="text-[10px] mt-2 font-black text-blue-600" data-i18n="s7_move">お金が移動！</p>
+                    <p class="text-lg mb-8 leading-relaxed text-gray-700" data-i18n="s7_body">最大の理由は、日本とアメリカの「金利の差」にあります。</p>
+                    <div class="relative bg-gray-50 rounded-3xl p-8 overflow-hidden h-48 flex items-center justify-between">
+                        <div class="text-center font-black">
+                            <p class="text-xs text-gray-400">JAPAN</p>
+                            <p class="text-2xl">0.25%</p>
                         </div>
-                        <div class="text-center font-bold text-blue-600"><p class="text-xs text-blue-400">USA</p><p class="text-xl">5.0%</p></div>
+                        <div class="flex-grow flex flex-col items-center mx-6">
+                            <div class="w-full h-1 bg-blue-200 relative">
+                                <div class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-blue-600 rounded-full animate-ping"></div>
+                            </div>
+                            <p class="text-[10px] mt-4 font-black text-blue-600" data-i18n="s7_money_flow">お金が移動！</p>
+                        </div>
+                        <div class="text-center font-black text-blue-600">
+                            <p class="text-xs text-blue-400">USA</p>
+                            <p class="text-2xl">5.0%</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div id="slide-8" class="slide">
                 <h2 class="text-3xl font-black mb-8 flex items-center gap-3">
-                    <i class="ph ph-shopping-bag text-orange-600"></i> <span data-i18n="s8_header">生活への影響</span>
+                    <i class="ph ph-shopping-bag text-orange-600"></i> <span data-i18n="s8_header">私たちの生活への影響</span>
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="bg-red-50 p-6 rounded-3xl border border-red-100">
                         <h4 class="font-bold text-red-600 mb-4" data-i18n="s8_bad_title">困ること</h4>
-                        <ul class="text-sm space-y-2 text-gray-700"><li data-i18n="s8_bad_1">・輸入品（小麦粉、油）の値上げ</li><li data-i18n="s8_bad_2">・電気・ガソリン代の上昇</li><li data-i18n="s8_bad_3">・iPhoneなどの値上がり</li></ul>
+                        <ul class="text-sm space-y-2 text-gray-600">
+                            <li data-i18n="s8_bad_1">・輸入品（小麦、油）が高くなる</li>
+                            <li data-i18n="s8_bad_2">・電気代、ガソリン代の上昇</li>
+                            <li data-i18n="s8_bad_3">・iPhoneなどの値上がり</li>
+                        </ul>
                     </div>
                     <div class="bg-green-50 p-6 rounded-3xl border border-green-100">
                         <h4 class="font-bold text-green-600 mb-4" data-i18n="s8_good_title">良いこと</h4>
-                        <ul class="text-sm space-y-2 text-gray-700"><li data-i18n="s8_good_1">・輸出企業の利益が増える</li><li data-i18n="s8_good_2">・外国人観光客が日本に来る</li></ul>
+                        <ul class="text-sm space-y-2 text-gray-600">
+                            <li data-i18n="s8_good_1">・輸出企業の利益が増える</li>
+                            <li data-i18n="s8_good_2">・外国人観光客が日本に来る</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div id="slide-9" class="slide">
                 <h2 class="text-3xl font-black mb-8 flex items-center gap-3 text-blue-600">
-                    <i class="ph ph-buildings"></i> <span data-i18n="s9_header">各国の考え方の違い</span>
+                    <i class="ph ph-globe-hemisphere-west"></i> <span data-i18n="s9_header">各国の考え方の違い</span>
                 </h2>
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 space-y-4">
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 space-y-6">
                     <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100">
-                        <h5 class="font-black text-blue-800 text-sm mb-1">USA (FRB)</h5>
-                        <p class="text-xs text-blue-700" data-i18n="s9_usa">「物価高は経済の敵！金利を上げて、景気を少し冷やしてでもインフレを抑える！」</p>
+                        <h5 class="font-black text-blue-800 text-sm mb-1 uppercase">USA (FRB)</h5>
+                        <p class="text-xs leading-relaxed text-blue-700" data-i18n="s9_usa">「物価高は経済の敵！金利を高くして、みんなが無理に買い物しないようにして、物価を落ち着かせよう。」</p>
                     </div>
                     <div class="p-4 bg-red-50 rounded-2xl border border-red-100">
-                        <h5 class="font-black text-red-800 text-sm mb-1">JAPAN (BoJ)</h5>
-                        <p class="text-xs text-red-700" data-i18n="s9_jp">「急に金利を上げると住宅ローン等が大変。給料が上がるのを待ちつつ、慎重に上げる。」</p>
+                        <h5 class="font-black text-red-800 text-sm mb-1 uppercase">JAPAN (BoJ)</h5>
+                        <p class="text-xs leading-relaxed text-red-700" data-i18n="s9_jp">「急に金利を上げるとローンなどが払えなくなる人がいて不景気が怖い。慎重に、ゆっくり上げたい。」</p>
                     </div>
                 </div>
             </div>
@@ -224,7 +240,7 @@
             <div id="slide-10" class="slide">
                 <div class="bg-blue-600 text-white rounded-3xl p-12 shadow-2xl text-center">
                     <h2 class="text-4xl font-black mb-8" data-i18n="s10_title">学びを未来へ</h2>
-                    <p class="text-blue-100 mb-12" data-i18n="s10_desc">お金の仕組みを知ることは、自分を守る第一歩です。</p>
+                    <p class="text-blue-100 mb-12 leading-relaxed" data-i18n="s10_desc">お金の仕組みを知ることは、自分を守る第一歩です。<br>世界のニュースにアンテナを広げよう。</p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <button onclick="changeSlide(-9)" class="bg-blue-500 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-400 transition">
                             <i class="ph ph-arrow-counter-clockwise"></i> <span data-i18n="s10_restart">最初から戻る</span>
@@ -240,35 +256,51 @@
     </main>
 
     <script>
-        // --- Translations ---
+        // --- Translations Dictionary ---
         const i18n = {
             ja: {
-                nav_home: "TOP", nav_title: "経済セミナー", s1_title: "お金の価値は<br><span class='text-blue-600'>「金利」</span>と<span class='text-orange-500'>「為替」</span>で決まる",
-                s1_desc: "「100円」は明日も同じ価値でしょうか？<br>ニュースで話題の経済のナゾを解き明かそう。", s1_nav_hint: "右上のボタンで進んでね",
+                nav_home: "TOP", nav_title: "経済セミナー",
+                s1_title: "お金の価値は<br><span class='text-blue-600'>「金利」</span>と<span class='text-orange-500'>「為替」</span>で決まる",
+                s1_desc: "「100円」は明日も同じ価値でしょうか？<br>ニュースで話題の経済のナゾを解き明かそう。", s1_start: "クリックしてスタート",
                 s2_header: "金利 ＝ お金のレンタル料", s2_body: "銀行にお金を預けることは、銀行に「貸す」ということです。そのお礼として受け取るのが利子、その割合が金利です。",
-                s2_high_title: "金利が高い国", s2_high_desc: "100万円預けると、1年後に 105万円になる！", s2_low_title: "金利が低い国", s2_low_desc: "預けてもあまり増えない...",
-                s3_header: "インフレ ＝ 物価が上がること", s3_body: "去年100円だったものが今年は103円になるのがインフレです。", s3_sim_title: "物価シミュレーター", s3_last_year: "去年: 100円", s3_this_year: "今年:", unit_yen: "円",
-                s4_header: "「実質金利」の計算", s4_nom: "名目金利", s4_inf: "インフレ率", s4_real: "実質金利", s4_label_nom: "名目金利 (%)", s4_label_inf: "インフレ率 (%)", s4_yield: "本当の利回り",
+                s2_high_title: "金利が高い国", s2_high_desc: "100万円預けると、1年後に105万円になる！",
+                s2_low_title: "金利が低い国", s2_low_desc: "預けてもあまり増えない...",
+                s3_header: "インフレ ＝ 物価が上がること", s3_body: "去年100円だったものが今年は103円になるのがインフレです。",
+                s3_sim_title: "物価シミュレーター", s3_last_year: "去年: 100円", s3_this_year: "今年:", unit_yen: "円",
+                s4_header: "「実質金利」の計算", s4_nom: "名目金利", s4_inf: "インフレ率", s4_real: "実質金利",
+                s4_label_nom: "名目金利 (%)", s4_label_inf: "インフレ率 (%)", s4_yield: "本当の利回り",
                 s5_header: "日本の現状", c_nom: "銀行金利", c_inf: "インフレ率", c_real: "実質金利",
-                s6_header: "為替と円安・円高", s6_weak_title: "円安", s6_weak_desc: "円の価値が下がり、ドルの価値が上がった状態", s6_strong_title: "円高", s6_strong_desc: "円の価値が上がり、ドルの価値が下がった状態",
-                s7_header: "なぜ「円安」なの？", s7_body: "日本とアメリカの「金利差」が原因です。", s7_move: "お金が移動！",
-                s8_header: "生活への影響", s8_bad_title: "困ること", s8_bad_1: "・輸入品（小麦粉、油）の値上げ", s8_bad_2: "・電気・ガソリン代の上昇", s8_bad_3: "・iPhoneなどの値上がり", s8_good_title: "良いこと", s8_good_1: "・輸出企業の利益が増える", s8_good_2: "・外国人観光客が日本に来る",
-                s9_header: "各国の考え方の違い", s9_usa: "「物価高は経済の敵！金利を上げて、景気を少し冷やしてでもインフレを抑える！」", s9_jp: "「急に金利を上げるとローン等が大変。給料が上がるのを待ちつつ慎重に上げる。」",
-                s10_title: "学びを未来へ", s10_desc: "お金の仕組みを知ることは、自分を守る第一歩です。", s10_restart: "最初から戻る", s10_home: "ニュースTOPへ"
+                s6_header: "為替と円安・円高", s6_weak_title: "円安", s6_weak_desc: "円の価値が下がり、ドルの価値が上がった状態",
+                s6_strong_title: "円高", s6_strong_desc: "円の価値が上がり、ドルの価値が下がった状態",
+                s7_header: "なぜ「円安」なの？", s7_body: "最大の理由は、日本とアメリカの「金利の差」にあります。", s7_money_flow: "お金が移動！",
+                s8_header: "私たちの生活への影響", s8_bad_title: "困ること", s8_bad_1: "・輸入品（小麦、油）が高くなる", s8_bad_2: "・電気代、ガソリン代の上昇", s8_bad_3: "・iPhoneなどの値上がり",
+                s8_good_title: "良いこと", s8_good_1: "・輸出企業の利益が増える", s8_good_2: "・外国人観光客が日本に来る",
+                s9_header: "各国の考え方の違い", s9_usa: "「物価高は経済の敵！金利を高くして、景気を少し冷やしてでもインフレを抑える！」",
+                s9_jp: "「急に金利を上げるとローンなどが払えなくなる人がいて不景気が怖い。慎重に上げたい。」",
+                s10_title: "学びを未来へ", s10_desc: "お金の仕組みを知ることは、自分を守る第一歩です。<br>世界のニュースにアンテナを広げよう。",
+                s10_restart: "最初から戻る", s10_home: "ニュースTOPへ"
             },
             en: {
-                nav_home: "HOME", nav_title: "ECON SEMINAR", s1_title: "Money Value is set by<br><span class='text-blue-600'>Interest</span> & <span class='text-orange-500'>Forex</span>",
-                s1_desc: "Is '100 Yen' worth the same tomorrow?<br>Let's solve the mysteries of the economy.", s1_nav_hint: "Use the top-right buttons to navigate",
+                nav_home: "HOME", nav_title: "ECON SEMINAR",
+                s1_title: "Money Value is set by<br><span class='text-blue-600'>Interest</span> & <span class='text-orange-500'>Forex</span>",
+                s1_desc: "Is '100 Yen' worth the same tomorrow?<br>Let's solve the mysteries of the economy.", s1_start: "Click to Start",
                 s2_header: "Interest = Rental Fee for Money", s2_body: "Depositing money in a bank means 'lending' it. The reward you receive is interest.",
-                s2_high_title: "High Interest Country", s2_high_desc: "Deposit $1M, get $1.05M after a year!", s2_low_title: "Low Interest Country", s2_low_desc: "Money hardly grows...",
-                s3_header: "Inflation = Rising Prices", s3_body: "Inflation means something that cost 100 last year costs 103 this year.", s3_sim_title: "Price Simulator", s3_last_year: "Last Year: 100", s3_this_year: "This Year:", unit_yen: "Yen",
-                s4_header: "Calculating 'Real Interest'", s4_nom: "Nominal", s4_inf: "Inflation", s4_real: "Real Rate", s4_label_nom: "Nominal Rate (%)", s4_label_inf: "Inflation Rate (%)", s4_yield: "Actual Yield",
-                s5_header: "Current Situation in Japan", c_nom: "Nominal Rate", c_inf: "Inflation", c_real: "Real Rate",
-                s6_header: "Forex & Yen Value", s6_weak_title: "Weak Yen", s6_weak_desc: "Yen value falls, Dollar value rises", s6_strong_title: "Strong Yen", s6_strong_desc: "Yen value rises, Dollar value falls",
-                s7_header: "Why is the Yen weak?", s7_body: "It's caused by the 'Interest Gap' between Japan and USA.", s7_move: "Money flows!",
-                s8_header: "Impact on Daily Life", s8_bad_title: "Disadvantages", s8_bad_1: "- Higher prices for imported food", s8_bad_2: "- Higher energy/gas costs", s8_bad_3: "- Higher prices for electronics (e.g. iPhone)", s8_good_title: "Advantages", s8_good_1: "+ Higher profits for exporters (e.g. Toyota)", s8_good_2: "+ More foreign tourists visiting Japan",
-                s9_header: "Global Policy Differences", s9_usa: "US (FRB): 'Fight inflation by raising interest rates, even if it slows down the economy!'", s9_jp: "Japan (BoJ): 'Raising rates too fast hurts mortgage holders. We wait for wage growth.'",
-                s10_title: "To the Future", s10_desc: "Knowing how money works is the first step to protecting yourself.", s10_restart: "Restart", s10_home: "Back to News TOP"
+                s2_high_title: "High Interest Country", s2_high_desc: "Deposit $1M, get $1.05M after a year!",
+                s2_low_title: "Low Interest Country", s2_low_desc: "Money hardly grows...",
+                s3_header: "Inflation = Rising Prices", s3_body: "Inflation means something that cost 100 last year costs 103 this year.",
+                s3_sim_title: "Price Simulator", s3_last_year: "Last Year: 100", s3_this_year: "This Year:", unit_yen: "Yen",
+                s4_header: "Calculating 'Real Interest'", s4_nom: "Nominal", s4_inf: "Inflation", s4_real: "Real Rate",
+                s4_label_nom: "Nominal Rate (%)", s4_label_inf: "Inflation Rate (%)", s4_yield: "Actual Yield",
+                s5_header: "Japan's Situation", c_nom: "Nominal Rate", c_inf: "Inflation", c_real: "Real Rate",
+                s6_header: "Forex & Yen Value", s6_weak_title: "Weak Yen", s6_weak_desc: "Yen value falls, Dollar value rises",
+                s6_strong_title: "Strong Yen", s6_strong_desc: "Yen value rises, Dollar value falls",
+                s7_header: "Why is the Yen weak?", s7_body: "The main reason is the 'Interest Gap' between Japan and the US.", s7_money_flow: "Money moves!",
+                s8_header: "Impact on Daily Life", s8_bad_title: "Disadvantages", s8_bad_1: "- Higher prices for imported food", s8_bad_2: "- Higher energy/gas costs", s8_bad_3: "- Higher prices for electronics (e.g. iPhone)",
+                s8_good_title: "Advantages", s8_good_1: "+ Higher profits for exporters (e.g. Toyota)", s8_good_2: "+ More foreign tourists visiting Japan",
+                s9_header: "Policy Differences", s9_usa: "US (FRB): 'Inflation is the enemy! Raise rates to cool down the economy and stabilize prices!'",
+                s9_jp: "Japan (BoJ): 'Raising rates too fast hurts mortgage holders. We want to be careful and slow.'",
+                s10_title: "To the Future", s10_desc: "Knowing how money works is the first step to protecting yourself.<br>Stay tuned to world news.",
+                s10_restart: "Restart", s10_home: "News TOP"
             }
         };
 
@@ -330,12 +362,26 @@
             const lang = document.getElementById('langSet').value;
             const labels = lang === 'ja' ? ['銀行金利', 'インフレ率', '実質金利'] : ['Nominal', 'Inflation', 'Real Rate'];
             const ctx = document.getElementById('japanChart').getContext('2d');
-            if (chartInstance) { if (!forceUpdate) return; chartInstance.destroy(); }
+
+            if (chartInstance) {
+                if (!forceUpdate) return;
+                chartInstance.destroy();
+            }
+
             chartInstance = new Chart(ctx, {
-                type: 'bar', data: {
-                    labels: labels, datasets: [{ data: [0.25, 3.0, -2.75], backgroundColor: ['#3b82f6', '#f97316', '#ef4444'], borderRadius: 12 }]
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: [0.25, 3.0, -2.75],
+                        backgroundColor: ['#3b82f6', '#f97316', '#ef4444'],
+                        borderRadius: 12
+                    }]
                 },
-                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+                options: { 
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } }
+                }
             });
         }
 
