@@ -42,7 +42,8 @@
                 <ul class="space-y-2">
                     <li>
                         <a href="context/rate.html" target="_blank" class="text-blue-600 hover:underline font-bold flex items-center">
-                            <span class="mr-2">📈</span> 金利完全理解
+                            <span class="mr-2">📈</span> 
+                            <span id="label-rate-link">金利完全理解</span>
                         </a>
                     </li>
                     </ul>
@@ -92,16 +93,19 @@
         function render() {
             const lang = document.getElementById('langSet').value;
 
-            // --- ここから追記：固定タイトルの切り替え ---
+            // --- 固定タイトルの切り替え ---
             const labelBackground = document.getElementById('label-background');
             const labelArchives = document.getElementById('label-archives');
+            const labelRateLink = document.getElementById('label-rate-link'); // 追記
         
             if (lang === 'ja') {
                 labelBackground.innerText = "ニュースがわかる背景知識";
                 labelArchives.innerText = "バックナンバー";
+                labelRateLink.innerText = "金利完全理解"; // 追記
             } else {
                 labelBackground.innerText = "Essential context for current affairs";
                 labelArchives.innerText = "Archives";
+                labelRateLink.innerText = "Understanding Interest Rates"; // 追記（英語名）
             }
                     
             const contentArea = document.getElementById('content-area');
@@ -114,7 +118,6 @@
 
             const data = articles[currentIndex];
             
-            // 各項目の安全な取得（存在しない場合のデフォルト値）
             const dateStr = data.date || "Unknown Date";
             const titleStr = (data.titles && data.titles[lang]) ? data.titles[lang] : "Untitled";
             const contentStr = (data.contents && data.contents[lang]) ? data.contents[lang] : "本文なし";
@@ -122,7 +125,6 @@
             
             let htmlBody = contentStr.replace(/\n/g, '<br>');
 
-            // 用語置換
             if (data.glossary && Array.isArray(data.glossary)) {
                 data.glossary.forEach(item => {
                     const t = item.term ? item.term[lang] : null;
@@ -134,7 +136,6 @@
                 });
             }
 
-            // メイン描画
             contentArea.innerHTML = `
                 <div class="text-blue-600 font-black mb-4 text-sm">${dateStr}</div>
                 <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight">${titleStr}</h2>
@@ -147,7 +148,6 @@
                 </div>
             `;
 
-            // アーカイブ描画
             archiveList.innerHTML = articles.map((art, idx) => {
                 const t = (art.titles && art.titles[lang]) ? art.titles[lang] : "Untitled";
                 return `
@@ -157,7 +157,6 @@
                 </div>`;
             }).join('');
 
-            // Mermaid再描画
             setTimeout(() => {
                 const el = document.querySelector('.mermaid');
                 if (el && window.mermaid && mermaidStr) {
