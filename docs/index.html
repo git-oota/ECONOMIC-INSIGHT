@@ -35,15 +35,19 @@
         </article>
 
         <section class="mb-16">
-            <h3 id="label-background" class="text-xl font-black mb-4 text-slate-800 uppercase tracking-wider">
-                ニュースがわかる背景知識
-            </h3>
-            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
-                <ul class="space-y-2">
+            <h3 id="label-background" class="text-xl font-black mb-4 text-slate-800 uppercase tracking-wider">ニュースがわかる背景知識</h3>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <ul class="space-y-4">
                     <li>
-                        <a href="context/rate.html" target="_blank" class="text-blue-600 hover:underline font-bold flex items-center">
-                            <span class="mr-2">📈</span> 
-                            <span id="label-rate-link">金利完全理解</span>
+                        <a href="context/rate.html" target="_blank" class="group flex items-center justify-between p-4 bg-slate-50 rounded-2xl hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200">
+                            <div class="flex items-center gap-4">
+                                <span class="text-3xl">📈</span>
+                                <div>
+                                    <p id="label-rate-link" class="font-black text-blue-600 text-lg uppercase">金利完全理解</p>
+                                    <p id="label-rate-desc" class="text-xs text-slate-400 font-bold">10分でわかる！金利と物価と為替のしくみ</p>
+                                </div>
+                            </div>
+                            <i class="ph ph-caret-right-bold text-slate-300 group-hover:text-blue-500 transition-colors"></i>
                         </a>
                     </li>
                 </ul>
@@ -51,9 +55,7 @@
         </section>
         
         <section>
-            <h3 id="label-archives" class="text-xl font-black mb-8 text-slate-800 uppercase tracking-wider">
-                Archives
-            </h3>
+            <h3 id="label-archives" class="text-xl font-black mb-8 text-slate-800 uppercase tracking-wider">Archives</h3>
             <div id="archive-list" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
         </section>
     </main>
@@ -72,10 +74,6 @@
         let articles = [];
         let currentIndex = 0;
 
-        if (window.mermaid) {
-            mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
-        }
-
         async function loadData() {
             try {
                 const res = await fetch('./data.json?t=' + Date.now());
@@ -84,42 +82,38 @@
                 render();
             } catch (e) {
                 console.error(e);
-                document.getElementById('content-area').innerHTML = 
-                    `<div class="text-red-500 text-center py-20 font-bold">エラーが発生しました: ${e.message}</div>`;
+                document.getElementById('content-area').innerHTML = `<div class="text-red-500 text-center py-20 font-bold">エラーが発生しました: ${e.message}</div>`;
             }
         }
 
         function render() {
             const lang = document.getElementById('langSet').value;
 
-            // --- 固定タイトルの切り替え ---
+            // 言語切替
             const labelBackground = document.getElementById('label-background');
             const labelArchives = document.getElementById('label-archives');
             const labelRateLink = document.getElementById('label-rate-link');
+            const labelRateDesc = document.getElementById('label-rate-desc');
         
             if (lang === 'ja') {
                 labelBackground.innerText = "ニュースがわかる背景知識";
                 labelArchives.innerText = "バックナンバー";
                 labelRateLink.innerText = "金利完全理解";
+                labelRateDesc.innerText = "10分でわかる！金利と物価と為替のしくみ";
             } else {
-                labelBackground.innerText = "Essential context for current affairs";
+                labelBackground.innerText = "Essential Context";
                 labelArchives.innerText = "Archives";
-                labelRateLink.innerText = "Understanding Interest Rates";
+                labelRateLink.innerText = "Interest Rates 101";
+                labelRateDesc.innerText = "Master interest rates & forex in 10 mins";
             }
 
-            // ★言語設定をリンクに引き継ぐ
+            // リンクに言語パラメータを付与
             const rateLink = document.querySelector('a[href*="rate.html"]');
-            if (rateLink) {
-                rateLink.href = `context/rate.html?lang=${lang}`;
-            }
+            if (rateLink) { rateLink.href = `context/rate.html?lang=${lang}`; }
                     
             const contentArea = document.getElementById('content-area');
             const archiveList = document.getElementById('archive-list');
-            
-            if (!articles || articles.length === 0) {
-                contentArea.innerHTML = `<p class="text-center py-20">記事がありません。</p>`;
-                return;
-            }
+            if (!articles || articles.length === 0) return;
 
             const data = articles[currentIndex];
             const dateStr = data.date || "Unknown Date";
@@ -129,59 +123,20 @@
             
             let htmlBody = contentStr.replace(/\n/g, '<br>');
 
-            if (data.glossary && Array.isArray(data.glossary)) {
-                data.glossary.forEach(item => {
-                    const t = item.term ? item.term[lang] : null;
-                    const d = item.def ? item.def[lang] : null;
-                    if (t && d) {
-                        const regex = new RegExp(t, 'g');
-                        htmlBody = htmlBody.replace(regex, `<span class="glossary-term" onclick="showGlossary('${t}', '${d}')">${t}</span>`);
-                    }
-                });
-            }
-
             contentArea.innerHTML = `
                 <div class="text-blue-600 font-black mb-4 text-sm">${dateStr}</div>
                 <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight">${titleStr}</h2>
                 <div class="prose prose-lg max-w-none text-slate-700 mb-16">${htmlBody}</div>
-                <div class="my-12 p-8 bg-slate-50 border rounded-3xl overflow-x-auto">
-                    <h3 class="font-black text-sm mb-8 text-slate-400 uppercase">Visual Insights</h3>
-                    <div class="mermaid-box flex justify-center">
-                        <pre class="mermaid">${mermaidStr}</pre>
-                    </div>
-                </div>
             `;
 
             archiveList.innerHTML = articles.map((art, idx) => {
                 const t = (art.titles && art.titles[lang]) ? art.titles[lang] : "Untitled";
-                return `
-                <div onclick="changeArticle(${idx})" class="p-5 bg-white rounded-2xl border hover:border-blue-500 cursor-pointer transition-all ${idx === currentIndex ? 'ring-2 ring-blue-500' : ''}">
-                    <div class="text-[10px] text-slate-400 font-bold">${art.date || ""}</div>
-                    <div class="font-black text-slate-800 truncate text-sm">${t}</div>
-                </div>`;
+                return `<div onclick="changeArticle(${idx})" class="p-5 bg-white rounded-2xl border cursor-pointer ${idx === currentIndex ? 'ring-2 ring-blue-500' : ''}">${t}</div>`;
             }).join('');
-
-            setTimeout(() => {
-                const el = document.querySelector('.mermaid');
-                if (el && window.mermaid && mermaidStr) {
-                    try {
-                        el.removeAttribute('data-processed');
-                        mermaid.run({ nodes: [el] });
-                    } catch (e) {
-                        console.error("Mermaid error:", e);
-                    }
-                }
-            }, 100);
         }
 
         function changeArticle(i) { currentIndex = i; render(); window.scrollTo({top:0, behavior:'smooth'}); }
-        function showGlossary(t, d) { 
-            document.getElementById('footer-term').innerText = t;
-            document.getElementById('footer-def').innerText = d;
-            document.getElementById('glossary-footer').classList.add('active'); 
-        }
         function closeGlossary() { document.getElementById('glossary-footer').classList.remove('active'); }
-
         loadData();
     </script>
 </body>
