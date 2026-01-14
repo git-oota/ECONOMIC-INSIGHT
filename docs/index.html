@@ -91,6 +91,19 @@
 
         function render() {
             const lang = document.getElementById('langSet').value;
+
+            // --- ここから追記：固定タイトルの切り替え ---
+            const labelBackground = document.getElementById('label-background');
+            const labelArchives = document.getElementById('label-archives');
+        
+            if (lang === 'ja') {
+                labelBackground.innerText = "ニュースがわかる背景知識";
+                labelArchives.innerText = "バックナンバー";
+            } else {
+                labelBackground.innerText = "Essential context for current affairs";
+                labelArchives.innerText = "Archives";
+            }
+                    
             const contentArea = document.getElementById('content-area');
             const archiveList = document.getElementById('archive-list');
             
