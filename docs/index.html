@@ -46,7 +46,7 @@
                             <span id="label-rate-link">金利完全理解</span>
                         </a>
                     </li>
-                    </ul>
+                </ul>
             </div>
         </section>
         
@@ -72,7 +72,6 @@
         let articles = [];
         let currentIndex = 0;
 
-        // Mermaid初期化
         if (window.mermaid) {
             mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
         }
@@ -96,19 +95,19 @@
             // --- 固定タイトルの切り替え ---
             const labelBackground = document.getElementById('label-background');
             const labelArchives = document.getElementById('label-archives');
-            const labelRateLink = document.getElementById('label-rate-link'); // 追記
+            const labelRateLink = document.getElementById('label-rate-link');
         
             if (lang === 'ja') {
                 labelBackground.innerText = "ニュースがわかる背景知識";
                 labelArchives.innerText = "バックナンバー";
-                labelRateLink.innerText = "金利完全理解"; // 追記
+                labelRateLink.innerText = "金利完全理解";
             } else {
                 labelBackground.innerText = "Essential context for current affairs";
                 labelArchives.innerText = "Archives";
-                labelRateLink.innerText = "Understanding Interest Rates"; // 追記（英語名）
+                labelRateLink.innerText = "Understanding Interest Rates";
             }
 
-            // リンク先URLに言語パラメータ (?lang=ja または ?lang=en) を追加する
+            // リンク先URLに言語パラメータを追加
             const rateLink = document.querySelector('a[href*="rate.html"]');
             if (rateLink) {
                 rateLink.href = `context/rate.html?lang=${lang}`;
@@ -123,7 +122,6 @@
             }
 
             const data = articles[currentIndex];
-            
             const dateStr = data.date || "Unknown Date";
             const titleStr = (data.titles && data.titles[lang]) ? data.titles[lang] : "Untitled";
             const contentStr = (data.contents && data.contents[lang]) ? data.contents[lang] : "本文なし";
