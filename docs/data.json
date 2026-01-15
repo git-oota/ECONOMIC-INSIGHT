@@ -1,5 +1,63 @@
 [
   {
+    "id": "20260116_082928",
+    "date": "2026-01-16",
+    "titles": {
+      "ja": "「高市トレード」と解散風 — 日経平均5万4000円台の攻防と円安160円への警戒",
+      "en": "The 'Takaichi Trade' and Snap Election: Nikkei 225 Battles at 54,000 While Yen Nears 160"
+    },
+    "contents": {
+      "ja": "【ニュース】\n高市早苗首相（日本初の女性首相）が衆議院の解散・総選挙の意向を固めたことで、市場では「高市トレード」が再燃しています。日経平均株価は今週、史上最高値の5万4000円台を突破しましたが、昨日の終値は5万4110円と利益確定売りに押される展開となりました。高市政権が掲げる積極的な財政出動への期待が株価を支える一方、為替市場では円売りが加速し、1ドル＝159円台と「160円の壁」が目前に迫っています。日銀は昨年12月に政策金利を0.75%に引き上げましたが、米国のトランプ政権による高関税政策や堅調な米経済を背景としたドル高圧力に対し、円安抑制の効果は限定的となっています。\n\n【投資家への視点】\n投資家は「選挙は買い」という格言通り、短期的には株高を享受すべきですが、同時に「円安リスク」への備えが不可欠です。高市首相の財政拡大路線は、日銀の追加利上げを困難にする可能性があり、さらなる円安を招く「悪い金利上昇」を招く恐れがあります。160円ラインでの政府・日銀による為替介入の可能性を注視しつつ、円建て資産に偏らず、米ドルやゴールド（金）などのオルタナティブ資産への分散投資を検討すべき局面です。\n\n【背景知識】\n「高市トレード」とは、かつての「アベノミクス」のように、積極的な政府支出と金融緩和的な姿勢を期待して、日本株を買い、円を売る市場の動きを指します。また「衆議院の解散」とは、首相が国会を解散し、国民の信を問うために総選挙を行うことです。選挙前は景気刺激策が期待されるため、株価が上がりやすい傾向があります。\n\n【国際的な視点】\n米国では、トランプ大統領が日本から5500億ドルの投資約束を取り付けたことを「歴史的勝利」と報じており、対日関税の緩和と引き換えに日本の資金を米国内のエネルギー・インフラに呼び込む戦略を強調しています。一方、中国は日本の対米接近に反発し、レアアースを含む800品目以上の輸出禁止措置を発表しました。中国メディアは「日本の対米従属が自国の首を絞める」と厳しく批判しており、地政学リスクが日本の供給網（サプライチェーン）に影を落としています。\n\n【生活への影響】\n留学生にとって、1ドル160円に迫る円安は、母国からの送金価値が高まる（円で受け取る額が増える）というメリットがあります。しかし、日本国内では輸入エネルギーや食品の価格がさらに上昇する「輸入インフレ」が避けられません。学費の支払いは有利になりますが、日々の生活費の管理にはこれまで以上の注意が必要です。",
+      "en": "【News】\nMarket sentiment is heating up with the 'Takaichi Trade' as Prime Minister Sanae Takaichi (Japan's first female PM) signals a snap election. The Nikkei 225 surged past the historic 54,000 mark this week, though it settled at 54,110 yesterday due to profit-taking. While expectations for fiscal expansion support stocks, the Yen is weakening toward the 159-160 range per USD. Despite the Bank of Japan raising rates to 0.75% in December, the Yen remains under pressure from the 'Trump Trade' in the US and a robust US economy.\n\n【Investor Perspective】\nWhile the 'Buy on Elections' adage holds, investors must guard against currency risk. PM Takaichi's expansionary fiscal policy might conflict with BOJ's tightening, potentially triggering 'bad interest rate hikes' and further Yen depreciation. Watch for government intervention at the 160 level. Diversification into USD assets or gold is recommended to balance Yen-heavy portfolios.\n\n【Background Knowledge】\n'Takaichi Trade' refers to market movements—buying Japanese stocks and selling the Yen—based on expectations of aggressive government spending and pro-growth policies, similar to 'Abenomics.' A 'Snap Election' (Dissolution of the Lower House) is when the PM calls for a general election to seek a new mandate, often leading to pre-election rallies on hopes for stimulus.\n\n【International Perspective】\nUS media highlights President Trump's 'historic victory' in securing a $550 billion investment pledge from Japan in exchange for tariff relief. Conversely, China has reacted by banning exports of over 800 items, including rare earths, to Japan. Chinese state media criticizes Japan's alignment with the US as a move that undermines its own economic security.\n\n【Impact on Daily Life】\nFor international students, the Yen nearing 160 means remittances from home will be worth more in Yen, making tuition payments relatively cheaper. However, this is a double-edged sword: 'import inflation' will continue to drive up the cost of food and energy in Japan. While your budget might stretch further in terms of foreign currency, local cost-of-living increases require careful management."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[解散総選挙の表明] --> B[積極財政への期待]\n    B --> C[日経平均株価の上昇: 54,000円台]\n    B --> D[円売り・円安の進行: 159-160円]\n    D --> E[輸入インフレの加速]\n    E --> F[日銀の追加利上げ議論]\n    F --> G[投資家: 外貨/金への分散投資]",
+      "en": "graph TD\n    A[Snap Election Call] --> B[Expectations for Fiscal Stimulus]\n    B --> C[Nikkei 225 Rises: 54,000 Level]\n    B --> D[Yen Weakens: 159-160 per USD]\n    D --> E[Accelerated Import Inflation]\n    E --> F[BOJ Rate Hike Debate]\n    F --> G[Investors: Diversify into USD/Gold]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "高市トレード",
+          "en": "Takaichi Trade"
+        },
+        "def": {
+          "ja": "高市首相の積極財政・金融緩和維持への期待から、日本株を買い円を売る市場の動き。",
+          "en": "Market trend of buying Japanese stocks and selling Yen based on expectations for PM Takaichi's expansionary policies."
+        }
+      },
+      {
+        "term": {
+          "ja": "衆議院解散",
+          "en": "Dissolution of the House of Representatives"
+        },
+        "def": {
+          "ja": "任期満了前に衆議院議員の身分を失わせ、総選挙を行うこと。首相の専権事項とされる。",
+          "en": "The PM's power to end the current term of the Lower House early to call for a general election."
+        }
+      },
+      {
+        "term": {
+          "ja": "政策金利",
+          "en": "Policy Interest Rate"
+        },
+        "def": {
+          "ja": "中央銀行（日銀）が金融政策の目標とする短期金利。現在は0.75%。",
+          "en": "The short-term interest rate set by the central bank (BOJ) to control the economy. Currently at 0.75%."
+        }
+      },
+      {
+        "term": {
+          "ja": "レアアース",
+          "en": "Rare Earths"
+        },
+        "def": {
+          "ja": "ハイテク製品の製造に不可欠な希少金属。中国が世界シェアの多くを握る。",
+          "en": "Rare minerals essential for high-tech manufacturing, where China holds a dominant global share."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260116_070303",
     "date": "2026-01-16",
     "titles": {
