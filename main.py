@@ -33,6 +33,7 @@ def generate_content():
     【捏造厳禁】
     - 新しいニュースがない場合は過去48時間以内の情報を採用。
     - 架空のニュースは絶対に書かない。データがない場合は為替動向と学費への影響に絞る。
+    - 日経新聞、朝日新聞よりTOPニュースを取得し、著作権に抵触しないようにリライトする
 
     【Output Format: JSON only】
     必ず以下のJSON形式のオブジェクト1つだけを出力してください。
@@ -41,7 +42,7 @@ def generate_content():
       "date": "{TODAY}",
       "titles": {{ "ja": "タイトル", "en": "Title" }},
       "contents": {{ 
-        "ja": "【ニュースの事実】\\n...\\n\\n【資産防衛のヒント】\\n(ここでお金と資産の持ち方の知恵を入れる)\\n\\n【生活への影響】\\n...", 
+        "ja": "【ニュース】\\n...\\n\\n【資産防衛のヒント】\\n(ここでお金と資産の持ち方の知恵を入れる)\\n\\n【生活への影響】\\n...", 
         "en": "..." 
       }},
       "mermaid": {{ "ja": "graph TD...", "en": "graph TD..." }},
@@ -50,7 +51,7 @@ def generate_content():
     """
 
     try:
-        # モデルをより安定した 2.0-flash-exp に変更
+        # モデルをより安定した gemini-3-flash-preview に変更
         response = client.models.generate_content(
             model='gemini-3-flash-preview', 
             contents=prompt,
