@@ -1,5 +1,53 @@
 [
   {
+    "id": "20260116_070303",
+    "date": "2026-01-16",
+    "titles": {
+      "ja": "歴史的円安と物価高：留学生のための「持たざるリスク」と資産防衛術",
+      "en": "Historic Yen Weakness & Inflation: Asset Defense Strategies for International Students"
+    },
+    "contents": {
+      "ja": "【ニュースの事実】\n2026年1月16日現在、日本の経済は大きな転換点を迎えています。ドル円相場は1ドル＝158円台で推移し、政府・日銀による為替介入への警戒感が非常に高まっています。消費者物価指数（コアCPI）は前年比3.0%上昇を記録し、44ヶ月連続で日銀の目標である2%を上回りました。一方で、日経平均株価は年初から6.5%上昇し史上最高値を更新。日本銀行は政策金利を0.75%まで引き上げましたが、依然として物価上昇に追いつかない状況が続いています。\n\n【資産防衛のヒント】\nインフレ局面では「現金の価値が目減りする」というリスクを理解する必要があります。例えば、年3%のインフレが続くと、100万円の現金は1年後には実質97万円の価値しかなくなります。\n1. **価値が下がる物（負債に近い資産）**: 車などは購入した瞬間から価値が下がり始め、維持費もかかります。インフレ対策としては不向きです。\n2. **お金を生む資産**: 株式や不動産、あるいは自分自身のスキル（自己投資）は、物価上昇に合わせて価値や収益が上がる傾向にあります。特に日経平均が最高値を更新している現在は、現金の一部を「成長する資産」に変えて持つことが、生活を守る防衛策となります。\n\n【生活への影響】\n輸入物価の上昇により、食品や光熱費のさらなる値上げが予想されます。留学生にとっては、仕送り（外貨）を円に替えるタイミングとしては有利ですが、日本国内でアルバイトをして円で生活している場合は、実質的な購買力が低下しています。学費の支払いなどに備え、単なる貯金ではなく、少額からの資産運用を検討する時期に来ています。",
+      "en": "【Economic Facts】\nAs of January 16, 2026, the Japanese economy is at a major crossroads. The Yen is trading around 158 JPY/USD, keeping markets on high alert for government intervention. Core CPI has hit 3.0% YoY, exceeding the BoJ's 2% target for 44 consecutive months. Conversely, the Nikkei 225 has surged 6.5% since the start of the year, reaching new all-time highs. Despite the BoJ raising interest rates to 0.75%, the highest in 30 years, inflation continues to outpace these adjustments.\n\n【Asset Defense Tips】\nIn an inflationary environment, it is crucial to recognize the risk of 'holding only cash.' If inflation stays at 3%, 1 million JPY in cash effectively loses 30,000 JPY in purchasing power within a year.\n1. **Depreciating Assets**: Items like cars lose value the moment they are used and incur maintenance costs. They are poor hedges against inflation.\n2. **Income-Generating Assets**: Stocks, real estate, and personal skill sets (self-investment) tend to appreciate or increase in return as prices rise. With the Nikkei at record highs, shifting a portion of cash into 'growing assets' is a key strategy to protect your wealth.\n\n【Impact on Daily Life】\nRising import costs will likely drive up food and utility prices. While international students receiving foreign remittances benefit from the weak Yen, those relying on JPY-denominated part-time jobs will see their purchasing power decline. It is time to consider small-scale investments rather than just saving cash to prepare for future tuition and living expenses."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[インフレ環境] --> B{資産の選択}\n    B --> C[現金・預金]\n    B --> D[お金を生む資産]\n    C --> E[価値が目減りする]\n    D --> F[株式・不動産など]\n    F --> G[物価と共に価値上昇]\n    B --> H[負債的資産]\n    H --> I[車・ブランド品など]\n    I --> J[時間の経過で価値下落]",
+      "en": "graph TD\n    A[Inflationary Env] --> B{Asset Choice}\n    B --> C[Cash & Savings]\n    B --> D[Income Assets]\n    C --> E[Value Erodes]\n    D --> F[Stocks/Real Estate]\n    F --> G[Value Grows with Inflation]\n    B --> H[Depreciating Assets]\n    H --> I[Cars/Luxury Goods]\n    I --> J[Value Drops over Time]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "コアCPI",
+          "en": "Core CPI"
+        },
+        "def": {
+          "ja": "生鮮食品を除いた消費者物価指数。物価の基調的な動きを示す。",
+          "en": "Consumer Price Index excluding fresh food; shows underlying price trends."
+        }
+      },
+      {
+        "term": {
+          "ja": "減価償却資産",
+          "en": "Depreciating Asset"
+        },
+        "def": {
+          "ja": "車などのように、時間の経過や使用によって価値が下がる資産。",
+          "en": "Assets like cars that lose value over time or through usage."
+        }
+      },
+      {
+        "term": {
+          "ja": "インカムゲイン",
+          "en": "Income Gain"
+        },
+        "def": {
+          "ja": "資産を保有することで得られる利益（配当金や利息など）。",
+          "en": "Profits earned from holding an asset, such as dividends or interest."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260115_062250",
     "date": "2026-01-15",
     "titles": {
