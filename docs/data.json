@@ -48,23 +48,6 @@
     ]
   },
   {
-    "id": "20260115_062250",
-    "date": "2026-01-15",
-    "titles": {
-      "ja": "データ更新中",
-      "en": "Updating Data"
-    },
-    "contents": {
-      "ja": "現在、最新の信頼できるニュースを精査中です。しばらくしてから再度ご確認ください。",
-      "en": "Checking latest reliable news."
-    },
-    "mermaid": {
-      "ja": "graph TD\nWait",
-      "en": "graph TD\nWait"
-    },
-    "glossary": []
-  },
-  {
     "id": "20260114_062246",
     "date": "2026-01-14",
     "titles": {
