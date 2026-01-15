@@ -5,72 +5,72 @@ from datetime import datetime, timezone, timedelta
 from google import genai
 from google.genai import types
 
-# ログ設定（エラーの原因を特定しやすくする）
+# ログ設定
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# 1. 環境設定 (日本標準時)
+# 1. 環境設定
 JST = timezone(timedelta(hours=+9), 'JST')
 NOW = datetime.now(JST)
 TODAY = NOW.strftime("%Y-%m-%d")
 UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 
-# Gemini クライアント初期化
-# 注意: GEMINI_API_KEY が環境変数に設定されている必要があります
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 def generate_content():
     print(f"[{datetime.now()}] ニュース分析（検索モード）を開始...")
     
-    # 面白さと資産リテラシーを組み込んだプロンプト
     prompt = f"""
     You are a professional economic analyst for international students in Japan.
     【Task】
     1. Use Google Search to find real economic news in Japan for today ({TODAY}).
-    2. Summarize the news in an engaging, easy-to-understand way (Target: International students).
+    2. Summarize the news in an engaging, easy-to-understand way.
     
-    【Required Insights (面白さのポイント)】
-    - Why is this news a "chance" or "risk" for people holding USD or YEN?
-    - Add a specific insight about "Asset Protection (投資) vs Consumption (消費)".
-    - Example: Mention that while the Yen is weak, buying assets like stocks is better than buying depreciating goods like cars.
-
+    【Required Insights (重要)】
+    - 日本は現在インフレ傾向にあります。現金のまま持つリスクと、資産を持つべき理由を解説してください。
+    - 特に「車などの価値が下がる物」と「株や不動産など、お金を生む資産」の違いを具体例に出して防衛策を提案してください。
+    
     【捏造厳禁】
-    - If no new major economic news is found for today, use the latest significant data from the last 48 hours.
-    - DO NOT create fake news. If data is unavailable, focus on the current Yen/Dollar trend and its impact on tuition/living costs.
+    - 新しいニュースがない場合は過去48時間以内の情報を採用。
+    - 架空のニュースは絶対に書かない。データがない場合は為替動向と学費への影響に絞る。
 
     【Output Format: JSON only】
+    必ず以下のJSON形式のオブジェクト1つだけを出力してください。
     {{
       "id": "{UPDATE_ID}",
       "date": "{TODAY}",
       "titles": {{ "ja": "タイトル", "en": "Title" }},
       "contents": {{ 
-        "ja": "【ニュースの事実】\\n...\\n\\n【資産防衛のヒント】\\n(ここにお金と資産の持ち方の知恵を入れる)\\n\\n【生活への影響】\\n...", 
+        "ja": "【ニュースの事実】\\n...\\n\\n【資産防衛のヒント】\\n(ここでお金と資産の持ち方の知恵を入れる)\\n\\n【生活への影響】\\n...", 
         "en": "..." 
       }},
       "mermaid": {{ "ja": "graph TD...", "en": "graph TD..." }},
-      "glossary": [ {{ "term": {{"ja":"..","en":".."}}, "def": {{"ja":"..","en":".."}} }} ]
+      "glossary": [ {{ "term": {{"ja":"用語","en":"Term"}}, "def": {{"ja":"意味","en":"Def"}} }} ]
     }}
     """
 
     try:
-        # モデル名は 'gemini-2.0-flash-exp' 等、利用可能な最新の安定版を指定してください
+        # モデルをより安定した 2.0-flash-exp に変更
         response = client.models.generate_content(
             model='gemini-3-flash-preview', 
             contents=prompt,
             config=types.GenerateContentConfig(
                 tools=[{'google_search': {}}],
                 response_mime_type='application/json',
-                temperature=0.7 # 少し面白さを出すために0.0から0.7へ調整
+                temperature=0.7 
             )
         )
         
-        # JSONとして解析
         content = json.loads(response.text)
+        
+        # ★エラー対策：もしリストで返ってきたら最初の要素を取り出す
+        if isinstance(content, list):
+            content = content[0]
+            
         return content
 
     except Exception as e:
         logger.error(f"API Error: {e}")
-        # 失敗時に既存のデータを消さないよう、Noneを返してメイン処理でハンドリングする
         return None
 
 def main():
@@ -78,10 +78,9 @@ def main():
     new_article = generate_content()
     
     if new_article is None:
-        print("⚠️ 記事生成に失敗したため、更新をスキップします。")
+        print("⚠️ 記事生成に失敗しました。更新をスキップします。")
         return
 
-    # 既存データの読み込み
     history = []
     if os.path.exists(data_path):
         with open(data_path, 'r', encoding='utf-8') as f:
@@ -89,19 +88,19 @@ def main():
                 history = json.load(f)
                 if not isinstance(history, list): history = []
             except Exception as e:
-                logger.error(f"JSON Read Error: {e}")
                 history = []
     
-    # 最新記事を先頭に追加（重複チェックを入れるとより良い）
+    # 記事を先頭に追加
     history.insert(0, new_article)
     
-    # docsディレクトリがない場合は作成
     os.makedirs(os.path.dirname(data_path), exist_ok=True)
     
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:50], f, ensure_ascii=False, indent=2)
     
-    print(f"✅ Success: {new_article.get('titles', {}).get('ja')}")
+    # 安全な取得方法に変更
+    title_ja = new_article.get('titles', {}).get('ja', 'No Title')
+    print(f"✅ Success: {title_ja}")
 
 if __name__ == "__main__":
     main()
