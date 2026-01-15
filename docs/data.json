@@ -58,54 +58,6 @@
     ]
   },
   {
-    "id": "20260116_070303",
-    "date": "2026-01-16",
-    "titles": {
-      "ja": "歴史的円安と物価高：留学生のための「持たざるリスク」と資産防衛術",
-      "en": "Historic Yen Weakness & Inflation: Asset Defense Strategies for International Students"
-    },
-    "contents": {
-      "ja": "【ニュース】\n2026年1月16日現在、日本の経済は大きな転換点を迎えています。ドル円相場は1ドル＝158円台で推移し、政府・日銀による為替介入への警戒感が非常に高まっています。消費者物価指数（コアCPI）は前年比3.0%上昇を記録し、44ヶ月連続で日銀の目標である2%を上回りました。一方で、日経平均株価は年初から6.5%上昇し史上最高値を更新。日本銀行は政策金利を0.75%まで引き上げましたが、依然として物価上昇に追いつかない状況が続いています。\n\n【資産防衛のヒント】\nインフレ局面では「現金の価値が目減りする」というリスクを理解する必要があります。例えば、年3%のインフレが続くと、100万円の現金は1年後には実質97万円の価値しかなくなります。\n1. **価値が下がる物（負債に近い資産）**: 車などは購入した瞬間から価値が下がり始め、維持費もかかります。インフレ対策としては不向きです。\n2. **お金を生む資産**: 株式や不動産、あるいは自分自身のスキル（自己投資）は、物価上昇に合わせて価値や収益が上がる傾向にあります。特に日経平均が最高値を更新している現在は、現金の一部を「成長する資産」に変えて持つことが、生活を守る防衛策となります。\n\n【生活への影響】\n輸入物価の上昇により、食品や光熱費のさらなる値上げが予想されます。留学生にとっては、仕送り（外貨）を円に替えるタイミングとしては有利ですが、日本国内でアルバイトをして円で生活している場合は、実質的な購買力が低下しています。学費の支払いなどに備え、単なる貯金ではなく、少額からの資産運用を検討する時期に来ています。",
-      "en": "【Economic Facts】\nAs of January 16, 2026, the Japanese economy is at a major crossroads. The Yen is trading around 158 JPY/USD, keeping markets on high alert for government intervention. Core CPI has hit 3.0% YoY, exceeding the BoJ's 2% target for 44 consecutive months. Conversely, the Nikkei 225 has surged 6.5% since the start of the year, reaching new all-time highs. Despite the BoJ raising interest rates to 0.75%, the highest in 30 years, inflation continues to outpace these adjustments.\n\n【Asset Defense Tips】\nIn an inflationary environment, it is crucial to recognize the risk of 'holding only cash.' If inflation stays at 3%, 1 million JPY in cash effectively loses 30,000 JPY in purchasing power within a year.\n1. **Depreciating Assets**: Items like cars lose value the moment they are used and incur maintenance costs. They are poor hedges against inflation.\n2. **Income-Generating Assets**: Stocks, real estate, and personal skill sets (self-investment) tend to appreciate or increase in return as prices rise. With the Nikkei at record highs, shifting a portion of cash into 'growing assets' is a key strategy to protect your wealth.\n\n【Impact on Daily Life】\nRising import costs will likely drive up food and utility prices. While international students receiving foreign remittances benefit from the weak Yen, those relying on JPY-denominated part-time jobs will see their purchasing power decline. It is time to consider small-scale investments rather than just saving cash to prepare for future tuition and living expenses."
-    },
-    "mermaid": {
-      "ja": "graph TD\n    A[インフレ環境] --> B{資産の選択}\n    B --> C[現金・預金]\n    B --> D[お金を生む資産]\n    C --> E[価値が目減りする]\n    D --> F[株式・不動産など]\n    F --> G[物価と共に価値上昇]\n    B --> H[負債的資産]\n    H --> I[車・ブランド品など]\n    I --> J[時間の経過で価値下落]",
-      "en": "graph TD\n    A[Inflationary Env] --> B{Asset Choice}\n    B --> C[Cash & Savings]\n    B --> D[Income Assets]\n    C --> E[Value Erodes]\n    D --> F[Stocks/Real Estate]\n    F --> G[Value Grows with Inflation]\n    B --> H[Depreciating Assets]\n    H --> I[Cars/Luxury Goods]\n    I --> J[Value Drops over Time]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "コアCPI",
-          "en": "Core CPI"
-        },
-        "def": {
-          "ja": "生鮮食品を除いた消費者物価指数。物価の基調的な動きを示す。",
-          "en": "Consumer Price Index excluding fresh food; shows underlying price trends."
-        }
-      },
-      {
-        "term": {
-          "ja": "減価償却資産",
-          "en": "Depreciating Asset"
-        },
-        "def": {
-          "ja": "車などのように、時間の経過や使用によって価値が下がる資産。",
-          "en": "Assets like cars that lose value over time or through usage."
-        }
-      },
-      {
-        "term": {
-          "ja": "インカムゲイン",
-          "en": "Income Gain"
-        },
-        "def": {
-          "ja": "資産を保有することで得られる利益（配当金や利息など）。",
-          "en": "Profits earned from holding an asset, such as dividends or interest."
-        }
-      }
-    ]
-  },
-  {
     "id": "20260114_062246",
     "date": "2026-01-14",
     "titles": {
@@ -197,82 +149,6 @@
         "def": {
           "ja": "外国の通貨（ドルなど）に対して、日本円の価値が下がること。輸入品が高くなります。",
           "en": "A situation where the value of the Yen decreases against other currencies, making imports more expensive."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260112_220155",
-    "date": "2026-01-12",
-    "titles": {
-      "ja": "物価の上昇と「お給料」のゆくえ",
-      "en": "Rising Prices and the Future of Wages"
-    },
-    "contents": {
-      "ja": "【ニュース】\n2026年が始まり、日本の経済は大きな転換点を迎えています。政府は、今年の経済成長率を3.4％、働く人の実質的な給料の伸びを1.3％と予測し、物価の上昇に負けないくらいの賃上げを目指す方針を示しました。一方で、外国の通貨に対して日本のお金の価値が下がる「円安」が進んでおり、1ドルが158円前後で取引されています。これにより、海外から輸入するエネルギーや食品の値段が上がりやすくなっています。\n\n【解説】\n世の中の物の値段が上がることを「インフレ」と言います。例えば、今まで100円で買えたノートが110円になると、同じお金で買えるものが減ってしまいます。これを防ぐには、お家の人からもらう「お小遣い」にあたる「お給料」を、110円以上に増やす必要があります。今、日本中の多くの会社で「物価が上がった分、お給料もしっかり上げよう」という話し合いが行われており、これが成功すれば、私たちの生活はより豊かになります。\n\n【生活への影響】\nお給料が物価よりもたくさん上がれば、生活に余裕が生まれ、新しいものを買ったり旅行に行ったりしやすくなります。しかし、円安の影響で電気代や輸入食品の価格が上がり続けると、家計の負担が増えてしまいます。これからの数ヶ月、社会全体でお給料がどれくらい増えるのかが、日本の景気を良くするための重要な鍵となります。",
-      "en": "As 2026 begins, the Japanese government aims for a 3.4% GDP growth rate and a 1.3% increase in real wages to outpace inflation. Currently, the Yen is weakening, trading at around 158 yen per US dollar, which makes imported goods like energy and food more expensive. The key focus for the economy is whether wage hikes can successfully offset the rising cost of living, ensuring that households have more purchasing power to stimulate further economic growth."
-    },
-    "mermaid": {
-      "ja": "graph TD\nA[物価が上がる] --> B[生活費が増える]\nB --> C[お給料を上げる動き]\nC --> D[自由に使えるお金が増える]\nD --> E[景気が良くなる]",
-      "en": "graph TD\nA[Prices Rise] --> B[Cost of Living Increases]\nB --> C[Wage Hike Movements]\nC --> D[Disposable Income Increases]\nD --> E[Economy Improves]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "実質賃金",
-          "en": "Real Wages"
-        },
-        "def": {
-          "ja": "受け取る給料の金額から、物価の上昇分を差し引いた、実際に買える物の量で表した給料の価値のこと。",
-          "en": "Wages adjusted for inflation, representing the actual purchasing power of one's income."
-        }
-      },
-      {
-        "term": {
-          "ja": "円安",
-          "en": "Weak Yen"
-        },
-        "def": {
-          "ja": "他国の通貨（ドルなど）に対して、日本円の価値が下がること。輸入品が高くなる原因になります。",
-          "en": "A situation where the value of the Japanese Yen decreases against other currencies, making imports more expensive."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260112_215341",
-    "date": "2026-01-12",
-    "titles": {
-      "ja": "【経済指標】直近の市場動向",
-      "en": "[Economic Indicators] Recent Market Trends"
-    },
-    "contents": {
-      "ja": "【ニュース】\n日本の株式市場では、景気の先行きに対する期待から、株価が変動しやすい状況が続いています。また、外国為替市場では円安の傾向が見られ、海外から輸入するエネルギーや食品の価格に影響を与えています。本日は「成人の日」の祝日のため、国内の主要な取引所は休みですが、世界的な経済の動きに合わせた調整が続いています。\n\n【解説】\n「株価」というのは、日本にあるたくさんの会社の「元気のよさ」を数字にした成績表のようなものです。これが高いと、会社が儲かっていて世の中が明るいサインになります。一方、「円安」は日本の「円」の価値が他国の通貨に対して下がっている状態で、海外からお菓子やガソリンを買うときに、今までよりたくさんのお金が必要になってしまうことを意味します。\n\n【生活への影響】\n株価が上がると、将来みんなの家計が潤ったり、新しい仕事が増えたりする可能性があります。一方で、円安で物の値段（物価）が上がると、普段買っている商品の価格が上がり、家計を圧迫することもあります。世界のお金の動きは、私たちの毎日の生活や将来の選択肢に深く関わっています。",
-      "en": "In the Japanese market, stock prices remain volatile due to expectations for the economic outlook. The yen continues to show a weakening trend, affecting the prices of imported goods. As today is a public holiday in Japan, major domestic exchanges are closed, but the market continues to adjust in line with global economic trends. For students, stock prices are like a 'report card' for companies, while a weak yen means imported goods become more expensive. These trends directly impact household costs and future economic opportunities."
-    },
-    "mermaid": {
-      "ja": "graph TD\nA[世界経済の動き] --> B[日本の株価・為替が変化]\nB --> C[輸入品の値段が上がる]\nC --> D[家計や生活に影響]",
-      "en": "graph TD\nA[Global Economic Trends] --> B[Changes in Stock & FX]\nB --> C[Import Prices Rise]\nC --> D[Impact on Daily Life]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "株価",
-          "en": "Stock Price"
-        },
-        "def": {
-          "ja": "会社の価値を数字で表したもの。景気の良さを測る目安になります。",
-          "en": "The price of a company's shares, used as an indicator of economic health."
-        }
-      },
-      {
-        "term": {
-          "ja": "円安",
-          "en": "Weak Yen"
-        },
-        "def": {
-          "ja": "他の国の通貨に対して、日本円の価値が下がること。輸入品が高くなります。",
-          "en": "A situation where the value of the yen decreases against other currencies, making imports more expensive."
         }
       }
     ]
