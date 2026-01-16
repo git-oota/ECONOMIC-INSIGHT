@@ -1,5 +1,53 @@
 [
   {
+    "id": "20260117_062229",
+    "date": "2026-01-17",
+    "titles": {
+      "ja": "日経平均5万3000円台で足踏み、円安158円と長期金利2.1%超えが投資判断の分水嶺に",
+      "en": "Nikkei 225 Hovers at 53k: 158 Yen and 2.1% Interest Rates Become Critical Investment Pivot Points"
+    },
+    "contents": {
+      "ja": "【ニュース】\n2026年1月17日現在、日本経済は歴史的な転換点にあります。前日の東京株式市場で日経平均株価は5万3936円で取引を終え、史上最高値圏での足踏みが続いています。背景にあるのは、1ドル＝158円台まで進んだ円安と、約28年ぶりの水準となる長期金利（10年債利回り）2.1%への上昇です。来週に控える日本銀行の金融政策決定会合では、さらなる利上げ（政策金利の引き上げ）が意識されており、市場には緊張感が走っています。また、高市総理大臣による衆議院解散の意向報道も、政治的な不透明感を強めています。\n\n【投資家目線での影響とアクション】\n投資家にとっては「金利上昇」が最大のテーマです。金利が上がると、企業の借金返済負担が増えるため、特に成長期待で買われていたハイテク株には逆風となります。一方で、金利上昇は銀行などの金融株には追い風です。現在は「グロース（成長株）からバリュー（割安株・金融株）」への資金シフトを検討すべき局面です。また、円安が158円まで進んでいるため、これ以上の円安が進まない（介入や利上げによる円高への揺り戻し）リスクを考慮し、外貨建て資産の利益確定も視野に入れるべきでしょう。\n\n【大学生が知っておくべき背景知識】\n「なぜ金利が上がると株価が下がるのか？」を理解しましょう。金利が上がると、投資家は「リスクのある株」よりも「安全で利回りの良い債券」に魅力を感じます。また、企業が新しい工場を建てるためのローン利息も高くなるため、将来の利益予想が下がります。現在、日本は長年続いた「ゼロ金利」を脱し、世界標準の「金利がある世界」に戻ろうとしています。これは経済の正常化を意味しますが、同時に借金が多い主体（国や一部の企業）にとっては厳しい試練となります。\n\n【国際的な視点と解釈の比較】\n・アメリカ：米市場は、日本の金利上昇を「デフレ脱却の成功」とポジティブに捉えつつ、円キャリートレード（安い円を借りてドルで運用する手法）の解消による米株への資金引き揚げを警戒しています。\n・中国：日本の製造業のコスト増（金利上昇による）を注視しています。円安が是正されれば中国製品の価格競争力が相対的に高まるため、日中間の貿易バランスの変化に敏感になっています。\n\n【資産防衛のヒント】\nインフレ（物価高）と金利上昇が同時に進む局面では、現金の価値が目減りします。銀行預金だけでなく、物価上昇に強い「実物資産（金や不動産）」や、金利上昇の恩恵を受ける「変動利付債」などを組み合わせた分散投資が、あなたの資産を守る鍵となります。\n\n【生活への影響】\n留学生にとって、1ドル158円の円安は二律背反です。母国からの送金を受け取る際は円が多く手に入りますが、日本国内の物価（特に輸入品の食品や燃料）はさらに上昇します。また、金利上昇により、将来日本で家を借りたりローンを組んだりする際のコストが上がる可能性があるため、今のうちに固定金利の仕組みを学んでおくことが重要です。",
+      "en": "【News Summary】\nAs of January 17, 2026, the Japanese economy is at a historic crossroads. The Nikkei 225 closed at 53,936 yen, maintaining its position near record highs. The key drivers are the yen's depreciation to the 158 level per dollar and the 10-year bond yield hitting 2.1%, a level not seen in 28 years. Investors are on edge ahead of next week's Bank of Japan (BOJ) meeting, where further interest rate hikes are expected. Additionally, reports of Prime Minister Takaichi's intent to dissolve the Lower House have introduced political uncertainty.\n\n【Investor Perspective & Actions】\n\"Rising interest rates\" is the dominant theme. Higher rates increase corporate borrowing costs, creating headwinds for high-growth tech stocks. Conversely, this environment benefits financial stocks like banks. Investors should consider shifting capital from 'Growth' to 'Value' (financials/stable sectors). With the yen at 158, the risk of a reversal (yen strengthening due to intervention or rate hikes) is high; thus, taking profits on foreign currency assets might be a prudent move.\n\n【Background for Students】\nUnderstand why stock prices often fall when interest rates rise: Higher rates make 'safe' government bonds more attractive than 'risky' stocks. Furthermore, the cost of loans for companies to build factories or develop products increases, lowering future profit expectations. Japan is currently transitioning from a decades-long 'zero-interest' era to a 'world with interest,' signaling economic normalization but posing a challenge for entities with high debt.\n\n【International Perspectives】\n- USA: Markets view Japan's rate hike as a successful exit from deflation but fear a reversal of the 'yen carry trade,' which could trigger a sell-off in US equities as capital returns to Japan.\n- China: Closely monitoring the rising costs for Japanese manufacturers. A stronger yen would improve the relative price competitiveness of Chinese exports, shifting the trade balance.\n\n【Asset Protection Tips】\nIn a period of simultaneous inflation and rising rates, the value of cash diminishes. Diversifying beyond simple bank deposits into 'real assets' like gold or 'floating-rate notes' that benefit from higher interest is key to protecting your wealth.\n\n【Impact on Daily Life】\nFor international students, 158 JPY/USD is a double-edged sword. While your home currency buys more yen, the cost of living (food, utilities) in Japan continues to rise. Also, rising interest rates mean future costs for housing loans or credit in Japan will increase, making it essential to understand how fixed vs. variable rates work now."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[日銀利上げ観測] --> B(長期金利上昇 2.1%)\n    B --> C{投資家判断}\n    C -->|マイナス影響| D[ハイテク・グロース株]\n    C -->|プラス影響| E[銀行・金融株]\n    F[円安 158円台] --> G[輸出企業の利益増]\n    G --> H[日経平均5.3万円維持]\n    B --> I[輸入物価の上昇]\n    I --> J[留学生の生活費増]",
+      "en": "graph TD\n    A[BOJ Rate Hike Specs] --> B(Long-term Rate Up 2.1%)\n    B --> C{Investor Decision}\n    C -->|Negative Impact| D[Tech/Growth Stocks]\n    C -->|Positive Impact| E[Banking/Financials]\n    F[Yen Weakness 158] --> G[Export Profit Boost]\n    G --> H[Nikkei 225 at 53k]\n    B --> I[Import Price Inflation]\n    I --> J[Higher Living Costs for Students]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "長期金利",
+          "en": "Long-term Interest Rate"
+        },
+        "def": {
+          "ja": "一般的に10年物国債の利回りを指し、住宅ローンや企業の借入金利の基準となる。",
+          "en": "Typically refers to the yield on 10-year government bonds, serving as a benchmark for mortgage and corporate loan rates."
+        }
+      },
+      {
+        "term": {
+          "ja": "円キャリートレード",
+          "en": "Yen Carry Trade"
+        },
+        "def": {
+          "ja": "低金利の円を借りて、より金利の高いドルなどで運用し、その差額で利益を得る投資手法。",
+          "en": "An investment strategy where one borrows yen at low rates to invest in higher-yielding currencies like the dollar."
+        }
+      },
+      {
+        "term": {
+          "ja": "バリュー株",
+          "en": "Value Stocks"
+        },
+        "def": {
+          "ja": "企業の利益や資産に対して、現在の株価が割安な水準にある銘柄。金利上昇局面で選好されやすい。",
+          "en": "Stocks that are undervalued relative to their earnings or assets; often preferred during periods of rising interest rates."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260116_082928",
     "date": "2026-01-16",
     "titles": {
