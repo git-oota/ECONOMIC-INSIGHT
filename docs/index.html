@@ -100,6 +100,41 @@
             }
         }
 
+        // index.html の injectGlossaryLinks 関数
+        function injectGlossaryLinks(text, glossary, lang) {
+            // 1. データが不完全なら、置換せずに元のテキストをそのまま返す（安全策）
+            if (!text || !glossary || !Array.isArray(glossary) || glossary.length === 0) {
+                return text;
+            }
+            
+            let processedText = text;
+            try {
+                // 長い単語から順にソート（「円」より「円安」を優先）
+                const sortedGlossary = [...glossary].sort((a, b) => {
+                    const lenA = (a.term && a.term[lang]) ? a.term[lang].length : 0;
+                    const lenB = (b.term && b.term[lang]) ? b.term[lang].length : 0;
+                    return lenB - lenA;
+                });
+        
+                sortedGlossary.forEach(item => {
+                    if (!item.term || !item.term[lang] || !item.def || !item.def[lang]) return;
+        
+                    const term = item.term[lang];
+                    const definition = item.def[lang].replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                    
+                    // すでにHTMLタグの一部になっている場合は置換しない（正規表現の改良）
+                    const regex = new RegExp(`(${term})(?![^<]*>|[^<>]*<\/a>)`, 'g');
+                    processedText = processedText.replace(regex, 
+                        `<span class="glossary-term" onclick="showGlossary('${term}', '${definition}')">$1</span>`
+                    );
+                });
+            } catch (e) {
+                console.error("Glossary Injection Error:", e);
+                return text; // エラーが起きても元の記事を表示
+            }
+            return processedText;
+        }
+                
         function render() {
             const lang = document.getElementById('langSet').value;
 
