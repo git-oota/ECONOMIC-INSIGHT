@@ -1,5 +1,63 @@
 [
   {
+    "id": "20260117_134936",
+    "date": "2026-01-17",
+    "titles": {
+      "ja": "日経平均5万4000円突破、「高市トレード」が加速する日本市場の行方",
+      "en": "Nikkei Breaks 54,000: The Future of Japan's Market as 'Takaichi Trade' Accelerates"
+    },
+    "contents": {
+      "ja": "【ニュース：日経平均、未知の領域へ】\n日経平均株価は17日、一時5万4000円の大台を突破し、史上最高値を更新しました。この背景にあるのは、高市早苗首相による「解散総選挙」への期待感です。市場では、積極的な財政出動と金融緩和的な姿勢を維持する「高市トレード」が再燃しており、外国人投資家を中心に日本株への買いが加速しています。一方で、円相場は1ドル＝159円台まで下落し、10年物国債利回りは2.1%台と27年ぶりの高水準を記録。株高・円安・金利上昇という、極めてボラティリティの高い局面を迎えています。\n\n【投資家目線：どう動くべきか】\n投資家にとって、現在は「期待」と「警戒」が交錯する時期です。短期的には、円安の恩恵を受けるトヨタなどの輸出関連株や、金利上昇で利ざやが改善する銀行株に資金が集まりやすいでしょう。しかし、金利の急騰は債券価格の下落を招き、住宅ローン金利の上昇を通じて国内消費を冷やすリスクもあります。投資家は、選挙後の具体的な政策発表を見極めるまで、利益確定売りを交えつつ、ポートフォリオの現金比率を少し高めに維持する「慎重な強気」の姿勢が求められます。\n\n【学生のための背景知識：なぜ政治で株が動くのか？】\n「解散総選挙」とは、衆議院議員の全員が任期満了前に職を失い、選挙を行うことです。新しい政権や強力なリーダーシップが期待されると、経済を活性化させる新しいルール（政策）が作られるという期待から、株が買われます。特に高市首相が掲げる「積極財政」は、政府がお金をたくさん使って景気を刺激する方針であるため、企業業績が良くなると予想されているのです。\n\n【国際的な視点：米中の反応】\nアメリカのメディア（CNBC等）は、日本の株高を「政治的安定への期待」として概ねポジティブに報じていますが、同時にFRBのパウエル議長に対する調査など自国の混乱を注視しています。一方、中国（環球時報等）は、日本の軍事費増大につながる財政出動や、半導体輸出規制の強化を警戒する文脈で報じています。日本国内では「景気回復の兆し」と捉えられていますが、海外からは「地政学的なパワーバランスの変化」として注目されている点に注意が必要です。",
+      "en": "【News: Nikkei Enters Uncharted Territory】\nThe Nikkei 225 surged past the 54,000 mark on the 17th, hitting a new all-time high. The primary driver is the speculation surrounding Prime Minister Sanae Takaichi's potential 'Snap Election.' The market is witnessing a resurgence of the 'Takaichi Trade,' characterized by expectations of aggressive fiscal expansion and a dovish monetary stance, prompting heavy buying by foreign investors. Conversely, the Yen has weakened to the 159 range against the Dollar, and the 10-year JGB yield hit 2.1%, a 27-year high. We are in a high-volatility phase of high stocks, a weak Yen, and rising interest rates.\n\n【Investor Insight: Strategic Actions】\nFor investors, this is a period of mixed signals. In the short term, capital is likely to flow into exporters like Toyota, which benefit from the weak Yen, and banking stocks, which see improved margins from rising rates. However, the sharp rise in yields risks crashing bond prices and cooling domestic consumption via higher mortgage rates. Investors should adopt a 'cautiously bullish' stance—taking some profits while maintaining slightly higher cash reserves until post-election policy details are clarified.\n\n【Background for Students: Why Politics Move Markets】\nA 'Snap Election' occurs when the House of Representatives is dissolved before the end of its term to hold a general election. When markets expect a strong mandate for a leader, they anticipate new growth-oriented policies. Specifically, PM Takaichi’s 'Fiscal Expansion' involves the government spending more to stimulate the economy, which leads to expectations of higher corporate profits and thus higher stock prices.\n\n【International Perspective: US & China Reactions】\nUS media (e.g., CNBC) views the Japanese rally positively as a sign of 'political stability,' though they are currently distracted by domestic probes into Fed Chair Powell. Meanwhile, Chinese outlets (e.g., Global Times) report on Japan's fiscal moves with caution, linking them to increased defense spending and semiconductor export controls. While Japan interprets this as an 'economic recovery,' the world sees it through the lens of 'geopolitical power shifts.'"
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[解散総選挙の観測] --> B[高市トレードの加速]\n    B --> C[積極的な財政出動への期待]\n    C --> D[日経平均株価の上昇]\n    C --> E[円安の進行]\n    D --> F[輸出企業の利益増]\n    E --> F\n    G[金利の上昇] --> H[債券価格の下落リスク]\n    G --> I[銀行セクターの収益改善]",
+      "en": "graph TD\n    A[Snap Election Speculation] --> B[Takaichi Trade Accelerates]\n    B --> C[Expectations of Fiscal Expansion]\n    C --> D[Nikkei 225 Rallies]\n    C --> E[Yen Depreciation]\n    D --> F[Exporter Profit Increase]\n    E --> F\n    G[Interest Rate Rise] --> H[Bond Price Downside Risk]\n    G --> I[Banking Sector Margin Improvement]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "高市トレード",
+          "en": "Takaichi Trade"
+        },
+        "def": {
+          "ja": "高市首相の経済政策（積極財政・金融緩和維持）を期待して、日本株を買い、円を売る投資行動のこと。",
+          "en": "An investment strategy of buying Japanese stocks and selling the Yen based on expectations of PM Takaichi's policies, such as fiscal expansion and continued monetary easing."
+        }
+      },
+      {
+        "term": {
+          "ja": "解散総選挙",
+          "en": "Snap Election"
+        },
+        "def": {
+          "ja": "衆議院を解散して行われる総選挙。政権の信を問うために任期満了前に行われることが多い。",
+          "en": "A general election called earlier than expected, usually to seek a new mandate or capitalize on high approval ratings."
+        }
+      },
+      {
+        "term": {
+          "ja": "財政出動",
+          "en": "Fiscal Expansion"
+        },
+        "def": {
+          "ja": "政府が公共事業や補助金などを通じて、国のお金を市場に投入し、景気を刺激すること。",
+          "en": "A policy where the government increases spending or cuts taxes to stimulate economic activity."
+        }
+      },
+      {
+        "term": {
+          "ja": "債券利回り",
+          "en": "Bond Yield"
+        },
+        "def": {
+          "ja": "債券（国などへの借金）に対する利息の割合。一般的に、金利が上がると債券の価格は下がる性質がある。",
+          "en": "The amount of return an investor realizes on a bond. Generally, when interest rates rise, bond prices fall."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260117_134116",
     "date": "2026-01-17",
     "titles": {
