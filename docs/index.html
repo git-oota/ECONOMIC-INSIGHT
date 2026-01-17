@@ -71,27 +71,33 @@
     <script>
         let articles = [];
         let currentIndex = 0;
-
+    
+        // --- 1. 追加：解説を表示する関数（これが無いとタップしても反応しません） ---
+        function showGlossary(term, definition) {
+            const footer = document.getElementById('glossary-footer');
+            document.getElementById('footer-term').innerText = term;
+            document.getElementById('footer-def').innerText = definition;
+            footer.classList.add('active');
+        }
+    
         async function loadData() {
             try {
                 const res = await fetch('./data.json?t=' + Date.now());
                 if (!res.ok) throw new Error("JSONファイルが見つかりません。");
                 articles = await res.json();
-
-                // 言語判定ロジック：URLパラメータを優先し、なければブラウザ言語を確認
+    
                 const params = new URLSearchParams(window.location.search);
                 let initialLang = params.get('lang');
-
+    
                 if (!initialLang) {
                     const browserLang = navigator.language || navigator.userLanguage;
-                    // 日本語(ja)以外はすべてデフォルトで英語(en)にする
                     initialLang = browserLang.startsWith('ja') ? 'ja' : 'en';
                 }
-
+    
                 if (initialLang === 'en' || initialLang === 'ja') {
                     document.getElementById('langSet').value = initialLang;
                 }
-
+    
                 render();
             } catch (e) {
                 console.error(e);
@@ -99,30 +105,25 @@
                     `<div class="text-red-500 text-center py-20 font-bold">エラーが発生しました: ${e.message}</div>`;
             }
         }
-
-        // index.html の injectGlossaryLinks 関数
+    
+        // --- 用語変換ロジック（そのまま維持） ---
         function injectGlossaryLinks(text, glossary, lang) {
-            // 1. データが不完全なら、置換せずに元のテキストをそのまま返す（安全策）
             if (!text || !glossary || !Array.isArray(glossary) || glossary.length === 0) {
                 return text;
             }
             
             let processedText = text;
             try {
-                // 長い単語から順にソート（「円」より「円安」を優先）
                 const sortedGlossary = [...glossary].sort((a, b) => {
                     const lenA = (a.term && a.term[lang]) ? a.term[lang].length : 0;
                     const lenB = (b.term && b.term[lang]) ? b.term[lang].length : 0;
                     return lenB - lenA;
                 });
-        
+    
                 sortedGlossary.forEach(item => {
                     if (!item.term || !item.term[lang] || !item.def || !item.def[lang]) return;
-        
                     const term = item.term[lang];
                     const definition = item.def[lang].replace(/'/g, "\\'").replace(/"/g, '&quot;');
-                    
-                    // すでにHTMLタグの一部になっている場合は置換しない（正規表現の改良）
                     const regex = new RegExp(`(${term})(?![^<]*>|[^<>]*<\/a>)`, 'g');
                     processedText = processedText.replace(regex, 
                         `<span class="glossary-term" onclick="showGlossary('${term}', '${definition}')">$1</span>`
@@ -130,14 +131,14 @@
                 });
             } catch (e) {
                 console.error("Glossary Injection Error:", e);
-                return text; // エラーが起きても元の記事を表示
+                return text;
             }
             return processedText;
         }
                 
         function render() {
             const lang = document.getElementById('langSet').value;
-
+    
             // 固定タイトルの切り替え
             const labelBackground = document.getElementById('label-background');
             const labelArchives = document.getElementById('label-archives');
@@ -152,8 +153,7 @@
                 labelArchives.innerText = "Archives";
                 labelRateLink.innerText = "Understanding Interest Rates";
             }
-
-            // リンクに言語情報を付与
+    
             const rateLink = document.querySelector('a[href*="rate.html"]');
             if (rateLink) {
                 rateLink.href = `context/rate.html?lang=${lang}`;
@@ -166,20 +166,22 @@
                 contentArea.innerHTML = `<p class="text-center py-20">記事がありません。</p>`;
                 return;
             }
-
+    
             const data = articles[currentIndex];
             const dateStr = data.date || "Unknown Date";
             const titleStr = (data.titles && data.titles[lang]) ? data.titles[lang] : "Untitled";
             const contentStr = (data.contents && data.contents[lang]) ? data.contents[lang] : "本文なし";
             
+            // --- 2. 修正ポイント：ここで変換関数を呼び出します ---
             let htmlBody = contentStr.replace(/\n/g, '<br>');
-
+            htmlBody = injectGlossaryLinks(htmlBody, data.glossary, lang);
+    
             contentArea.innerHTML = `
                 <div class="text-blue-600 font-black mb-4 text-sm">${dateStr}</div>
                 <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight">${titleStr}</h2>
                 <div class="prose prose-lg max-w-none text-slate-700 mb-16">${htmlBody}</div>
             `;
-
+    
             archiveList.innerHTML = articles.map((art, idx) => {
                 const t = (art.titles && art.titles[lang]) ? art.titles[lang] : "Untitled";
                 return `
@@ -189,10 +191,10 @@
                 </div>`;
             }).join('');
         }
-
+    
         function changeArticle(i) { currentIndex = i; render(); window.scrollTo({top:0, behavior:'smooth'}); }
         function closeGlossary() { document.getElementById('glossary-footer').classList.remove('active'); }
-
+    
         loadData();
     </script>
 </body>
