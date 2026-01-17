@@ -58,64 +58,6 @@
     ]
   },
   {
-    "id": "20260117_134116",
-    "date": "2026-01-17",
-    "titles": {
-      "ja": "「高市トレード」が市場を席巻、日経平均5万4000円を巡る攻防と円安の行方",
-      "en": "'Takaichi Trade' Dominates Markets: Nikkei 225 Battles at 54,000 as Yen Weakens"
-    },
-    "contents": {
-      "ja": "【ニュース】\n2026年1月17日、東京株式市場は高市政権による早期の「衆議院解散」観測を背景とした「高市トレード」に沸いています。日経平均株価は一時5万4000円の大台を突破し、バブル期後の最高値を更新し続けています。この上昇を牽引しているのは、高市首相が掲げる積極的な「財政出動」への期待感です。特にAI、半導体、防衛関連銘柄への資金流入が顕著で、TSMCの設備投資増額発表も追い風となりました。一方で、為替市場では円が対ドルで158円台まで下落し、輸入物価の上昇によるインフレ懸念も再燃しています。\n\n【資産防衛のヒント】\n投資家としては、現在は「期待先行」の相場であることを自覚すべきです。選挙での与党勝利は「政治的安定」をもたらしますが、同時に膨大な国債発行による長期金利の上昇リスクを孕んでいます。投資戦略としては、恩恵を受ける防衛・半導体セクターを軸にしつつ、金利上昇の恩恵を受ける銀行株をポートフォリオに組み込むことでリスクヘッジを図るのが賢明です。また、円安が進む局面では、外貨建て資産（米国株やETF）の保有を継続し、円安による資産目減りを防ぐ意識が重要です。\n\n【生活への影響】\n大学生の皆さんにとって、このニュースは「将来の就職先」と「生活費」に直結します。政府が重点投資する半導体やAI分野は採用意欲がさらに高まるでしょう。しかし、円安とインフレの同時進行により、食料品やエネルギー価格がさらに上昇する可能性があります。また、日銀が「金利正常化」を進める中で、将来の住宅ローン金利や奨学金の返済条件にも影響が出る可能性があるため、金利の動向には敏感になっておく必要があります。\n\n【国際的な視点】\nアメリカのメディア（Bloomberg等）は、今回の動きを「アベノミクスの再来」と捉え、日本のリフレ政策が世界のマネーフローに与える影響を注視しています。一方、中国（環球時報等）は、高市政権のタカ派的な外交姿勢や防衛費増額、半導体の国産化推進に対し、地政学的な緊張が高まるとして警戒感を露わにしています。日本国内では「景気刺激」として好意的に報じられるニュースも、一歩外に出れば「軍拡」や「通貨安競争」と批判的に捉えられる側面があることを理解しておくべきです。",
-      "en": "[News]\nAs of Jan 17, 2026, the Tokyo market is surging on the 'Takaichi Trade,' fueled by speculation of a 'Snap Election' by the Takaichi administration. The Nikkei 225 briefly crossed the 54,000 mark, continuing to break post-bubble records. This rally is driven by expectations for aggressive 'Fiscal Stimulus' promised by PM Takaichi, particularly in AI, semiconductors, and defense. TSMC's record-high CapEx plans have further boosted equipment makers. Conversely, the Yen has weakened to the 158 range against the Dollar, reigniting inflation fears.\n\n[Investment Tips]\nInvestors must recognize this as an 'expectation-driven' market. While an election victory brings political stability, it risks spiking long-term interest rates due to massive bond issuance. A wise strategy involves focusing on defense and semi-sectors while hedging with banking stocks that benefit from rising rates. Additionally, maintaining exposure to foreign currency assets (US stocks/ETFs) is crucial to protect against purchasing power loss from a weak Yen.\n\n[Impact on Daily Life]\nFor students, this directly impacts 'future careers' and 'living costs.' Sectors receiving government investment will see higher recruitment. However, the combination of a weak Yen and inflation may further push up food and energy prices. As the BOJ proceeds with 'Monetary Normalization,' keep an eye on interest rates, as they will eventually affect student loan repayments and future mortgage costs.\n\n[Global Perspective]\nUS media (e.g., Bloomberg) views this as 'Abenomics 2.0,' focusing on how Japan's reflationary policies shift global capital. Meanwhile, Chinese media (e.g., Global Times) remains wary of PM Takaichi's hawkish diplomacy, increased defense spending, and semiconductor independence, citing rising geopolitical tensions. It is essential to understand that while domestic reports focus on 'economic stimulus,' international views may criticize it as 'militarization' or 'currency competition.']"
-    },
-    "mermaid": {
-      "ja": "graph TD\n    A[衆議院解散の観測] --> B{高市トレード}\n    B --> C[積極的な財政出動期待]\n    C --> D[株価上昇: AI・半導体・防衛]\n    C --> E[国債増発懸念]\n    E --> F[長期金利の上昇]\n    F --> G[銀行株へのプラス影響]\n    B --> H[円安進行 1ドル158円]\n    H --> I[インフレ圧力の増大]",
-      "en": "graph TD\n    A[Snap Election Speculation] --> B{Takaichi Trade}\n    B --> C[Expectations for Fiscal Stimulus]\n    C --> D[Stock Rally: AI, Semis, Defense]\n    C --> E[Concerns over Bond Issuance]\n    E --> F[Rise in Long-term Interest Rates]\n    F --> G[Positive Impact on Bank Stocks]\n    B --> H[Yen Weakening 158/USD]\n    H --> I[Increased Inflationary Pressure]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "高市トレード",
-          "en": "Takaichi Trade"
-        },
-        "def": {
-          "ja": "高市早苗首相の経済政策（積極的な財政出動や緩和的な金融政策の支持）を期待して、関連する株式を買う投資行動のこと。",
-          "en": "Investment activity buying stocks in anticipation of PM Sanae Takaichi's economic policies, characterized by fiscal expansion and supportive monetary policy."
-        }
-      },
-      {
-        "term": {
-          "ja": "衆議院解散",
-          "en": "Dissolution of the House of Representatives"
-        },
-        "def": {
-          "ja": "任期満了前に衆議院議員の全員の資格を失わせ、総選挙を行うこと。政権が国民の信を問うために行われ、市場では政策の継続性や変化を占う重要イベントとなる。",
-          "en": "The act of terminating the term of all members of the House of Representatives before it ends to call a general election. Used by the government to seek a public mandate, often moving markets."
-        }
-      },
-      {
-        "term": {
-          "ja": "財政出動",
-          "en": "Fiscal Stimulus"
-        },
-        "def": {
-          "ja": "政府が公共投資や減税などを通じて、市場にお金を流し、景気を刺激すること。景気回復が期待される反面、国の借金（国債）が増える要因にもなる。",
-          "en": "Government measures like public spending or tax cuts to inject money into the economy. While it boosts growth, it also increases national debt via bond issuance."
-        }
-      },
-      {
-        "term": {
-          "ja": "金利正常化",
-          "en": "Monetary Normalization"
-        },
-        "def": {
-          "ja": "中央銀行が長期間続けてきた異例の低金利政策や大規模な金融緩和を解除し、金利を本来の適切な水準に戻していくプロセス。",
-          "en": "The process by which a central bank reverses its ultra-loose monetary policy and low interest rates to return them to more conventional, appropriate levels."
-        }
-      }
-    ]
-  },
-  {
     "id": "20260117_062229",
     "date": "2026-01-17",
     "titles": {
