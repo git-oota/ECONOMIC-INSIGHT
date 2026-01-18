@@ -1,5 +1,63 @@
 [
   {
+    "id": "20260119_061915",
+    "date": "2026-01-19",
+    "titles": {
+      "ja": "「自由貿易」か「保護主義」か：EU・メルコスールFTA署名と米関税リスクの激突",
+      "en": "Free Trade vs. Protectionism: EU-Mercosur FTA Signed Amid U.S. Tariff Risks"
+    },
+    "contents": {
+      "ja": "【ニュース要約】\n本日、日本経済新聞は2つの対照的な国際貿易ニュースを報じました。一つは、EU（欧州連合）と南米の経済ブロック「メルコスール」が、25年に及ぶ交渉の末に自由貿易協定（FTA）に署名したことです。これにより、世界最大級の自由貿易圏が誕生します。一方で、アメリカのトランプ政権は、欧州8カ国に対して10%の追加関税を課す方針を表明しました。世界経済は、自由貿易による成長と、関税による分断の「二極化」が加速しています。\n\n【投資家への影響と行動指針】\n投資家にとっては「サプライチェーンの再編」が最大のテーマとなります。米国の関税リスクにさらされる欧州企業の短期的下落に注意が必要ですが、長期的に見れば南米市場へのアクセスが改善される欧州の自動車・機械セクターには追い風です。投資家は、特定の国に依存しない「マルチ・ラテラル（多角的）」なポートフォリオを構築し、関税の影響を受けにくい内需株やサービス業への分散を検討すべきです。\n\n【大学生のための背景知識】\n「FTA（自由貿易協定）」とは、国同士で「関税（輸入品にかかる税金）」をなくしたり、投資のルールを決めたりする約束のことです。通常、関税がなくなるとモノが安く買えるようになり、経済が活性化します。しかし、自国の産業を守りたい国（現在のアメリカなど）は、あえて関税を高くする「保護主義」をとることがあります。これは、安価な輸入品が入るのを防ぐためですが、結果として消費者が払う価格が上がるデメリットもあります。\n\n【国際的な視点の比較】\nアメリカでは、今回の追加関税を「国内雇用の保護」や「対等な貿易条件の確保」として正当化する報道が目立ちます。一方、中国メディアは、アメリカの独走を批判しつつ、自国が主導する広域経済圏（RCEPなど）の優位性を強調する傾向にあります。日本では、輸出依存度が高い国として、米欧の貿易摩擦が日本企業（特に自動車部品など）に波及することを警戒する「中立かつ慎重」な解釈が主流です。",
+      "en": "【News Summary】\nToday, Nikkei reported two contrasting international trade developments. First, the EU and the South American trade bloc 'Mercosur' signed a Free Trade Agreement (FTA) after 25 years of negotiations, creating one of the world's largest free trade zones. Conversely, the U.S. administration announced plans to impose a 10% additional tariff on eight European countries. The global economy is rapidly polarizing between growth through free trade and fragmentation through tariffs.\n\n【Investor Insight & Action】\nFor investors, 'supply chain restructuring' is the dominant theme. Caution is needed regarding short-term dips in European companies exposed to U.S. tariff risks. However, the EU-Mercosur FTA provides a long-term tailwind for European automotive and machinery sectors gaining better access to South American markets. Investors should build 'multi-lateral' portfolios and consider diversifying into domestic demand-led stocks or services less affected by tariffs.\n\n【Background for Students】\nAn 'FTA' (Free Trade Agreement) is a pact between nations to eliminate 'tariffs' (taxes on imports) and establish investment rules. Lowering tariffs generally makes goods cheaper and stimulates the economy. However, countries wanting to protect domestic industries (like the current U.S.) may adopt 'protectionism' by raising tariffs. While this blocks cheap imports, it often leads to higher prices for consumers.\n\n【International Perspective】\nIn the U.S., reports often justify these additional tariffs as necessary for 'protecting domestic jobs' and 'ensuring fair trade.' Meanwhile, Chinese media tend to criticize U.S. unilateralism while highlighting the strengths of China-led economic zones like RCEP. In Japan, which is highly export-dependent, the prevailing interpretation is 'neutral and cautious,' focusing on how U.S.-Europe trade friction might spill over to Japanese firms, particularly in the auto parts sector."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[世界貿易の二極化] --> B[EU・メルコスールFTA]\n    A --> C[米国による追加関税]\n    B --> D[自由貿易圏の拡大]\n    B --> E[欧州・南米間の物価下落]\n    C --> F[保護主義の強化]\n    C --> G[サプライチェーンの混乱・物価上昇]\n    D --> H[投資機会: 欧州輸出企業]\n    F --> I[投資リスク: 米欧関連銘柄]",
+      "en": "graph TD\n    A[Global Trade Polarization] --> B[EU-Mercosur FTA]\n    A --> C[U.S. Additional Tariffs]\n    B --> D[Expansion of Free Trade Zone]\n    B --> E[Price Drops between EU & S.America]\n    C --> F[Strengthening Protectionism]\n    C --> G[Supply Chain Disruption / Inflation]\n    D --> H[Opportunity: EU Exporters]\n    F --> I[Risk: US-Europe Related Stocks]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "自由貿易協定",
+          "en": "Free Trade Agreement (FTA)"
+        },
+        "def": {
+          "ja": "特定の国や地域の間で、関税や輸出入の制限をなくすために結ぶ条約。",
+          "en": "A treaty between specific countries or regions to eliminate tariffs and import/export restrictions."
+        }
+      },
+      {
+        "term": {
+          "ja": "関税",
+          "en": "Tariff"
+        },
+        "def": {
+          "ja": "輸入品に対して、輸入先の国が課す税金。自国産業の保護や税収確保が目的。",
+          "en": "A tax imposed by a government on imported goods, used to protect domestic industries or generate revenue."
+        }
+      },
+      {
+        "term": {
+          "ja": "メルコスール",
+          "en": "Mercosur"
+        },
+        "def": {
+          "ja": "ブラジル、アルゼンチンなど南米諸国による関税同盟・共同市場のこと。",
+          "en": "A South American trade bloc and customs union comprising countries like Brazil and Argentina."
+        }
+      },
+      {
+        "term": {
+          "ja": "保護主義",
+          "en": "Protectionism"
+        },
+        "def": {
+          "ja": "関税や輸入制限によって自国の産業を外国製品との競争から守ろうとする政策。",
+          "en": "Economic policy of restraining trade between nations through methods such as tariffs on imported goods to protect domestic industries."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260117_134936",
     "date": "2026-01-17",
     "titles": {
