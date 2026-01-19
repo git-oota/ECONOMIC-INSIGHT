@@ -1,6 +1,7 @@
 import os
 import json
 import logging
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from google import genai
 from google.genai import types
@@ -24,50 +25,27 @@ def generate_content():
     You are a professional economic analyst and SEO specialist for international audiences.
     【Task】
     1. Use Google Search to find real economic news in Japan for today ({TODAY}).
-    2. Summarize the news in an engaging, easy-to-understand way.
+    2. Summarize the news in an engaging way for a global audience.
     
-    【SEO & Target Keyword Strategy (最重要)】
-    - 以下のターゲットキーワードを、自然な形でタイトル(titles)と要約(descriptions)の冒頭（左側）に含めてください。
-    - 英語キーワード: "Japan Economy", "Nikkei 225", "Yen (JPY)", "Bank of Japan (BoJ)", "Investing in Japan", "Inflation".
-    - 日本語キーワード: "日本経済", "日経平均", "円安", "金利", "投資", "ニュース要約".
-    - 検索エンジンは文章の先頭に近い単語を重視します。重要な単語を必ず左側に配置してください。
+    【SEO Keyword Strategy】
+    - Titles & Descriptions の左側に重要語（Japan Economy, Nikkei 225, Yen (JPY), BoJ, Inflation）を配置。
+    - 英語タイトルは検索結果でのクリック率（CTR）を意識した魅力的なものに。
 
     【Required Insights】
-    - あなたは日経新聞社のシニア編集者です。日経新聞よりTOPニュースを取得し、著作権に配慮してリライトしてください。
-    - 経済関連のニュースの場合は、投資家目線で、マーケットへの影響と推奨アクションを具体的に記載して。
-    - 大学生でもわかるように、ニュースを読むために必要な背景知識（Essential Context）を詳しく説明してください。
-    - 国際比較：アメリカ（WSJ）や中国での報道のされ方を探し、日本での解釈と比較分析して。
+    - 日経新聞編集者の視点でリライト（著作権順守）。
+    - 投資家への影響と具体的な推奨アクション。
+    - 大学生・留学生向けの背景知識（Essential Context）解説。
+    - 米・中との報道内容の比較分析。
     
-    【Metadata & Glossary Rule】
-    - descriptions: 検索結果(SERPs)のクリック率を最大化するための要約です。
-        - ja: 120文字以内。読者が「答えを知りたくなる」フックを作ってください。
-        - en: 160文字以内。キーワードを盛り込みつつ、プロフェッショナルなトーンで。
-    - glossary: 本文中の専門用語を3〜5個抽出。termは本文の表記と完全に一致させてください。
-
-    【捏造厳禁】
-    - 過去48時間以内の情報を採用。架空のニュースは絶対に書かない。
-    - データ不足時は朝日新聞、読売新聞、産経新聞から収集。
-
     【Output Format: Strict JSON only】
     {{
       "id": "{UPDATE_ID}",
       "date": "{TODAY}",
-      "titles": {{ "ja": "SEOキーワードを含むタイトル", "en": "Keyword-rich Engaging Title" }},
-      "descriptions": {{ 
-        "ja": "前半に重要単語を配置した要約", 
-        "en": "Search-optimized summary starting with target keywords" 
-      }},
-      "contents": {{ 
-        "ja": "【今日のニュース】\\n...\\n\\n【投資家へのインサイト】\\n...\\n\\n【Essential Context】\\n...", 
-        "en": "..." 
-      }},
+      "titles": {{ "ja": "タイトル", "en": "Title" }},
+      "descriptions": {{ "ja": "120文字要約", "en": "160 chars SEO summary" }},
+      "contents": {{ "ja": "本文", "en": "Body" }},
       "mermaid": {{ "ja": "graph TD...", "en": "graph TD..." }},
-      "glossary": [
-        {{
-          "term": {{ "ja": "用語", "en": "Term" }},
-          "def": {{ "ja": "解説", "en": "Explanation" }}
-        }}
-      ]
+      "glossary": [ {{ "term": {{"ja":"用語","en":"Term"}}, "def": {{"ja":"解説","en":"Exp"}} }} ]
     }}
     """
 
@@ -81,16 +59,43 @@ def generate_content():
                 temperature=0.7 
             )
         )
-        
         content = json.loads(response.text)
-        if isinstance(content, list):
-            content = content[0]
-            
-        return content
-
+        return content[0] if isinstance(content, list) else content
     except Exception as e:
         logger.error(f"API Error: {e}")
         return None
+
+def update_sitemap(data_path):
+    """sitemap.xmlを自動生成・更新する"""
+    base_url = "https://jp-economy.com"
+    pages = [
+        "index.html",
+        "profile.html",
+        "privacy.html",
+        "contact.html",
+        "context/rate.html"
+    ]
+    
+    # XMLの構造を作成
+    urlset = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+    
+    for page in pages:
+        url_el = ET.SubElement(urlset, "url")
+        loc = ET.SubElement(url_el, "loc")
+        loc.text = f"{base_url}/{page}"
+        lastmod = ET.SubElement(url_el, "lastmod")
+        lastmod.text = TODAY
+        changefreq = ET.SubElement(url_el, "changefreq")
+        changefreq.text = "daily" if page == "index.html" else "weekly"
+        priority = ET.SubElement(url_el, "priority")
+        priority.text = "1.0" if page == "index.html" else "0.8"
+
+    # 保存
+    sitemap_path = os.path.join(os.path.dirname(data_path), 'sitemap.xml')
+    tree = ET.ElementTree(urlset)
+    ET.indent(tree, space="  ", level=0) # 見やすく整形
+    tree.write(sitemap_path, encoding='utf-8', xml_declaration=True)
+    print(f"✅ Sitemap updated: {sitemap_path}")
 
 def main():
     data_path = 'docs/data.json'
@@ -109,15 +114,17 @@ def main():
             except:
                 history = []
     
-    # 記事を先頭に追加
     history.insert(0, new_article)
     os.makedirs(os.path.dirname(data_path), exist_ok=True)
     
+    # 記事データ保存
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:50], f, ensure_ascii=False, indent=2)
     
-    title_ja = new_article.get('titles', {}).get('ja', 'No Title')
-    print(f"✅ Success: {title_ja}")
+    # サイトマップ更新
+    update_sitemap(data_path)
+    
+    print(f"✅ Success: {new_article.get('titles', {}).get('ja')}")
 
 if __name__ == "__main__":
     main()
