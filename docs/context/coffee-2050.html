@@ -152,4 +152,21 @@
             document.getElementById('price-value-future').innerText = t.valueFuture;
             
             // フッター
-            document.getElementById('f-link-profile').innerText =
+            document.getElementById('f-link-profile').innerText = t.fProfile;
+            document.getElementById('f-link-privacy').innerText = t.fPrivacy;
+            document.getElementById('f-link-contact').innerText = t.fContact;
+            document.getElementById('f-link-profile').href = `../profile.html?lang=${lang}`;
+            document.getElementById('f-link-privacy').href = `../privacy.html?lang=${lang}`;
+            document.getElementById('f-link-contact').href = `../contact.html?lang=${lang}`;
+        }
+
+        function goHome() { 
+            location.href = `../index.html?lang=${document.getElementById('langSet').value}`; 
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('langSet').value = params.get('lang') || 'ja';
+        updateLanguage();
+    </script>
+</body>
+</html>
