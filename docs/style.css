@@ -1,4 +1,4 @@
-/* 基本設定 */
+/* 基本設定とフォント */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
 
 body {
@@ -8,22 +8,23 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f8fafc; /* bg-slate-50 */
-    color: #0f172a;            /* text-slate-900 */
+    background-color: #f8fafc;
+    color: #0f172a;
 }
 
 main {
     flex: 1;
     width: 100%;
-    max-width: 56rem;          /* max-w-4xl */
-    margin: 2rem auto;         /* 上下の余白と中央寄せ */
+    max-width: 56rem;
+    margin: 2rem auto;
     padding: 2rem;
     background-color: #fff;
-    border-radius: 1.5rem;     /* rounded-3xl */
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); /* shadow-sm */
+    border-radius: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
-/* ヘッダー・ナビゲーション */
+/* ヘッダー */
 nav.bg-black {
     background-color: #000;
     padding: 1.5rem;
@@ -33,7 +34,7 @@ nav.bg-black {
 }
 
 .nav-container {
-    max-width: 64rem;          /* max-w-5xl */
+    max-width: 64rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -41,12 +42,13 @@ nav.bg-black {
 }
 
 .header-title {
-    color: #fff !important;    /* 強制的に白文字 */
+    color: #fff !important; /* 強制的に白文字 */
     font-size: 1.5rem;
     font-weight: 900;
     font-style: italic;
     cursor: pointer;
     text-decoration: none;
+    margin: 0;
 }
 
 /* フッター */
@@ -55,6 +57,7 @@ nav.bg-black {
     color: #fff;
     padding: 30px 20px;
     font-size: 14px;
+    margin-top: auto;
 }
 
 .footer-content {
@@ -101,15 +104,9 @@ nav.bg-black {
     font-size: 12px;
 }
 
-/* レスポンシブ調整 */
+/* レスポンシブ */
 @media (max-width: 600px) {
-    .footer-nav li {
-        margin-left: 0;
-        margin-right: 15px;
-        margin-bottom: 10px;
-    }
-    main {
-        margin: 1rem;
-        padding: 1.5rem;
-    }
+    .footer-content { flex-direction: column; text-align: center; }
+    .footer-nav li { margin: 5px 10px; }
+    main { margin: 1rem; padding: 1.5rem; }
 }
