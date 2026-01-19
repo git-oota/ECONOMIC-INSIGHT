@@ -3,117 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">お問い合わせ - JAPAN ECONOMY</title>
+    <title id="page-title">お問い合わせ - JP-Economy</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
-        body { font-family: 'Noto Sans JP', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
-        main { flex: 1; }
-        .site-footer { background-color: #222; color: #fff; padding: 30px 20px; font-size: 14px; }
-        .footer-content { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto 20px; flex-wrap: wrap; }
-        .footer-logo { font-weight: bold; font-size: 18px; }
-        .footer-nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; }
-        .footer-nav li { margin-left: 20px; }
-        .footer-nav a { color: #ccc; text-decoration: none; transition: color 0.3s; }
-        .footer-nav a:hover { color: #fff; }
-        .copyright { text-align: center; border-top: 1px solid #444; padding-top: 20px; color: #888; font-size: 12px; }
-    </style>
 </head>
-<body class="bg-slate-50">
-    <nav class="bg-black p-6 sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <h1 class="text-white text-2xl font-black italic cursor-pointer" onclick="goHome()">JAPAN ECONOMY</h1>
+<body>
+    <nav class="bg-black">
+        <div class="nav-container">
+            <h1 class="header-title" onclick="goHome()">JAPAN ECONOMY</h1>
             <select id="langSet" class="bg-slate-800 text-sm rounded px-3 py-1 outline-none text-white border border-slate-600" onchange="updateLanguage()">
                 <option value="ja">日本語</option>
                 <option value="en">English</option>
             </select>
         </div>
     </nav>
-
-    <main class="max-w-4xl mx-auto py-12 px-6 bg-white shadow-sm my-8 rounded-3xl">
+    <main>
         <h1 id="main-h1" class="text-3xl font-black mb-8 border-b-4 border-black pb-2">お問い合わせ</h1>
-        <p id="intro-p" class="mb-8 text-slate-700 leading-relaxed">
-            当サイトに関するご意見・ご質問、またはお仕事のご依頼などは、以下のメールアドレスまでご連絡ください。
-        </p>
-
+        <p id="intro-p" class="mb-8 text-slate-700"></p>
         <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 mb-8">
             <h2 id="email-label" class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-2">Email Address</h2>
-            <p class="text-xl font-black text-blue-600">
-                <a href="mailto:info@jp-economy.com">info@jp-economy.com</a>
-            </p>
+            <p class="text-xl font-black text-blue-600"><a href="mailto:info@jp-economy.com">info@jp-economy.com</a></p>
         </div>
-
-        <p id="disclaimer-p" class="text-sm text-slate-500 italic">
-            ※内容を確認し、順次返信させていただきますが、すべてのお問い合わせに回答できない場合もございます。あらかじめご了承ください。
-        </p>
+        <p id="disclaimer-p" class="text-sm text-slate-500 italic"></p>
     </main>
-
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-logo">JP-Economy</div>
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="#" id="f-link-profile">運営者情報</a></li>
-                    <li><a href="#" id="f-link-privacy">個人情報保護方針</a></li>
-                    <li><a href="#" id="f-link-contact">お問い合わせ</a></li>
+                    <li><a href="#" id="f-link-profile"></a></li>
+                    <li><a href="#" id="f-link-privacy"></a></li>
+                    <li><a href="#" id="f-link-contact"></a></li>
                 </ul>
             </nav>
         </div>
-        <div class="copyright">
-            <small>&copy; 2026 JP-Economy All Rights Reserved.</small>
-        </div>
     </footer>
-
     <script>
         const texts = {
             ja: {
-                title: "お問い合わせ - JP-Economy",
-                h1: "お問い合わせ",
-                intro: "当サイトに関するご意見・ご質問、またはお仕事のご依頼などは、以下のメールアドレスまでご連絡ください。",
-                emailLabel: "メールアドレス",
-                disclaimer: "※内容を確認し、順次返信させていただきますが、すべてのお問い合わせに回答できない場合もございます。あらかじめご了承ください。",
+                title: "お問い合わせ - JP-Economy", h1: "お問い合わせ",
+                intro: "ご意見やご依頼は以下のメールまでご連絡ください。",
+                emailLabel: "メールアドレス", disclaimer: "※順次返答しますが全てに回答できない場合があります。",
                 fProfile: "運営者情報", fPrivacy: "個人情報保護方針", fContact: "お問い合わせ"
             },
             en: {
-                title: "Contact Us - JP-Economy",
-                h1: "Contact Us",
-                intro: "For any inquiries, questions, or business requests regarding this site, please contact us at the following email address.",
-                emailLabel: "Email Address",
-                disclaimer: "*We will review your message and respond as soon as possible. Please note that we may not be able to answer all inquiries. Thank you for your understanding.",
+                title: "Contact Us - JP-Economy", h1: "Contact Us",
+                intro: "Please contact us at the email below for inquiries.",
+                emailLabel: "Email Address", disclaimer: "*We will respond as soon as possible, but not all messages may receive a reply.",
                 fProfile: "About Us", fPrivacy: "Privacy Policy", fContact: "Contact"
             }
         };
-
         function updateLanguage() {
             const lang = document.getElementById('langSet').value;
             const t = texts[lang];
-
             document.getElementById('page-title').innerText = t.title;
             document.getElementById('main-h1').innerText = t.h1;
             document.getElementById('intro-p').innerText = t.intro;
             document.getElementById('email-label').innerText = t.emailLabel;
             document.getElementById('disclaimer-p').innerText = t.disclaimer;
-
-            // フッター
             document.getElementById('f-link-profile').innerText = t.fProfile;
             document.getElementById('f-link-privacy').innerText = t.fPrivacy;
             document.getElementById('f-link-contact').innerText = t.fContact;
-            
-            // リンク
             document.getElementById('f-link-profile').href = `profile.html?lang=${lang}`;
             document.getElementById('f-link-privacy').href = `privacy.html?lang=${lang}`;
             document.getElementById('f-link-contact').href = `contact.html?lang=${lang}`;
         }
-
-        function goHome() {
-            const lang = document.getElementById('langSet').value;
-            location.href = `index.html?lang=${lang}`;
-        }
-
+        function goHome() { location.href = `index.html?lang=${document.getElementById('langSet').value}`; }
         const params = new URLSearchParams(window.location.search);
-        const lang = params.get('lang') || 'ja';
-        document.getElementById('langSet').value = lang;
+        document.getElementById('langSet').value = params.get('lang') || 'ja';
         updateLanguage();
     </script>
 </body>
