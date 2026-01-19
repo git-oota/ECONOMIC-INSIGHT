@@ -1,0 +1,79 @@
+/* ページ全体の基本的なスタイル（任意） */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* メインコンテンツを中央寄せ */
+    min-height: calc(100vh - 160px); /* フッターが下にくるように調整 */
+}
+h1 { color: #222; }
+h2 { border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-top: 30px; }
+
+/* --- ここからフッターのスタイル（前回作成分） --- */
+.site-footer {
+    background-color: #222; /* ダークグレー背景 */
+    color: #fff;            /* 白文字 */
+    padding: 30px 20px;
+    font-size: 14px;
+    margin-top: auto; /* flexboxで下部に固定するため */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-nav li {
+    margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .footer-nav li {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+.footer-nav a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #888;
+    font-size: 12px;
+}
+/* --- フッターのスタイルここまで --- */
