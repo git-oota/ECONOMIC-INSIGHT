@@ -145,9 +145,9 @@
     
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="profile.html">運営者情報</a></li>
-                    <li><a href="privacy.html">個人情報保護方針</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="profile.html" id="f-link-profile">運営者情報</a></li>
+                    <li><a href="privacy.html" id="f-link-privacy">個人情報保護方針</a></li>
+                    <li><a href="contact.html" id="f-link-contact">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>
@@ -226,58 +226,87 @@
         }
                 
         function render() {
+            // 1. 現在の選択言語を取得
             const lang = document.getElementById('langSet').value;
-    
-            // 固定タイトルの切り替え
+        
+            // 2. 固定ラベル（ナビゲーション・見出し・フッター）の要素を取得
             const labelBackground = document.getElementById('label-background');
             const labelArchives = document.getElementById('label-archives');
             const labelRateLink = document.getElementById('label-rate-link');
+            
+            // フッターのリンク要素を取得
+            const fProfile = document.getElementById('f-link-profile');
+            const fPrivacy = document.getElementById('f-link-privacy');
+            const fContact = document.getElementById('f-link-contact');
         
+            // 3. 言語に応じてテキストを切り替え
             if (lang === 'ja') {
                 labelBackground.innerText = "ニュースがわかる背景知識";
                 labelArchives.innerText = "バックナンバー";
                 labelRateLink.innerText = "金利完全理解";
+                
+                // フッターテキスト
+                if (fProfile) fProfile.innerText = "運営者情報";
+                if (fPrivacy) fPrivacy.innerText = "個人情報保護方針";
+                if (fContact) fContact.innerText = "お問い合わせ";
             } else {
                 labelBackground.innerText = "Essential context for current affairs";
                 labelArchives.innerText = "Archives";
                 labelRateLink.innerText = "Understanding Interest Rates";
+                
+                // フッターテキスト（英語）
+                if (fProfile) fProfile.innerText = "About Us";
+                if (fPrivacy) fPrivacy.innerText = "Privacy Policy";
+                if (fContact) fContact.innerText = "Contact";
             }
-    
+        
+            // 4. 各リンクに言語パラメータ (?lang=ja/en) を付与して遷移先を保持
             const rateLink = document.querySelector('a[href*="rate.html"]');
-            if (rateLink) {
-                rateLink.href = `context/rate.html?lang=${lang}`;
-            }
-                    
+            if (rateLink) rateLink.href = `context/rate.html?lang=${lang}`;
+            if (fProfile) fProfile.href = `profile.html?lang=${lang}`;
+            if (fPrivacy) fPrivacy.href = `privacy.html?lang=${lang}`;
+            if (fContact) fContact.href = `contact.html?lang=${lang}`;
+        
+            // 5. メインコンテンツの表示処理
             const contentArea = document.getElementById('content-area');
             const archiveList = document.getElementById('archive-list');
             
+            // 記事データがない場合の処理
             if (!articles || articles.length === 0) {
-                contentArea.innerHTML = `<p class="text-center py-20">記事がありません。</p>`;
+                contentArea.innerHTML = `<p class="text-center py-20">${lang === 'ja' ? '記事がありません。' : 'No articles found.'}</p>`;
                 return;
             }
-    
+        
+            // 現在表示する記事データを取得
             const data = articles[currentIndex];
             const dateStr = data.date || "Unknown Date";
             const titleStr = (data.titles && data.titles[lang]) ? data.titles[lang] : "Untitled";
-            const contentStr = (data.contents && data.contents[lang]) ? data.contents[lang] : "本文なし";
+            const contentStr = (data.contents && data.contents[lang]) ? data.contents[lang] : (lang === 'ja' ? "本文なし" : "No content available");
             
-            // --- 2. 修正ポイント：ここで変換関数を呼び出します ---
+            // 改行を <br> に変換
             let htmlBody = contentStr.replace(/\n/g, '<br>');
+            
+            // 用語解説リンク（グロッサリー）を注入
             htmlBody = injectGlossaryLinks(htmlBody, data.glossary, lang);
-    
+        
+            // メイン記事のHTMLを反映
             contentArea.innerHTML = `
                 <div class="text-blue-600 font-black mb-4 text-sm">${dateStr}</div>
                 <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight">${titleStr}</h2>
                 <div class="prose prose-lg max-w-none text-slate-700 mb-16">${htmlBody}</div>
             `;
-    
+        
+            // 6. アーカイブリスト（バックナンバー）の生成
             archiveList.innerHTML = articles.map((art, idx) => {
                 const t = (art.titles && art.titles[lang]) ? art.titles[lang] : "Untitled";
+                const isActive = idx === currentIndex;
+                
                 return `
-                <div onclick="changeArticle(${idx})" class="p-5 bg-white rounded-2xl border hover:border-blue-500 cursor-pointer transition-all ${idx === currentIndex ? 'ring-2 ring-blue-500' : ''}">
-                    <div class="text-[10px] text-slate-400 font-bold">${art.date || ""}</div>
-                    <div class="font-black text-slate-800 truncate text-sm">${t}</div>
-                </div>`;
+                    <div onclick="changeArticle(${idx})" 
+                         class="p-5 bg-white rounded-2xl border hover:border-blue-500 cursor-pointer transition-all ${isActive ? 'ring-2 ring-blue-500 border-blue-500' : 'border-slate-100'}">
+                        <div class="text-[10px] text-slate-400 font-bold">${art.date || ""}</div>
+                        <div class="font-black text-slate-800 truncate text-sm">${t}</div>
+                    </div>`;
             }).join('');
         }
     
