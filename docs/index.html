@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>JAPAN ECONOMY</title>
-    
+    <meta name="description" content="Latest Japan economy news, interest rates, and forex insights.">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -13,13 +14,50 @@
     <link rel="alternate" hreflang="ja" href="https://jp-economy.com/index.html?lang=ja" />
     <link rel="alternate" hreflang="en" href="https://jp-economy.com/index.html?lang=en" />
     <link rel="alternate" hreflang="x-default" href="https://jp-economy.com/index.html?lang=en" />
-    
-    <meta name="description" content="Latest Japan economy news, interest rates, and forex insights.">
+
+    <style>
+        /* 用語解説リンクのスタイル */
+        .glossary-term { 
+            border-bottom: 2px dotted #2563eb; 
+            cursor: pointer; 
+            color: #2563eb; 
+            font-weight: bold; 
+            transition: background-color 0.2s;
+        }
+        .glossary-term:hover {
+            background-color: #eff6ff;
+        }
+
+        /* 用語解説フッターのスタイル */
+        #glossary-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.98); /* 濃い紺色 */
+            color: white;
+            padding: 1.5rem;
+            z-index: 1000;
+            display: none; /* 初期状態は非表示 */
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+            border-top: 1px solid #334155;
+        }
+
+        /* アクティブ時のアニメーション（JSで制御） */
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        .footer-active {
+            display: block !important;
+            animation: slideUp 0.3s ease-out;
+        }
+    </style>
 </head>
-<body>
-    <nav class="bg-black">
-        <div class="nav-container">
-            <h1 class="header-title" onclick="location.reload()">JAPAN ECONOMY</h1>
+<body class="bg-slate-50">
+    <nav class="bg-black p-6 sticky top-0 z-50">
+        <div class="nav-container max-w-5xl mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-black italic cursor-pointer" onclick="location.reload()">JAPAN ECONOMY</h1>
             <select id="langSet" class="bg-slate-800 text-sm rounded px-3 py-1 outline-none text-white border border-slate-600" onchange="render()">
                 <option value="ja">日本語</option>
                 <option value="en">English</option>
@@ -27,32 +65,35 @@
         </div>
     </nav>
 
-    <main>
+    <main class="max-w-4xl mx-auto py-12 px-6 bg-white shadow-sm my-8 rounded-3xl">
         <article id="content-area" class="min-h-[400px]">
-            <p id="loading-msg" class="text-center text-slate-400 pt-20 animate-pulse">分析データをロード中...</p>
+            <p id="loading-msg" class="text-center text-slate-400 pt-20 animate-pulse">Analyzing latest news...</p>
         </article>
 
-        <section class="mt-16 pt-8 border-t">
-            <h3 id="label-background" class="text-xl font-black mb-4 uppercase tracking-wider">ニュースがわかる背景知識</h3>
+        <section class="mt-16 pt-8 border-t border-slate-100">
+            <h3 id="label-background" class="text-xl font-black mb-4 uppercase tracking-wider text-slate-800"></h3>
             <ul class="space-y-2">
-                <li><a href="context/rate.html" id="rate-link" class="text-blue-600 hover:underline font-bold flex items-center">
-                    <span class="mr-2">📈</span><span id="label-rate-link">金利完全理解</span></a></li>
+                <li>
+                    <a href="context/rate.html" id="rate-link" class="text-blue-600 hover:underline font-bold flex items-center bg-blue-50 p-4 rounded-xl transition-colors hover:bg-blue-100">
+                        <span class="mr-3 text-xl">📈</span><span id="label-rate-link"></span>
+                    </a>
+                </li>
             </ul>
         </section>
         
         <section class="mt-16">
-            <h3 id="label-archives" class="text-xl font-black mb-8 uppercase tracking-wider">Archives</h3>
+            <h3 id="label-archives" class="text-xl font-black mb-8 uppercase tracking-wider text-slate-800"></h3>
             <div id="archive-list" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
         </section>
     </main>
 
     <div id="glossary-footer">
-        <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <div>
-                <h4 id="footer-term" class="text-blue-400 font-bold text-xs mb-1 uppercase">GLOSSARY</h4>
-                <p id="footer-def" class="text-white text-base"></p>
+        <div class="max-w-4xl mx-auto flex justify-between items-center gap-6">
+            <div class="flex-1">
+                <h4 id="footer-term" class="text-blue-400 font-bold text-xs mb-1 uppercase tracking-widest">GLOSSARY</h4>
+                <p id="footer-def" class="text-white text-base leading-relaxed"></p>
             </div>
-            <button onclick="closeGlossary()" class="text-slate-400 text-4xl">&times;</button>
+            <button onclick="closeGlossary()" class="text-slate-400 hover:text-white text-4xl leading-none transition-colors">&times;</button>
         </div>
     </div>
 
@@ -61,13 +102,15 @@
             <div class="footer-logo">JAPAN ECONOMY</div>
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="#" id="f-link-profile">運営者情報</a></li>
-                    <li><a href="#" id="f-link-privacy">個人情報保護方針</a></li>
-                    <li><a href="#" id="f-link-contact">お問い合わせ</a></li>
+                    <li><a href="#" id="f-link-profile"></a></li>
+                    <li><a href="#" id="f-link-privacy"></a></li>
+                    <li><a href="#" id="f-link-contact"></a></li>
                 </ul>
             </nav>
         </div>
-        <div class="copyright"><small>&copy; 2026 JAPAN ECONOMY All Rights Reserved.</small></div>
+        <div class="copyright">
+            <small>&copy; 2026 JAPAN ECONOMY All Rights Reserved.</small>
+        </div>
     </footer>
 
     <script>
@@ -81,117 +124,126 @@
                 const params = new URLSearchParams(window.location.search);
                 document.getElementById('langSet').value = params.get('lang') || (navigator.language.startsWith('ja') ? 'ja' : 'en');
                 render();
-            } catch (e) { console.error(e); }
+            } catch (e) {
+                console.error("Data Load Error:", e);
+                document.getElementById('loading-msg').innerText = "Failed to load data.";
+            }
         }
 
         function render() {
-            // 1. 現在の言語設定と表示する記事データを取得
             const lang = document.getElementById('langSet').value;
             const data = articles[currentIndex];
-        
-            // 2. ラベル（見出し）の言語切り替え
+
             const labels = {
                 ja: {
                     background: "ニュースがわかる背景知識",
                     archives: "バックナンバー",
-                    rateLink: "金利完全理解",
+                    rateLink: "金利完全理解（セミナー資料）",
                     fProfile: "運営者情報",
                     fPrivacy: "個人情報保護方針",
                     fContact: "お問い合わせ",
-                    noArticle: "記事がありません。"
+                    noArticle: "記事が見つかりませんでした。"
                 },
                 en: {
                     background: "Essential Context",
                     archives: "Archives",
-                    rateLink: "Understanding Rates",
+                    rateLink: "Understanding Interest Rates (Seminar)",
                     fProfile: "About Us",
                     fPrivacy: "Privacy Policy",
                     fContact: "Contact",
-                    noArticle: "No articles found."
+                    noArticle: "No articles available."
                 }
             };
-        
+
             const t = labels[lang];
+            
+            // ラベルの更新
             document.getElementById('label-background').innerText = t.background;
             document.getElementById('label-archives').innerText = t.archives;
             document.getElementById('label-rate-link').innerText = t.rateLink;
-        
-            // 3. フッターリンクのテキストと言語パラメータ(?lang=)の更新
-            const fProfile = document.getElementById('f-link-profile');
-            const fPrivacy = document.getElementById('f-link-privacy');
-            const fContact = document.getElementById('f-link-contact');
-        
-            fProfile.innerText = t.fProfile;
-            fPrivacy.innerText = t.fPrivacy;
-            fContact.innerText = t.fContact;
-        
-            fProfile.href = `profile.html?lang=${lang}`;
-            fPrivacy.href = `privacy.html?lang=${lang}`;
-            fContact.href = `contact.html?lang=${lang}`;
-            
-            // 金利講義へのリンクも言語を維持
-            const rateLink = document.getElementById('rate-link');
-            if (rateLink) rateLink.href = `context/rate.html?lang=${lang}`;
-        
-            // 4. メインコンテンツの表示
-            const contentArea = document.getElementById('content-area');
+            document.getElementById('f-link-profile').innerText = t.fProfile;
+            document.getElementById('f-link-privacy').innerText = t.fPrivacy;
+            document.getElementById('f-link-contact').innerText = t.fContact;
+
+            // リンクの言語維持
+            document.getElementById('f-link-profile').href = `profile.html?lang=${lang}`;
+            document.getElementById('f-link-privacy').href = `privacy.html?lang=${lang}`;
+            document.getElementById('f-link-contact').href = `contact.html?lang=${lang}`;
+            document.getElementById('rate-link').href = `context/rate.html?lang=${lang}`;
+
             if (!data) {
-                contentArea.innerHTML = `<p class="text-center py-20">${t.noArticle}</p>`;
+                document.getElementById('content-area').innerHTML = `<p class="text-center py-20">${t.noArticle}</p>`;
                 return;
             }
-        
-            // --- SEO対策：メタタグとタイトルの動的更新 ---
-            // ブラウザのタブ名（Title）を記事タイトルに変更
-            document.title = data.titles[lang] + " - JAPAN ECONOMY";
-            
-            // Google検索結果用の要約（Description）を更新
+
+            // SEOメタ情報の更新
+            document.title = `${data.titles[lang]} - JAPAN ECONOMY`;
             const metaDesc = document.querySelector('meta[name="description"]');
             if (metaDesc && data.descriptions) {
                 metaDesc.setAttribute("content", data.descriptions[lang]);
             }
-            // ------------------------------------------
-        
+
+            // 本文表示と用語リンク埋め込み
             const title = data.titles[lang];
             const content = data.contents[lang].replace(/\n/g, '<br>');
-        
-            contentArea.innerHTML = `
-                <div class="text-blue-600 font-black mb-4 text-sm">${data.date}</div>
-                <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight">${title}</h2>
-                <div class="prose prose-lg max-w-none text-slate-700">
+            document.getElementById('content-area').innerHTML = `
+                <div class="text-blue-600 font-black mb-4 text-sm tracking-widest">${data.date}</div>
+                <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight text-slate-900">${title}</h2>
+                <div class="prose prose-lg max-w-none text-slate-700 leading-relaxed">
                     ${injectGlossaryLinks(content, data.glossary, lang)}
                 </div>
             `;
-        
-            // 5. アーカイブリスト（バックナンバー）の生成
+
+            // アーカイブ
             document.getElementById('archive-list').innerHTML = articles.map((art, idx) => {
-                const activeClass = idx === currentIndex ? 'ring-2 ring-blue-500 border-blue-500' : 'border-slate-100';
+                const activeClass = idx === currentIndex ? 'ring-2 ring-blue-500 border-blue-500 bg-blue-50' : 'border-slate-100 bg-white';
                 return `
-                    <div onclick="changeArticle(${idx})" class="p-5 bg-white rounded-2xl border cursor-pointer transition-all hover:border-blue-300 ${activeClass}">
-                        <div class="text-[10px] text-slate-400 font-bold">${art.date}</div>
+                    <div onclick="changeArticle(${idx})" class="p-5 rounded-2xl border cursor-pointer transition-all hover:border-blue-300 ${activeClass}">
+                        <div class="text-[10px] text-slate-400 font-bold mb-1">${art.date}</div>
                         <div class="font-black text-slate-800 truncate text-sm">${art.titles[lang]}</div>
                     </div>`;
             }).join('');
         }
 
         function injectGlossaryLinks(text, glossary, lang) {
+            if (!glossary || glossary.length === 0) return text;
             let processed = text;
-            if (!glossary) return text;
-            glossary.sort((a,b) => b.term[lang].length - a.term[lang].length).forEach(item => {
-                const t = item.term[lang];
-                const d = item.def[lang].replace(/'/g, "\\'");
-                const regex = new RegExp(`(${t})(?![^<]*>|[^<>]*<\/a>)`, 'g');
-                processed = processed.replace(regex, `<span class="glossary-term" onclick="showGlossary('${t}', '${d}')">$1</span>`);
+            // 長い用語から順に処理（重複置換を防ぐ）
+            const sortedGlossary = [...glossary].sort((a, b) => b.term[lang].length - a.term[lang].length);
+            
+            sortedGlossary.forEach(item => {
+                const term = item.term[lang];
+                const def = item.def[lang].replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                // すでにリンクになっている部分はスキップする正規表現
+                const regex = new RegExp(`(${term})(?![^<]*>|[^<>]*<\/span>)`, 'g');
+                processed = processed.replace(regex, `<span class="glossary-term" onclick="showGlossary('${term}', '${def}')">$1</span>`);
             });
             return processed;
         }
 
-        function showGlossary(t, d) {
-            document.getElementById('footer-term').innerText = t;
-            document.getElementById('footer-def').innerText = d;
-            document.getElementById('glossary-footer').classList.add('active');
+        function showGlossary(term, definition) {
+            document.getElementById('footer-term').innerText = term;
+            document.getElementById('footer-def').innerText = definition;
+            const footer = document.getElementById('glossary-footer');
+            footer.style.display = 'block';
+            // 少し遅らせてアニメーションクラスを追加
+            setTimeout(() => footer.classList.add('footer-active'), 10);
         }
-        function closeGlossary() { document.getElementById('glossary-footer').classList.remove('active'); }
-        function changeArticle(i) { currentIndex = i; render(); window.scrollTo({top:0, behavior:'smooth'}); }
+
+        function closeGlossary() {
+            const footer = document.getElementById('glossary-footer');
+            footer.classList.remove('footer-active');
+            // アニメーション終了後に非表示にする
+            setTimeout(() => { footer.style.display = 'none'; }, 300);
+        }
+
+        function changeArticle(i) {
+            currentIndex = i;
+            render();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            closeGlossary();
+        }
+
         loadData();
     </script>
 </body>
