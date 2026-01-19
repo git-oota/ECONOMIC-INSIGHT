@@ -18,7 +18,7 @@ UPDATE_ID = NOW.strftime("%Y%m%d_%H%M%S")
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 def generate_content():
-    print(f"[{datetime.now()}] ニュース分析（検索モード）を開始...")
+    print(f"[{datetime.now()}] SEO強化モードでニュース分析を開始...")
     
     prompt = f"""
     You are a professional economic analyst and SEO specialist for international audiences.
@@ -26,27 +26,27 @@ def generate_content():
     1. Use Google Search to find real economic news in Japan for today ({TODAY}).
     2. Summarize the news in an engaging, easy-to-understand way.
     
-    【SEO & Target Keyword Strategy (重要)】
-    - 以下のターゲットキーワードを、自然な形でタイトル(titles)と要約(descriptions)の冒頭に含めてください。
+    【SEO & Target Keyword Strategy (最重要)】
+    - 以下のターゲットキーワードを、自然な形でタイトル(titles)と要約(descriptions)の冒頭（左側）に含めてください。
     - 英語キーワード: "Japan Economy", "Nikkei 225", "Yen (JPY)", "Bank of Japan (BoJ)", "Investing in Japan", "Inflation".
     - 日本語キーワード: "日本経済", "日経平均", "円安", "金利", "投資", "ニュース要約".
-    - 特に英語のタイトルは、検索結果でクリックされるよう、具体的な数字や「Why it matters」を含めたベネフィットを強調してください。
+    - 検索エンジンは文章の先頭に近い単語を重視します。重要な単語を必ず左側に配置してください。
 
     【Required Insights】
     - あなたは日経新聞社のシニア編集者です。日経新聞よりTOPニュースを取得し、著作権に配慮してリライトしてください。
-    - 経済関連のニュースの場合は、投資家目線で、投資家への影響と推奨アクションを記載。
-    - 大学生でもわかるように、背景知識（Essential Context）を専門用語を噛み砕いて説明してください。
-    - 国際比較：アメリカ（WSJ）や中国（新華社/Caixin）での報じられ方を探し、日本との視点の違いを分析。
+    - 経済関連のニュースの場合は、投資家目線で、マーケットへの影響と推奨アクションを具体的に記載して。
+    - 大学生でもわかるように、ニュースを読むために必要な背景知識（Essential Context）を詳しく説明してください。
+    - 国際比較：アメリカ（WSJ）や中国での報道のされ方を探し、日本での解釈と比較分析して。
     
-    【Glossary & Metadata Rule】
-    - descriptions: 検索結果(SERPs)のクリック率(CTR)を最大化するための要約です。
-        - ja: 120文字以内。重要なキーワードを前半に配置。
-        - en: 160文字以内。読者が答えを知りたくなるようなフック（Hook）を作ってください。
+    【Metadata & Glossary Rule】
+    - descriptions: 検索結果(SERPs)のクリック率を最大化するための要約です。
+        - ja: 120文字以内。読者が「答えを知りたくなる」フックを作ってください。
+        - en: 160文字以内。キーワードを盛り込みつつ、プロフェッショナルなトーンで。
     - glossary: 本文中の専門用語を3〜5個抽出。termは本文の表記と完全に一致させてください。
 
     【捏造厳禁】
     - 過去48時間以内の情報を採用。架空のニュースは絶対に書かない。
-    - データ不足時は朝日新聞、読売新聞、産経新聞からデータを補完。
+    - データ不足時は朝日新聞、読売新聞、産経新聞から収集。
 
     【Output Format: Strict JSON only】
     {{
@@ -54,8 +54,8 @@ def generate_content():
       "date": "{TODAY}",
       "titles": {{ "ja": "SEOキーワードを含むタイトル", "en": "Keyword-rich Engaging Title" }},
       "descriptions": {{ 
-        "ja": "前半にキーワードを配置した要約（120文字）", 
-        "en": "Search-optimized summary (160 characters) starting with target keywords" 
+        "ja": "前半に重要単語を配置した要約", 
+        "en": "Search-optimized summary starting with target keywords" 
       }},
       "contents": {{ 
         "ja": "【今日のニュース】\\n...\\n\\n【投資家へのインサイト】\\n...\\n\\n【Essential Context】\\n...", 
@@ -109,6 +109,7 @@ def main():
             except:
                 history = []
     
+    # 記事を先頭に追加
     history.insert(0, new_article)
     os.makedirs(os.path.dirname(data_path), exist_ok=True)
     
