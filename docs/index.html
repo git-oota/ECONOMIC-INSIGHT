@@ -138,12 +138,14 @@
         function render() {
             const lang = document.getElementById('langSet').value;
             const data = articles[currentIndex];
-
+        
+            // 1. 各言語のラベル定義（新着記事「コーヒー危機」を追加）
             const labels = {
                 ja: {
                     background: "ニュースがわかる背景知識",
                     archives: "バックナンバー",
                     rateLink: "金利完全理解（セミナー資料）",
+                    coffeeLink: "2050年コーヒー危機",
                     fProfile: "運営者情報",
                     fPrivacy: "個人情報保護方針",
                     fContact: "お問い合わせ",
@@ -153,42 +155,49 @@
                     background: "Essential Context",
                     archives: "Archives",
                     rateLink: "Understanding Interest Rates (Seminar)",
+                    coffeeLink: "2050 Coffee Crisis",
                     fProfile: "About Us",
                     fPrivacy: "Privacy Policy",
                     fContact: "Contact",
                     noArticle: "No articles available."
                 }
             };
-
+        
             const t = labels[lang];
             
-            // ラベルの更新
+            // 2. テキストラベルの更新
             document.getElementById('label-background').innerText = t.background;
             document.getElementById('label-archives').innerText = t.archives;
             document.getElementById('label-rate-link').innerText = t.rateLink;
+            document.getElementById('label-coffee-link').innerText = t.coffeeLink; // コーヒー記事のラベル
+            
             document.getElementById('f-link-profile').innerText = t.fProfile;
             document.getElementById('f-link-privacy').innerText = t.fPrivacy;
             document.getElementById('f-link-contact').innerText = t.fContact;
-
-            // リンクの言語維持
+        
+            // 3. リンクの言語パラメータ(?lang=)維持
             document.getElementById('f-link-profile').href = `profile.html?lang=${lang}`;
             document.getElementById('f-link-privacy').href = `privacy.html?lang=${lang}`;
             document.getElementById('f-link-contact').href = `contact.html?lang=${lang}`;
+            
+            // 背景知識セクションの各記事リンク
             document.getElementById('rate-link').href = `context/rate.html?lang=${lang}`;
-
+            document.getElementById('coffee-link').href = `context/coffee-2050.html?lang=${lang}`;
+        
+            // 4. 記事データが存在しない場合の処理
             if (!data) {
-                document.getElementById('content-area').innerHTML = `<p class="text-center py-20">${t.noArticle}</p>`;
+                document.getElementById('content-area').innerHTML = `<p class="text-center py-20 text-slate-400">${t.noArticle}</p>`;
                 return;
             }
-
-            // SEOメタ情報の更新
+        
+            // 5. SEOメタ情報（タイトル・説明文）の動的更新
             document.title = `${data.titles[lang]} - JAPAN ECONOMY`;
             const metaDesc = document.querySelector('meta[name="description"]');
             if (metaDesc && data.descriptions) {
                 metaDesc.setAttribute("content", data.descriptions[lang]);
             }
-
-            // 本文表示と用語リンク埋め込み
+        
+            // 6. メイン記事の表示（用語解説リンクを注入）
             const title = data.titles[lang];
             const content = data.contents[lang].replace(/\n/g, '<br>');
             document.getElementById('content-area').innerHTML = `
@@ -198,8 +207,8 @@
                     ${injectGlossaryLinks(content, data.glossary, lang)}
                 </div>
             `;
-
-            // アーカイブ
+        
+            // 7. アーカイブリスト（サイドバー/下部）の生成
             document.getElementById('archive-list').innerHTML = articles.map((art, idx) => {
                 const activeClass = idx === currentIndex ? 'ring-2 ring-blue-500 border-blue-500 bg-blue-50' : 'border-slate-100 bg-white';
                 return `
