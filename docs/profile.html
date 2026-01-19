@@ -3,24 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>運営者情報 - JP-Economy</title>
+    <title id="page-title">運営者情報 - JP-Economy</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+        body { font-family: 'Noto Sans JP', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+        main { flex: 1; }
+        .site-footer { background-color: #222; color: #fff; padding: 30px 20px; font-size: 14px; }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto 20px; flex-wrap: wrap; }
+        .footer-logo { font-weight: bold; font-size: 18px; }
+        .footer-nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; }
+        .footer-nav li { margin-left: 20px; }
+        .footer-nav a { color: #ccc; text-decoration: none; transition: color 0.3s; }
+        .footer-nav a:hover { color: #fff; }
+        .copyright { text-align: center; border-top: 1px solid #444; padding-top: 20px; color: #888; font-size: 12px; }
+    </style>
 </head>
-<body style="display: flex; flex-direction: column; min-height: 100vh;">
-    <main>
-        <h1>運営者情報</h1>
-        <h2>運営者：管理者HO</h2>
-        <p>2026年の不透明な経済状況において、個人がいかにして「知識」と「資産」を守り、成長させるかをテーマに発信しています。</p>
+<body class="bg-slate-50">
+    <nav class="bg-black text-white p-6 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-black italic cursor-pointer" onclick="goHome()">JAPAN ECONOMY</h1>
+            <select id="langSet" class="bg-slate-800 text-sm rounded px-3 py-1 outline-none text-white" onchange="updateLanguage()">
+                <option value="ja">日本語</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </nav>
 
-        <h2>執筆ポリシー</h2>
-        <ul>
-            <li><strong>専門性とわかりやすさ：</strong> 複雑な金利の動向や経済ニュースを、背景知識がなくてもわかるレベルまで噛み砕いて解説します。</li>
-            <li><strong>ニュースが読めるようになる：</strong> 用語説明を充実させることにより、毎日読むことで自然にニュースが理解できるようになります。</li>
-            <li><strong>事実に基づく発信：</strong> 公的なデータやエビデンスに基づき、客観的な情報提供に努めます。</li>
+    <main class="max-w-4xl mx-auto py-12 px-6 bg-white shadow-sm my-8 rounded-3xl">
+        <h1 id="main-h1" class="text-3xl font-black mb-8 border-b-4 border-black pb-2">運営者情報</h1>
+        
+        <h2 id="sub-h2-admin" class="text-xl font-bold mb-4">運営者：管理者HO</h2>
+        <p id="desc-p" class="mb-8 text-slate-700 leading-relaxed">2026年の不透明な経済状況において、個人がいかにして「知識」と「資産」を守り、成長させるかをテーマに発信しています。</p>
+
+        <h2 id="sub-h2-policy" class="text-xl font-bold mb-4">執筆ポリシー</h2>
+        <ul class="space-y-4 mb-12">
+            <li><strong id="policy-1-t">専門性とわかりやすさ：</strong> <span id="policy-1-d">複雑な金利の動向や経済ニュースを、背景知識がなくてもわかるレベルまで噛み砕いて解説します。</span></li>
+            <li><strong id="policy-2-t">ニュースが読めるようになる：</strong> <span id="policy-2-d">用語説明を充実させることにより、毎日読むことで自然にニュースが理解できるようになります。</span></li>
+            <li><strong id="policy-3-t">事実に基づく発信：</strong> <span id="policy-3-d">公的なデータやエビデンスに基づき、客観的な情報提供に努めます。</span></li>
         </ul>
 
-        <h2>当サイトの目標</h2>
-        <p>受験生の親御様や投資初心者の方々が、迷いなく最適な選択ができるような「情報のハブ」を目指しています。</p>
+        <h2 id="sub-h2-goal" class="text-xl font-bold mb-4">当サイトの目標</h2>
+        <p id="goal-p" class="text-slate-700 leading-relaxed">受験生の親御様や投資初心者の方々が、迷いなく最適な選択ができるような「情報のハブ」を目指しています。</p>
     </main>
 
     <footer class="site-footer">
@@ -28,9 +53,9 @@
             <div class="footer-logo">JP-Economy</div>
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="profile.html">運営者情報</a></li>
-                    <li><a href="privacy.html">個人情報保護方針</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="#" id="f-link-profile">運営者情報</a></li>
+                    <li><a href="#" id="f-link-privacy">個人情報保護方針</a></li>
+                    <li><a href="#" id="f-link-contact">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,5 +63,76 @@
             <small>&copy; 2026 JP-Economy All Rights Reserved.</small>
         </div>
     </footer>
+
+    <script>
+        const texts = {
+            ja: {
+                title: "運営者情報 - JP-Economy",
+                h1: "運営者情報",
+                admin: "運営者：管理者HO",
+                desc: "2026年の不透明な経済状況において、個人がいかにして「知識」と「資産」を守り、成長させるかをテーマに発信しています。",
+                policyH2: "執筆ポリシー",
+                p1t: "専門性とわかりやすさ：", p1d: "複雑な金利の動向や経済ニュースを、背景知識がなくてもわかるレベルまで噛み砕いて解説します。",
+                p2t: "ニュースが読めるようになる：", p2d: "用語説明を充実させることにより、毎日読むことで自然にニュースが理解できるようになります。",
+                p3t: "事実に基づく発信：", p3d: "公的なデータやエビデンスに基づき、客観的な情報提供に努めます。",
+                goalH2: "当サイトの目標",
+                goalP: "受験生の親御様や投資初心者の方々が、迷いなく最適な選択ができるような「情報のハブ」を目指しています。",
+                fProfile: "運営者情報", fPrivacy: "個人情報保護方針", fContact: "お問い合わせ"
+            },
+            en: {
+                title: "About Us - JP-Economy",
+                h1: "About Us",
+                admin: "Administrator: HO",
+                desc: "In the uncertain economic climate of 2026, we focus on how individuals can protect and grow their 'knowledge' and 'assets'.",
+                policyH2: "Editorial Policy",
+                p1t: "Expertise & Clarity:", p1d: "We break down complex interest rate trends and economic news into easy-to-understand insights, even without prior knowledge.",
+                p2t: "Empowering News Literacy:", p2d: "By providing comprehensive glossaries, consistent reading will naturally lead to a better understanding of global news.",
+                p3t: "Fact-Based Reporting:", p3d: "We strive to provide objective information based on official data and credible evidence.",
+                goalH2: "Our Goal",
+                goalP: "We aim to be an 'information hub' where parents of examinees and beginner investors can make the best choices without hesitation.",
+                fProfile: "About Us", fPrivacy: "Privacy Policy", fContact: "Contact"
+            }
+        };
+
+        function updateLanguage() {
+            const lang = document.getElementById('langSet').value;
+            const t = texts[lang];
+
+            document.getElementById('page-title').innerText = t.title;
+            document.getElementById('main-h1').innerText = t.h1;
+            document.getElementById('sub-h2-admin').innerText = t.admin;
+            document.getElementById('desc-p').innerText = t.desc;
+            document.getElementById('sub-h2-policy').innerText = t.policyH2;
+            document.getElementById('policy-1-t').innerText = t.p1t;
+            document.getElementById('policy-1-d').innerText = t.p1d;
+            document.getElementById('policy-2-t').innerText = t.p2t;
+            document.getElementById('policy-2-d').innerText = t.p2d;
+            document.getElementById('policy-3-t').innerText = t.p3t;
+            document.getElementById('policy-3-d').innerText = t.p3d;
+            document.getElementById('sub-h2-goal').innerText = t.goalH2;
+            document.getElementById('goal-p').innerText = t.goalP;
+
+            // フッターリンク
+            document.getElementById('f-link-profile').innerText = t.fProfile;
+            document.getElementById('f-link-privacy').innerText = t.fPrivacy;
+            document.getElementById('f-link-contact').innerText = t.fContact;
+            
+            // リンクのパラメータ更新
+            document.getElementById('f-link-profile').href = `profile.html?lang=${lang}`;
+            document.getElementById('f-link-privacy').href = `privacy.html?lang=${lang}`;
+            document.getElementById('f-link-contact').href = `contact.html?lang=${lang}`;
+        }
+
+        function goHome() {
+            const lang = document.getElementById('langSet').value;
+            location.href = `index.html?lang=${lang}`;
+        }
+
+        // 初期化処理
+        const params = new URLSearchParams(window.location.search);
+        const lang = params.get('lang') || 'ja';
+        document.getElementById('langSet').value = lang;
+        updateLanguage();
+    </script>
 </body>
 </html>
