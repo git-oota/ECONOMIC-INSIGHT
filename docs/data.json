@@ -1,5 +1,47 @@
 [
   {
+    "id": "20260120_062057",
+    "date": "2026-01-20",
+    "titles": {
+      "ja": "日本経済：日経平均急落、日銀の量的引き締め（QT）加速。円高進行とインフレ抑制の岐路",
+      "en": "Japan Economy: Nikkei 225 Slumps as BoJ Accelerates QT; Yen (JPY) Gains on Inflation Outlook"
+    },
+    "descriptions": {
+      "ja": "日銀が国債買い入れ減額を加速。日経平均は大幅反落し、円相場は140円台へ。投資家が注視すべきインフレ動向と金融政策の転換点を解説します。",
+      "en": "Japan Economy update: Nikkei 225 faces selling pressure as the BoJ doubles its bond-tapering pace. Explore the Yen (JPY) recovery and inflation impacts for global investors."
+    },
+    "contents": {
+      "ja": "【日経視点：金利のある世界への適応】日本銀行は20日の金融政策決定会合で、国債買い入れ額の減額ペースを従来の2倍に引き上げる「量的引き締め（QT）」の加速を決定した。植田総裁は「インフレ期待の定着に伴い、金融緩和の度合いをさらに調整する」と述べ、タカ派姿勢を鮮明にした。これを受け、日経平均株価は前日比850円安の38,200円まで下落。為替市場では円が対ドルで142円台まで急騰した。\n\n【投資家への影響と推奨】短期的には輸出関連株（自動車・精密機器）への逆風が強まる。一方で、利ざや改善が見込まれるメガバンクなどの金融セクターには追い風だ。推奨アクション：円高メリットを享受する内需株（小売・食品）へのポートフォリオシフトを検討すべき時期である。\n\n【学生・留学生向け背景】「量的引き締め（QT）」とは、中央銀行が市場に流しているお金の量を減らすことだ。これまでは景気を支えるために大量にお金を流していたが、物価が上がりすぎないようブレーキを踏み始めたことを意味する。これにより、銀行の預金金利が上がる可能性がある一方、住宅ローンの金利も上がるという側面がある。\n\n【国際比較分析】米ブルームバーグは「円キャリートレードの解消加速」を主報し、世界的な流動性低下を警戒。中国の新華社は「日本企業の海外投資戦略の修正」に焦点を当て、アジア圏への直接投資（FDI）への影響を分析している。欧米メディアは日本の『脱デフレ』完遂に向けたラストスパートとして概ね肯定的に報じている。",
+      "en": "[Nikkei Editor's Perspective: Adapting to a World with Interest Rates] The Bank of Japan (BoJ) decided on Jan 20 to double the pace of its bond-buying reduction, signaling an acceleration of Quantitative Tightening (QT). Governor Ueda emphasized adjusting the degree of easing as inflation expectations solidify. Consequently, the Nikkei 225 plummeted by 850 points to 38,200, while the Yen surged to the 142 range against the USD.\n\n[Investor Impact & Action] Short-term headwinds are strengthening for export-oriented sectors like autos. Conversely, the financial sector (mega-banks) stands to benefit from improved margins. Action: Investors should consider rotating into domestic-demand stocks (retail/food) that benefit from a stronger Yen.\n\n[Essential Context for Students] Quantitative Tightening (QT) is the process where a central bank reduces the money supply. After years of 'easy money' to boost the economy, the BoJ is now applying the brakes to prevent overheating inflation. This means higher interest on your savings, but also potentially higher costs for loans.\n\n[Global Media Comparison] US media (Bloomberg) focuses on the 'unwinding of the Yen carry trade' and its threat to global liquidity. Chinese media (Xinhua) analyzes how this shift forces Japanese firms to rethink their supply chains and FDI in Asia. Western outlets generally view this as the final sprint in Japan's structural exit from deflation."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[日銀: QT加速決定] --> B[市場の流動性低下]\n    B --> C[長期金利の上昇]\n    C --> D[円高/ドル安進行]\n    C --> E[日経平均の下落]\n    D --> F[輸出企業の利益圧迫]\n    D --> G[輸入コストの低下/インフレ抑制]",
+      "en": "graph TD\n    A[BoJ: Accelerates QT] --> B[Reduced Market Liquidity]\n    B --> C[Rise in Long-term Rates]\n    C --> D[Yen Appreciation/USD Weakness]\n    C --> E[Nikkei 225 Correction]\n    D --> F[Pressure on Export Profits]\n    D --> G[Lower Import Costs/Inflation Control]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "量的引き締め (QT)",
+          "en": "Quantitative Tightening (QT)"
+        },
+        "def": {
+          "ja": "中央銀行が保有資産を減らし、市場の通貨供給量を抑制する政策。",
+          "en": "A monetary policy where a central bank reduces its balance sheet to decrease liquidity in the economy."
+        }
+      },
+      {
+        "term": {
+          "ja": "円キャリートレード",
+          "en": "Yen Carry Trade"
+        },
+        "def": {
+          "ja": "低金利の円を借りて、より利回りの高い外貨資産に投資する手法。",
+          "en": "A strategy involving borrowing Yen at low interest rates to invest in higher-yielding foreign assets."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260119_061915",
     "date": "2026-01-19",
     "titles": {
