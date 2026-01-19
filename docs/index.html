@@ -92,40 +92,92 @@
         }
 
         function render() {
+            // 1. 現在の言語設定と表示する記事データを取得
             const lang = document.getElementById('langSet').value;
-            
-            // ラベル切り替え
-            document.getElementById('label-background').innerText = lang === 'ja' ? "ニュースがわかる背景知識" : "Essential Context";
-            document.getElementById('label-archives').innerText = lang === 'ja' ? "バックナンバー" : "Archives";
-            document.getElementById('label-rate-link').innerText = lang === 'ja' ? "金利完全理解" : "Understanding Rates";
-            
-            // フッターリンク切り替え
+            const data = articles[currentIndex];
+        
+            // 2. ラベル（見出し）の言語切り替え
+            const labels = {
+                ja: {
+                    background: "ニュースがわかる背景知識",
+                    archives: "バックナンバー",
+                    rateLink: "金利完全理解",
+                    fProfile: "運営者情報",
+                    fPrivacy: "個人情報保護方針",
+                    fContact: "お問い合わせ",
+                    noArticle: "記事がありません。"
+                },
+                en: {
+                    background: "Essential Context",
+                    archives: "Archives",
+                    rateLink: "Understanding Rates",
+                    fProfile: "About Us",
+                    fPrivacy: "Privacy Policy",
+                    fContact: "Contact",
+                    noArticle: "No articles found."
+                }
+            };
+        
+            const t = labels[lang];
+            document.getElementById('label-background').innerText = t.background;
+            document.getElementById('label-archives').innerText = t.archives;
+            document.getElementById('label-rate-link').innerText = t.rateLink;
+        
+            // 3. フッターリンクのテキストと言語パラメータ(?lang=)の更新
             const fProfile = document.getElementById('f-link-profile');
             const fPrivacy = document.getElementById('f-link-privacy');
             const fContact = document.getElementById('f-link-contact');
-            fProfile.innerText = lang === 'ja' ? "運営者情報" : "About Us";
-            fPrivacy.innerText = lang === 'ja' ? "個人情報保護方針" : "Privacy Policy";
-            fContact.innerText = lang === 'ja' ? "お問い合わせ" : "Contact";
+        
+            fProfile.innerText = t.fProfile;
+            fPrivacy.innerText = t.fPrivacy;
+            fContact.innerText = t.fContact;
+        
             fProfile.href = `profile.html?lang=${lang}`;
             fPrivacy.href = `privacy.html?lang=${lang}`;
             fContact.href = `contact.html?lang=${lang}`;
-
-            const data = articles[currentIndex];
-            if (!data) return;
-
+            
+            // 金利講義へのリンクも言語を維持
+            const rateLink = document.getElementById('rate-link');
+            if (rateLink) rateLink.href = `context/rate.html?lang=${lang}`;
+        
+            // 4. メインコンテンツの表示
+            const contentArea = document.getElementById('content-area');
+            if (!data) {
+                contentArea.innerHTML = `<p class="text-center py-20">${t.noArticle}</p>`;
+                return;
+            }
+        
+            // --- SEO対策：メタタグとタイトルの動的更新 ---
+            // ブラウザのタブ名（Title）を記事タイトルに変更
+            document.title = data.titles[lang] + " - JAPAN ECONOMY";
+            
+            // Google検索結果用の要約（Description）を更新
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc && data.descriptions) {
+                metaDesc.setAttribute("content", data.descriptions[lang]);
+            }
+            // ------------------------------------------
+        
             const title = data.titles[lang];
             const content = data.contents[lang].replace(/\n/g, '<br>');
-            document.getElementById('content-area').innerHTML = `
+        
+            contentArea.innerHTML = `
                 <div class="text-blue-600 font-black mb-4 text-sm">${data.date}</div>
                 <h2 class="text-3xl md:text-5xl font-black mb-12 leading-tight">${title}</h2>
-                <div class="prose prose-lg max-w-none text-slate-700">${injectGlossaryLinks(content, data.glossary, lang)}</div>
+                <div class="prose prose-lg max-w-none text-slate-700">
+                    ${injectGlossaryLinks(content, data.glossary, lang)}
+                </div>
             `;
-
-            document.getElementById('archive-list').innerHTML = articles.map((art, idx) => `
-                <div onclick="changeArticle(${idx})" class="p-5 bg-white rounded-2xl border cursor-pointer ${idx === currentIndex ? 'ring-2 ring-blue-500' : ''}">
-                    <div class="text-[10px] text-slate-400 font-bold">${art.date}</div>
-                    <div class="font-black text-slate-800 truncate text-sm">${art.titles[lang]}</div>
-                </div>`).join('');
+        
+            // 5. アーカイブリスト（バックナンバー）の生成
+            document.getElementById('archive-list').innerHTML = articles.map((art, idx) => {
+                const activeClass = idx === currentIndex ? 'ring-2 ring-blue-500 border-blue-500' : 'border-slate-100';
+                return `
+                    <div onclick="changeArticle(${idx})" class="p-5 bg-white rounded-2xl border cursor-pointer transition-all hover:border-blue-300 ${activeClass}">
+                        <div class="text-[10px] text-slate-400 font-bold">${art.date}</div>
+                        <div class="font-black text-slate-800 truncate text-sm">${art.titles[lang]}</div>
+                    </div>`;
+            }).join('');
         }
 
         function injectGlossaryLinks(text, glossary, lang) {
