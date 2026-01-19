@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://jp-economy.com/sitemap.xml
