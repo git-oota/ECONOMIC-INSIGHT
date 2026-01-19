@@ -16,6 +16,75 @@
             transform: translateY(100%); transition: transform 0.3s ease; z-index: 1000;
         }
         #glossary-footer.active { transform: translateY(0); }
+
+        /* フッター全体のスタイル（2番目を参考に黒背景） */
+        .site-footer {
+            background-color: #222; /* ダークグレー */
+            color: #fff;            /* 白文字 */
+            padding: 30px 20px;     /* 上下の余白 */
+            font-size: 14px;        /* 少し小さめの文字サイズ */
+        }
+        
+        /* コンテンツ部分のレイアウト（1番目を参考に横並び） */
+        .footer-content {
+            display: flex;
+            justify-content: space-between; /* 左右に配置 */
+            align-items: center;            /* 上下中央揃え */
+            max-width: 1000px;              /* コンテンツの最大幅 */
+            margin: 0 auto 20px;            /* 中央寄せと下の余白 */
+            flex-wrap: wrap;                /* スマホで折り返す設定 */
+        }
+        
+        /* サイトロゴのデザイン */
+        .footer-logo {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px; /* スマホ表示時の余白 */
+        }
+        
+        /* ナビゲーションのスタイル */
+        .footer-nav ul {
+            list-style: none;       /* リストの・を消す */
+            padding: 0;
+            margin: 0;
+            display: flex;          /* リンクを横並びにする */
+            flex-wrap: wrap;        /* スマホで折り返す */
+        }
+        
+        .footer-nav li {
+            margin-left: 20px;      /* リンク間の余白 */
+        }
+        
+        /* スマホ表示時に左側の余白を消す調整 */
+        @media (max-width: 600px) {
+            .footer-nav li {
+                margin-left: 0;
+                margin-right: 15px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        /* リンクのスタイル */
+        .footer-nav a {
+            color: #ccc;            /* 少しグレーがかった白 */
+            text-decoration: none;  /* 下線を消す */
+            transition: color 0.3s; /* マウスを乗せた時の変化 */
+        }
+        
+        /* マウスを乗せた時の色 */
+        .footer-nav a:hover {
+            color: #fff;            /* 真っ白にする */
+        }
+        
+        /* コピーライトのスタイル */
+        .copyright {
+            text-align: center;     /* 中央揃え */
+            border-top: 1px solid #444; /* 上に薄い線を入れる */
+            padding-top: 20px;      /* 線の上の余白 */
+            color: #888;            /* 控えめなグレー */
+            font-size: 12px;
+        }
+                
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 pb-32">
