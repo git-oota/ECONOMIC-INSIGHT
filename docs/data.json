@@ -1,5 +1,62 @@
 [
   {
+    "id": "20260122_062931",
+    "date": "2026-01-22",
+    "titles": {
+      "ja": "日本経済：日銀会合を前に日経平均が乱高下、高市首相の「消費減税」表明で円高（JPY）進行",
+      "en": "Japan Economy: Nikkei 225 Volatile as BoJ Meeting Begins; Yen (JPY) Gains on Takaichi Election Shock"
+    },
+    "descriptions": {
+      "ja": "日銀の追加利上げ観測と高市首相の衆院解散・消費税減税案が市場を直撃。日経平均は5万2000円台で推移し、債券市場ではJGB金利が27年ぶりの高水準を記録。投資家は「日本版トラス・ショック」への警戒を強めています。",
+      "en": "Japan Economy, Nikkei 225, Yen (JPY), BoJ, Inflation: Markets brace for BoJ policy signals as PM Takaichi's snap election and tax cut vow trigger bond rout. JGB yields hit 27-year highs while Yen strengthens amid fiscal uncertainty."
+    },
+    "contents": {
+      "ja": "2026年1月22日、日本の金融市場は「政治」と「金融政策」の交差点で激しい揺れに見舞われています。日銀（BoJ）は本日より金融政策決定会合を開始。前回12月に政策金利を0.75%へ引き上げたばかりですが、市場は植田総裁がさらなるタカ派姿勢を示すかに注目しています。一方、高市早苗首相が2月8日の総選挙を控え「食料品等の消費税停止」を打ち出したことで、財政悪化懸念から10年物国債（JGB）金利が2.3%を超え、1999年以来の高水準をマークしました。日経平均株価は一時5万4000円の最高値から反落し、銀行株の売りが目立つ展開です。\n\n【投資家への影響とアクション】\n1. 短期：金利上昇の恩恵を受ける銀行株は、債券含み損の懸念から短期的にボラティリティが上昇。押し目買いの好機か慎重な見極めが必要。\n2. 中期：円高（USD/JPY 157円台）進行により、輸出セクターから内需・ディフェンシブ銘柄へのシフトを推奨。\n3. リスク管理：日本の財政信認低下リスクに備え、金（Gold）や海外資産への分散投資を継続すべきです。",
+      "en": "On January 22, 2026, Japanese markets are reeling from a collision of aggressive monetary policy and fiscal populism. As the Bank of Japan (BoJ) begins its two-day meeting, investors are parsing whether Governor Ueda will signal a move toward 1.0% interest rates following December's hike to 0.75%. Simultaneously, Prime Minister Sanae Takaichi’s surprise call for a snap election and a pledge to suspend consumption taxes on food has sparked a massive sell-off in Japanese Government Bonds (JGBs). The 10-year yield surged past 2.3%, a level not seen in 27 years, drawing comparisons to the UK's 'Truss Shock.' The Nikkei 225, which recently flirted with 54,500, is now facing heavy resistance as bank stocks suffer from bond-related volatility.\n\n【Investor Impact & Actionable Insights】\n1. Short-term: High volatility in mega-banks as rising yields boost margins but crater bond portfolios. Monitor the BoJ press conference for 'normalization' speed.\n2. Mid-term: The Yen (JPY) is strengthening toward 157/USD as fiscal stimulus expectations paradoxically boost local currency demand. Shift focus toward domestic-demand stocks over exporters.\n3. Risk Hedge: Diversification into Gold or USD-denominated assets is advised as Japan's fiscal credibility faces its sternest test in decades."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市首相の解散宣言] --> B[消費税減税の公約]\n    B --> C[財政悪化懸念/JGB売り]\n    C --> D[長期金利 2.3%超え]\n    D --> E[日経平均株価への下押し圧力]\n    F[日銀会合開始] --> G[追加利上げ示唆?]\n    G --> H[円高/JPY上昇]",
+      "en": "graph TD\n    A[PM Takaichi Snap Election] --> B[Consumption Tax Cut Pledge]\n    B --> C[Fiscal Deficit Concerns / JGB Sell-off]\n    C --> D[10Y JGB Yields > 2.3%]\n    D --> E[Nikkei 225 Downward Pressure]\n    F[BoJ Meeting Starts] --> G[Signals of Rate Hike to 1.0%?]\n    G --> H[Yen Appreciation / JPY Up]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "消費税減税案",
+          "en": "Consumption Tax Cut Proposal"
+        },
+        "def": {
+          "ja": "高市首相が提唱した、食料品等の8%課税を一時停止する政策。財政赤字拡大の懸念から国債市場を混乱させている。",
+          "en": "A policy proposed by PM Takaichi to suspend the 8% tax on food, triggering market fears regarding Japan's massive public debt."
+        }
+      },
+      {
+        "term": {
+          "ja": "JGB (日本国債)",
+          "en": "JGB (Japanese Government Bond)"
+        },
+        "def": {
+          "ja": "日本政府が発行する債券。2026年1月現在、利回りが急上昇しており、銀行の保有資産価値に影響を与えている。",
+          "en": "Bonds issued by the Japanese government. As of Jan 2026, yields are spiking, impacting bank balance sheets and borrowing costs."
+        }
+      },
+      {
+        "term": {
+          "ja": "タカ派 (Hawkish)",
+          "en": "Hawkish"
+        },
+        "def": {
+          "ja": "インフレ抑制のために金利引き上げを支持する姿勢。現在の日銀は長年の緩和からこの姿勢へ転換中。",
+          "en": "A policy stance favoring higher interest rates to combat inflation. The BoJ is currently shifting toward this stance after decades of easing."
+        }
+      }
+    ],
+    "comparison": {
+      "us_media": "Focuses on the 'Sell America' trade and how Japan's yield spike might trigger a massive unwinding of the Yen Carry Trade, affecting US Treasuries.",
+      "china_media": "Highlights regional capital shifts, noting that Japan's fiscal instability could drive investors toward Chinese equities as a relative value play in Asia.",
+      "nikkei_editor_view": "Warns that the 'Takaichi Trade' is a double-edged sword: while tax cuts might boost consumption, the loss of fiscal discipline could lead to a catastrophic loss of trust in the Yen."
+    }
+  },
+  {
     "id": "20260120_062057",
     "date": "2026-01-20",
     "titles": {
