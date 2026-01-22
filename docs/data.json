@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260123_062441",
+    "date": "2026-01-23",
+    "titles": {
+      "ja": "Japan Economy: 日銀、金利0.75%据え置き濃厚も「タカ派的維持」に注目—日経225は5万4000円台で推移",
+      "en": "Japan Economy & Nikkei 225: BoJ Eyes 'Hawkish Hold' at 0.75% Amid Yen Weakness; Nikkei Scales 54,000"
+    },
+    "descriptions": {
+      "ja": "2026年1月23日、日銀は金融政策決定会合で金利据え置きを決定する見通し。12月のCPI鈍化予想と高市首相による衆院解散・総選挙（2月8日投開票）が焦点。円安158円台とJGB利回り上昇が投資家心理を揺さぶる中、日経平均は世界をアウトパフォームしています。",
+      "en": "Japan Economy, BoJ, Nikkei 225, Yen (JPY), Inflation: Markets brace for the BoJ's Jan 23 decision. While a hold at 0.75% is expected, focus shifts to Governor Ueda’s guidance and PM Takaichi's snap election. Nikkei 225 hits 54,000 as exports prove resilient against global tariff pressures."
+    },
+    "contents": {
+      "ja": "【市場概況】2026年1月23日の東京市場は、日銀（BoJ）の金融政策決定会合の結果発表を控え、緊迫感に包まれています。市場コンセンサスは政策金利0.75%の据え置きですが、焦点は植田総裁の「タカ派的」なトーンの維持にあります。円安（USD/JPY 158円台）が進行する中、追加利上げの示唆がなければ円売りが加速するリスクも孕んでいます。\n\n【投資家への影響】日経平均株価（Nikkei 225）は54,000円の節目を突破し、年初来で約8%上昇と米欧市場を凌駕。企業収益の改善と、高市早苗首相による「2月8日投開票の衆院解散・総選挙」を受けた追加財政出動への期待が買いを支えています。投資家は、JGB（日本国債）10年物利回りが2.38%と27年ぶりの高水準にある点に注意が必要で、金利上昇によるグロース株への影響を注視すべきです。\n\n【背景知識】大学生・留学生向け：日本は長年のゼロ金利政策を終え、現在は「金利のある世界」へと完全に移行しました。0.75%という金利は、1995年以来の最高水準です。これは、賃金と物価が共に上昇する「正の循環」が定着しつつあることを示しています。\n\n【国際比較】米トランプ政権の関税政策に対し、中国は内需拡大と景気刺激策で対抗していますが、日本は電子部品や食品輸出の好調により、2025年の輸出額が前年比3.1%増と健闘。欧米メディアは「日本の輸出回復の持続性」に懐疑的ですが、国内では「高市ノミクス」によるリフレ期待が先行しています。",
+      "en": "Decision Day: The Bank of Japan (BoJ) concludes its two-day meeting on January 23, 2026. While a consensus points to a rate hold at 0.75%, the primary focus is whether Governor Ueda delivers a 'Hawkish Hold' to support the struggling Yen (JPY), currently hovering near 158 per dollar. \n\nInvestor Impact: The Nikkei 225 has demonstrated remarkable resilience, scaling the 54,000 level. This rally is fueled by strong corporate earnings revisions and optimism surrounding PM Sanae Takaichi’s announcement of a snap election for February 8. Investors should monitor the 10-year JGB yield, which recently touched a 27-year high of 2.38%, potentially increasing volatility in interest-rate-sensitive sectors.\n\nEssential Context: For students and international observers, Japan has successfully exited its 'Lost Decades.' The current 0.75% rate—the highest since 1995—marks a normalization of monetary policy driven by stable inflation and wage growth. \n\nComparative Analysis: While U.S. media remains fixated on the impact of Trump’s 2026 tariffs on global trade, and Chinese reports focus on domestic stimulus to combat deflation, Japan is standing out. Despite a 4.1% drop in car exports to the US, Japan’s overall exports grew by 3.1% in 2025, led by high-tech components, showcasing a strategic pivot in its trade dependencies."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[日銀会合 1/23] --> B{金利 0.75% 据置}\n    B --> C[タカ派的示唆]\n    B --> D[ハト派的示唆]\n    C --> E[円高/債券安]\n    D --> F[円安/株高]\n    G[高市首相 総選挙発表] --> H[財政出動期待]\n    H --> I[日経225 54,000維持]\n    I --> J[投資家アクション: 日本株ホールド]",
+      "en": "graph TD\n    A[BoJ Meeting Jan 23] --> B{Rate Hold at 0.75%}\n    B --> C[Hawkish Guidance]\n    B --> D[Dovish Guidance]\n    C --> E[Yen Strength/JGB Yield Up]\n    D --> F[Yen Weakness/Stocks Up]\n    G[PM Takaichi Snap Election] --> H[Fiscal Stimulus Hope]\n    H --> I[Nikkei 225 @ 54,000]\n    I --> J[Investor Action: Hold Japanese Equities]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "タカ派的維持 (Hawkish Hold)",
+          "en": "Hawkish Hold"
+        },
+        "def": {
+          "ja": "金利は据え置くものの、将来的な利上げに対して前向きな姿勢を示すこと。",
+          "en": "Maintaining current interest rates while signaling a bias toward future increases."
+        }
+      },
+      {
+        "term": {
+          "ja": "JGB (日本国債)",
+          "en": "JGB (Japanese Government Bond)"
+        },
+        "def": {
+          "ja": "日本政府が発行する債券。10年物利回りは国内長期金利の指標となる。",
+          "en": "Debt securities issued by the Government of Japan; the 10-year yield is a key benchmark for long-term rates."
+        }
+      },
+      {
+        "term": {
+          "ja": "高市ノミクス",
+          "en": "Takaichinomics"
+        },
+        "def": {
+          "ja": "高市早苗首相が掲げる、機動的な財政出動と大胆な金融緩和を柱とする経済政策の通称。",
+          "en": "Economic policies associated with PM Sanae Takaichi, focusing on fiscal stimulus and strategic growth."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260122_062931",
     "date": "2026-01-22",
     "titles": {
