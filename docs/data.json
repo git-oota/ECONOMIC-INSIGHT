@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260124_062245",
+    "date": "2026-01-24",
+    "titles": {
+      "ja": "日本経済：日銀の据え置きと「強気」の成長予測で日経平均は高値圏、円相場は乱高下",
+      "en": "Japan Economy: BoJ Rate Hold & Hawkish Growth Upgrades Fuel Nikkei 225 as Yen Jitters Persist"
+    },
+    "descriptions": {
+      "ja": "日本経済最新：日銀は金利を0.75%に据え置くも、成長率見通しを上方修正。日経平均は53,800円台で堅調に推移。植田総裁は追加利上げに含みを持たせ、円安への警戒感を強調。投資家が注視すべき「賃金と物価の好循環」の行方を徹底分析。",
+      "en": "Japan Economy Update: BoJ maintains 0.75% rate while upgrading growth forecasts. Nikkei 225 remains near record highs at 53,846. Governor Ueda signals potential future hikes amid JPY volatility and the upcoming general election, highlighting a shift in the inflation narrative."
+    },
+    "contents": {
+      "ja": "【日経視点の分析】日本銀行は2026年最初の金融政策決定会合で、政策金利を0.75%で据え置くことを決定しました。しかし、中身は極めて「タカ派的」です。2025年度・2026年度の成長率見通しを引き上げ、コアインフレ率が目標の2%近傍で推移するとの確信を深めています。市場では、2月の衆院選（高市政権初陣）を前にした一時的な「静観」と捉えられていますが、委員の1人が利上げを主張して反対票を投じるなど、正常化への圧力は強まっています。投資家は、円安による輸入インフレが企業収益を圧迫するリスクと、金利上昇の恩恵を受ける金融株の買い場を天秤にかける局面です。米国メディアはトランプ政権の関税リスクと日米金利差に焦点を当てる一方、中国メディアはサプライチェーンの日本回帰と製造業PMIの回復を注視しています。",
+      "en": "The Bank of Japan (BoJ) concluded its January 2026 meeting by holding the short-term rate at 0.75%, yet the underlying tone was decidedly hawkish. By upgrading GDP growth forecasts for FY2025 and FY2026, the BoJ signaled that the 'virtuous cycle' between wages and prices is finally taking root. While the market expected a pause ahead of the February 8 general election under PM Sanae Takaichi, a dissenting vote for an immediate hike to 1% underscores the growing momentum for normalization. Investor Action: Strategic buying in domestic mega-banks is recommended as net interest margins improve, while exporters face volatility from a potential yen rebound. US media outlets are zeroing in on the 'yield gap' and the impact of potential US tariffs on Japanese autos, whereas Chinese reports are analyzing the 17-month high in Japan's Flash PMI as a sign of regional manufacturing resilience. For students, this marks the end of Japan's era of 'cheap money,' shifting the economic focus from survival to sustainable growth."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[日銀: 金利0.75%据え置き] --> B{成長率見通し上方修正}\n    B --> C[日経平均: 5.3万円台維持]\n    B --> D[追加利上げ期待の継続]\n    D --> E[円相場: 157-158円で乱高下]\n    E --> F[輸出企業の利益確定売り]\n    D --> G[銀行・金融セクターへの資金流入]\n    H[2月衆院選の不透明感] --> C",
+      "en": "graph TD\n    A[BoJ: Rate Hold at 0.75%] --> B{Growth Outlook Upgraded}\n    B --> C[Nikkei 225: Holds 53k level]\n    B --> D[Expectations of Future Hikes]\n    D --> E[Yen Volatility: JPY 157-158 range]\n    E --> F[Profit-taking in Exporters]\n    D --> G[Capital Inflow to Financial Sector]\n    H[Feb General Election Uncertainty] --> C"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "賃金と物価の好循環",
+          "en": "Virtuous Cycle of Wages and Prices"
+        },
+        "def": {
+          "ja": "賃金の上昇が消費を促し、それが物価の緩やかな上昇と企業収益の拡大につながる理想的な経済状態。",
+          "en": "An economic state where wage increases drive consumption, leading to moderate price rises and expanded corporate profits."
+        }
+      },
+      {
+        "term": {
+          "ja": "コアCPI",
+          "en": "Core CPI"
+        },
+        "def": {
+          "ja": "生鮮食品を除いた消費者物価指数。日銀が金融政策を判断する際の主要な指標。",
+          "en": "The Consumer Price Index excluding volatile fresh food; the primary gauge used by the BoJ for monetary policy decisions."
+        }
+      },
+      {
+        "term": {
+          "ja": "政策金利",
+          "en": "Policy Interest Rate"
+        },
+        "def": {
+          "ja": "中央銀行が短期金融市場の誘導目標とする金利。現在は0.75%。",
+          "en": "The short-term interest rate target set by the central bank; currently 0.75% in Japan."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260123_062441",
     "date": "2026-01-23",
     "titles": {
