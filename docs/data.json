@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260126_062013",
+    "date": "2026-01-26",
+    "titles": {
+      "ja": "日本経済：日経平均5万4000円台目前、日銀金利据え置きと高市総理の解散総選挙で市場激動",
+      "en": "Japan Economy: Nikkei 225 Eyes 54k as BoJ Holds Rates Amid Takaichi’s Snap Election Call"
+    },
+    "descriptions": {
+      "ja": "日本経済：日銀が政策金利を0.75%で据え置く一方、景気判断を上方修正。高市総理の衆院解散と大型減税案を受け、日経平均（Nikkei 225）は高値圏で推移。円（JPY）安とインフレ（Inflation）の行方に投資家の注目が集まっています。",
+      "en": "Japan Economy: Nikkei 225 remains bullish as BoJ holds rates at 0.75% while upgrading growth outlook. Yen (JPY) faces pressure from PM Takaichi’s fiscal stimulus and snap election. Vital insights on Inflation and market strategy for global investors."
+    },
+    "contents": {
+      "ja": "【日経編集者部視点】日本市場は今、「金融正常化」と「積極財政」の交差点に立っています。日銀（BoJ）は1月の会合で金利を0.75%に据え置きましたが、展望レポートでは2026年度の成長率見通しを1.0%に引き上げ、ハト派的な据え置きの中にもタカ派的な火種を残しました。一方、高市総理は2月8日の投開票に向け衆院を解散。食料品への消費税一時停止という劇薬を提示しており、これが財政赤字拡大懸念から長期金利（JGB 10年）を27年ぶりの高水準（2.3%台）へ押し上げています。\n\n【投資家への影響と推奨アクション】高金利環境への移行は銀行株に追い風ですが、急激な金利上昇はグロース株の重石となります。推奨：①利ざや改善が見込まれる大手金融株のホールド。②円安メリットが薄れる中、内需型優良株へのシフト検討。③選挙結果によるボラティリティに備えた為替ヘッジの徹底。\n\n【グローバル比較】米国（Fed）が利下げサイクルに入る中、日本は逆行する利上げ局面。中国が構造的不況からの脱却に苦戦する中、日本は30年来のデフレ脱却をかけた「最後の審判」を迎えています。",
+      "en": "【Nikkei Editorial Perspective】The Japanese market is currently at a crossroads between monetary normalization and aggressive fiscal expansion. While the Bank of Japan (BoJ) kept its short-term rate at 0.75% this January, it upgraded its FY2026 growth forecast to 1.0%, signaling a persistent 'hawkish undercurrent.' Simultaneously, PM Sanae Takaichi’s decision to dissolve the Lower House for a Feb 8 election—coupled with a proposal to suspend sales tax on food—has rattled bond markets, pushing 10-year JGB yields to a 27-year high of 2.3%.\n\n【Investor Impact & Action】Rising yields favor mega-banks but pose a threat to high-valuation growth stocks. Actions: 1) Maintain exposure to financial sectors benefiting from wider net interest margins. 2) Re-evaluate exporters as Yen (JPY) sensitivity increases. 3) Prepare for high volatility leading up to the snap election by utilizing currency hedges.\n\n【Global Comparison】While the US Fed pivots toward rate cuts to ensure a soft landing, Japan is moving in the opposite direction. Unlike China’s struggle with structural deflation, Japan is navigating a 'Great Normalization' that makes it a unique outlier in the 2026 global macro landscape."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[日銀: 金利0.75%据え置き] --> B{市場の反応}\n    B --> C[日経平均: 54,000円台維持]\n    B --> D[円相場: 158円台の円安継続]\n    E[高市総理: 衆院解散・減税案] --> F[長期金利上昇 2.3%]\n    F --> G[銀行株への資金流入]\n    C --> H[投資家: 選挙結果を注視]",
+      "en": "graph TD\n    A[BoJ: Rates Held at 0.75%] --> B{Market Reaction}\n    B --> C[Nikkei 225: Staying near 54k]\n    B --> D[Yen: Weakness at 158/USD]\n    E[PM Takaichi: Snap Election & Tax Cuts] --> F[JGB Yields Spike to 2.3%]\n    F --> G[Inflow to Financial Stocks]\n    C --> H[Investors: Eyeing Feb 8 Election]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "政策金利据え置き",
+          "en": "Policy Rate Hold"
+        },
+        "def": {
+          "ja": "中央銀行が現在の金利水準を維持すること。今回は0.75%で据え置かれた。",
+          "en": "The decision by a central bank to keep interest rates at current levels; held at 0.75%."
+        }
+      },
+      {
+        "term": {
+          "ja": "解散総選挙",
+          "en": "Snap Election"
+        },
+        "def": {
+          "ja": "任期満了前に衆議院を解散して行う選挙。政治的空白や政策変更のリスクを伴う。",
+          "en": "An election called earlier than expected, often creating market volatility and policy shifts."
+        }
+      },
+      {
+        "term": {
+          "ja": "コアコアCPI",
+          "en": "Core-Core CPI"
+        },
+        "def": {
+          "ja": "食料（生鮮除く）とエネルギーを除いた消費者物価指数。真のインフレ傾向を示す。",
+          "en": "Consumer Price Index excluding fresh food and energy, representing underlying inflation trends."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260124_062245",
     "date": "2026-01-24",
     "titles": {
