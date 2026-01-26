@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260127_062604",
+    "date": "2026-01-27",
+    "titles": {
+      "ja": "日本経済と日経平均：日銀の金利据え置きと高市政権の「消費税減税」が市場を揺さぶる",
+      "en": "Japan Economy & Nikkei 225: BoJ Rate Hold and Yen (JPY) Volatility Amid Takaichi Tax Relief Shock"
+    },
+    "descriptions": {
+      "ja": "日銀は金利を0.75%で据え置くも、将来の追加利上げを示唆。一方、高市政権の消費税減税案が国債暴落を招き、日経平均は5万3000円台で乱高下しています。",
+      "en": "Japan Economy: Nikkei 225 fluctuates near 53,000 as BoJ maintains 0.75% rates while hinting at future hikes. Takaichi’s tax cut plan triggers JGB sell-offs and Yen (JPY) volatility."
+    },
+    "contents": {
+      "ja": "【日経視点の分析】日本市場は現在、日銀の「金融正常化」と高市政権の「積極財政」という二つの巨大な力が衝突する局面にある。日銀は1月の会合で金利を0.75%に据え置いたが、高田審議委員が1.0%への利上げを主張するなど、タカ派への傾斜が鮮明だ。一方で、2月8日の衆院選を前に高市総理が打ち出した「食料品等の消費税減税（2年間）」は、5兆円規模の財源不足懸念から日本国債（JGB）の売りを加速させ、長期金利を押し上げている。投資家は、この『タカイチ・ショック』による円安の再加速と、輸入インフレの再燃を警戒すべきだ。具体的には、AI半導体需要の恩恵を受けるアドバンテスト等のハイテク株には強気、金利上昇の恩恵を受ける銀行株にも注目だが、国債価格の変動には細心の注意が必要である。\n\n【大学生・留学生向け背景解説】「賃金と物価の好循環（Virtuous Cycle）」が鍵です。日本は長年デフレに苦しんできましたが、現在は賃金が上がり、それが消費を呼び、さらに物価が適度に上がる状態を目指しています。日銀が金利を上げようとするのは、この循環が定着したと判断しつつあるからです。\n\n【米中との比較】米国は1月27-28日のFRB会合を控え、利下げのタイミングを模索中。中国はAI分野での追い上げと景気刺激策に注力。対する日本は、世界で唯一「金利を上げる方向」にあり、独自の金融政策サイクルに入っています。",
+      "en": "Analysis from a Nikkei Perspective: The Japanese market is currently a battlefield between the BoJ’s ‘normalization’ and the Takaichi administration’s fiscal expansion. While the BoJ held rates at 0.75% in January, the 8-1 vote (with member Takata dissenting for a hike to 1.0%) signals a hawkish shift. Simultaneously, PM Sanae Takaichi’s proposal to cut consumption tax on food for two years ahead of the Feb 8 election has sparked a ‘Takaichi Shock,’ driving a massive sell-off in Japanese Government Bonds (JGB) due to deficit concerns. Investors should brace for Yen (JPY) volatility as the market weighs fiscal stimulus against monetary tightening. Recommended Action: Remain overweight on AI-beneficiaries like Advantest and Tokyo Electron, but hedge against rising yields by monitoring banking sectors.\n\nEssential Context for Students: The focus is the 'Virtuous Cycle' between wages and prices. After decades of deflation, Japan is finally seeing wages rise, which supports higher consumption and stable inflation, allowing the BoJ to exit its ultra-loose policy.\n\nGlobal Comparison: While the US Federal Reserve (meeting Jan 27-28) debates the timing of rate cuts and China focuses on AI stimulus to combat deflation, Japan is uniquely positioned as the only major economy moving toward higher interest rates, creating a decoupled policy environment."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の減税公約] --> B{財源不足懸念}\n    B --> C[日本国債 JGB 売却]\n    C --> D[長期金利の上昇]\n    D --> E[円安抑制 or 加速の不透明感]\n    F[日銀のタカ派姿勢] --> G[利上げ期待の継続]\n    G --> H[日経平均の乱高下]",
+      "en": "graph TD\n    A[Takaichi Tax Cut Proposal] --> B{Fiscal Deficit Concerns}\n    B --> C[JGB Sell-off]\n    C --> D[Rising Long-term Yields]\n    D --> E[Yen JPY Volatility]\n    F[Hawkish BoJ Signals] --> G[Expectation of Future Hikes]\n    G --> H[Nikkei 225 Volatility]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "賃金と物価の好循環",
+          "en": "Virtuous Cycle"
+        },
+        "def": {
+          "ja": "賃金上昇が消費を促し、それが企業の収益改善とさらなる賃上げ・適度な物価上昇につながる経済の理想的なサイクル。",
+          "en": "An economic cycle where wage growth drives consumption, leading to higher corporate profits and further price/wage increases."
+        }
+      },
+      {
+        "term": {
+          "ja": "JGB",
+          "en": "Japanese Government Bond"
+        },
+        "def": {
+          "ja": "日本政府が発行する債券。利回りが上がると価格は下がる性質があり、現在は減税による財政悪化懸念で売られている。",
+          "en": "Bonds issued by the Japanese government. Currently facing sell-offs as investors fear fiscal deterioration from proposed tax cuts."
+        }
+      },
+      {
+        "term": {
+          "ja": "コアコアCPI",
+          "en": "Core-Core CPI"
+        },
+        "def": {
+          "ja": "生鮮食品とエネルギーを除いた消費者物価指数。日銀が基調的なインフレを判断する際に最も重視する指標の一つ。",
+          "en": "Consumer Price Index excluding fresh food and energy, used by the BoJ to gauge underlying long-term inflation trends."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260126_062013",
     "date": "2026-01-26",
     "titles": {
