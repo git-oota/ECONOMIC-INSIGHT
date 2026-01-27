@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260128_091850",
+    "date": "2026-01-28",
+    "titles": {
+      "ja": "日本経済：日経平均が史上最高値を射程、日銀の利上げ示唆と2月総選挙が市場を揺さぶる",
+      "en": "Japan Economy: Nikkei 225 Nears Record Highs as BoJ Signals Hikes Amid Election Volatility"
+    },
+    "descriptions": {
+      "ja": "日経平均株価は53,000円台で推移し史上最高値を伺う。日銀は政策金利を0.75%に据え置くも、インフレ継続を受け追加利上げに含み。2月8日の投開票を前に円高が進行中。",
+      "en": "Japan Economy and Nikkei 225 face a pivotal moment as the index hits 53,000+. BoJ holds rates at 0.75% but hints at future hikes. JPY strengthens ahead of the Feb 8 snap election."
+    },
+    "contents": {
+      "ja": "【日経視点：デフレ脱却の最終章】日本市場は現在、歴史的な転換点にある。日経平均株価は1月に54,499円の史上最高値を記録し、現在は53,000円台で堅調に推移。背景にはAI半導体需要によるテック株の牽引がある。一方、日銀は1月の会合で金利を0.75%に据え置いたが、審議委員からは1.0%への引き上げを求める声も上がり、タカ派へのシフトは鮮明だ。2月8日の衆議院総選挙を控え、高市政権（想定）による財政出動への期待と、通貨介入への警戒感が交錯し、ドル円は154円台まで円高が進行。投資家は輸出株から内需・金融株へのシフトを検討すべき局面だ。\n\n【報道比較分析】米国メディアは「トランプ関税」が日本の製造業に与える負の影響を強調する一方、中国メディアは日本のAI・半導体分野での独走を警戒。日本国内では選挙公約である「食料品への消費税減税」の財源議論が焦点となっている。",
+      "en": "[Nikkei Analysis: The Final Chapter of Deflation] The Japanese market is at a historic crossroads. The Nikkei 225 hit an all-time high of 54,499 in January, currently stabilizing in the 53,000 range driven by AI-related semiconductor demand (e.g., Advantest, Tokyo Electron). The Bank of Japan (BoJ) maintained its policy rate at 0.75% in the January meeting, but a hawkish undertone prevails with board members eyeing 1.0% to combat 2.5% inflation. With the snap election on February 8, the Yen (JPY) has strengthened to the 154 level against the USD as markets weigh fiscal expansion against potential intervention. Investors should pivot from export-heavy giants to domestic financial institutions benefiting from higher margins.\n\n[Comparative Media Analysis] US outlets focus on the 'Tariff Risk' to Japanese automakers, while Chinese media highlight Japan's resurgence in the global AI supply chain. Domestically, the debate centers on the feasibility of proposed consumption tax cuts on food."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[AI半導体需要] --> B[日経平均史上最高値]\n    C[日銀0.75%維持・利上げ示唆] --> D[円高進行 154円台]\n    E[2月8日 総選挙] --> F[市場ボラティリティ上昇]\n    B --> G[投資アクション: 金融・内需株へのシフト]\n    D --> G",
+      "en": "graph TD\n    A[AI Semiconductor Demand] --> B[Nikkei 225 All-Time High]\n    C[BoJ Policy 0.75% + Hawkish Signal] --> D[JPY Strength at 154 Level]\n    E[Feb 8 Snap Election] --> F[Increased Market Volatility]\n    B --> G[Action: Shift to Financials/Domestic Stocks]\n    D --> G"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "出口戦略 (Exit Strategy)",
+          "en": "Normalization"
+        },
+        "def": {
+          "ja": "長年の超低金利政策を終え、金利のある「普通の経済」に戻す日銀のプロセス。",
+          "en": "The process by which the BoJ ends ultra-loose monetary policy to return to a standard interest-rate environment."
+        }
+      },
+      {
+        "term": {
+          "ja": "解散総選挙 (Snap Election)",
+          "en": "Snap Election"
+        },
+        "def": {
+          "ja": "任期満了を待たずに衆議院を解散して行う選挙。2026年2月8日に投開票予定。",
+          "en": "An election called earlier than expected, scheduled for Feb 8, 2026, creating short-term policy uncertainty."
+        }
+      },
+      {
+        "term": {
+          "ja": "コアコアCPI (Core-Core CPI)",
+          "en": "Core-Core CPI"
+        },
+        "def": {
+          "ja": "生鮮食品及びエネルギーを除く消費者物価指数。日銀が物価安定を判断する最重要指標。",
+          "en": "Consumer Price Index excluding fresh food and energy, used by the BoJ to gauge underlying inflation trends."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260127_062604",
     "date": "2026-01-27",
     "titles": {
