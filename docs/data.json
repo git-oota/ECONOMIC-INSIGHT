@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260129_063050",
+    "date": "2026-01-29",
+    "titles": {
+      "ja": "日本経済：日銀「タカ派」議事要旨で円安牽制、日経平均は最高値圏でトランプ関税を警戒",
+      "en": "Japan Economy: Nikkei 225 Near Records as BoJ Minutes Signal Hawkish Shift to Protect Yen (JPY)"
+    },
+    "descriptions": {
+      "ja": "日銀議事要旨が追加利上げを示唆し円安を牽制。日経平均は5万4000円台の最高値圏。トランプ関税の影響を受けるトヨタの減益見通しと、高市政権の消費税減税議論が焦点。",
+      "en": "Japan Economy update: Nikkei 225 tests record highs as BoJ minutes reveal a hawkish bias to support the Yen (JPY). Toyota faces profit hits from US tariffs while PM Takaichi eyes tax cuts."
+    },
+    "contents": {
+      "ja": "本日の日本経済は、日銀が公開した12月会合の議事要旨が「タカ派」的な内容であったことが最大の焦点です。委員からは円安によるインフレ加速を懸念し、実質金利の低さを是正すべきとの声が上がり、市場では早期の追加利上げ観測が再燃しています。一方で、トヨタ自動車が2025年の世界販売首位を維持したものの、米国のトランプ政権による15%の追加関税により、今期の営業利益が1.5兆円押し下げられる見通しを発表しました。投資家は、AI需要による株価の勢いと、地政学的な関税リスクの狭間で慎重な選別を迫られています。また、国内では高市早苗政権による食品消費税0%への減税案が浮上しており、2月の総選挙に向けた財政拡大への期待と懸念が交錯しています。\n\n【投資家への影響と推奨】\n円高メリット銘柄（内需・小売）への資金シフトを推奨。一方で、関税リスクに直面する自動車セクターは利益確定売りが先行する可能性があります。日銀の正常化プロセスは「円安終了」のシグナルであり、為替ヘッジの再検討が必要です。\n\n【米・中との比較分析】\n米国はトランプ大統領の「ドル安誘導」発言で通貨安を模索していますが、日本はインフレ抑制のために「円高」を必要とする逆転現象が起きています。中国は産業利益が回復基調にあるものの、日米同様に関税包囲網への対応に苦慮しており、東アジア全体で対米輸出依存からの脱却が急務となっています。",
+      "en": "Japan's economic landscape today is dominated by the release of the Bank of Japan's (BoJ) December meeting minutes, which revealed a surprisingly hawkish stance. Board members expressed urgent concerns regarding the weak Yen (JPY) and the necessity to adjust historically low real interest rates to curb persistent inflation. Consequently, the Nikkei 225 is experiencing volatility near its all-time high of 54,000 points. Meanwhile, Toyota Motor Corp confirmed its status as the world's top automaker for 2025 but warned of a massive ¥1.5 trillion profit hit due to the 15% US import tariffs under the Trump administration. This 'Trump Risk' is forcing investors to pivot from traditional exporters to domestic-oriented sectors. Domestically, PM Sanae Takaichi's proposal to slash food consumption tax to 0% ahead of the February snap election provides a potential tailwind for retail stocks but raises questions about long-term fiscal health.\n\n【Investor Impact & Actions】\nAction: Shift portfolios toward domestic demand-driven sectors (Real Estate, Retail) that benefit from a stronger Yen and potential tax cuts. Caution: Automakers face structural profit erosion from US trade policy; look for entry points in AI-related tech instead. \n\n【Essential Context for Students】\nHistorically, Japan maintained 'Negative Interest Rates' for nearly a decade. In 2026, we are witnessing 'Monetary Normalization,' where the BoJ raises rates to match global standards. For international students, this means a likely increase in the Yen's value, making tuition and living costs more expensive when converted from foreign currencies."
+    },
+    "mermaid": {
+      "ja": "graph TD; A[日銀議事要旨] -->|タカ派姿勢| B[円高圧力/金利上昇]; B --> C[輸出企業利益の圧縮]; D[米国トランプ関税] -->|15%課税| E[トヨタ等自動車株の下落]; F[AI・半導体需要] -->|株価下支え| G[日経平均最高値圏]; G --> H[投資判断: 内需シフト]",
+      "en": "graph TD; A[BoJ Minutes] -->|Hawkish Tone| B[Yen Strength/Rate Hike Hopes]; B --> C[Pressure on Exporters]; D[US Trump Tariffs] -->|15% Levy| E[Toyota Profit Drop]; F[AI/Semi Demand] -->|Index Support| G[Nikkei 225 Records]; G --> H[Investor Action: Domestic Pivot]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "実質金利",
+          "en": "Real Interest Rate"
+        },
+        "def": {
+          "ja": "名目金利からインフレ率を引いたもの。日銀はこれが極めて低いことが円安の主因と分析しています。",
+          "en": "The nominal interest rate minus inflation. BoJ identifies its current low level as a primary driver for Yen weakness."
+        }
+      },
+      {
+        "term": {
+          "ja": "トランプ関税",
+          "en": "Trump Tariffs"
+        },
+        "def": {
+          "ja": "米国トランプ政権が導入した輸入関税。日本車に対し2.5%から15%へ引き上げられ、企業の利益を直撃しています。",
+          "en": "Import duties reintroduced by the Trump administration, raising levies on Japanese cars from 2.5% to 15%, impacting corporate earnings."
+        }
+      },
+      {
+        "term": {
+          "ja": "消費税減税議論",
+          "en": "Consumption Tax Cut Debate"
+        },
+        "def": {
+          "ja": "高市政権が掲げる食品税率0%案。物価高対策として期待される一方、5兆円規模の財源確保が課題です。",
+          "en": "A proposal by the Takaichi cabinet to cut food tax to 0% to combat inflation, requiring ¥5 trillion in alternative funding."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260128_091850",
     "date": "2026-01-28",
     "titles": {
