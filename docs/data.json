@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260130_062844",
+    "date": "2026-01-30",
+    "titles": {
+      "ja": "日本経済と日経平均：日銀のタカ派姿勢と解散総選挙で円（JPY）ボラティリティ急増",
+      "en": "Japan Economy & Nikkei 225: BoJ Hawkish Signal and Yen (JPY) Volatility Drive Market Sentiment"
+    },
+    "descriptions": {
+      "ja": "2026年1月30日の日本市場は、日銀の追加利上げ示唆と高市首相による衆議院解散を受けた「政治リスク」が交錯。日経平均は53,000円台で推移し、投資家は銀行株へのシフトを強めています。",
+      "en": "Japan Economy Update: Nikkei 225 stabilizes near 53,400 as BoJ hints at rate hikes. JPY faces volatility amid PM Takaichi's snap election call. Investors pivot to financials as inflation forecasts rise."
+    },
+    "contents": {
+      "ja": "【日経新聞編集者の視点】\n2026年1月の金融政策決定会合を経て、日本経済は「金利のある世界」への完全移行を鮮明にしています。植田総裁は0.75%の金利維持を決定したものの、1.0%への利上げを求める反対票が投じられたことは、市場に強いタカ派的メッセージとして伝わりました。さらに、高市総理による2月8日の投開票に向けた衆議院解散は、大規模な財政出動への期待と、日本の債務持続性への懸念という二面性を市場に突きつけています。\n\n【投資家への影響と推奨アクション】\n利上げ局面の恩恵を受ける「メガバンク・地方銀行」のウェイト引き上げを推奨。一方で、円安メリットが薄れる輸出企業や、借入コスト増が重荷となる不動産セクターは慎重な見極めが必要です。総選挙の結果次第で財政赤字拡大懸念からJGB（日本国債）利回りが急騰するリスクがあるため、債券ポートフォリオのデュレーション短縮を検討すべきです。\n\n【大学生・留学生向け解説】\n「衆議院解散（Snap Election）」とは、任期満了を待たずに首相が議会を解散し、国民の信を問うことです。現在は高市首相が自らの経済政策（高市トレード）への支持を固めるために行っています。これが経済に与える影響として、選挙前の景気刺激策（バラマキ）への期待から株価が上がりやすい反面、国の借金が増える懸念から円が売られることもあります。\n\n【米・中との比較】\n米国がインフレ沈静化により利下げサイクルへの移行を模索する中、日本は逆行して利上げサイクルにあります。この「金利差縮小」が2026年の円安是正の鍵となります。一方、中国との比較では、AI半導体需要の恩恵を日本企業（アドバンテスト等）が享受しており、地政学リスクを背景とした「日本シフト」の資金流入が日経平均を下支えしています。",
+      "en": "### Nikkei Editorial Perspective\nFollowing the January 2026 BoJ meeting, the Japanese economy has firmly entered a 'world with interest rates.' While Governor Ueda maintained the short-term rate at 0.75%, the 8-1 vote—with a dissent calling for 1.0%—sent a hawkish signal to global markets. Simultaneously, PM Sanae Takaichi’s call for a snap election on February 8 has introduced 'political risk,' balancing hopes for fiscal expansion against fears over Japan’s debt sustainability.\n\n### Investor Impact & Actionable Insights\n- **Sector Rotation:** Overweight 'Financials' (Mega-banks) as net interest margins improve with rising rates.\n- **Risk Management:** Exercise caution in 'Real Estate' due to rising borrowing costs. \n- **JPY Strategy:** Expect volatility. Hedge JPY exposure as the 'Takaichi Trade' may lead to temporary Yen weakness before BoJ-driven strengthening.\n\n### Essential Context for Students\nA **'Snap Election'** occurs when the Prime Minister dissolves the lower house early to seek a fresh mandate. Currently, PM Takaichi aims to solidify her 'reflationary' economic agenda. For international students, this explains why Tokyo's atmosphere is charged: markets rally on stimulus hopes, but long-term bond yields may rise due to debt concerns.\n\n### Global Comparative Analysis\n- **vs. USA:** While the Fed considers a pause/cut cycle, the BoJ is moving in the opposite direction (normalization). This narrowing interest rate gap is the primary driver for JPY recovery in 2026.\n- **vs. China:** Japan is positioning itself as a stable alternative in the AI supply chain. Unlike China's regulatory uncertainty, Japan's tech sector (e.g., Advantest) is seeing sustained capital inflows from global funds seeking 'China+1' exposure."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[日銀タカ派姿勢] --> B(利上げ観測)\n    B --> C{市場反応}\n    C -->|ポジティブ| D[銀行株上昇]\n    C -->|ネガティブ| E[不動産株下落]\n    F[衆議院解散] --> G(財政拡大期待)\n    G --> H[日経平均下支え]\n    G --> I[国債利回り上昇]",
+      "en": "graph TD\n    A[BoJ Hawkish Tone] --> B(Rate Hike Expectations)\n    B --> C{Market Reaction}\n    C -->|Positive| D[Financial Stocks Rally]\n    C -->|Negative| E[Real Estate Pressure]\n    F[Snap Election Call] --> G(Fiscal Expansion Hopes)\n    G --> H[Nikkei 225 Support]\n    G --> I[Rising JGB Yields]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "タカ派 (Hawkish)",
+          "en": "Hawkish"
+        },
+        "def": {
+          "ja": "インフレ抑制のために利上げや金融引き締めに積極的な姿勢。",
+          "en": "A policy stance that favors higher interest rates to combat inflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "解散総選挙 (Snap Election)",
+          "en": "Snap Election"
+        },
+        "def": {
+          "ja": "任期満了前に議会を解散して行われる選挙。政治的空白や政策変更のリスクを伴う。",
+          "en": "An election called earlier than expected, often to capitalize on high approval ratings or resolve policy deadlocks."
+        }
+      },
+      {
+        "term": {
+          "ja": "高市トレード (Takaichi Trade)",
+          "en": "Takaichi Trade"
+        },
+        "def": {
+          "ja": "高市首相の積極財政・金融緩和継続（または緩やかな移行）を期待した株買い・円売りの動き。",
+          "en": "Market movements based on PM Takaichi's reflationary policies, typically involving buying stocks and selling Yen."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260129_063050",
     "date": "2026-01-29",
     "titles": {
