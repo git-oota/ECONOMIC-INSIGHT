@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260131_062942",
+    "date": "2026-01-31",
+    "titles": {
+      "ja": "日本経済：東京都区部インフレ率2％へ鈍化、日経平均（Nikkei 225）は5万3000円台で底堅い展開",
+      "en": "Japan Economy: Nikkei 225 Braces for BoJ Pivot as Inflation Hits 2% Target"
+    },
+    "descriptions": {
+      "ja": "日本経済：東京都区部CPIが2.0%に低下し、日銀の早期利上げ観測が抑制。日経平均株価（Nikkei 225）は5万3322円で週を終え、2月8日の衆院選を前に投資家は静観。円（JPY）は153円台で推移。",
+      "en": "Japan Economy and Nikkei 225 focus on cooling Tokyo CPI (2.0%) and BoJ's normalization path. As Yen (JPY) stabilizes, global investors eye the Feb 8 general election under the Takaichi administration."
+    },
+    "contents": {
+      "ja": "【日経視点の分析】2026年1月30日に発表された1月の東京都区部消費者物価指数（CPI、生鮮食品を除く）は前年同月比2.0%上昇となり、前月の2.3%から鈍化しました。これは日銀の物価目標に合致する数字であり、市場では「日銀が追加利上げを急ぐ必要性が低下した」との見方が広がっています。日経平均株価は、米ハイテク株の下落を受け一時的に値を下げたものの、5万3000円台を維持。高市政権による積極的な財政出動への期待が下支えとなっています。一方で、2月8日の衆院選を控え、市場は政策の継続性を注視する「嵐の前の静けさ」にあります。\n\n【投資家への影響とアクション】日銀の利上げペースが緩やかになるとの観測から、銀行株には利益確定売りが出る一方、不動産株には追い風です。推奨：3月の春闘回答が出るまで、全体指数に対しては中立を維持しつつ、内需関連のバリュー株を選別すること。\n\n【大学生・留学生向け背景】「東京都区部CPI」は全国の物価動向を占う先行指標です。日本のインフレが「コストプッシュ型（輸入価格高騰）」から「ディマンドプル型（賃金上昇に伴う需要増）」へ移行できるかが、30年ぶりの経済正常化の鍵を握っています。\n\n【米中比較分析】米国がFRBによる利下げ時期の模索（ソフトランディング）に集中し、中国が不動産市場のテコ入れを急ぐ中、日本は「デフレ完全脱却と金利のある世界への適応」という、主要国で唯一の独自サイクルを歩んでいます。",
+      "en": "【Nikkei Editorial Insight】The Tokyo CPI (excluding fresh food) for January 2026 rose 2.0% YoY, cooling from December's 2.3%. This alignment with the BoJ's target has led markets to believe that Governor Ueda will not rush into further rate hikes. While the Nikkei 225 faced pressure from US tech volatility, it remained resilient above 53,000, supported by expectations of fiscal stimulus from the Takaichi administration. However, with the general election scheduled for February 8, the market is in a 'wait-and-see' mode regarding policy continuity.\n\n【Investor Impact & Action】Expect profit-taking in banking stocks as hike expectations cool, while real estate may see a boost. Action: Maintain a neutral stance on broad indices until the Shunto wage negotiations in March. Focus on domestic demand-driven value stocks.\n\n【Essential Context for Students】Tokyo CPI is a 'leading indicator'—it predicts national trends 2-3 weeks in advance. The core challenge for Japan is transitioning from 'cost-push inflation' to 'demand-pull inflation' driven by wage growth, marking a historic return to economic normalcy after 30 years.\n\n【Comparative Analysis】While the US Fed navigates the timing of rate cuts and China ramps up property sector support, Japan is uniquely focused on 'exiting deflation' and adapting to a positive interest-rate environment, creating a distinct investment narrative compared to its peers."
+    },
+    "mermaid": {
+      "ja": "graph TD\n  A[東京都区部CPI 2.0%] --> B[日銀: 政策金利 0.75% 維持]\n  B --> C[追加利上げ観測の後退]\n  D[2/8 衆院選の不透明感] --> E[日経平均: 5.3万円台で保ち合い]\n  F[高市政権の財政出動期待] --> E\n  C --> E",
+      "en": "graph TD\n  A[Tokyo CPI at 2.0%] --> B[BoJ: Holds Rate at 0.75%]\n  B --> C[Cooling Hike Expectations]\n  D[Feb 8 Election Uncertainty] --> E[Nikkei 225: Rangebound at 53k]\n  F[Takaichi Fiscal Stimulus] --> E\n  C --> E"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "コアCPI",
+          "en": "Core CPI"
+        },
+        "def": {
+          "ja": "天候で変動しやすい生鮮食品を除いた消費者物価指数。日銀が政策判断で最も重視する指標。",
+          "en": "Consumer Price Index excluding volatile fresh food. The primary gauge used by the BoJ for policy decisions."
+        }
+      },
+      {
+        "term": {
+          "ja": "政策正常化",
+          "en": "Monetary Normalization"
+        },
+        "def": {
+          "ja": "長期間続いた大規模な金融緩和やマイナス金利から脱却し、金利機能を回復させること。",
+          "en": "The process of moving away from ultra-loose monetary policy and negative rates toward standard interest rate functions."
+        }
+      },
+      {
+        "term": {
+          "ja": "春闘",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる賃金交渉。2026年は物価高を上回る賃上げが維持されるかが焦点。",
+          "en": "Annual spring wage negotiations. In 2026, the focus is on whether wage hikes will continue to outpace inflation."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260130_062844",
     "date": "2026-01-30",
     "titles": {
