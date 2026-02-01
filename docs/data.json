@@ -1,5 +1,47 @@
 [
   {
+    "id": "20260202_062444",
+    "date": "2026-02-02",
+    "titles": {
+      "ja": "日本経済：日経平均5万3000円台で一進一退、総選挙とみずほ決算に注目",
+      "en": "Japan Economy: Nikkei 225 Eyes 53k as Mizuho Earnings & Snap Election Loom"
+    },
+    "descriptions": {
+      "ja": "日経平均は53,000円台で推移。8日の総選挙を控え投資家は静観姿勢ですが、みずほFG等の好決算が下値を支えています。日銀の追加利上げ観測と円安抑制策が焦点です。",
+      "en": "Japan Economy, Nikkei 225, Yen (JPY): Stocks hover near 53,000 as markets weigh Mizuho earnings against Feb 8 election risks. BoJ rate hike signals and fiscal stimulus keep investors on alert."
+    },
+    "contents": {
+      "ja": "【日経視点：高値圏での踊り場と政治リスク】\n本日2月2日の東京株式市場で、日経平均株価は5万3000円台前半で小幅な動きとなっています。投資家の関心は、今週末8日に控えた衆議院総選挙（高市早苗首相による解散）と、本日発表されるみずほフィナンシャルグループなどの主要企業決算に集中しています。\n\n「サナエノミクス」と呼ばれる積極財政への期待が株価を押し上げる一方、40年債利回りが4%を超えるなど、長期金利の急騰が「悪い金利上昇」への警戒感を招いています。日銀は1月の会合で政策金利を0.75%に据え置きましたが、植田和男総裁は「見通しに沿えば追加利上げ」の姿勢を崩しておらず、市場は年内1.0%への到達を織り込み始めています。\n\n【投資家への影響と推奨】\n選挙結果が判明するまでボラティリティが高い状態が続くため、インデックス投資は「静観」を推奨。一方で、金利上昇の恩恵を受けるメガバンク（みずほ等）や、AI半導体需要が堅調な東京エレクトロンなど、個別銘柄の押し目買いには好機と言えます。為替は154円前後で安定していますが、米当局との協調介入リスクには引き続き注意が必要です。\n\n【報道比較：米・中の視点】\n米ブルームバーグは「日本国債（JGB）の利回り上昇が米10年債に波及するリスク」を強調し、グローバルな金利上昇圧力の起点として日本を注視しています。一方、中国のメディアは「高市政権の対中強硬姿勢と経済安全保障」を警戒しており、日本の輸出競争力の変化がアジアのサプライチェーンに与える影響を分析しています。",
+      "en": "### Market Analysis: Nikkei at a Crossroads Amid 'Sanaenomics'\nAs of February 2, 2026, the Nikkei 225 is trading in the 53,000 range, reflecting a cautious 'wait-and-see' mood ahead of the February 8 snap election called by PM Sanae Takaichi. While corporate earnings remain robust—with Mizuho Financial Group reporting today—the market is grappling with a 'yield shock' as 40-year JGB yields surged past 4%.\n\n### Investor Insights & Action\n- **Volatility Alert:** Expect swings as election polls fluctuate. Institutional investors are currently sitting on the sidelines.\n- **Recommended Action:** Focus on 'Value over Growth.' Higher interest rates favor Japanese mega-banks. Accumulate top-tier exporters if the Yen (JPY) dips toward 155, but remain hedged against sudden BoJ intervention.\n\n### Essential Context for Students\nWhy is the election so important for the economy? PM Takaichi’s plan to suspend consumption tax on food and increase stimulus ('Sanaenomics') is a massive fiscal expansion. However, the Bank of Japan (BoJ) is trying to 'normalize' policy by raising rates to fight 2% inflation. This tug-of-war between cheap money from the government and tighter money from the central bank is what makes the current market so unpredictable.\n\n### Global Media Comparison\n- **US Perspective (WSJ/Bloomberg):** Focuses on the 'Japan Carry Trade' reversal. Rising JGB yields are forcing Japanese investors to pull money out of US Treasuries, pushing global borrowing costs higher.\n- **China Perspective (Caixin):** Analyzes how Japan's fiscal stimulus might enhance its manufacturing competitiveness against Chinese exports, while monitoring Takaichi’s hawkish stance on trade."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市首相の積極財政] --> B{市場の反応}\n    B -->|期待| C[日経平均53,000円台]\n    B -->|懸念| D[長期金利4%超え]\n    D --> E[日銀の正常化プロセス]\n    E --> F[追加利上げ観測 1.0%へ]\n    C --> G[2月8日 総選挙の結果待ち]",
+      "en": "graph TD\n    A[Takaichi Fiscal Expansion] --> B{Market Reaction}\n    B -->|Optimism| C[Nikkei 225 at 53k]\n    B -->|Anxiety| D[JGB Yields > 4%]\n    D --> E[BoJ Normalization]\n    E --> F[Next Rate Hike Target: 1.0%]\n    C --> G[Feb 8 Election Outlook]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "サナエノミクス",
+          "en": "Sanaenomics"
+        },
+        "def": {
+          "ja": "高市早苗首相が提唱する、消費税減税や大規模な財政出動を柱とした経済政策。",
+          "en": "Economic policies of PM Sanae Takaichi focusing on fiscal stimulus and consumption tax cuts."
+        }
+      },
+      {
+        "term": {
+          "ja": "JGB利回りショック",
+          "en": "JGB Yield Shock"
+        },
+        "def": {
+          "ja": "財政悪化懸念から日本国債（JGB）が売られ、利回りが急上昇すること。世界的な金利上昇を招く要因となる。",
+          "en": "A sudden spike in Japanese Government Bond yields due to fiscal concerns, impacting global rates."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260131_062942",
     "date": "2026-01-31",
     "titles": {
