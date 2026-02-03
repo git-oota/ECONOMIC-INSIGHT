@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260204_063624",
+    "date": "2026-02-04",
+    "titles": {
+      "ja": "日本経済：日経平均が史上最高値5万4000円台へ、高市総選挙への期待と円安加速が背景",
+      "en": "Japan Economy: Nikkei 225 Hits Record 54,720 as Takaichi Election Odds Surge; BoJ Eyes Rate Hike"
+    },
+    "descriptions": {
+      "ja": "日経平均は54,720円で史上最高値を更新。高市首相の解散総選挙（2月8日）での勝利期待とリフレ政策が株価を押し上げる一方、円安進行で日銀の早期利上げ観測も強まっています。",
+      "en": "Japan Economy, Nikkei 225 surges to an all-time high of 54,720. Investors cheer PM Takaichi's reflationary stance ahead of the Feb 8 election, while a weak Yen (JPY) pressures the BoJ to hike rates."
+    },
+    "contents": {
+      "ja": "2026年2月4日の東京株式市場で、日経平均株価は前日比3.9%高の5万4720円66銭と史上最高値を更新して取引を終えました。背景には、2月8日に控えた衆議院総選挙で高市早苗首相率いる自民党が大勝するとの観測があり、市場は大規模な財政出動を伴う「リフレ派政策」の継続を好感しています。一方、為替市場ではドル円が154円台後半で推移し、円安が輸入物価を押し上げる懸念から、日本銀行の「主な意見（1月会合分）」では早期の追加利上げを示唆するタカ派的な議論が目立ちました。米国はトランプ政権下で対日関税リスクをちらつかせつつ協調介入を模索し、中国は台湾問題を巡る対立からレアアースの対日輸出規制を強化するなど、地政学リスクも高まっています。投資家は、選挙後の財政拡大と日銀の引き締め時期の『ねじれ』に注視すべきです。",
+      "en": "The Nikkei 225 reached a historic milestone of 54,720.66 on Feb 4, 2026, driven by 'Takaichi-nomics' optimism. Markets anticipate a landslide victory for PM Sanae Takaichi in the upcoming Feb 8 snap election, signaling continued fiscal expansion. However, the Yen (JPY) remains under significant pressure, hovering near 155 per dollar. This has forced the Bank of Japan (BoJ) into a hawkish corner; the Jan meeting summary revealed growing urgency for a rate hike to 1.0% to curb imported inflation. Internationally, the narrative is split: US media focuses on potential joint FX intervention with the Trump administration to stabilize the Yen, while Chinese outlets highlight Beijing's new export curbs on rare earths targeting Japan's tech sector. Investors should remain long on tech giants like Advantest but hedge against JGB volatility as the BoJ prepares for its next move."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市首相の解散総選挙] -->|勝利期待| B(株価上昇/史上最高値)\n    A -->|拡張財政| C(円安の進行)\n    C -->|輸入物価上昇| D(日銀の早期利上げ観測)\n    E[米トランプ政権] -->|関税圧力| F(日米協調介入の模索)\n    G[中国レアアース規制] -->|供給網リスク| B",
+      "en": "graph TD\n    A[PM Takaichi Snap Election] -->|Victory Hopes| B(Nikkei 225 Record High)\n    A -->|Fiscal Expansion| C(Yen Weakness/JPY)\n    C -->|Imported Inflation| D(BoJ Rate Hike Pressure)\n    E[Trump Tariffs] -->|Trade Pressure| F(Joint FX Intervention Talks)\n    G[China Rare Earth Curbs] -->|Supply Chain Risk| B"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "リフレ政策",
+          "en": "Reflationary Policy"
+        },
+        "def": {
+          "ja": "デフレ脱却のため、財政出動と金融緩和を組み合わせて物価と成長率を引き上げる政策。",
+          "en": "A policy mix of fiscal spending and monetary easing aimed at boosting inflation and growth to end deflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "解散総選挙",
+          "en": "Snap Election"
+        },
+        "def": {
+          "ja": "任期満了を待たずに議会を解散して行われる選挙。政権が国民の信を問うために利用される。",
+          "en": "An election called earlier than expected to seek a new mandate from the public."
+        }
+      },
+      {
+        "term": {
+          "ja": "協調介入",
+          "en": "Joint Intervention"
+        },
+        "def": {
+          "ja": "複数の国の中央銀行が協力して為替相場に介入し、通貨安や通貨高を是正すること。",
+          "en": "Coordinated action by multiple central banks to influence exchange rates and stabilize currencies."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260202_062444",
     "date": "2026-02-02",
     "titles": {
