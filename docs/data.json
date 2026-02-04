@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260205_063414",
+    "date": "2026-02-05",
+    "titles": {
+      "ja": "日本経済：日経平均5万4000円台の衝撃と日銀「後手」への警戒感",
+      "en": "Japan Economy: Nikkei 225 Eyes 55k as BoJ Fears Being 'Behind the Curve' on Inflation"
+    },
+    "descriptions": {
+      "ja": "日経平均株価が5万4000円超の史上最高値を更新。円安による輸出企業の利益押し上げと、日曜日の総選挙を控えた高市政権への期待が背景にあります。一方で日銀内ではインフレ抑制の遅れ（Behind the curve）を懸念するタカ派意見が強まっており、投資家は早期利上げシナリオへの警戒を強めています。",
+      "en": "Japan Economy & Nikkei 225 reach historic highs near 55,000, fueled by Yen (JPY) weakness and election optimism. However, BoJ minutes reveal growing hawkishness as members fear falling 'behind the curve' on sticky inflation. Investors must now balance export-led gains against imminent interest rate hikes."
+    },
+    "contents": {
+      "ja": "2026年2月5日現在の日本市場は、歴史的な転換点にあります。日経平均株価は一時5万4800円台に達し、半導体関連（アドバンテスト、東京エレクトロン）やソフトバンクグループが牽引。1ドル＝155〜159円台の円安がトヨタ等の輸出企業に巨額の利益をもたらしています。しかし、日銀の1月会合議事要旨では、インフレが予想以上に粘着的（Sticky）であり、利上げが遅れるリスクが議論されました。今週末の衆院選で高市政権の安定が期待される中、市場は「円安・株高」の継続と「日銀のタカ派転換」という相反する圧力に直面しています。投資家は、輸出株の利益確定を進めつつ、銀行株など利上げメリット銘柄へのシフトを検討すべき局面です。",
+      "en": "As of February 5, 2026, the Japanese market is at a historic crossroads. The Nikkei 225 recently touched the 54,800 level, driven by semiconductor giants and SoftBank Group, while the Yen (JPY) hovering between 155-159 has bolstered exporters like Toyota. However, the latest BoJ summary of opinions highlights a critical shift: policymakers are increasingly worried about being 'behind the curve' regarding sticky inflation. With the general election this Sunday favoring the Takaichi administration's fiscal expansion, the market is caught between 'Yen weakness-driven rallies' and 'impending rate hike fears.' For global investors, the focus is shifting from pure growth in tech/exporters to defensive positioning in financials (banks) that benefit from higher interest rates."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[円安 155-159 JPY/USD] --> B[輸出企業・半導体の利益増]\n    B --> C[日経平均 史上最高値 54,000超]\n    C --> D[インフレの粘着化 Sticky Inflation]\n    D --> E[日銀 利上げ期待の加速]\n    E --> F[投資家：ハイテクから銀行株へシフト]",
+      "en": "graph TD\n    A[Weak Yen 155-159 JPY/USD] --> B[Export & Semi-conductor Profits]\n    B --> C[Nikkei 225 Record High 54,000+]\n    C --> D[Sticky Inflation Concerns]\n    D --> E[BoJ Rate Hike Expectations]\n    E --> F[Investors: Shift from Tech to Banks]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "Behind the curve",
+          "en": "Behind the curve"
+        },
+        "def": {
+          "ja": "中央銀行の政策対応が、インフレなどの経済状況の変化に対して遅れている状態。",
+          "en": "A situation where a central bank is responding too slowly to economic changes like rising inflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "レートチェック",
+          "en": "Rate Check"
+        },
+        "def": {
+          "ja": "通貨当局が銀行に為替相場の水準を問い合わせること。実質的な為替介入の前兆とされる。",
+          "en": "Authorities asking banks for exchange rate quotes, often seen as a precursor to actual currency intervention."
+        }
+      },
+      {
+        "term": {
+          "ja": "粘着的なインフレ",
+          "en": "Sticky Inflation"
+        },
+        "def": {
+          "ja": "賃金上昇などを背景に、物価がなかなか下がりにくくなる現象。",
+          "en": "Prices that do not adjust quickly to changes in economic conditions, often due to rising wages."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260204_063624",
     "date": "2026-02-04",
     "titles": {
