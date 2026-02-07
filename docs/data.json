@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260208_062711",
+    "date": "2026-02-08",
+    "titles": {
+      "ja": "日本経済：日経平均が史上最高値を更新。日銀の追加利上げ観測と衆院選投開票が焦点に",
+      "en": "Japan Economy: Nikkei 225 Hits Record Highs Amid BoJ Rate Hike Speculation & Snap Election"
+    },
+    "descriptions": {
+      "ja": "2026年2月8日、日本は衆議院総選挙の投開票日を迎えました。日経平均株価は55,000円台の史上最高値を記録し、日銀の利上げ観測と半導体投資が加速。投資家への影響を分析します。",
+      "en": "Japan Economy Update: Nikkei 225 reaches historic 55,826 peak as BoJ signals normalization. Focus on Feb 8 snap election and TSMC's 3nm plant in Kumamoto. Essential investor insights."
+    },
+    "contents": {
+      "ja": "2026年2月8日、日本経済は歴史的な転換点にあります。本日投開票の衆議院総選挙では、高市早苗首相の経済政策「積極財政」の継続が問われていますが、市場は既にその先の『金利のある世界』を織り込み始めています。日経平均株価は今月、史上最高値の55,826円に到達。背景には、TSMCによる熊本での3ナノメートル半導体量産計画という強力な実需と、日銀（BoJ）による政策金利1.0%への引き上げ観測があります。インフレ率は4年連続で2%を超え、「デフレ脱却」から「インフレ抑制」へとフェーズが移行。投資家は、利ざや改善が見込まれる金融株や、半導体関連銘柄（アドバンテスト等）への配分を強めるべき局面です。一方で、円安に伴う輸入物価高が家計を圧迫しており、実質賃金の伸びが今後の持続的成長の鍵となります。",
+      "en": "As of February 8, 2026, the Japanese economy is navigating a critical juncture marked by a historic snap election and a structural shift in monetary policy. The Nikkei 225 recently hit a staggering all-time high of 55,826, fueled by the 'AI-Semiconductor' boom, highlighted by TSMC's decision to mass-produce 3nm chips in Kumamoto. The Bank of Japan (BoJ) has maintained a hawkish stance, with the policy rate currently at 0.75% and markets pricing in a hike to 1.0% by April. This move aims to curb the 'sticky' inflation that has remained above 2% for four consecutive years. For global investors, the focus shifts to domestic-demand sectors and financials that benefit from a rising interest rate environment. Comparing with the US and China, Japan stands out as a 'safe harbor' for tech manufacturing, though the weak Yen (JPY) continues to pose a challenge for domestic consumption. The outcome of today's election will determine if the current fiscal expansion can coexist with the BoJ's normalization path."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[半導体投資: TSMC 3nm] --> B[日経平均最高値 55,826]\n    C[インフレ継続 2%超] --> D[日銀利上げ観測 1.0%へ]\n    E[衆院選投開票 2/8] --> F{政策の継続性}\n    D --> G[円安抑制・金融株上昇]\n    F --> B",
+      "en": "graph TD\n    A[Chip Investment: TSMC 3nm] --> B[Nikkei 225 ATH 55,826]\n    C[Inflation > 2%] --> D[BoJ Rate Hike Spec to 1.0%]\n    E[Snap Election Feb 8] --> F{Policy Continuity}\n    D --> G[JPY Stabilization & Bank Stocks Up]\n    F --> B"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "実質賃金",
+          "en": "Real Wages"
+        },
+        "def": {
+          "ja": "名目賃金から物価変動の影響を除いた、実際の購買力を示す指標。",
+          "en": "Wages adjusted for inflation, representing the actual purchasing power of consumers."
+        }
+      },
+      {
+        "term": {
+          "ja": "3ナノメートル (3nm)",
+          "en": "3-nanometer (3nm)"
+        },
+        "def": {
+          "ja": "最先端の半導体微細化プロセス。AIやスマホの性能を決定づける。",
+          "en": "The most advanced semiconductor manufacturing process, critical for AI and smartphones."
+        }
+      },
+      {
+        "term": {
+          "ja": "タカ派 (Hawkish)",
+          "en": "Hawkish"
+        },
+        "def": {
+          "ja": "インフレ抑制のために利上げや金融引き締めに積極的な姿勢。",
+          "en": "A policy stance favoring higher interest rates to combat inflation."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260205_063414",
     "date": "2026-02-05",
     "titles": {
