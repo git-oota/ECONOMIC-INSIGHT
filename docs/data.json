@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260210_063946",
+    "date": "2026-02-10",
+    "titles": {
+      "ja": "日本経済：日銀が追加利上げを示唆、インフレ定着で円高進行　日経平均は輸出株売りに警戒",
+      "en": "Japan Economy: BoJ Signals Rate Hike as Inflation Persists; Nikkei 225 Braces for Yen (JPY) Strength"
+    },
+    "descriptions": {
+      "ja": "日本銀行の植田総裁が追加利上げの可能性を示唆。賃金と物価の好循環を背景に、長年の金融緩和からの脱却が加速。為替は円高に振れ、日経平均株価は輸出企業を中心に利益確定売りが先行しています。投資家への影響と米中比較を徹底解説。",
+      "en": "Japan Economy update: BoJ Governor hints at rate hikes amid sticky inflation. JPY strengthens as the Nikkei 225 faces pressure from a stronger Yen. Explore investor strategies, BoJ policy shifts, and a comparative analysis of US and China market reactions."
+    },
+    "contents": {
+      "ja": "【日経視点の分析：金融正常化への最終章】本日、日本銀行は2026年度の経済・物価情勢展望レポートを公表し、植田総裁は記者会見で「実質金利は極めて低い水準にある」と述べ、追加利上げへの意欲を明確にしました。これは、春闘での賃金上昇がサービス価格へ転嫁され始めたことを評価したものです。\n\n【投資家への影響と推奨アクション】\n1. 為替（JPY）：日米金利差の縮小を見込み、円高バイアスが強まります。1ドル130円台前半を視野に入れたポジション調整が必要です。\n2. 株式（Nikkei 225）：トヨタなどの輸出セクターには逆風ですが、利ざや改善が見込まれる三菱UFJ等の銀行株には追い風です。グロース株からバリュー株（特に金融）へのリバランスを推奨します。\n\n【グローバル比較】\n米国（FRB）がインフレ沈静化を受けて利下げを模索し、中国（人民銀行）が不動産不況対策で大規模緩和を継続する中、日本だけが「利上げ」という逆のベクトルを向いています。この「政策の乖離」が、2026年のグローバル・マネーのフローを決定付ける要因となります。",
+      "en": "【Nikkei Editorial Perspective: The Final Chapter of Normalization】The Bank of Japan (BoJ) released its Outlook Report today. Governor Ueda emphasized that 'real interest rates remain significantly low,' signaling a readiness for further hikes. This shift follows data showing wage increases from the 'Shunto' spring negotiations are successfully filtering into service prices.\n\n【Investor Impact & Actions】\n1. Currency (JPY): Expect a bullish Yen as the US-Japan yield gap narrows. Prepare for a potential move toward the 130-134 range against the USD.\n2. Equities (Nikkei 225): Export-heavy giants like Toyota face headwinds from the stronger Yen. Conversely, mega-banks (e.g., MUFG) stand to benefit from improved net interest margins. Recommended Action: Rebalance from tech/exporters to domestic financials.\n\n【Global Comparison】\nWhile the US Fed considers rate cuts and China maintains aggressive stimulus to combat property sector woes, Japan is uniquely tightening. This 'Policy Divergence' is set to redefine global capital flows in 2026, positioning the Yen as a proactive currency rather than a passive carry-trade funding source."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[日銀: 追加利上げ示唆] --> B{市場の反応}\n    B -->|円買い加速| C[円高/ドル安 135円割れ]\n    B -->|金利上昇| D[銀行株の上昇]\n    C --> E[輸出企業の利益圧迫]\n    E --> F[日経平均株価の下落圧力]\n    D --> G[バリュー株への資金シフト]",
+      "en": "graph TD\n    A[BoJ: Signals Rate Hike] --> B{Market Reaction}\n    B -->|Long JPY| C[Yen Strengthens below 135]\n    B -->|Yields Up| D[Bank Stocks Rally]\n    C --> E[Export Profit Squeeze]\n    E --> F[Nikkei 225 Selling Pressure]\n    D --> G[Rotation to Value Stocks]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "金融正常化",
+          "en": "Monetary Policy Normalization"
+        },
+        "def": {
+          "ja": "マイナス金利や大規模緩和を止め、金利機能が働く通常の経済状態に戻すこと。",
+          "en": "Moving away from unconventional policies like negative rates to a standard interest-rate-driven economy."
+        }
+      },
+      {
+        "term": {
+          "ja": "春闘",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる労働組合と企業による賃金交渉。日本のインフレ動向の鍵を握る。",
+          "en": "Annual spring wage negotiations between unions and employers, crucial for Japan's inflation outlook."
+        }
+      },
+      {
+        "term": {
+          "ja": "イールドカーブ・コントロール (YCC)",
+          "en": "Yield Curve Control (YCC)"
+        },
+        "def": {
+          "ja": "長期金利を一定の範囲に抑える日銀の政策。現在は事実上撤廃されている。",
+          "en": "A BoJ policy to cap long-term interest rates, now effectively phased out in favor of market-driven rates."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260208_062711",
     "date": "2026-02-08",
     "titles": {
