@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260211_064256",
+    "date": "2026-02-11",
+    "titles": {
+      "ja": "日本経済と円（JPY）最新動向：高市政権の歴史的圧勝で日経225が5万7千円突破、日銀利上げ観測が加速",
+      "en": "Japan Economy & Yen (JPY) Update: Nikkei 225 Hits Record 57k as Takaichi Landslide Fuels BoJ Rate Hike Bets"
+    },
+    "descriptions": {
+      "ja": "日本経済は高市総理の選挙圧勝を受け日経225が史上最高値を更新。建国記念日の休場裏で日銀の1.0%への利上げ観測が強まり、円（JPY）は155円台で推移。投資家は米中対立の余波とインフレ動向を注視。",
+      "en": "Japan Economy: Nikkei 225 surges past 57,000 following PM Takaichi's landslide victory. BoJ normalization bets rise as 10Y yields hit 27-year highs. Yen (JPY) holds at 155 amid $550bn US investment pledge and China trade tensions."
+    },
+    "contents": {
+      "ja": "【日経視点：『高市トレード』の幕開けと日銀の試練】 2月11日、日本の金融市場は建国記念日で休場ですが、市場参加者の視線は2月8日の衆院選での自民党（高市政権）の『絶対安定多数』確保と、それに続く日経225の57,000円突破という歴史的転換点に注がれています。高市政権が掲げる大規模な財政出動と食料品への消費税一時減税案は、デフレ完全脱却への期待を高める一方、日銀にとっては『利上げの加速』を迫る両刃の剣となっています。現在0.75%の政策金利は、早ければ3月にも1.0%へ引き上げられるとの見方が強まっており、10年債利回りは2.3%台と約27年ぶりの高水準に達しています。 \n\n【投資家への影響と推奨アクション】 1. **株式市場**: 財政拡大期待から建設、防衛、半導体セクターへの資金流入が継続。ただし、円高進行による輸出株の利益確定売りに注意。 2. **為替・債券**: 日米金利差縮小により円（JPY）の買い戻し圧力が強まっています。JGB（日本国債）は価格下落リスクが高いため、短中期の変動利付債へのシフトを推奨。 3. **地政学リスク**: 中国による対日レアアース輸出規制の強化を受け、サプライチェーンの脱中国化を進める企業の選別が不可欠です。",
+      "en": "### Nikkei Editor's Take: The 'Takaichi Trade' and BoJ's Tightrope Walk\nAs Japan observes National Foundation Day, the global community is processing the seismic shift in Tokyo. Prime Minister Sanae Takaichi’s landslide victory on February 8 has ignited the 'Takaichi Trade,' propelling the Nikkei 225 to an unprecedented 57,337 points. Her mandate for aggressive fiscal stimulus and a temporary food sales tax cut suggests a final break from deflation. However, this expansionary stance complicates the Bank of Japan's (BoJ) path. With 10-year JGB yields touching 2.3%, the market is pricing in a rate hike to 1.0% by April to counteract yen-driven inflation.\n\n### Impact on Investors & Actions\n- **Equities:** The Nikkei's momentum is strong, backed by retail optimism. Investors should focus on 'Economic Security' plays—companies benefiting from the $550bn US investment pledge (SoftBank, Mitsubishi Heavy). \n- **Currency (JPY):** The Yen is stabilizing near 155. A potential 'Carry Trade' unwinding looms if BoJ hikes faster than expected. Hedging against USD/JPY volatility is advised.\n- **Geopolitics:** China's retaliatory travel warnings and rare earth restrictions are hitting the luxury and tech sectors. Diversification into Southeast Asia is the primary strategic pivot.\n\n### Essential Context for Students\n- **National Foundation Day:** A holiday commemorating the enthronement of Japan's first emperor. Markets are closed, but 'off-shore' futures dictate the next day's opening.\n- **Normalization:** After decades of near-zero rates, the BoJ is returning to a 'normal' interest rate environment. This affects everything from student loans to the global cost of borrowing.\n\n### Media Comparison: US vs. China\n- **US (Bloomberg/CNBC):** Highlights the 'Takaichi-Trump' alignment, focusing on Japan's massive investment in US data centers and energy as a stabilizing force for the alliance.\n- **China (Global Times):** Portrays the Takaichi administration as 'militaristic' and warns that Japan's alignment with US tech sanctions will lead to a 'lost decade' caused by the loss of the Chinese market."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の圧勝] --> B[大規模財政出動期待]\n    B --> C[日経225史上最高値更新]\n    B --> D[インフレ圧力増大]\n    D --> E[日銀利上げ観測 1.0%へ]\n    E --> F[10年債利回り上昇 2.3%]\n    F --> G[円安歯止め/円高方向へ]\n    G --> H[輸出企業の利益圧縮懸念]",
+      "en": "graph TD\n    A[Takaichi Landslide Victory] --> B[Aggressive Fiscal Stimulus]\n    B --> C[Nikkei 225 Record Highs]\n    B --> D[Rising Inflation Pressure]\n    D --> E[BoJ Rate Hike Bets to 1.0%]\n    E --> F[10Y JGB Yields at 2.3%]\n    F --> G[Yen Strengthening/JPY Recovery]\n    G --> H[Profit Squeeze for Exporters]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "春季労使交渉。2026年は5%超の賃上げが期待され、日銀の利上げ判断の鍵を握る。",
+          "en": "Annual spring wage negotiations. A 5%+ hike in 2026 is critical for BoJ's 'virtuous cycle' of inflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "キャリートレード",
+          "en": "Carry Trade"
+        },
+        "def": {
+          "ja": "低金利の円を借りて高金利通貨で運用する手法。日銀の利上げでこの資金が逆流し、市場混乱を招くリスクがある。",
+          "en": "Borrowing low-interest Yen to invest in high-yield assets. BoJ hikes risk a rapid unwinding, causing global volatility."
+        }
+      },
+      {
+        "term": {
+          "ja": "経済安保法",
+          "en": "Economic Security Act"
+        },
+        "def": {
+          "ja": "重要物資の供給網確保を目的とした法案。高市政権下で半導体やレアアースの脱中国依存が加速している。",
+          "en": "Legislation aimed at securing supply chains. Under Takaichi, Japan is accelerating its decoupling from China for critical minerals."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260210_063946",
     "date": "2026-02-10",
     "titles": {
