@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260212_063444",
+    "date": "2026-02-12",
+    "titles": {
+      "ja": "日本経済：日経平均5万7000円突破、高市政権の圧勝で「新次元の reflation」へ",
+      "en": "Japan Economy: Nikkei 225 Hits 57,000 as Takaichi Victory Ignites New Reflation Era"
+    },
+    "descriptions": {
+      "ja": "日本経済と日経平均は高市首相の衆院選圧勝を受け史上最高値を更新。円（JPY）は介入警戒で下げ止まる一方、日銀（BoJ）は4月の1%への追加利上げを強く示唆。投資家は財政拡大と金融正常化の「二兎」を追う展開に注目。",
+      "en": "Japan Economy and Nikkei 225 surge to record highs after PM Takaichi's landslide win. While Yen (JPY) stabilizes on intervention threats, BoJ signals an April rate hike to 1.0%. Investors weigh fiscal expansion against monetary normalization."
+    },
+    "contents": {
+      "ja": "【日経視点：政治の『超』安定が招く市場の熱狂】\n2026年2月12日の東京市場は、8日の衆院選での与党圧勝を受けた「高市トレード」が最高潮に達しました。日経平均株価は一時5万8000円に迫る勢いを見せ、終値でも5万7000円台を維持。高市首相が掲げる21兆円規模の補正予算と食料品への消費税一時停止といった積極財政が、名目GDP成長率3.4%への期待を裏付けています。\n\n【投資家への影響と推奨アクション】\n日銀は現在0.75%の政策金利を4月に1.0%へ引き上げる公算が大きく、銀行株（三菱UFJ、みずほ）の利益拡大が続くと予想されます。一方、円安が160円に迫る場面では政府の介入リスクが極めて高く、輸出株への過度な依存は禁物です。「内需・金融」へのシフトを推奨します。\n\n【大学生・留学生向け解説】\n「高市トレード」とは、積極的な財政出動を好む高市政権下で、株高・円安・金利上昇が同時進行する現象を指します。特に「中立金利（景気を冷やしも温めもしない金利）」が従来の1%から1.5%へ上方修正されつつある点は、将来の住宅ローンや預金金利に直結する重要な変化です。\n\n【グローバル比較】\n米国が2026年上期の利下げサイクル入りを模索する中、日本は世界で唯一「利上げ」の道を進んでいます。中国が米国債保有を減らし元高へ誘導する動きを見せる中、円は「キャリートレードの調達通貨」としての地位が揺らぎ始めており、世界の資金流動性に変調をきたすリスクを孕んでいます。",
+      "en": "[Nikkei Perspective: Political Stability Fuels Market Euphoria]\nAs of Feb 12, 2026, the 'Takaichi Trade' has reached a fever pitch following the LDP's supermajority victory. The Nikkei 225 benchmark flirted with the 58,000 mark, closing firmly above 57,000. PM Takaichi's 21-trillion-yen stimulus and proposed food tax suspension have solidified expectations for a 3.4% nominal GDP growth rate.\n\n[Investor Impact & Action Plan]\nWith the BoJ poised to hike the policy rate to 1.0% in April, Japanese financials (MUFG, Mizuho) remain prime beneficiaries of expanding net interest margins. However, with USD/JPY hovering near 160, intervention risks are acute. Recommendation: Rotate from pure exporters to domestic demand and financial sectors.\n\n[Essential Context for Students]\nThe 'Takaichi Trade' refers to the unique correlation of rising stocks, a volatile Yen, and climbing JGB yields under a pro-growth administration. Understanding the 'Neutral Interest Rate'—now estimated at 1.5%—is crucial as it marks Japan's definitive exit from the 'lost decades' of zero-interest policy.\n\n[Comparative Analysis]\nUnlike the US, which is eyeing rate cuts in H1 2026, Japan is the sole major economy on a tightening path. As China actively diversifies away from US Treasuries to support the Yuan, the JPY is losing its status as a cheap carry-trade funding currency, potentially triggering a global reallocation of capital."
+    },
+    "mermaid": {
+      "ja": "graph TD; A[高市政権の圧勝] --> B[21兆円の積極財政]; B --> C[日経平均5万7000円突破]; A --> D[日銀の正常化継続]; D --> E[4月利上げ観測 1.0%]; E --> F[円安抑制と介入リスク]; C --> G[投資資金の日本流入];",
+      "en": "graph TD; A[Takaichi Supermajority] --> B[21tn Yen Stimulus]; B --> C[Nikkei 225 Breaks 57,000]; A --> D[BoJ Policy Normalization]; D --> E[April Hike Signal to 1.0%]; E --> F[Yen Stabilization/Intervention]; C --> G[Global Capital Inflow to Japan];"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "高市トレード",
+          "en": "Takaichi Trade"
+        },
+        "def": {
+          "ja": "高市首相の積極財政を背景とした、日本株買い・円売りの市場反応。",
+          "en": "Market rally characterized by buying Japanese stocks and selling Yen based on PM Takaichi's reflationary policies."
+        }
+      },
+      {
+        "term": {
+          "ja": "中立金利",
+          "en": "Neutral Rate"
+        },
+        "def": {
+          "ja": "経済を刺激も抑制もしない理論的な金利水準。日本でも1.5%程度への上昇が意識されている。",
+          "en": "The theoretical interest rate that neither stimulates nor restricts the economy; currently rising toward 1.5% in Japan."
+        }
+      },
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "春季労使交渉。2026年は物価目標2%定着に向けた賃上げ率が焦点。",
+          "en": "Annual spring wage negotiations; the 2026 focus is on sustaining wage growth above the 2% inflation target."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260211_064256",
     "date": "2026-02-11",
     "titles": {
