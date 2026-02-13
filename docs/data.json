@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260214_063646",
+    "date": "2026-02-14",
+    "titles": {
+      "ja": "日本経済：高市新政権の『超積極財政』で日経平均は5万7000円台。日銀(BoJ)利上げ観測と円安(JPY)の攻防",
+      "en": "Japan Economy: Nikkei 225 Hits Record 57,000 on 'Takaichi Trade'; BoJ Normalization Eyes Inflation and Yen (JPY) Stability"
+    },
+    "descriptions": {
+      "ja": "日本経済：高市総理の選挙圧勝を受け、日経平均は過去最高値を更新。20兆円規模の財政出動への期待と、日銀(BoJ)の追加利上げ、円(JPY)安進行への警戒感が交錯する市場の最前線を解説。",
+      "en": "Japan Economy Update: Nikkei 225 surges to new highs following PM Takaichi's mandate. Investors weigh $135B fiscal stimulus against BoJ rate hike signals and Yen (JPY) volatility. Essential insights for global portfolios."
+    },
+    "contents": {
+      "ja": "【日経新聞編集者の視点：転換点を迎える日本】\n2026年2月14日、日本経済は『デフレ脱却』の最終章に突入しました。高市早苗首相率いる自民党が総選挙で圧勝し、20兆円規模の補正予算編成を表明。これを受けた『高市トレード』が日経平均株価を5万7000円台の歴史的高値へと押し上げています。\n\n【投資家への影響と推奨アクション】\n1. **株式市場**: 財政拡大の恩恵を受ける建設・防衛・半導体セクターが主導。ただし、金利上昇によるバリュエーション調整に注意。\n2. **為替・債券**: 10年債利回りは2.3%を超え、日銀の追加利上げ（0.75%超え）が現実味を帯びています。ドル円(USD/JPY)は155〜160円の介入ゾーンにあり、急な円高へのヘッジが推奨されます。\n\n【グローバル比較分析】\n米国はFRBが金利を据え置く「待機モード」にある一方、日本は『正常化』に向けた独自路線の利上げを継続しています。中国が景気減速と格闘する中、アジアの投資マネーは『成長と適度なインフレ』を両立し始めた日本市場へ流入しています。",
+      "en": "【Nikkei Editor's Insight: Japan's Structural Pivot】\nAs of Feb 14, 2026, Japan has entered the final chapter of its exit from a deflationary mindset. Following PM Sanae Takaichi’s landslide election victory, the 'Takaichi Trade' has propelled the Nikkei 225 to the 57,000-58,000 range, fueled by a projected ¥20 trillion ($135B) stimulus package.\n\n【Investor Impact & Actionable Insights】\n1. **Equity Markets**: Domestic sectors (Construction, Defense, Semi-cap) are outperforming. Investors should pivot toward 'Value' stocks as rising yields test Growth valuations.\n2. **FX & Fixed Income**: With 10Y JGB yields hitting 2.38%, the BoJ is under pressure to hike rates beyond 0.75%. Watch the 160 JPY/USD ceiling; the Ministry of Finance remains on high alert for intervention.\n\n【Comparative Analysis】\nWhile the US Fed maintains a 'wait-and-see' stance at 3.5%, Japan is the only major economy aggressively 'normalizing' upward. Compared to China's deflationary struggles, Japan’s transition to demand-pull inflation makes it the preferred destination for regional equity flows."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の選挙圧勝] --> B[20兆円規模の積極財政]\n    B --> C[日経平均が過去最高値更新]\n    B --> D[JGB利回り上昇 2.3%超]\n    D --> E{日銀の判断}\n    E -->|利上げ継続| F[円安抑制・銀行株上昇]\n    E -->|据え置き| G[更なる円安・輸出株上昇]",
+      "en": "graph TD\n    A[Takaichi Election Victory] --> B[¥20T Fiscal Expansion]\n    B --> C[Nikkei 225 Record Highs]\n    B --> D[JGB Yields Surge >2.3%]\n    D --> E{BoJ Decision}\n    E -->|Rate Hike| F[Yen Recovery / Bank Stocks Up]\n    E -->|Hold| G[Yen Weakness / Export Boost]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "高市トレード",
+          "en": "Takaichi Trade"
+        },
+        "def": {
+          "ja": "積極的な財政出動と金融緩和継続を期待した、日本株買い・円売りの投資行動。",
+          "en": "Market rally characterized by buying Japanese stocks and selling Yen in anticipation of aggressive fiscal stimulus."
+        }
+      },
+      {
+        "term": {
+          "ja": "GDP速報値",
+          "en": "Preliminary GDP"
+        },
+        "def": {
+          "ja": "四半期終了から約1.5ヶ月後に発表される最初の経済成長率データ。市場への影響が最も大きい。",
+          "en": "The first estimate of GDP growth released ~1.5 months after quarter-end; highly market-sensitive."
+        }
+      },
+      {
+        "term": {
+          "ja": "正常化",
+          "en": "Normalization"
+        },
+        "def": {
+          "ja": "日銀がマイナス金利や大規模緩和を止め、金利のある『普通の』金融政策に戻す過程。",
+          "en": "The BoJ's process of exiting ultra-loose policies to return to standard interest-rate-driven monetary policy."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260212_063444",
     "date": "2026-02-12",
     "titles": {
