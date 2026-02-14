@@ -1,5 +1,67 @@
 [
   {
+    "id": "20260215_062549",
+    "date": "2026-02-15",
+    "titles": {
+      "ja": "日本経済：日経平均5万7000円突破、高市政権の「強気」と日銀利上げの足音",
+      "en": "Japan Economy: Nikkei 225 Hits Record 57,000 as BoJ Rate Hike Looms Post-Election"
+    },
+    "descriptions": {
+      "ja": "高市新政権の圧勝を受けた日経平均株価の史上最高値更新と、4月に向けた日銀の1%利上げ観測を分析。投資家への影響と米中比較を網羅。",
+      "en": "Japan Economy, Nikkei 225, Yen (JPY), BoJ, Inflation: Analyzing Nikkei's record 57,000 peak and BoJ's potential 1% rate hike following Takaichi's landslide victory."
+    },
+    "contents": {
+      "ja": "2026年2月15日現在、日本経済は歴史的な転換点を迎えています。2月8日の衆院選での高市早苗首相率いる自民党の圧勝により、日経平均株価は一時57,337円の史上最高値を記録しました。市場は「高市ノミクス」による減税と防衛投資を好感していますが、同時に日銀のタカ派メンバーである田村氏が春の利上げを示唆し、4月には政策金利が1990年代以来の1%台に達するとの予測が強まっています。投資家は、株価の過熱感と円キャリートレードの巻き戻しリスクを注視すべき局面です。一方、外交面では中国漁船の拿捕による緊張が高まっており、地政学リスクが市場の重石となる可能性があります。",
+      "en": "As of February 15, 2026, Japan's economy stands at a historic crossroads. Following Prime Minister Sanae Takaichi's landslide election victory on Feb 8, the Nikkei 225 surged to an unprecedented all-time high of 57,337. While markets cheer 'Takaichi-nomics'—characterized by tax cuts and defense spending—BoJ hawk Naoki Tamura has signaled a potential rate hike this spring. Analysts, including Bank of America, now project rates hitting 1% by April, the highest since the 1990s. Investors should prepare for volatility as the Yen carry trade faces unwinding risks. Meanwhile, geopolitical tensions rise following the seizure of a Chinese vessel, adding a layer of uncertainty to the regional outlook."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の圧勝] --> B[高市ノミクス: 減税・防衛増額]\n    B --> C[日経平均 57,000円突破]\n    D[インフレ率 2%定着] --> E[日銀 田村委員のタカ派発言]\n    E --> F[4月 1%利上げ観測]\n    C --> G[投資家: 利益確定売り検討]\n    F --> H[円安修正・キャリー解除リスク]\n    I[中国との緊張] --> G",
+      "en": "graph TD\n    A[Takaichi Victory] --> B[Takaichi-nomics: Tax Cuts/Defense]\n    B --> C[Nikkei 225 Breaks 57,000]\n    D[Sticky Inflation 2%+] --> E[BoJ Tamura Hawkish Signal]\n    E --> F[April 1% Rate Hike Forecast]\n    C --> G[Investors: Profit Taking Phase]\n    F --> H[Yen Recovery/Carry Trade Unwind]\n    I[China Tensions] --> G"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "高市ノミクス",
+          "en": "Takaichi-nomics"
+        },
+        "def": {
+          "ja": "高市首相が提唱する、消費税減税、戦略的財政出動、防衛力強化を柱とした経済政策。",
+          "en": "Economic policy under PM Takaichi focusing on tax cuts, strategic fiscal spending, and defense buildup."
+        }
+      },
+      {
+        "term": {
+          "ja": "円キャリートレード",
+          "en": "Yen Carry Trade"
+        },
+        "def": {
+          "ja": "低金利の円を借りて外貨建て資産で運用する手法。日銀の利上げで急速に巻き戻されるリスクがある。",
+          "en": "Borrowing low-interest Yen to invest in higher-yield assets; faces risk of rapid unwinding as BoJ raises rates."
+        }
+      },
+      {
+        "term": {
+          "ja": "PPI (企業物価指数)",
+          "en": "PPI (Producer Price Index)"
+        },
+        "def": {
+          "ja": "企業間で取引される商品の価格動向。1月は2.3%上昇し、インフレ圧力が根強いことを示した。",
+          "en": "Measures price changes for goods traded between businesses. Jan rose 2.3%, showing persistent inflationary pressure."
+        }
+      }
+    ],
+    "comparison": {
+      "us": "The US Fed holds rates steady while focusing on PCE inflation, contrasting with Japan's aggressive pivot toward tightening.",
+      "china": "China faces a property slump with home prices falling 3.1%, while Japan's asset prices hit record highs amid political stability.",
+      "japan": "Japan transitions from decades of 'lost years' to a high-growth, high-interest rate environment with a 230% debt-to-GDP challenge."
+    },
+    "investor_action": {
+      "action": "Neutral to Cautious. Lock in profits on Nikkei tech stocks. Watch USD/JPY 152 support level; a break below could trigger a massive carry trade exit.",
+      "risk_level": "High Volatility"
+    },
+    "student_context": "For students, Japan's move to a 1% interest rate is monumental. For 30 years, Japan had near-zero rates. This change means higher returns on savings but also higher costs for government debt, which already exceeds 1,300 trillion yen."
+  },
+  {
     "id": "20260214_063646",
     "date": "2026-02-14",
     "titles": {
