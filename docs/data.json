@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260216_062630",
+    "date": "2026-02-16",
+    "titles": {
+      "ja": "日本経済：日経平均5万7000円台で定着か、高市政権の「成長投資」が海外勢を誘引",
+      "en": "Japan Economy: Nikkei 225 Holds 57k as 'Takaichi Trade' Ignites Global Interest; BoJ Normalization Eyes 1% Rate"
+    },
+    "descriptions": {
+      "ja": "日本経済は総選挙での高市総裁大勝を受け、日経平均が5万7000円超の歴史的高値圏で推移。日銀の追加利上げ観測と政府の1350億ドル規模の経済対策が交錯する中、投資家は円（JPY）のボラティリティと国内内需株の選別物色を強めています。",
+      "en": "Japan Economy update: Nikkei 225 sustains record highs post-election. Investors weigh PM Takaichi's $135B stimulus against BoJ rate hike signals. Yen (JPY) volatility remains a key risk for global portfolios."
+    },
+    "contents": {
+      "ja": "【市場概況】2026年2月16日の東京市場は、先週の衆院選における自民党・高市総裁の圧倒的勝利（316議席獲得）を受けた「高市トレード」が継続しています。日経平均株価は一時5万7337円の最高値を付けた後、5万7000円台前半で堅調に推移。投資家は、高市氏が掲げる「生産性向上クレジット」や1350億ドル規模の追加補正予算による国内景気刺激策を好感しています。\n\n【日銀の動向】一方で、日本銀行（BoJ）は政策金利を0.75%に据え置いているものの、植田総裁は「賃金と物価の好循環」を背景に、2026年半ばまでの1.0%への引き上げを示唆。これが円（JPY）の下値を支え、1ドル＝150円台前半での推移を促しています。\n\n【投資家への影響】輸出関連株には為替安定が逆風となる一方、AI・自動化・シルバー経済関連の内需株に資金が流入しています。推奨アクションとしては、為替ヘッジ付きの日本株ETFの保有継続と、利上げメリットを享受するメガバンク株の押し目買いが有効です。\n\n【国際比較】米国メディアは「日本の失われた30年の終焉」と好意的に報じる一方、中国メディアは日米貿易協定（2025年7月締結）の深化に伴う東アジアのサプライチェーン再編に警戒感を示しています。留学生にとって、現在の日本は『デフレ脱却』から『成長型経済』への歴史的転換点にあります。",
+      "en": "[Market Overview] On February 16, 2026, Tokyo markets are characterized by the 'Takaichi Trade' following PM Sanae Takaichi's landslide victory. The Nikkei 225 is stabilizing above the 57,000 mark, fueled by expectations of a $135 billion stimulus package and strategic R&D tax credits. \n\n[BoJ Strategy] The Bank of Japan (BoJ) maintains the policy rate at 0.75%, but hints at a hike to 1.0% by mid-2026. This hawkish tilt has provided a floor for the Yen (JPY), currently trading near 150-152 per dollar, balancing the inflationary pressures of fiscal expansion.\n\n[Investor Insight] While exporters face headwinds from a stabilizing Yen, domestic sectors like 'Physical AI' and logistics automation are surging. Recommended action: Maintain exposure to Japan Equities but pivot toward domestic demand-oriented sectors and financial institutions benefiting from higher yields.\n\n[Global Perspective] Western outlets like Bloomberg and the FT highlight Japan's 'Golden Era' and the end of stagnation. Conversely, Chinese state media focus on the risks of Japan's closer industrial ties with the US. For international students and expats, the 'Wage-Price Spiral' is no longer a theory but a reality reflected in rising living costs and record-high starting salaries."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の大勝] --> B[1350億ドルの財政出動]\n    B --> C[日経平均5万7000円突破]\n    A --> D[日銀の正常化加速]\n    D --> E[円のボラティリティ上昇]\n    C --> F[内需・ハイテク株への資金流入]\n    E --> G[輸出企業の利益圧縮懸念]",
+      "en": "graph TD\n    A[Takaichi Landslide Victory] --> B[$135B Fiscal Stimulus]\n    B --> C[Nikkei 225 Surpasses 57k]\n    A --> D[BoJ Normalization Path]\n    D --> E[Yen JPY Volatility]\n    C --> F[Capital Inflow to Domestic/Tech]\n    E --> G[Export Profit Margin Pressure]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "高市トレード",
+          "en": "Takaichi Trade"
+        },
+        "def": {
+          "ja": "高市早苗首相の積極財政・緩和的金融政策への期待に基づく株買い・円売りの市場反応。",
+          "en": "Market rally driven by expectations of PM Takaichi's expansionary fiscal and pro-growth policies."
+        }
+      },
+      {
+        "term": {
+          "ja": "生産性向上クレジット",
+          "en": "Productivity Credits"
+        },
+        "def": {
+          "ja": "AIや自動化投資を行う企業に対し、法人税を直接控除する2026年の新制度。",
+          "en": "A 2026 tax incentive program providing direct corporate tax credits for AI and automation investments."
+        }
+      },
+      {
+        "term": {
+          "ja": "中立金利",
+          "en": "Neutral Rate"
+        },
+        "def": {
+          "ja": "景気を熱しも冷やしもしない金利水準。日銀は1.5%程度と推定している。",
+          "en": "The interest rate level that neither stimulates nor restricts economic growth, estimated at ~1.5% for Japan."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260215_062549",
     "date": "2026-02-15",
     "titles": {
