@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260217_062936",
+    "date": "2026-02-17",
+    "titles": {
+      "ja": "日本経済：日経平均5万7000円目前で足踏み、GDP下振れも高まる期待。高市政権下の「日銀・円安・インフレ」の行方。",
+      "en": "Japan Economy: Nikkei 225 Holds Near 57k Despite GDP Miss; BoJ & Yen (JPY) in Focus as Takaichi Era Begins"
+    },
+    "descriptions": {
+      "ja": "日本経済：Q4のGDPは0.2%増と予測を下回るも、日経平均は5万7000円台の最高値圏。高市首相と植田総裁の初会談を受け、追加利上げと円安への影響をプロが分析。投資家への具体的指針と米中報道の比較も網羅。",
+      "en": "Japan Economy Update: Nikkei 225 remains resilient near record highs as BoJ navigates soft Q4 GDP data. Analyze Yen (JPY) volatility, Inflation trends, and PM Takaichi's fiscal expansion strategy for global investors."
+    },
+    "contents": {
+      "ja": "【日経視点：『高市トレード』の真価が問われる局面】\n2025年第4四半期（10-12月期）の実質GDP成長率は、年率換算で0.2%増と市場予想（1.6%増）を大幅に下回りました。しかし、株式市場は底堅く、日経平均株価は5万7000円前後の歴史的高値圏を維持しています。これは、2月8日の衆院選で圧勝した高市早苗首相による「21兆円規模の大型補正予算」や「食品への消費税免税」といった積極財政への期待が、成長率の低迷を打ち消しているためです。\n\n【投資家への影響と推奨アクション】\n1. **内需株へのシフト**: 円安（153円台）と物価高が続く中、輸出株よりも高市政権の恩恵を受ける「防衛」「AI・半導体」「消費関連」の国内銘柄に注目。 \n2. **JGB（日本国債）のボラティリティ**: 10年債利回りが2.3%を超えるなど上昇傾向にあり、債券ポートフォリオのデュレーション調整が急務です。\n3. **円（JPY）のヘッジ**: 日銀の植田総裁と高市首相の会談では「利上げへの具体的要請」はなかったものの、3月・4月の追加利上げ観測は根強く、円高への急反転リスクを警戒すべきです。\n\n【米・中報道との比較】\n- **米メディア（Reuters/Bloomberg）**: 日本の「財政規律の欠如」と、高市首相による日銀への利下げ圧力リスクを注視。米国市場が休場（大統領の日）の中、日本の独歩高に警戒感を示しています。\n- **中国メディア**: 高市首相の台湾・安全保障に関する発言を受け、日本製品への不買運動や観光客の減少を強調。経済的な「デカップリング」のリスクを報じています。",
+      "en": "【Nikkei Editor's Take: The Resilience of the 'Takaichi Trade'】\nJapan's Q4 2025 GDP grew by a mere 0.2% (annualized), missing the 1.6% consensus. Despite this, the Nikkei 225 remains buoyant near the 57,000 mark. The market is pricing in the massive fiscal stimulus promised by PM Sanae Takaichi following her supermajority win on February 8. Investors are balancing the 'GDP miss' against the prospects of a 21 trillion yen stimulus and consumption tax exemptions on food.\n\n【Investor Impact & Recommended Actions】\n1. **Sector Rotation**: Shift focus toward domestic demand, defense, and AI-related sectors. While exporters benefit from JPY at 153, the Takaichi administration's focus on technological sovereignty favors local high-tech firms.\n2. **Fixed Income Alert**: JGB 10-year yields hit 2.38%, a 27-year high. Investors should prepare for a steepening yield curve as the BoJ balances normalization with fiscal expansion.\n3. **Currency Outlook**: Watch for a potential 'March Surprise' hike. Though Governor Ueda remains cautious, persistent inflation (3% core in 2025) makes a rate hike to 1.0% plausible by Q2.\n\n【Global Media Comparison】\n- **US Outlets**: Focus on 'Fiscal Dominance' risks, questioning if PM Takaichi will compromise BoJ independence to keep rates low despite high debt-to-GDP ratios.\n- **Chinese Outlets**: Highlight diplomatic friction and consumer boycotts of Japanese goods following Takaichi's security-first rhetoric, warning of supply chain disruptions."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の圧勝] --> B{積極財政政策}\n    B --> C[大型補正予算/減税]\n    B --> D[防衛・AI投資]\n    C --> E[インフレ圧力の継続]\n    D --> F[日経平均の押し上げ]\n    E --> G[日銀の利上げ判断]\n    G --> H{円安/円高の分岐点}\n    F --> I[グローバル投資家の資金流入]",
+      "en": "graph TD\n    A[Takaichi Landslide Victory] --> B{Fiscal Expansion}\n    B --> C[Stimulus & Tax Breaks]\n    B --> D[Defense & AI Investment]\n    C --> E[Persistent Inflation]\n    D --> F[Nikkei 225 Record Highs]\n    E --> G[BoJ Rate Hike Dilemma]\n    G --> H{JPY Volatility}\n    F --> I[Inflow of Foreign Capital]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる賃金交渉。2026年は5%超の賃上げが日銀の利上げ判断の鍵とされる。",
+          "en": "Annual spring wage negotiations. Hikes above 5% are seen as the catalyst for BoJ's interest rate normalization."
+        }
+      },
+      {
+        "term": {
+          "ja": "テクニカル・リセッション",
+          "en": "Technical Recession"
+        },
+        "def": {
+          "ja": "2四半期連続のマイナス成長。日本はQ4で0.1%増となり、辛うじて回避した。",
+          "en": "Two consecutive quarters of negative GDP growth. Japan narrowly avoided this with a 0.1% Q4 gain."
+        }
+      },
+      {
+        "term": {
+          "ja": "財政優位 (Fiscal Dominance)",
+          "en": "Fiscal Dominance"
+        },
+        "def": {
+          "ja": "政府の債務維持のために中央銀行が低金利を強いられる状態。高市政権下での懸念材料。",
+          "en": "A situation where monetary policy is dictated by the government's fiscal needs, often to manage high debt."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260216_062630",
     "date": "2026-02-16",
     "titles": {
