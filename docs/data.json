@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260218_063732",
+    "date": "2026-02-18",
+    "titles": {
+      "ja": "日本経済・日経平均：高値圏での利益確定売り、日銀・植田総裁と高市新首相の政策協調に注目",
+      "en": "Japan Economy & Nikkei 225: Profit-taking at Record Highs as Investors Scrutinize Takaichi-Ueda Policy Synergy"
+    },
+    "descriptions": {
+      "ja": "日経平均は5万6000円台で推移。高市総裁誕生後の期待上げが一服し、市場は日銀の3月利上げ観測と新政権の財政出動のバランスを注視。円相場（JPY）は153円付近で乱高下。",
+      "en": "Japan Economy: Nikkei 225 stabilizes near 56k as post-election euphoria fades. Investors weigh BoJ (JPY) rate hike odds against PM Takaichi's fiscal dovishness. Essential insights for global portfolios."
+    },
+    "contents": {
+      "ja": "【日経視点】2026年2月18日の東京市場は、歴史的な高値を更新し続けてきた日経平均株価が利益確定売りに押される展開となっています。2月8日の総選挙で勝利した高市早苗首相と、日銀の植田和男総裁による初の会談を経て、市場は「タカ派な日銀とハト派な政府」という奇妙な均衡を模索しています。植田総裁は物価目標2.0%の達成に自信を深めており、3月あるいは4月の追加利上げ（0.75%からの引き上げ）が80%の確率で織り込まれています。一方で、高市首相の積極財政への期待が株価の下支えとなっており、ハイテク株や防衛関連銘柄の選別が進んでいます。\n\n【投資家への影響】短期的には円高・株安のボラティリティに注意。日銀の利上げが現実味を帯びる中、銀行セクターの収益改善期待は継続。一方、米国のテック株安が波及しやすいため、半導体関連は押し目買いの好機を伺うフェーズです。\n\n【学生向け解説】「貿易収支の改善」と「賃金と物価の好循環」が現在のキーワードです。日本がデフレを完全に脱却し、金利のある世界へ戻る最終段階にあります。\n\n【国際比較】米国はインフレ再燃懸念とテック株の調整、中国は不動産不況と春節後の需要回復の鈍さに苦しむ中、日本は「政治的安定」と「リフレ政策の継続」により、相対的な投資先としての魅力（消去法的な買い）を維持しています。",
+      "en": "The Tokyo market on February 18, 2026, reflects a period of consolidation after the Nikkei 225 hit historic peaks above 58,000 earlier this month. Following the landslide victory of PM Sanae Takaichi on Feb 8, the focus has shifted to her synergy with BoJ Governor Kazuo Ueda. While Takaichi is known for fiscal expansion (Abenomics 2.0 style), Ueda has signaled increasing confidence in the 2% inflation target, with markets pricing in an 80% chance of a rate hike in March or April from the current 0.75%.\n\n[Investor Impact] Expect heightened volatility in the JPY/USD pair as the interest rate differential narrows. While the 'Takaichi Trade' supports domestic demand and defense sectors, global tech weakness (spilling over from the US) is dragging on SoftBank and semiconductor names. Financial sectors remain a 'Buy' on expectations of margin expansion.\n\n[Essential Context] Japan is transitioning to a 'normal' interest rate environment. This 'Monetary Normalization' is the most significant shift in 30 years, aiming to balance wage growth with healthy inflation.\n\n[Global Comparison] Unlike the US, which is battling sticky inflation and high rates, or China, which faces a structural housing crisis, Japan stands out as a 'Reflation Success Story,' offering a unique blend of political stability and corporate governance reform."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市新政権の積極財政] --> B{日本経済の方向性}\n    C[日銀の利上げ観測] --> B\n    B --> D[日経平均: 利益確定売り]\n    B --> E[円相場: 153円台の攻防]\n    D --> F[投資アクション: 銀行株・防衛株注目]\n    E --> G[輸出企業への利益圧縮リスク]",
+      "en": "graph TD\n    A[PM Takaichi Fiscal Expansion] --> B{Japan Economic Outlook}\n    C[BoJ Rate Hike Speculation] --> B\n    B --> D[Nikkei 225: Profit Taking]\n    B --> E[Yen JPY: Volatility at 153]\n    D --> F[Investor Action: Focus on Banks & Defense]\n    E --> G[Risk: Margin Pressure for Exporters]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "正常化 (Normalization)",
+          "en": "Monetary Normalization"
+        },
+        "def": {
+          "ja": "大規模な金融緩和策を解除し、金利を市場の実勢に合わせた水準に戻すこと。",
+          "en": "The process of withdrawing unconventional monetary stimulus and returning interest rates to a level consistent with economic fundamentals."
+        }
+      },
+      {
+        "term": {
+          "ja": "高市トレード (Takaichi Trade)",
+          "en": "Takaichi Trade"
+        },
+        "def": {
+          "ja": "高市首相の積極財政や防衛増強を期待した、建設・防衛・国内消費関連株への買い。",
+          "en": "Market positioning favoring defense, construction, and domestic demand stocks based on PM Takaichi's fiscal policies."
+        }
+      },
+      {
+        "term": {
+          "ja": "イールドカーブ (Yield Curve)",
+          "en": "Yield Curve"
+        },
+        "def": {
+          "ja": "債券の残存期間と利回りの関係を表す曲線。日銀の政策修正により形状が変化する。",
+          "en": "A line that plots yields of bonds having equal credit quality but differing maturity dates; a key indicator for BoJ policy shifts."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260217_062936",
     "date": "2026-02-17",
     "titles": {
