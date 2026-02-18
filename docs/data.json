@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260219_063554",
+    "date": "2026-02-19",
+    "titles": {
+      "ja": "日本経済：日経平均5万7000円台の攻防、日銀の追加利上げ観測と高市政権の財政出動が交錯",
+      "en": "Japan Economy: Nikkei 225 Record Highs Tested by BoJ Rate Path | Yen (JPY) & Takaichi Fiscal Policy"
+    },
+    "descriptions": {
+      "ja": "日本経済は高市新政権の大型減税案と日銀の金利正常化の狭間で揺れています。日経平均株価は史上最高値圏を維持。円相場（JPY）への影響と投資家が取るべき行動を、日経編集者の視点で鋭く分析します。",
+      "en": "Japan Economy news: Nikkei 225 stabilizes at record levels. BoJ signals 2026 rate hikes as IMF warns against PM Takaichi's tax cuts. Critical insights for Yen (JPY) investors and the $550B US investment deal."
+    },
+    "contents": {
+      "ja": "【市場概況】2026年2月19日の東京株式市場では、日経平均株価が5万7000円台の史上最高値圏で推移しています。2月8日の総選挙での高市早苗首相率いる自民党の圧勝を受け、1350億ドル規模の経済対策への期待が相場を牽引。一方で、日銀は政策金利を0.75%に据え置いたものの、インフレ目標達成への自信を深めており、年内の追加利上げを示唆しています。\n\n【投資家への影響】IMFは高市政権が掲げる「食料品への消費税一時停止」に対し、財政悪化の懸念から警告を発しました。投資家は銀行株（利ざや改善）に強気な一方、輸出関連株は円高への揺り戻しを警戒すべき局面です。推奨アクション：円貨資産の配分維持と、内需・防衛関連銘柄への注目。\n\n【グローバル視点】米国メディアは日本による5500億ドルの対米投資計画（オハイオ州の天然ガス発電所等）の収益性を疑問視する一方、中国メディアは日本の輸出急増がアジア圏の需要回復を背景にしている点に注目しています。日本はデフレ完全脱却に向けた「正念場」にあります。",
+      "en": "The Tokyo market remains buoyant as the Nikkei 225 trades near the 57,000 mark following PM Sanae Takaichi’s landslide election victory. Her 'Takaichi-nomics'—featuring a $135B stimulus and proposed consumption tax cuts—has fueled record equity rallies. However, the Bank of Japan (BoJ) maintains a hawkish tilt, signaling that while rates are currently at 0.75%, further normalization is necessary to reach a 'neutral rate' by 2027.\n\nInvestor Impact: The IMF has explicitly warned Japan against fiscal loosening, creating a tension between government spending and monetary tightening. For global investors, this creates a 'buy the dip' opportunity in Japanese financials but necessitates hedging for Yen (JPY) volatility as the carry trade continues to unwind. Action: Focus on domestic demand and defense sectors, which align with the new administration's priorities.\n\nContext & Comparison: While Western outlets like the NYT focus on the strategic risks of Japan's $550B investment pledge to the US, Chinese media (Xinhua) highlights Japan's narrowing trade deficit and surging exports to Asia. For students, this represents the final transition from the 'Lost Decades' to a high-nominal-growth economy."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の圧勝] --> B[大規模財政出動・減税案]\n    B --> C[日経平均 史上最高値]\n    B --> D[物価上昇圧力の継続]\n    D --> E[日銀 追加利上げ示唆]\n    E --> F[円安に歯止め/円高懸念]\n    F --> G[輸出企業への利益圧迫]\n    E --> H[銀行セクターの収益改善]",
+      "en": "graph TD\n    A[Takaichi Election Win] --> B[Massive Fiscal Stimulus]\n    B --> C[Nikkei 225 Record Highs]\n    B --> D[Persistent Inflationary Pressure]\n    D --> E[BoJ Rate Hike Signals]\n    E --> F[JPY Strengthening Bias]\n    F --> G[Pressure on Exporters]\n    E --> H[Improved Banking Margins]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "中立金利",
+          "en": "Neutral Rate"
+        },
+        "def": {
+          "ja": "景気を熱しも冷やもしない理論上の金利水準。日銀は2027年までの到達を目指している。",
+          "en": "The theoretical interest rate that neither stimulates nor restrains economic growth."
+        }
+      },
+      {
+        "term": {
+          "ja": "高市ノミクス",
+          "en": "Takaichi-nomics"
+        },
+        "def": {
+          "ja": "高市首相が掲げる、機動的な財政出動と大胆な減税、防衛費増額を柱とした経済政策。",
+          "en": "Economic policies of PM Takaichi focusing on fiscal stimulus, tax cuts, and increased defense spending."
+        }
+      },
+      {
+        "term": {
+          "ja": "IMF4条協議",
+          "en": "Article IV Consultation"
+        },
+        "def": {
+          "ja": "IMFが加盟国の経済状況を年次で審査・助言するプロセス。今回は日本の財政規律に警告を発した。",
+          "en": "The IMF's annual assessment of a member country's economy; recently warned Japan on fiscal risks."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260218_063732",
     "date": "2026-02-18",
     "titles": {
