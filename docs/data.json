@@ -1,5 +1,67 @@
 [
   {
+    "id": "20260220_063406",
+    "date": "2026-02-20",
+    "titles": {
+      "ja": "日本経済：1月コアCPIは2.0%へ減速、「高市ノミクス」と日銀利上げの交錯",
+      "en": "Japan Economy: Inflation Eases to 2.0% as BoJ Rate Hike Looms Under 'Sanaenomics' Stimulus"
+    },
+    "descriptions": {
+      "ja": "2026年2月20日発表の1月コアCPIは2.0%と予想通り減速。高市総理の大型財政出動と日銀の6月1%利上げ観測が交錯し、日経平均は5万7000円台で乱高下。投資家は円安介入リスクと銀行株の動向を注視。",
+      "en": "Japan Economy, Nikkei 225, Yen (JPY), BoJ, Inflation: January Core CPI hit 2.0%, meeting consensus. Markets eye a BoJ hike to 1% by June amid PM Takaichi's massive fiscal expansion. JPY remains near 155 as intervention risks persist."
+    },
+    "contents": {
+      "ja": "本日発表された1月の全国消費者物価指数（コアCPI）は、前年同月比2.0%の上昇となり、前月の2.4%から2ヶ月連続で減速しました。これは市場予想と一致しており、ガソリン価格の下落と食品の値上げ一服が要因です。しかし、高市早苗首相の「高市ノミクス」による21.3兆円規模の補正予算と食料品への消費税凍結案は、将来的なインフレ再燃リスクを孕んでいます。日経新聞の視点では、現在の局面は『財政拡張と金融正常化の綱引き』です。日銀は植田総裁のもと、6月までに政策金利を1.0%へ引き上げる構えを見せており、長期金利（10年債利回り）は2.3%台と約30年ぶりの高水準で推移しています。株式市場では、金利上昇の恩恵を受けるメガバンク株への資金流入が続く一方、円安による輸入コスト増を懸念する内需セクターには下押し圧力がかかっています。",
+      "en": "Japan's Core CPI for January slowed to 2.0% YoY, aligning with market expectations and marking a second consecutive month of deceleration from December's 2.4%. While headline inflation cools due to energy subsidies and stabilizing food prices, the underlying economic narrative is dominated by 'Sanaenomics.' Prime Minister Sanae Takaichi's landslide election victory has cleared the path for a 21.3 trillion yen stimulus package, including a controversial suspension of sales tax on food. From a Nikkei editorial perspective, Japan is entering a volatile era of 'Fiscal Expansion vs. Monetary Normalization.' Despite the GDP missing Q4 forecasts (only 0.1% growth), the Bank of Japan (BoJ) remains hawkish. A Reuters poll indicates a majority of economists now expect the policy rate to hit 1.0% by June 2026. For global investors, the focus shifts to the Yen's resilience near the 155-160 range and the potential for the Ministry of Finance to intervene if volatility spikes."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市ノミクス: 財政出動 21.3兆円] --> B{インフレ圧力}\n    C[1月コアCPI: 2.0% 減速] --> B\n    B --> D[日銀: 6月1%利上げ観測]\n    D --> E[長期金利上昇 2.3%]\n    E --> F[銀行株・金融セクター買い]\n    D --> G[円安抑制・155円台維持]\n    F --> H[日経平均 57,000円台の攻防]",
+      "en": "graph TD\n    A[Sanaenomics: 21.3T Yen Stimulus] --> B{Inflation Pressure}\n    C[Jan Core CPI: 2.0% Easing] --> B\n    B --> D[BoJ: 1% Rate Hike by June]\n    D --> E[JGB 10Y Yields at 2.3%]\n    E --> F[Buy Financials/Banks]\n    D --> G[JPY Stabilization at 155]\n    F --> H[Nikkei 225 Volatility at 57k]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "高市ノミクス (Sanaenomics)",
+          "en": "Sanaenomics"
+        },
+        "def": {
+          "ja": "高市早苗首相が提唱する、戦略的財政出動、消費税減税（食料品）、および防衛・先端技術への投資を中心とした経済政策。",
+          "en": "Economic policies of PM Sanae Takaichi focusing on aggressive fiscal spending, food sales tax suspension, and heavy investment in defense and AI."
+        }
+      },
+      {
+        "term": {
+          "ja": "中立金利 (Neutral Rate / r*)",
+          "en": "Neutral Rate (r*)"
+        },
+        "def": {
+          "ja": "景気を過熱も冷やしもしない理論上の金利水準。日本の中立金利は生産性向上により1.5%程度まで上昇したとの分析がある。",
+          "en": "The theoretical interest rate that neither stimulates nor restrains the economy. Analysts suggest Japan's nominal neutral rate is rising toward 1.5%."
+        }
+      },
+      {
+        "term": {
+          "ja": "コアCPI (Core CPI)",
+          "en": "Core CPI"
+        },
+        "def": {
+          "ja": "生鮮食品を除いた消費者物価指数。日銀が金融政策を判断する際の最重要指標の一つ。",
+          "en": "Consumer Price Index excluding fresh food; a key metric used by the BoJ to gauge underlying inflation trends."
+        }
+      }
+    ],
+    "investment_insights": {
+      "impact": "The divergence between the Fed's potential 'higher for longer' stance (under new Chair Kevin Warsh) and the BoJ's steady hiking path is narrowing the interest rate gap, but Sanaenomics-induced JGB yield spikes are the new wildcard.",
+      "action": "Overweight Japanese Mega-banks (MUFG, SMFG) to capture margin expansion from higher rates. Hedge JPY exposure as the 160 level remains a 'red line' for government intervention. Monitor 'Takaichi-trade' sectors like Defense and Semiconductors."
+    },
+    "comparison": {
+      "USA": "The US faces 'sticky' inflation with the Fed delaying cuts until June 2026, contrasting with Japan's 'managed' normalization.",
+      "China": "China remains mired in deflationary pressure (CPI 0.2%) and a property crisis, making Japan's reflation story more attractive to global equity funds.",
+      "Japan": "Japan is the only major economy simultaneously pursuing massive fiscal expansion and interest rate hikes, a high-stakes experiment in 'Sanaenomics'."
+    },
+    "essential_context": "For students: Unlike 'Abenomics' which relied on 'The Three Arrows' (including massive easing), 'Sanaenomics' accepts higher interest rates as a sign of a 'strong Japan' while using fiscal policy to shield households from rising costs. The 2026 budget is the largest in history (122.3 trillion yen), testing Japan's debt sustainability."
+  },
+  {
     "id": "20260219_063554",
     "date": "2026-02-19",
     "titles": {
