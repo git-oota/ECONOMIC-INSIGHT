@@ -1,5 +1,62 @@
 [
   {
+    "id": "20260221_062633",
+    "date": "2026-02-21",
+    "titles": {
+      "ja": "日本経済：高市政権が「緊縮脱却」を宣言、日経平均は5万7000円台で地固めへ。インフレ鈍化で日銀利上げ観測は後退",
+      "en": "Japan Economy: Nikkei 225 Eyes 57k as PM Takaichi Vows End to Austerity; BoJ Rate Hike Bets Ease on Cooling Inflation"
+    },
+    "descriptions": {
+      "ja": "高市首相がAIや半導体への積極投資を表明。1月CPIは1.5%に鈍化し、日銀の早期追加利上げ観測が和らぐ中、日経平均は地政学リスクで小反落も強気相場を維持。",
+      "en": "Japan Economy, Nikkei 225, Yen (JPY), BoJ, Inflation: PM Takaichi pivots to proactive fiscal policy as Jan CPI cools to 1.5%, offering BoJ breathing room amid 5% wage hike demands."
+    },
+    "contents": {
+      "ja": "2026年2月21日、日本の経済政策は大きな転換点を迎えている。高市早苗首相は国会演説で「過度な緊縮財政からの脱却」を宣言し、AI、半導体、造船などの戦略分野へ122.3兆円の過去最大予算を投じる方針を固めた。一方で、1月の全国消費者物価指数（CPI）は前年同月比1.5%と、2022年以来の低水準に鈍化。これにより、現在0.75%の政策金利を維持する日銀の次手について、市場では「3月利上げ」の緊急性が低下したとの見方が広がっている。日経平均株価は前日に米・イラン緊張を背景とした利益確定売りで5万6772円まで調整したが、春闘での5%超の賃上げ回答への期待が下値を支えている。投資家は、円安メリット銘柄から内需・設備投資関連株へのシフトを検討すべき局面だ。",
+      "en": "As of February 21, 2026, Japan is pivoting toward a 'proactive fiscal' era under PM Sanae Takaichi. Following a landslide election victory, the administration submitted a record ¥122.3 trillion budget, prioritizing 'Crisis Management Investment' in AI and semiconductors. This fiscal expansion coincides with a cooling Inflation print; January's headline CPI hit 1.5%, the lowest since 2022, providing the Bank of Japan (BoJ) significant 'breathing room' to maintain its 0.75% rate in the near term. While the Nikkei 225 saw a minor retreat to the 56,700 level due to US-Iran geopolitical friction, the underlying sentiment remains bullish driven by 'Shunto' wage hike expectations exceeding 5%. Investors are advised to monitor the shift from export-heavy portfolios to domestic-demand and infrastructure sectors as real wages approach positive territory."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の積極財政] --> B{122.3兆円予算}\n    B --> C[戦略投資: AI/半導体]\n    B --> D[消費税減税の議論]\n    E[1月CPI 1.5%に低下] --> F{日銀の判断}\n    F --> G[利上げ急がず 0.75%維持]\n    H[春闘 5%賃上げ回答] --> I[実質賃金プラス化]\n    I --> J[日経平均の長期的支持]",
+      "en": "graph TD\n    A[Takaichi Fiscal Expansion] --> B{Record ¥122.3T Budget}\n    B --> C[Strategic Investment: AI/Chips]\n    B --> D[Consumption Tax Cut Debate]\n    E[Jan CPI Drops to 1.5%] --> F{BoJ Stance}\n    F --> G[No Rush to Hike: Hold 0.75%]\n    H[Shunto 5% Wage Hikes] --> I[Real Wage Growth]\n    I --> J[Long-term Nikkei Support]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "日本独自の春季労使交渉。2026年は物価高を上回る5%超の賃上げが焦点。",
+          "en": "Japan's annual spring wage negotiations. 2026 focuses on 5%+ hikes to outpace inflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "危機管理投資",
+          "en": "Crisis Management Investment"
+        },
+        "def": {
+          "ja": "高市政権の柱。経済安保、AI、半導体への国費投入で潜在成長率を引き上げる戦略。",
+          "en": "A pillar of Takaichi's policy aiming to boost growth via AI, chips, and economic security spending."
+        }
+      },
+      {
+        "term": {
+          "ja": "中立金利",
+          "en": "Neutral Rate"
+        },
+        "def": {
+          "ja": "景気を熱しも冷やしもしない金利水準。日銀は現在1.0%程度への正常化を目指している。",
+          "en": "The interest rate that neither stimulates nor restrains the economy; BoJ targets ~1.0%."
+        }
+      }
+    ],
+    "comparison": {
+      "us": "The Federal Reserve remains hawkish due to persistent core inflation and geopolitical risks (US-Iran), contrasting with Japan's easing inflation and continued stimulus.",
+      "china": "Facing structural slowdown and diplomatic shifts, China's outbound tourism to Japan has declined, while Japan shifts focus to domestic self-reliance in chips.",
+      "investor_action": "Neutral on Tech due to global volatility; Overweight on Japanese Banks and Domestic Construction as infrastructure spending ramps up."
+    }
+  },
+  {
     "id": "20260220_063406",
     "date": "2026-02-20",
     "titles": {
