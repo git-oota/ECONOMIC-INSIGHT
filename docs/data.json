@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260223_062608",
+    "date": "2026-02-23",
+    "titles": {
+      "ja": "日本経済：日経平均5万7000円台の攻防とインフレ2.0%鈍化—高市政権下の「出口戦略」に不透明感",
+      "en": "Japan Economy: Nikkei 225 Hits Records as Inflation Cools to 2.0%—BoJ Rate Hike Path Clouded by 'Takaichinomics'"
+    },
+    "descriptions": {
+      "ja": "日経平均が史上最高値を更新する中、1月のコアCPIは2.0%へ鈍化。高市新政権の減税策と日銀の利上げ方針が交錯し、投資家は4月の政策決定を注視しています。",
+      "en": "Japan Economy & Nikkei 225: Core CPI slowed to 2.0% in Jan, testing the BoJ's hawkish stance. Investors eye Yen (JPY) volatility as PM Takaichi's tax cuts clash with rate hike plans."
+    },
+    "contents": {
+      "ja": "【週明けの東京市場展望】2026年2月23日、日本の金融市場は「高市ラリー」の持続性と日銀の正常化プロセスの整合性を問う重要な局面にあります。2月8日の衆院選での自民党（高市総裁）大勝利を受け、日経平均株価は一時5万7000円の大台を突破。しかし、直近発表された1月のコアCPI（生鮮食品を除く）は2.0%と、前月の2.4%から急減速しました。これは政府の燃料補助金や高市首相が掲げる「食料品消費税の2年間停止」への期待が先行した形です。\n\n編集部注：日銀は現在、政策金利を0.75%に据え置いていますが、市場では6月までの1.0%への引き上げ予想が7割を超えています。一方で、インフレ率が目標の2%を割り込むリスクが浮上しており、植田総裁の「慎重な対話」が求められます。円相場は1ドル＝155円前後で推移しており、実質実効為替レートは1995年比で3分の1という歴史的低水準にあります。輸出企業の利益を押し上げる一方、家計の購買力減退が内需の重石となる「二極化」が鮮明です。\n\n【投資家への推奨アクション】\n1. セクター戦略：円安の恩恵を受ける輸出株から、内需・賃上げの恩恵を受ける「国内消費関連株」へのシフトを推奨。特に高市政権の減税策で恩恵を受ける小売セクターに注目。\n2. 債券市場：JGB（日本国債）10年物利回りの上昇余地を注視し、銀行株の押し目買いを検討。\n\n【米中比較分析】\n・米国：FRBが2026年中の複数回の利下げを模索する「ハト派」スタンスに転換中。\n・中国：デフレ圧力からの脱却を目指し、大規模な財政出動を継続。\n・日本：世界で唯一「利上げ」のタイミングを計る特異なポジションにあり、グローバル資金の受け皿となっています。",
+      "en": "As of February 23, 2026, the Japanese market is navigating a complex tug-of-war between record-breaking equity prices and cooling macro indicators. Following Prime Minister Sanae Takaichi’s landslide election victory on Feb 8, the Nikkei 225 surged past the 57,000 mark. However, January's Core CPI data released late last week showed a significant slowdown to 2.0% (down from 2.4%), primarily due to energy subsidies and anticipation of Takaichi’s proposed 2-year suspension of sales tax on food.\n\nNikkei Editor's Insight: The Bank of Japan (BoJ) currently maintains a 0.75% policy rate. While 70% of economists forecast a hike to 1.0% by June, the dip in headline inflation to 1.5%—the first time below target in four years—creates a communication challenge for Governor Ueda. The Yen (JPY) remains weak at 155 per dollar, with its real effective exchange rate hitting a 50-year low, boosting exporters but crushing household purchasing power.\n\n【Investor Insights & Actions】\n1. Sector Rotation: Move from export-heavy tech to domestic retail and services that will benefit from the upcoming 'Takaichi Tax Cuts.'\n2. Fixed Income: Monitor JGB yields closely. Financial stocks remain a 'buy on dips' as the long-term trend toward normalization persists despite short-term CPI volatility.\n\n【Global Comparison】\n- USA: Transitioning to a dovish cycle with expected rate cuts in 2026 as inflation stabilizes.\n- China: Struggling to spark demand-led growth, maintaining aggressive fiscal stimulus.\n- Japan: Uniquely positioned as the only major economy attempting to 'normalize' rates, making it a primary destination for global carry-trade reversals."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の誕生] --> B{積極財政・減税}\n    B --> C[株価押し上げ/日経平均5.7万円]\n    B --> D[インフレ抑制期待/消費税停止案]\n    D --> E[1月コアCPI 2.0%へ鈍化]\n    E --> F{日銀のジレンマ}\n    F --> G[利上げ継続か?]\n    F --> H[景気配慮で据え置きか?]\n    G --> I[円高・株価調整リスク]\n    H --> J[円安継続・輸入物価上昇]",
+      "en": "graph TD\n    A[Takaichi Victory] --> B{Fiscal Expansion & Tax Cuts}\n    B --> C[Boosts Equities / Nikkei 57k]\n    B --> D[Disinflationary Pressure / Sales Tax Cut]\n    D --> E[Jan Core CPI slows to 2.0%]\n    E --> F{BoJ Dilemma}\n    F --> G[Proceed with Rate Hike?]\n    F --> H[Pause for Growth?]\n    G --> I[JPY Strength / Market Correction]\n    H --> J[JPY Weakness / Import Cost Surge]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "コアコアCPI",
+          "en": "Core-Core CPI"
+        },
+        "def": {
+          "ja": "生鮮食品及びエネルギーを除く消費者物価指数。日銀が基調的なインフレ判断で最も重視する指標。",
+          "en": "Consumer Price Index excluding fresh food and energy. The BoJ's preferred gauge for underlying inflation trends."
+        }
+      },
+      {
+        "term": {
+          "ja": "実質実効為替レート",
+          "en": "Real Effective Exchange Rate (REER)"
+        },
+        "def": {
+          "ja": "物価変動や貿易額を考慮した通貨の総合的な購買力。現在の円は1970年代水準まで低下中。",
+          "en": "A measure of a currency's value against a basket of others, adjusted for inflation. JPY is currently at its lowest purchasing power since the 1970s."
+        }
+      },
+      {
+        "term": {
+          "ja": "高市トレード",
+          "en": "Takaichi Trade"
+        },
+        "def": {
+          "ja": "高市首相の経済政策（積極財政・金融緩和維持）を期待した「株高・円安」の投資行動。",
+          "en": "Investment strategy betting on 'Strong Stocks/Weak JPY' based on PM Takaichi's reflationary and dovish policy stance."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260222_062437",
     "date": "2026-02-22",
     "titles": {
