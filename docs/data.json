@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260224_064714",
+    "date": "2026-02-24",
+    "titles": {
+      "ja": "日本経済：輸出8.6%増で景気回復鮮明に、高市政権の2026年度予算審議が日経平均57,000円台を牽引か",
+      "en": "Japan Economy: Nikkei 225 Eyes 57,000 as BoJ Reports 8.6% Export Surge Amid FY2026 Budget Debates"
+    },
+    "descriptions": {
+      "ja": "日銀発表の1月実質輸出は8.6%増と大幅反発。国会では高市政権による初の通年予算審議が始まり、経済安保と賃上げへの期待から日経平均は史上最高値圏を維持。投資家は円安の揺り戻しと利上げ時期を注視。",
+      "en": "Japan Economy Update: BoJ data shows a sharp 8.6% rebound in exports. As PM Takaichi begins FY2026 budget debates, the Nikkei 225 stays near record highs. Investors monitor Yen (JPY) stability and BoJ's next move on inflation targets."
+    },
+    "contents": {
+      "ja": "【日経視点：デフレ完全脱却への最終章】本日、日銀が発表した1月の実質貿易指数で輸出が前月比8.6%増と急回復したことは、外需の底堅さを証明した。高市早苗首相による「経済安保」を軸とした2026年度予算案の審議が衆院で本格化しており、防衛・半導体への巨額投資が成長期待を後押ししている。投資家への影響として、日経平均は57,000円台という「新常態」に突入しており、輸出企業の業績上振れが期待される。推奨アクションは、利上げ局面で恩恵を受けるメガバンクと、政府支援が厚い先端技術銘柄の押し目買いだ。背景知識として、現在の日本は「春闘」による賃上げが物価上昇を上回るかどうかの瀬戸際にある。比較分析では、米国の関税リスクや中国の景気停滞に対し、日本は政治的安定と製造業の回帰（リショアリング）により、相対的な消去法買いの対象となっている。",
+      "en": "Analysis: Japan's economy is entering a 'normalization' phase. Today's BoJ report of an 8.6% export rebound underscores resilient global demand. In the Diet, PM Sanae Takaichi's administration has commenced debates on the FY2026 budget, emphasizing economic security and semiconductor subsidies. Investor Impact: The Nikkei 225 is trading in a new 'high-plateau' range near 57,000. Recommended Action: Accumulate major financial stocks benefiting from higher rates and tech leaders aligned with national security goals. Essential Context: The focus is on the 'Shunto' wage negotiations; sustainable inflation is only possible if wages outpace CPI. Global Comparison: While the US faces 'tariff fog' due to Supreme Court rulings and China struggles with supply chain shifts, Japan stands out as a safe haven with political stability and structural growth."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[実質輸出 8.6%増] --> B[企業収益の改善]\n    B --> C[日経平均 57,000円維持]\n    D[高市政権 予算審議] --> E[経済安保投資]\n    E --> C\n    C --> F[投資家: 金融・テック株へ注視]",
+      "en": "graph TD\n    A[Exports Up 8.6%] --> B[Corporate Earnings Recovery]\n    B --> C[Nikkei 225 Near 57,000]\n    D[Takaichi Budget Debate] --> E[Economic Security Investment]\n    E --> C\n    C --> F[Investors: Focus on Banks & Tech]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "実質貿易指数",
+          "en": "Real Trade Index"
+        },
+        "def": {
+          "ja": "物価変動の影響を除いた輸出入の数量を示す指標。景気の実態を把握するのに適している。",
+          "en": "A measure of trade volume excluding price fluctuations, providing a clearer view of economic activity."
+        }
+      },
+      {
+        "term": {
+          "ja": "春闘",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる日本独自の賃金交渉。2026年は物価高を上回る賃上げが焦点。",
+          "en": "Japan's annual spring wage negotiations; 2026 is critical for ensuring wage growth exceeds inflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "経済安保",
+          "en": "Economic Security"
+        },
+        "def": {
+          "ja": "高市政権の重要政策。中国依存の脱却や半導体供給網の強化を目的とする。",
+          "en": "A key pillar of the Takaichi admin, aiming to reduce reliance on China and secure tech supply chains."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260223_062608",
     "date": "2026-02-23",
     "titles": {
