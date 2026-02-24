@@ -1,5 +1,63 @@
 [
   {
+    "id": "20260225_063616",
+    "date": "2026-02-25",
+    "titles": {
+      "ja": "日本経済：日経平均5万8000円目前、高市・植田「政策摩擦」で揺れる円相場と利上げ観測",
+      "en": "Japan Economy: Nikkei 225 Nears 58,000 as BoJ Rate Hike Speculation Clashes with Takaichi’s Mandate"
+    },
+    "descriptions": {
+      "ja": "日経平均株価は57,976円と最高値を更新。高市首相の大型財政出動への期待と、植田総裁の利上げ路線の対立が市場の焦点です。投資家は3月の政策決定に注目。",
+      "en": "Japan Economy & Nikkei 225: Stocks hit record 57,976 as PM Takaichi’s landslide victory fuels stimulus hopes, while BoJ’s potential 1% rate hike sparks JPY volatility."
+    },
+    "contents": {
+      "ja": "2026年2月25日の東京株式市場は、日経平均株価が一時58,000円の大台に迫る歴史的な展開となった。背景には、2月上旬の衆議院選挙で圧倒的多数を得た高市早苗政権による「戦略的財政出動」への強い期待がある。一方で、日本銀行（BoJ）は政策金利を現在の0.75%から1.0%へ引き上げる検討に入っており、為替市場では1ドル＝156円台で円安・円高の思惑が交錯している。報道によると、高市首相は植田総裁に対し、拙速な利上げがデフレ完全脱却を阻むリスクを伝えたとされ、政府・日銀間の「政策摩擦」が投資家のリスクシナリオとして浮上している。インフレ率は2.0%と目標圏内にあるが、賃金上昇を伴う「好循環」の維持が今後の鍵となる。",
+      "en": "As of February 25, 2026, the Nikkei 225 has surged to a record 57,976, driven by market euphoria following Prime Minister Sanae Takaichi’s decisive electoral mandate for aggressive fiscal expansion. However, a shadow looms over the rally as the Bank of Japan (BoJ) signals a potential rate hike to 1.0% by June to combat persistent import-driven inflation. Reports of 'policy friction' emerged after PM Takaichi expressed reservations to Governor Ueda regarding rapid tightening. While the Japan Economy shows resilience with Core CPI at 2.0%, the Yen (JPY) remains volatile at 156 per dollar. Investors are weighing the benefits of fiscal stimulus against the rising cost of capital, making the upcoming March BoJ meeting a critical pivot point for global portfolios."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の圧勝] --> B[大型財政出動の期待]\n    B --> C[日経平均 58,000円接近]\n    D[日銀 1.0%への利上げ観測] --> E[円相場のボラティリティ]\n    A -- 政策摩擦 --> D\n    C --> F[投資判断: 慎重な強気]\n    E --> F",
+      "en": "graph TD\n    A[Takaichi Landslide Victory] --> B[Fiscal Stimulus Hopes]\n    B --> C[Nikkei 225 Near 58,000]\n    D[BoJ 1.0% Rate Hike Speculation] --> E[JPY Currency Volatility]\n    A -- Policy Friction -- > D\n    C --> F[Investment Action: Cautious Bullish]\n    E --> F"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "政策摩擦",
+          "en": "Policy Friction"
+        },
+        "def": {
+          "ja": "政府の財政政策と中央銀行の金融政策が異なる方向を向き、市場に不透明感を与える状態。",
+          "en": "A situation where government fiscal policy and central bank monetary policy diverge, creating market uncertainty."
+        }
+      },
+      {
+        "term": {
+          "ja": "中立金利",
+          "en": "Neutral Rate"
+        },
+        "def": {
+          "ja": "経済を過熱も冷やしもしない理論上の金利水準。日銀は1.75%程度を目指すと目されている。",
+          "en": "The theoretical interest rate that neither stimulates nor restrains the economy. BoJ targets approx 1.75%."
+        }
+      },
+      {
+        "term": {
+          "ja": "需給ギャップ",
+          "en": "Output Gap"
+        },
+        "def": {
+          "ja": "経済の供給力と実際の需要の差。2026年現在はプラス圏にあり、インフレ圧力の要因となっている。",
+          "en": "The difference between actual output and potential output; currently positive in Japan, fueling inflation."
+        }
+      }
+    ],
+    "insights": {
+      "editorial": "Nikkei editors emphasize that while the 58,000 milestone is psychological, the real story is the 'Takaichi-Ueda standoff.' The market is pricing in a 'Goldilocks' scenario where stimulus offsets rate hikes, but any breakdown in communication could trigger a sharp Yen appreciation (Endaka).",
+      "investor_action": "Recommended Action: Stay overweight on Japanese financials benefiting from higher rates (MUFG, SMFG) and AI-linked tech (Tokyo Electron). Hedge JPY exposure as the 155-160 range remains a battleground for intervention.",
+      "student_context": "Essential Context: For students of macroeconomics, Japan in 2026 represents the 'normalization' phase. After 30 years of zero rates, the transition to a 1% rate environment changes how companies value future cash flows and how households manage savings.",
+      "global_comparison": "US/China Analysis: Unlike the US Fed (pausing at 3.5%) or China (struggling with structural deflation), Japan is the only major economy in 2026 successfully navigating a 're-inflation' cycle, attracting global 'carry trade' reversals."
+    }
+  },
+  {
     "id": "20260224_064714",
     "date": "2026-02-24",
     "titles": {
