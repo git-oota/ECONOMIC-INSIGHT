@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260226_063602",
+    "date": "2026-02-26",
+    "titles": {
+      "ja": "日本経済：日経平均が5万8000円超の史上最高値、タカイチ・トレードで円安加速",
+      "en": "Japan Economy: Nikkei 225 Hits Record 58,000+ as Dovish BoJ Shifts Trigger Yen (JPY) Slump"
+    },
+    "descriptions": {
+      "ja": "高市政権による日銀審議委員のハト派指名を受け、日経平均は5万8000円を突破。インフレ鈍化と円安進行が交錯する中、投資家は「金利上昇の先送り」を好感しています。",
+      "en": "Japan Economy update: Nikkei 225 surges to record highs above 58,000 as PM Takaichi's dovish BoJ appointments fuel Yen (JPY) weakness and delay rate hike expectations."
+    },
+    "contents": {
+      "ja": "【日経視点：歴史的転換点】日本市場は今、かつてない「官邸主導」の相場環境にあります。高市早苗首相が日銀の審議委員にハト派の佐藤彩乃氏と安田東一郎氏を指名したことは、市場に「早期利上げ停止」の強烈なメッセージとして伝わりました。1月のコアCPIが2.0%まで鈍化し、2月の東京都区部予測も1.7%と目標を下回る見通しの中、日銀の正常化プロセスは一時停止を余儀なくされています。\n\n【投資家への影響】円安メリットを享受する半導体（アドバンテスト、東エレク）や非鉄金属セクターが牽引し、日経平均は6万ドルの大台を視野に入れています。一方、JGB（国債）市場では財政拡大への警戒から長期金利が上昇する「ねじれ」が発生。投資家は為替ヘッジ付きの日本株保有を強化しつつ、内需株への資金移動を注視すべきです。\n\n【グローバル比較】トランプ政権が15%の全世界関税を表明し、中国との貿易摩擦が再燃する中で、日本の「積極財政×金融緩和継続」という独自のスタンスは、相対的な逃避先（セーフヘイブン）としての魅力を高めています。米国が利下げ時期を探る中、日本は逆に「利上げの先送り」という逆相関の動きを見せています。",
+      "en": "The Japanese market is currently navigating an unprecedented policy-driven rally. Prime Minister Sanae Takaichi’s nomination of two dovish academics, Ayano Sato and Toichiro Asada, to the Bank of Japan (BoJ) Policy Board has signaled a significant slowdown in interest rate normalization. With January Core CPI cooling to 2.0% and February's Tokyo forecast dropping to 1.7%, the central bank’s path to further hikes is increasingly complicated.\n\n**Investor Action:** The Nikkei 225 is eyeing the psychological 60,000 level, led by tech giants like Advantest and Tokyo Electron benefiting from a weaker Yen. However, JGB yields are edging up due to concerns over 'responsible proactive fiscal policy' and increased debt issuance. Investors should favor export-oriented tech but maintain a cautious eye on currency volatility as the Yen nears 157 per dollar.\n\n**Global Context:** While the US under President Trump signals a 15% global tariff regime and China faces renewed trade probes, Japan’s unique mix of fiscal expansion and monetary accommodation makes it a relative safe haven. Unlike the Fed, which is debating rate cuts, the BoJ is now perceived as 'hawkish-on-hold' or moving back toward a dovish stance, creating a distinct divergence in global capital flows."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権のハト派指名] --> B[日銀利上げ期待の後退]\n    B --> C[円安進行 JPY 156-157]\n    C --> D[輸出・半導体株の買い]\n    D --> E[日経平均 史上最高値更新]\n    A --> F[積極財政への警戒]\n    F --> G[長期金利 JGB の上昇]",
+      "en": "graph TD\n    A[Takaichi's Dovish Nominees] --> B[Delayed BoJ Rate Hike Hopes]\n    B --> C[Yen Depreciation JPY 156-157]\n    C --> D[Surge in Export/Tech Stocks]\n    D --> E[Nikkei 225 Record Highs]\n    A --> F[Fiscal Expansion Concerns]\n    F --> G[Rise in Long-term JGB Yields]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "ハト派 (Dovish)",
+          "en": "Dovish"
+        },
+        "def": {
+          "ja": "景気支援のために低金利や金融緩和を支持する立場。",
+          "en": "A policy stance favoring low interest rates and monetary easing to support economic growth."
+        }
+      },
+      {
+        "term": {
+          "ja": "コアCPI",
+          "en": "Core CPI"
+        },
+        "def": {
+          "ja": "生鮮食品を除いた消費者物価指数。日銀が最も重視する指標の一つ。",
+          "en": "Consumer Price Index excluding volatile fresh food prices; a key gauge for BoJ policy."
+        }
+      },
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Spring Wage Offensive"
+        },
+        "def": {
+          "ja": "日本独自の春季賃金交渉。2026年は3%以上の賃上げが焦点。",
+          "en": "Japan's annual spring wage negotiations; 2026 focuses on hitting a 3%+ increase."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260225_063616",
     "date": "2026-02-25",
     "titles": {
