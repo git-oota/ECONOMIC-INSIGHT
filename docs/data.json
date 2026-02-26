@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260227_063333",
+    "date": "2026-02-27",
+    "titles": {
+      "ja": "日経平均5万9000円突破、史上最高値更新。高市政権の「リフレ派」人事案で利上げ観測後退",
+      "en": "Japan Economy: Nikkei 225 Smashes 59,000 Record as BoJ Rate Hike Bets Cool Amid Political Pressure"
+    },
+    "descriptions": {
+      "ja": "日経平均が初の5万9000円台へ。高市首相による日銀審議委員へのリフレ派起用で早期利上げ観測が抑制され、円安・株高が加速。投資家は4月の政策決定会合を注視しています。",
+      "en": "Japan Economy: Nikkei 225 hits historic 59,000 level. BoJ policy uncertainty grows as PM Takaichi nominates dovish board members, weakening JPY to 156 and fueling tech-led stock rallies."
+    },
+    "contents": {
+      "ja": "2026年2月27日現在の日本経済は、歴史的な転換点を迎えています。前日の東京株式市場で日経平均株価は一時59,300円を超え、史上最高値を更新しました。この背景には、米エヌビディアの好決算を受けた半導体関連株の続伸に加え、高市早苗政権による「日銀人事」への介入的側面があります。高市首相は、緩和継続を重視する『リフレ派』の学者2名を日銀審議委員に指名。これにより、市場が警戒していた早期の追加利上げ観測が後退し、円相場は1ドル＝156円台まで下落、輸出関連株への買いを誘発しました。一方で、日銀内部では高田審議委員らが『出口戦略』の加速を主張しており、政府の成長重視路線と日銀の正常化路線の「ねじれ」が鮮明になっています。投資家は、賃上げ率5%超が期待される春闘回答と、4月の政策決定会合での1.0%への利上げ有無を最大の焦点としています。",
+      "en": "As of February 27, 2026, the Japanese economy has reached a historic milestone. The Nikkei 225 surged past the 59,000 mark yesterday, hitting a fresh all-time high of 59,386. This rally is fueled by a 'Goldilocks' scenario: blockbuster AI earnings from Nvidia boosting tech giants like Advantest, and unexpected political shifts at home. Prime Minister Sanae Takaichi has nominated two prominent 'reflationist' academics to the Bank of Japan (BoJ) board, a move interpreted by markets as a soft pivot toward maintaining accommodative policy. This has effectively cooled immediate bets for a rate hike to 1.0%, pushing the Yen down to the 156 range against the Dollar. While BoJ hawks like Hajime Takata continue to call for a 'gear shift' to normalize rates, the tension between Takaichi’s growth-first fiscal policy and the BoJ’s inflation-targeting mandate is creating a unique window for equity bulls. Investors are now laser-focused on the upcoming Shunto wage results, where a 5-6% hike is anticipated, potentially forcing the BoJ's hand in April."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権によるリフレ派人事] --> B[日銀の追加利上げ観測が後退]\n    B --> C[円安進行 156円/ドル]\n    B --> D[長期金利の上昇抑制]\n    E[米AI関連株の好決算] --> F[日本の半導体関連株へ波及]\n    C --> G[日経平均 59,000円突破]\n    F --> G\n    G --> H[投資家: 4月利上げ有無を注視]",
+      "en": "graph TD\n    A[Takaichi Govt Nominates Reflationists] --> B[Cooling of BoJ Rate Hike Bets]\n    B --> C[JPY Weakness 156/USD]\n    B --> D[Capped JGB Yields]\n    E[Nvidia/US AI Surge] --> F[Japan Tech/Chip Stocks Rally]\n    C --> G[Nikkei 225 Breaks 59,000]\n    F --> G\n    G --> H[Investors Focus on April BoJ Meeting]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "リフレ派",
+          "en": "Reflationists"
+        },
+        "def": {
+          "ja": "デフレ脱却のために積極的な金融緩和と財政出動を重視する経済学派。高市政権の支持基盤に近い。",
+          "en": "Economists who advocate for aggressive monetary easing and fiscal spending to overcome deflation. Closely aligned with PM Takaichi's policies."
+        }
+      },
+      {
+        "term": {
+          "ja": "春闘",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる労使間の賃金交渉。2026年は5%以上の賃上げが日銀の利上げ判断の鍵となる。",
+          "en": "Annual spring labor-management wage negotiations. In 2026, a 5%+ hike is the prerequisite for BoJ's next rate hike."
+        }
+      },
+      {
+        "term": {
+          "ja": "正常化路線",
+          "en": "Monetary Normalization"
+        },
+        "def": {
+          "ja": "長年の超低金利政策から脱却し、金利のある世界へ戻す日銀の政策方針。",
+          "en": "The BoJ's policy path of moving away from ultra-loose interest rates toward a conventional positive-rate environment."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260226_063602",
     "date": "2026-02-26",
     "titles": {
