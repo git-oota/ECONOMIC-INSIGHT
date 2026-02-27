@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260228_063044",
+    "date": "2026-02-28",
+    "titles": {
+      "ja": "日本経済：日経平均が史上最高値更新、高市政権の「半導体・財政」攻勢がインフレ鈍化を凌駕",
+      "en": "Japan Economy: Nikkei 225 Hits Record Highs as Takaichi’s Fiscal Surge Defies Inflation Dip; Yen (JPY) & BoJ in Focus"
+    },
+    "descriptions": {
+      "ja": "日経平均は58,850円で週を終え、高市政権の半導体支援（ラピダスへの2500億円）と旺盛な小売売上高が市場を牽引。東京CPIは1.8%に低下も、日銀の正常化姿勢は不変。",
+      "en": "Japan Economy: Nikkei 225 nears 60k as PM Takaichi’s $1.6B chip boost (Rapidus) and 4.1% retail surge offset cooling Tokyo CPI (1.8%). Investors eye BoJ’s next move amid US tariff talks."
+    },
+    "contents": {
+      "ja": "【日経視点：構造改革の完遂へ】2026年2月最終週、日本市場は歴史的な転換点を迎えた。高市早苗政権の圧倒的勝利を受けた「高市トレード」が本格化し、政府は次世代半導体ラピダスへ2500億円の追加支援を決定。1月の小売売上高が前月比4.1%増と5年ぶりの高い伸びを記録したことで、内需主導の成長への期待が膨らんでいる。一方で、2月の東京コアCPIは政府の補助金影響で1.8%と目標の2%を下回ったが、日銀の植田総裁は「賃金と物価の好循環」を強調し、正常化の手を緩めない構えだ。\n\n【投資家への影響と推奨】日経平均は6万円の大台を視野に入れている。推奨：(1) 半導体・DX関連株の押し目買い、(2) 利上げメリットを享受する大手銀行株のホールド。ただし、トランプ政権による関税リスク（対米投資交渉中）が円安(155円台)を加速させる可能性があり、輸出企業の想定為替レートに注意が必要。\n\n【グローバル比較】米国がFRBの利下げ時期と関税政策に揺れ、中国が不動産不況でCSI300指数が低迷する中、日本は「政治的安定×財政拡大×適度なインフレ」の三拍子が揃う稀有な投資先として浮上している。",
+      "en": "【Nikkei Editor’s Perspective: Completing Structural Reform】The final week of February 2026 marked a historic pivot. The 'Takaichi Trade' is in full swing following the LDP's landslide victory. The government has committed an additional 250 billion yen ($1.6B) to Rapidus, signaling a do-or-die stance on chip sovereignty. With January retail sales surging 4.1% MoM (a 5-year high), domestic demand is becoming a robust second engine for growth. While Tokyo’s Feb Core CPI dipped to 1.8% due to energy subsidies, BoJ Governor Ueda remains committed to normalization, viewing the dip as temporary.\n\n【Investor Impact & Action】Nikkei 225 is eyeing the psychological 60,000 level. Action: (1) Accumulate Semiconductor/DX stocks on dips. (2) Hold major banks to leverage rising yields. Caution: Watch JPY volatility (155-156 range) as PM Takaichi heads to the US in March to negotiate a $550B investment deal to mitigate Trump's reciprocal tariffs.\n\n【Comparative Analysis】While the US grapples with Fed uncertainty and protectionism, and China’s CSI300 struggles with deflationary pressure, Japan stands out as a unique 'Goldilocks' destination offering political stability, fiscal expansion, and resilient corporate earnings."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の誕生] --> B[大規模な財政出動 & 半導体支援]\n    B --> C[日経平均 史上最高値 58,850円]\n    D[政府補助金] --> E[東京CPI 1.8%に鈍化]\n    C --> F{投資家判断}\n    F --> G[銀行・内需株へ資金シフト]\n    F --> H[対米関税リスクを注視]",
+      "en": "graph TD\n    A[Takaichi Landslide Win] --> B[Fiscal Spending & Chip Subsidies]\n    B --> C[Nikkei 225 Record High 58,850]\n    D[Energy Subsidies] --> E[Tokyo CPI Slows to 1.8%]\n    C --> F{Investor Sentiment}\n    F --> G[Shift to Banks & Domestic Demand]\n    F --> H[Monitor US Tariff Risks]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "ラピダス (Rapidus)",
+          "en": "Rapidus"
+        },
+        "def": {
+          "ja": "2nm世代の先端半導体国産化を目指す国策会社。政府は累計3兆円規模の支援を計画。",
+          "en": "A state-backed venture aiming to mass-produce 2nm logic chips by 2027 to ensure Japan's tech sovereignty."
+        }
+      },
+      {
+        "term": {
+          "ja": "コアCPI (Core CPI)",
+          "en": "Core CPI"
+        },
+        "def": {
+          "ja": "生鮮食品を除く消費者物価指数。日銀の金融政策決定における最重要指標の一つ。",
+          "en": "Consumer Price Index excluding fresh food; a key metric for the Bank of Japan's inflation targeting."
+        }
+      },
+      {
+        "term": {
+          "ja": "正常化 (Normalization)",
+          "en": "Normalization"
+        },
+        "def": {
+          "ja": "異次元緩和を脱し、金利のある世界へ戻すこと。2026年3月の追加利上げが市場の焦点。",
+          "en": "The process of exiting ultra-loose monetary policy. Markets expect a rate hike to 1.0% by mid-2026."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260227_063333",
     "date": "2026-02-27",
     "titles": {
