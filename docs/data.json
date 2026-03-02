@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260303_063515",
+    "date": "2026-03-03",
+    "titles": {
+      "ja": "日本経済：日経平均6万円大台を射程に、高市政権の「新アベノミクス」と日銀の緩和継続示唆が追い風",
+      "en": "Japan Economy: Nikkei 225 Eyes 60k Milestone as BoJ Signals Cautious Hikes Amid Takaichi's Reflationary Push"
+    },
+    "descriptions": {
+      "ja": "日経平均は2月に10%超急騰し5万8000円台。高市首相の成長戦略と日銀氷見野副総裁の慎重な利上げ姿勢が投資家心理を改善。一方で中東情勢緊迫による原油高と円安進行がリスク要因に。",
+      "en": "Japan Economy, Nikkei 225, Yen (JPY), BoJ, Inflation: Nikkei nears 60,000 as PM Takaichi's stimulus hope and BoJ's dovish tilt boost sentiment. Watch JPY volatility and Middle East oil risks."
+    },
+    "contents": {
+      "ja": "【日経視点：デフレ脱却の最終章へ】日本市場は今、かつてない「適温経済（ゴルディロックス）」の局面を迎えています。2月の衆院選での自民党大勝を受け、高市早苗首相が推し進める積極財政と「新アベノミクス」への期待が海外投資家を呼び込み、日経平均は6万円の大台を視界に捉えました。日銀の氷見野副総裁は3月2日の講演で、利上げの継続を示唆しつつも「緩和的な環境の維持」を強調。1月のCPIが1.5%まで鈍化したことで、急激な引き締めへの懸念が和らいだことが株高を支えています。\n\n【投資家への影響と推奨】日本企業の業績は5年連続の最高益更新を見込んでおり、特に内需セクターや半導体部材に妙味があります。ただし、米国・イスラエルによるイラン攻撃という地政学リスクが原油価格を押し上げ、コストプッシュ型のインフレ再燃を招く恐れがあります。投資家は、円安メリット銘柄の利益確定を進めつつ、防衛関連やエネルギー株でのヘッジを検討すべきです。\n\n【グローバル比較】米メディアは「日本株の米国ハイテク株からのデカップリング（切り離し）」に注目し、中国メディアは高市政権下の国防費増額が日本の防衛産業に与える影響を警戒感を持って報じています。",
+      "en": "Japan Economy Analysis: The Japanese market has entered a 'Goldilocks' phase. Following PM Sanae Takaichi's decisive election victory, the 'New Abenomics' narrative has triggered a massive inflow of foreign capital, pushing the Nikkei 225 toward the psychological 60,000 level. BoJ Deputy Governor Himino's speech on March 2nd struck a balance, suggesting gradual normalization while reassuring markets that policy remains accommodative. With January CPI cooling to 1.5%, the pressure for aggressive rate hikes has dissipated, providing a tailwind for equities.\n\nInvestor Impact: Corporate Japan is on track for its 5th consecutive year of record profits. While domestic-oriented stocks and semiconductor materials remain attractive, the escalation of US-Israel military actions against Iran poses a 'tail risk.' Rising oil prices could trigger cost-push inflation, complicating the BoJ's path. Investors should consider hedging with defense and energy sectors while monitoring JPY/USD levels near 156.\n\nGlobal Comparison: US outlets highlight Japan's resilience despite the US tech slump, framing it as a safe haven. Conversely, Chinese media focuses on Japan's increased defense spending and potential shifts in regional trade dynamics under the Takaichi administration."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高市政権の大勝] --> B[積極財政・成長戦略期待]\n    B --> C[海外投資家の日本株買い]\n    C --> D[日経平均 6万円を視野]\n    E[1月CPI 1.5%に鈍化] --> F[日銀の慎重な利上げ姿勢]\n    F --> D\n    G[中東地政学リスク] --> H[原油高・インフレ再燃懸念]\n    H --> I[市場の調整リスク]",
+      "en": "graph TD\n    A[Takaichi Election Victory] --> B[Fiscal Stimulus Expectations]\n    B --> C[Foreign Capital Inflow]\n    C --> D[Nikkei 225 Nears 60k]\n    E[Jan CPI at 1.5%] --> F[BoJ Cautious Normalization]\n    F --> D\n    G[Middle East Conflict] --> H[Oil Price Spike Risk]\n    H --> I[Market Correction Warning]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "リフレ派",
+          "en": "Reflationists"
+        },
+        "def": {
+          "ja": "デフレ脱却のためにマネタリーベースの拡大や積極財政を重視する経済学派。高市政権の支持基盤。",
+          "en": "Economists who advocate for expanding the monetary base and fiscal stimulus to exit deflation. Core to PM Takaichi's policy."
+        }
+      },
+      {
+        "term": {
+          "ja": "適温経済",
+          "en": "Goldilocks Economy"
+        },
+        "def": {
+          "ja": "過熱もせず冷え込みもしない、持続的な成長と低インフレが共存する理想的な経済状態。",
+          "en": "An ideal economic state with moderate growth and low inflation, neither overheating nor in recession."
+        }
+      },
+      {
+        "term": {
+          "ja": "実質賃金",
+          "en": "Real Wages"
+        },
+        "def": {
+          "ja": "名目賃金から物価変動の影響を除いた、実際の購買力を示す指標。2026年はプラス転換が焦点。",
+          "en": "Wages adjusted for inflation, reflecting actual purchasing power. A key focus for Japan in 2026 is turning this positive."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260228_063044",
     "date": "2026-02-28",
     "titles": {
