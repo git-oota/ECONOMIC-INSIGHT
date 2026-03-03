@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260304_063520",
+    "date": "2026-03-04",
+    "titles": {
+      "ja": "日本経済：日経平均、中東リスクで5万6000円割れ目前。円安とインフレ再燃に揺れる日銀の選択",
+      "en": "Japan Economy: Nikkei 225 Plummets as Middle East Conflict Ignites Inflation Fears; Yen (JPY) and BoJ Strategy Under Pressure"
+    },
+    "descriptions": {
+      "ja": "中東情勢の緊迫化による原油高を受け、日経平均は一時1600円超の急落。日銀・氷見野副総裁は追加利上げに慎重姿勢を示すも、インフレ圧力と円安が投資家心理を冷やしています。",
+      "en": "Japan Economy and Nikkei 225 face a sharp correction as Middle East tensions drive oil prices higher. BoJ Deputy Gov. Himino signals caution on inflation, leaving JPY and investors in a state of high volatility."
+    },
+    "contents": {
+      "ja": "【日経視点：三重苦に直面する日本市場】\n東京株式市場は、地政学リスク、原油高、そして政策の不透明感という「三重苦」に直面しています。3月3日の日経平均株価は前日比1685円（2.53%）安の5万6269円で終了し、節目の5万6000円割れを窺う展開となりました。米・イスラエルによるイランへの攻撃報道を受け、WTI原油先物が71ドル台へ急騰。輸入物価の上昇を通じたコストプッシュ型インフレの再燃が、日本経済の回復シナリオに影を落としています。\n\n【投資家への影響と推奨アクション】\nトヨタ（-6.1%）やソニー（-6.3%）といった輸出主力株が、世界的なリスクオフの流れで売られています。一方で、原油高の恩恵を受けるエネルギーセクターや、防衛関連株への資金シフトが見られます。短期的なボラティリティは続くため、3月18-19日の日銀金融政策決定会合までは、キャッシュポジションを高めつつ、円建て資産のヘッジを検討すべき局面です。\n\n【グローバル比較：米中との温度差】\n米国ではFRBの利下げ期待が後退し、金利上昇が株価を圧迫。中国は内需停滞によるデフレ懸念が続く中、日本は「インフレ定着と利上げの是非」という独自のジレンマにあります。高市政権によるリフレ派の審議委員起用が円安を助長する側面もあり、欧米メディアは日本の「政策の不一致（Policy Mismatch）」を注視しています。",
+      "en": "【Nikkei Analysis: A Triple Headwind for Japan】\nThe Tokyo market is grappling with a 'triple headwind': geopolitical instability, surging energy costs, and monetary policy ambiguity. On March 3, the Nikkei 225 closed down 1,685 points (-2.53%) at 56,269.50, testing the psychological floor of 56,000. Reports of U.S.-Israeli strikes on Iran sent WTI crude soaring toward $71, threatening to reignite cost-push inflation in resource-poor Japan just as the BoJ considers normalization.\n\n【Investor Impact & Strategic Action】\nBlue-chip exporters like Toyota (-6.1%) and Sony (-6.3%) were hit hard by global risk-off sentiment. Conversely, energy and defense-related stocks are seeing defensive inflows. Investors should brace for continued volatility. The recommended stance is 'cautious accumulation' on dips, but only after the BoJ’s March 18-19 meeting provides clarity on the interest rate path.\n\n【Global Context for Students & Expats】\nUnlike the U.S., where the focus is on when the Fed will cut rates, or China, which battles deflation, Japan is uniquely trying to exit decades of stimulus. The nomination of 'reflationist' board members by PM Takaichi's administration suggests a preference for growth over aggressive tightening, even as the Yen (JPY) weakens toward 157. This policy divergence makes Japanese assets particularly sensitive to external shocks."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[中東情勢の緊迫化] --> B[原油価格の急騰]\n    B --> C[輸入コスト増/インフレ懸念]\n    C --> D[日経平均急落]\n    C --> E[日銀の利上げジレンマ]\n    F[高市政権のリフレ派起用] --> G[円安圧力の継続]",
+      "en": "graph TD\n    A[Middle East Conflict] --> B[Oil Price Spike]\n    B --> C[Import Costs/Inflation Fear]\n    C --> D[Nikkei 225 Plunge]\n    C --> E[BoJ Policy Dilemma]\n    F[Takaichi's Reflationist Moves] --> G[Continued JPY Weakness]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "リフレ派",
+          "en": "Reflationists"
+        },
+        "def": {
+          "ja": "デフレ脱却のために積極的な金融緩和と財政出動を支持する経済学派や政治家。",
+          "en": "Economists or politicians who support aggressive monetary easing and fiscal spending to overcome deflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "コストプッシュ型インフレ",
+          "en": "Cost-Push Inflation"
+        },
+        "def": {
+          "ja": "原材料や燃料費の上昇が原因で、製品価格が押し上げられるインフレ形態。",
+          "en": "Inflation caused by an increase in prices of inputs like raw materials and energy."
+        }
+      },
+      {
+        "term": {
+          "ja": "リスクオフ",
+          "en": "Risk-Off"
+        },
+        "def": {
+          "ja": "投資家が不透明な状況下で、株式などのリスク資産を売り、現金や金などの安全資産へ逃避すること。",
+          "en": "A market condition where investors sell risky assets (stocks) and move capital to safe havens (cash, gold)."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260303_063515",
     "date": "2026-03-03",
     "titles": {
