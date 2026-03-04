@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260305_063605",
+    "date": "2026-03-05",
+    "titles": {
+      "ja": "日本経済：日経平均が中東情勢で急落、日銀・植田総裁は3月利上げに慎重姿勢を示唆",
+      "en": "Japan Economy: Nikkei 225 Plunges on Mideast Tensions; BoJ Governor Ueda Signals Caution on March Rate Hike"
+    },
+    "descriptions": {
+      "ja": "日本経済の最新動向：中東紛争による原油高と日経平均54,000円台への急落を詳報。日銀（BoJ）の金利政策と円（JPY）の動向、インフレへの影響を投資家視点で分析します。",
+      "en": "Japan Economy update: Nikkei 225 slides to 54,000 range amid Mideast conflict. BoJ's Ueda hints at holding Yen (JPY) interest rates steady in March. Expert analysis on inflation and investor strategy."
+    },
+    "contents": {
+      "ja": "【日経新聞編集者の視点】日本市場は今、外部ショックによる「出口戦略」の足踏みに直面しています。日経平均株価は2月に史上最高値の5万9000円台を記録しましたが、中東情勢の緊迫化を受け、3月4日には一時1,500円超の急落を見せました。植田和男総裁は国会答弁で、原油高が日本の「交易条件」を悪化させ、基調的なインフレを抑制するリスクに言及。これにより、市場が期待していた3月19日の追加利上げ観測は急速に後退し、4月以降への先送りが濃厚となっています。\n\n【投資家への影響と推奨アクション】\n短期的にはボラティリティの上昇に備えるべきです。特に原油高は輸入コスト増を通じて企業の利益を圧迫します。ただし、2026年の春闘（Shunto）では4.5%程度の力強い賃上げ回答が相次いでおり、国内の購買力は底堅いと見られます。円安（1ドル＝157円台）は輸出企業に追い風ですが、政府の介入リスクも高まっています。推奨：エネルギー関連銘柄のヘッジ検討、および利上げ先送りによる銀行株の一時的な調整局面での押し目買い。\n\n【米・中との比較】\n米国はトランプ政権下での関税政策とインフレ再燃リスクに揺れており、FRBは利下げに慎重です。一方、中国は地域紛争によるエネルギー価格上昇が製造業のコスト増に直結し、景気回復の重石となっています。日本は「デフレ脱却」の最終局面にあり、他国がインフレ抑制に苦しむ中で、唯一「マイルドなインフレと賃金の好循環」を維持できるかが焦点です。",
+      "en": "The Japanese market is currently facing a 'pause' in its normalization path due to external shocks. After the Nikkei 225 hit a historic high of 59,332 in February, it plunged by over 1,500 points on March 4, closing in the 54,000 range as Middle East tensions escalated. BoJ Governor Kazuo Ueda, in a parliamentary testimony, highlighted that surging oil prices could worsen Japan's 'terms of trade' and potentially dampen underlying inflation. This has led markets to price out a March 19 rate hike, shifting expectations to April or June.\n\n[Investor Impact & Actions]\nInvestors should brace for heightened volatility. While high oil prices squeeze corporate margins, the 2026 'Shunto' (spring wage negotiations) is yielding robust results near 4.5%, suggesting resilient domestic demand. The Yen (JPY) at the 157 level supports exporters but increases intervention risks. Action: Consider hedging with energy stocks and look for entry points in banking stocks during corrections caused by delayed rate hikes.\n\n[Global Comparison]\nWhile the US grapples with 'Trump 2.0' tariff uncertainties and sticky inflation, and China faces headwinds from rising manufacturing costs, Japan is in a unique position. It is navigating the final stage of exiting deflation. The key differentiator is whether Japan can maintain its 'virtuous cycle' of wages and prices while the rest of the world battles cost-push shocks."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[中東情勢の緊迫化] --> B[原油価格の高騰]\n    B --> C{日銀の判断}\n    C -->|慎重姿勢| D[3月利上げ先送り観測]\n    C -->|コスト増| E[交易条件の悪化]\n    D --> F[日経平均のボラティリティ上昇]\n    E --> G[家計・企業の負担増]\n    F --> H[投資家のリスクオフ姿勢]",
+      "en": "graph TD\n    A[Mideast Tensions] --> B[Oil Price Spike]\n    B --> C{BoJ Decision}\n    C -->|Caution| D[March Rate Hike Delayed]\n    C -->|Cost Push| E[Worsening Terms of Trade]\n    D --> F[Nikkei 225 Volatility]\n    E --> G[Pressure on Households/Firms]\n    F --> H[Investor Risk-Off Sentiment]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる労使間の賃金交渉。2026年は約4.5%の高水準な賃上げが期待されている。",
+          "en": "Annual spring wage negotiations. 2026 is seeing high-level agreements around 4.5%."
+        }
+      },
+      {
+        "term": {
+          "ja": "交易条件",
+          "en": "Terms of Trade"
+        },
+        "def": {
+          "ja": "輸出物価指数を輸入物価指数で割ったもの。原油高は輸入コストを上げ、この指標を悪化させる。",
+          "en": "The ratio of export prices to import prices. High oil prices raise import costs, worsening this ratio."
+        }
+      },
+      {
+        "term": {
+          "ja": "政策金利 (0.75%)",
+          "en": "Policy Rate (0.75%)"
+        },
+        "def": {
+          "ja": "日銀が設定する短期金利の目標。2025年12月に0.75%まで引き上げられた。",
+          "en": "The BoJ's short-term interest rate target, raised to 0.75% in December 2025."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260304_063520",
     "date": "2026-03-04",
     "titles": {
