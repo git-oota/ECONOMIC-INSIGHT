@@ -1,5 +1,62 @@
 [
   {
+    "id": "20260306_063640",
+    "date": "2026-03-06",
+    "titles": {
+      "ja": "日本経済：春闘5.94%の衝撃と高市流「食料品減税」への期待―日経平均は中東リスクで乱高下",
+      "en": "Japan Economy: Nikkei 225 Stabilizes as 5.94% Shunto Wage Demands Fuel BoJ April Hike Bets"
+    },
+    "descriptions": {
+      "ja": "連合が発表した2026年春闘の要求平均は5.94%と高水準を維持。高市政権の食料品消費税停止案や中東情勢の緊迫化が市場を揺さぶる中、投資家は4月の日銀利上げシナリオを注視しています。",
+      "en": "Japan Economy: Nikkei 225 recovers as Shunto wage demands hit 5.94%. While the BoJ remains cautious amid Middle East tensions, investors eye JPY volatility and Takaichi’s food tax cut proposal."
+    },
+    "contents": {
+      "ja": "2026年3月6日、日本の労働市場と資本市場は「歴史的転換点」の渦中にあります。連合（Rengo）が発表した今年の春闘平均要求額は5.94%と、昨年の記録的な水準を維持。これにより、日銀（BoJ）が掲げる「賃金と物価の好循環」の確信が深まり、市場では4月の追加利上げ（0.75%から1.0%へ）を織り込む動きが強まっています。一方で、株式市場は「中東ショック」に翻弄されています。米・イスラエルによるイラン攻撃を受け、原油価格が高騰。日経平均株価は2月に付けた59,332円の最高値から一転、3月上旬には54,000円台まで急落しましたが、現在は55,000円台で下げ止まりを模索中です。政治面では、2月の総選挙で大勝した高市早苗首相が「食料品への消費税2年間停止」という大胆な家計支援策を打ち出し、デフレ脱却を決定的なものにする姿勢を鮮明にしています。投資家は、エネルギーコスト増によるスタグフレーション懸念と、内需拡大期待の狭間で慎重な選別投資を迫られています。",
+      "en": "As of March 6, 2026, Japan is navigating a complex economic landscape defined by record labor demands and geopolitical volatility. Rengo announced a 5.94% average wage hike demand for the 2026 Shunto, reinforcing expectations for a Bank of Japan (BoJ) policy normalization in April. Despite the Nikkei 225 retreating from its February peak of 59,332 due to the escalating U.S.-Israeli conflict with Iran, the index found support near 55,278 as tech shares rebounded. Prime Minister Sanae Takaichi, following a decisive election victory, is pushing for a temporary two-year suspension of the 8% consumption tax on food to solidify Japan's exit from deflation. For global investors, the focus is shifting from pure growth to 'quality and resilience.' While the Yen (JPY) remains pressured near 157 per dollar due to energy import costs, the structural shift toward a high-wage economy offers a unique long-term bullish case for Japanese financials and domestic-oriented sectors. Compared to a cooling US economy and China's 4.5% growth target, Japan stands out as the only major economy aggressively pursuing interest rate normalization."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[春闘要求 5.94%] --> B{日銀の判断}\n    B -->|4月利上げ観測| C[円安抑制・銀行株上昇]\n    D[中東情勢緊迫] --> E[原油高・輸入インフレ]\n    E --> F[実質賃金の押し下げ]\n    G[高市政権 減税案] --> H[個人消費の下支え]\n    H --> I[デフレ完全脱却への期待]",
+      "en": "graph TD\n    A[Shunto Demands 5.94%] --> B{BoJ Decision}\n    B -->|April Hike Bets| C[JPY Support / Bank Stocks Up]\n    D[Middle East Conflict] --> E[Oil Price Spike / Imported Inflation]\n    E --> F[Pressure on Real Wages]\n    G[Takaichi Tax Cut] --> H[Consumer Spending Support]\n    H --> I[Deflation Exit Confirmation]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる賃金交渉。2026年は人手不足を背景に5.94%という高水準の要求がなされた。",
+          "en": "Annual spring wage negotiations. In 2026, demands hit 5.94% due to chronic labor shortages."
+        }
+      },
+      {
+        "term": {
+          "ja": "プライマリーバランス (Primary Balance)",
+          "en": "Primary Balance"
+        },
+        "def": {
+          "ja": "政策的経費を税収等で賄えているかを示す指標。2026年度予算案で28年ぶりの黒字化を目指す。",
+          "en": "The fiscal balance excluding interest payments. Japan aims for its first surplus in 28 years in FY2026."
+        }
+      },
+      {
+        "term": {
+          "ja": "スタグフレーション (Stagflation)",
+          "en": "Stagflation"
+        },
+        "def": {
+          "ja": "不況下での物価上昇。中東情勢による原油高が日本の景気回復を阻害するリスクとして警戒されている。",
+          "en": "Economic stagnation combined with high inflation. Rising oil prices due to war pose a risk to Japan."
+        }
+      }
+    ],
+    "insights": {
+      "investor_action": "Overweight Japanese mega-banks (MUFG, Mizuho) as the yield curve steepens toward the April BoJ meeting. Use energy sector ETFs as a hedge against Middle East escalation. Monitor the 158 resistance level on USD/JPY for potential intervention signals.",
+      "student_context": "Understand that Japan is moving from a 'zero-inflation' culture to a 'virtuous cycle' where wages drive prices. The Shunto results are the most critical data point for the BoJ's exit from ultra-loose policy.",
+      "comparative_analysis": "While the US Fed is debating the timing of rate cuts to avoid recession, and China sets a modest 4.5% growth target to manage debt, Japan is the outlier—fighting to maintain momentum in rate hikes and fiscal expansion simultaneously."
+    }
+  },
+  {
     "id": "20260305_063605",
     "date": "2026-03-05",
     "titles": {
