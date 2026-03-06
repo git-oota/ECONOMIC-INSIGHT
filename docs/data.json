@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260307_063057",
+    "date": "2026-03-07",
+    "titles": {
+      "ja": "日本経済と日経平均：原油高騰が金融正常化を直撃、スタグフレーション懸念で投資戦略に転換点",
+      "en": "Japan Economy & Nikkei 225: Oil Shock Tests BoJ Strategy as Stagflation Risks Rise"
+    },
+    "descriptions": {
+      "ja": "中東情勢緊迫化による原油高が日本経済を直撃。日経平均は週間で5.5%下落。インフレ再燃と円安のリスクに対し、日銀の金融正常化戦略は修正を迫られています。",
+      "en": "Japan Economy faces a critical week as the Nikkei 225 plunges 5.5% amid Middle East tensions. BoJ normalization is under pressure as Yen (JPY) and Inflation risks spike."
+    },
+    "contents": {
+      "ja": "【日経新聞編集者の視点】2026年3月7日現在、日本経済は「第3のオイルショック」とも呼べる重大な局面に立たされています。中東での軍事衝突により、日経平均株価は週間で5.5%安の55,621円と、2025年4月以来の最悪の下げを記録しました。エネルギー自給率の低い日本にとって、原油高は貿易赤字の拡大とコストプッシュ型インフレを同時に招く「ダブルパンチ」です。日銀はこれまで政策金利を0.75%まで引き上げ、正常化を進めてきましたが、景気後退とインフレが併存するスタグフレーションのリスクから、3月会合での追加利上げは見送られる公算が強まっています。\n\n【投資家への影響と推奨アクション】\n1. 短期的視点：エネルギー関連株（INPEX等）は直近で売られましたが、原油高が長期化すればインフレヘッジとして再評価される可能性があります。一方で、ハイテク株（富士通、NEC）は底堅さを見せており、押し目買いの好機かもしれません。\n2. 中長期的視点：10年債利回りが2.15%に達しており、国内債券への資金シフトを検討すべき時期です。円安（JPY）の進行には、為替ヘッジ付き資産での防衛が推奨されます。\n\n【大学生・留学生向け背景解説】\nなぜ中東の戦争で日本の物価が上がるのでしょうか？日本はエネルギーの約9割を輸入に頼っています。原油が上がると、電気代だけでなく、輸送費を通じてコンビニの弁当から留学生の航空券まで全てが値上がりします。これを「コストプッシュ・インフレ」と呼び、賃金が追いつかないと生活が苦しくなるため、現在行われている「春闘（賃上げ交渉）」の結果が非常に重要になります。\n\n【国際比較分析】\n米国はエネルギー自給率が高く、FRB（連邦準備制度）は利下げのタイミングを模索する余裕がありますが、日本は円安による輸入物価高を抑えるために「利上げをしたいが景気が怖くてできない」というジレンマに陥っています。中国はロシアからのエネルギー供給ルートを確保しており、日本ほどの直接的な打撃は受けていないのが現状です。",
+      "en": "【Nikkei Editor's Perspective】As of March 7, 2026, the Japanese economy stands at a critical juncture resembling a 'Third Oil Shock.' The Nikkei 225 recorded its worst weekly performance since April 2025, falling 5.5% to 55,621 JPY due to escalating Middle East conflicts. For Japan, a nation with low energy self-sufficiency, surging oil prices deliver a 'double punch' of expanding trade deficits and cost-push inflation. While the BoJ has raised rates to 0.75% for normalization, the looming threat of stagflation—stagnant growth paired with high inflation—makes a further hike in the March meeting unlikely.\n\n【Investor Impact & Actions】\n1. Short-term: Energy stocks (e.g., INPEX) sold off recently but may be revalued as inflation hedges if oil prices stay elevated. Conversely, resilient tech names like Fujitsu and NEC offer potential 'buy the dip' opportunities.\n2. Long-term: With 10-year JGB yields hitting 2.15%, investors should consider shifting toward domestic bonds. Defending against Yen (JPY) volatility with currency-hedged assets is highly recommended.\n\n【Essential Context for Students】\nWhy does a war in the Middle East make life in Japan more expensive? Japan imports nearly 90% of its energy. Higher oil prices raise electricity bills and logistics costs, affecting everything from convenience store meals to international student airfares. This is 'Cost-Push Inflation.' The outcome of the current 'Shunto' (Spring Wage Negotiations) is vital to see if wages can keep up with these rising costs.\n\n【Global Comparison】\nThe US maintains high energy self-sufficiency, allowing the Fed flexibility to time rate cuts. In contrast, Japan faces a dilemma: it needs to hike rates to curb import-driven inflation via the Yen, but fears choking off a fragile recovery. China remains relatively insulated compared to Japan, thanks to secured energy routes from Russia."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[中東情勢の緊迫化] --> B[原油・天然ガス価格の高騰]\n    B --> C[日本の貿易収支悪化]\n    B --> D[コストプッシュ型インフレの再燃]\n    C --> E[円安 JPY の進行]\n    D --> F[日銀のジレンマ: 利上げ vs 景気配慮]\n    F --> G[日経平均株価の乱高下]\n    G --> H[投資家: ディフェンシブ資産へのシフト]",
+      "en": "graph TD\n    A[Middle East Conflict] --> B[Spike in Oil & Gas Prices]\n    B --> C[Japan Trade Deficit Widens]\n    B --> D[Resurgence of Cost-Push Inflation]\n    C --> E[Yen JPY Weakness]\n    D --> F[BoJ Dilemma: Hike vs Economic Support]\n    F --> G[Nikkei 225 Volatility]\n    G --> H[Investors: Shift to Defensive Assets]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "スタグフレーション",
+          "en": "Stagflation"
+        },
+        "def": {
+          "ja": "不況（Stagnation）と物価上昇（Inflation）が同時に進行する経済現象。政策対応が極めて困難。",
+          "en": "A situation where the inflation rate is high, the economic growth rate slows, and unemployment remains steadily high."
+        }
+      },
+      {
+        "term": {
+          "ja": "JGB",
+          "en": "Japanese Government Bond"
+        },
+        "def": {
+          "ja": "日本国債。利回りの上昇は、住宅ローン金利や企業の借入コストに直接影響する。",
+          "en": "Bonds issued by the government of Japan. Rising yields impact mortgage rates and corporate borrowing costs."
+        }
+      },
+      {
+        "term": {
+          "ja": "春闘",
+          "en": "Shunto (Spring Wage Negotiations)"
+        },
+        "def": {
+          "ja": "日本の労働組合と企業の間で毎年春に行われる賃上げ交渉。消費の鍵を握る。",
+          "en": "Annual spring wage negotiations between labor unions and employers in Japan, crucial for consumer spending."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260306_063640",
     "date": "2026-03-06",
     "titles": {
