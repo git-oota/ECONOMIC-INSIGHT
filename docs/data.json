@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260308_092221",
+    "date": "2026-03-08",
+    "titles": {
+      "ja": "日本経済：日経平均5万5000円台で底堅さ、中東情勢と春闘5.94％要求が焦点",
+      "en": "Japan Economy: Nikkei 225 Resilience as BoJ Eyes JPY Stability and 5.94% Shunto Wage Demands"
+    },
+    "descriptions": {
+      "ja": "日本経済は中東情勢による原油高でスタグフレーション懸念に直面するも、日経平均は5万5000円台で反発。2026年春闘の5.94％賃上げ要求がBoJの追加利上げ判断の鍵となります。投資家は銀行株のイールドカーブ・スティープニングに注目すべきです。",
+      "en": "Japan Economy update: Nikkei 225 remains resilient near 55,000 despite Middle East oil shocks. Bank of Japan (BoJ) monitors JPY volatility as Shunto 2026 wage demands hit a robust 5.94%, signaling a potential April rate hike. Investors should eye financial sectors for yield curve gains."
+    },
+    "contents": {
+      "ja": "【日経視点：デフレ脱却の最終章へ】2026年3月8日現在、日本経済は「高インフレ・高金利」という新たな常態への適応を迫られています。今週の日経平均株価は、中東での地政学リスクに伴う原油急騰により一時5％超の急落を見せましたが、週末には5万5000円台を回復。高市政権による7830億ドルの巨額予算と、連合（Rengo）が発表した5.94％という力強い春闘回答への期待が下支えとなっています。日銀（BoJ）は現在、政策金利を0.75％に据え置いていますが、賃金と物価の好循環を確認し、4月にも1.0％への追加利上げに踏み切る公算が大きくなっています。投資家への助言として、利回り上昇の恩恵を受けるメガバンクや、内需拡大の恩恵を受ける小売りセクターへのシフトを推奨します。一方で、エネルギーコスト増に弱い中小企業や輸出企業には、為替160円台のボラティリティを含めた警戒が必要です。",
+      "en": "【Nikkei Editorial: The Final Chapter of Deflation Exit】As of March 8, 2026, Japan's economy is navigating the transition to a 'higher-for-longer' interest rate environment. The Nikkei 225, after a 5% weekly dip triggered by Middle East-driven oil spikes, staged a recovery to the 55,000 level. Support stems from the Takaichi Administration's record $783B budget and robust Shunto wage demands averaging 5.94%, the highest in decades. While the Bank of Japan (BoJ) currently holds rates at 0.75%, market pricing suggests a 65% probability of a hike to 1.0% in April once the 'virtuous cycle' of wages and prices is confirmed. Investor Action: Overweight Japanese financial institutions (MUFG, SMFG) to capture yield curve steepening. Caution is advised for SMEs struggling with 'wage hike fatigue' and energy-sensitive sectors. Comparison: Unlike the US Fed focusing on the timing of cuts, the BoJ is uniquely focused on 'normalization' after 30 years of stagnation."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[中東情勢/原油高] --> B{スタグフレーション懸念}\n    B --> C[日経平均の一時的下落]\n    D[2026春闘 5.94%要求] --> E[日銀の利上げ期待]\n    E --> F[銀行株/金融セクター上昇]\n    G[高市政権 巨額予算] --> H[内需下支え]\n    H --> C\n    F --> I[日経平均 55,000円台回復]",
+      "en": "graph TD\n    A[Middle East Conflict/Oil Spike] --> B{Stagflation Fears}\n    B --> C[Nikkei 225 Pullback]\n    D[2026 Shunto 5.94% Demand] --> E[BoJ Rate Hike Expectations]\n    E --> F[Financial Sector Upside]\n    G[Takaichi Budget $783B] --> H[Domestic Demand Support]\n    H --> C\n    F --> I[Nikkei 225 Recovery to 55,000]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる労働組合と経営側の賃金交渉。2026年は実質賃金プラス化の鍵となる。",
+          "en": "Annual spring wage negotiations. In 2026, it is the primary engine for achieving positive real wage growth."
+        }
+      },
+      {
+        "term": {
+          "ja": "イールドカーブ・スティープニング",
+          "en": "Yield Curve Steepening"
+        },
+        "def": {
+          "ja": "短期金利と長期金利の差が広がること。銀行の貸出利ざや改善に寄与する。",
+          "en": "An increase in the gap between short-term and long-term interest rates, benefiting bank profit margins."
+        }
+      },
+      {
+        "term": {
+          "ja": "高市効果 (Takaichi Effect)",
+          "en": "Takaichi Effect"
+        },
+        "def": {
+          "ja": "高市早苗政権による積極的な財政出動が経済成長とインフレを後押しする現象。",
+          "en": "The economic boost and inflationary pressure driven by PM Sanae Takaichi's aggressive fiscal expansion."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260307_063057",
     "date": "2026-03-07",
     "titles": {
