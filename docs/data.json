@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260309_062449",
+    "date": "2026-03-09",
+    "titles": {
+      "ja": "日本経済：日経平均5万5000円台で攻防、中東緊迫と日銀「金利ある世界」への最終調整",
+      "en": "Japan Economy: Nikkei 225 Defends 55k Support as BoJ Eyes Rate Hike Amid Global Turmoil"
+    },
+    "descriptions": {
+      "ja": "日経平均は中東情勢の緊迫化による原油高と円安を受け、5万5621円で週を終えた。日銀の植田総裁は追加利上げを示唆しており、投資家は3月会合での1.0%への引き上げを警戒。高インフレと地政学リスクが交錯する中、日本市場は「正常化」の真価を問われている。",
+      "en": "Japan Economy, Nikkei 225, Yen (JPY), BoJ, Inflation: Markets brace for a potential BoJ hike to 1.0% as Middle East tensions drive oil prices. Investors eye 54,100 support."
+    },
+    "contents": {
+      "ja": "【日経新聞編集者の視点】かつての「デフレの象徴」だった日本市場は、今や「金利ある世界」への適応という歴史的転換点にあります。日経平均は2月に史上最高値5万9332円を記録した後の調整局面にありますが、これは単なる下落ではなく、過熱感の払拭と実体経済（賃金・物価の好循環）の確認作業です。植田総裁は中東情勢によるコストプッシュ型インフレを注視しつつも、中立金利への回帰を急いでいます。【投資家への影響と推奨】現在の日銀政策金利は0.75%ですが、3月または4月に1.0%への引き上げが濃厚です。短期的には54,100円のサポートラインに注目。利上げ局面では地銀株や大型バリュー株に妙味がありますが、エネルギー価格高騰によるスタグフレーション懸念がリスク要因です。【留学生・大学生向け背景】「中立金利（Neutral Rate）」とは、景気を熱しも冷やしもしない理論上の金利です。日本が長年続けたマイナス金利からここへ戻ることは、日本経済が「普通の国」に戻ることを意味します。【米中報道との比較】米国メディア（Bloomberg等）はトランプ政権の関税政策と中東紛争の「グローバル・インフレ波及」を強調する一方、中国メディアは日本の利上げによる資本回帰（円キャリー取引の解消）がアジア市場に与える流動性ショックを警戒しています。日本国内では「春闘の賃上げ率」が利上げの正当性を裏付けるかどうかに焦点が当たっています。",
+      "en": "【Nikkei Editor's Perspective】The Japanese market, once a symbol of stagnation, is now at a historic crossroads as it adapts to a 'world with interest rates.' While the Nikkei 225 is correcting after its record high of 59,332 in February, this is a necessary 'reality check' to align stock prices with wage-driven inflation. Governor Ueda is navigating a narrow path: raising rates toward 'neutral' levels while managing the fallout from Middle East-induced energy costs. 【Investor Impact & Action】With the policy rate at 0.75%, a hike to 1.0% is on the horizon for March/April. Recommendation: Monitor the 54,100 support level. A 'bull steepening' of the JGB yield curve favors the banking sector, but watch for stagflation risks if oil prices remain elevated. 【Essential Context for Students】The 'Neutral Rate' (r*) is the interest rate that neither stimulates nor restrains the economy. Japan's move toward this level signals the end of its decades-long 'emergency' monetary policy. 【Global Comparison】US media focuses on 'Trump Risk' and tariff impacts on global trade, while Chinese outlets highlight the potential liquidity drain from Asia as the Yen strengthens. Japanese reporting remains laser-focused on whether 'Shunto' wage hikes can sustain domestic consumption amidst rising costs."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[中東紛争/原油高] --> B[輸入インフレ圧力]\n    B --> C[日銀: 追加利上げ示唆 0.75%→1.0%]\n    C --> D[円安抑制・金利正常化]\n    D --> E[日経平均: 短期調整 55k付近]\n    E --> F[投資戦略: バリュー株・銀行株へのシフト]",
+      "en": "graph TD\n    A[Mideast Conflict/Oil Spike] --> B[Imported Inflation Pressure]\n    B --> C[BoJ: Signals Rate Hike 0.75% to 1.0%]\n    C --> D[Yen Stabilization/Normalization]\n    D --> E[Nikkei 225: Short-term Correction at 55k]\n    E --> F[Strategy: Shift to Value/Banking Stocks]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "中立金利 (r*)",
+          "en": "Neutral Rate (r-star)"
+        },
+        "def": {
+          "ja": "経済を加速も減速もさせない理論的な金利水準。日銀は現在ここを目指して利上げ中。",
+          "en": "The theoretical interest rate at which the economy is neither expanding nor contracting."
+        }
+      },
+      {
+        "term": {
+          "ja": "イールドカーブ・スティープニング",
+          "en": "Yield Curve Steepening"
+        },
+        "def": {
+          "ja": "長期金利が短期金利よりも速く上昇すること。銀行の利ざや改善に寄与する。",
+          "en": "When long-term interest rates rise faster than short-term rates, boosting bank profit margins."
+        }
+      },
+      {
+        "term": {
+          "ja": "スタグフレーション",
+          "en": "Stagflation"
+        },
+        "def": {
+          "ja": "景気停滞（スタグネーション）と物価上昇（インフレ）が同時に進行する現象。",
+          "en": "A combination of stagnant economic growth and high inflation."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260308_092221",
     "date": "2026-03-08",
     "titles": {
