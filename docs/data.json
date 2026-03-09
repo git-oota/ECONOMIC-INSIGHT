@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260310_063358",
+    "date": "2026-03-10",
+    "titles": {
+      "ja": "【日本経済】日経平均5.2%急落とGDP上方修正の交錯：中東有事の原油ショックが試す植田日銀の「正常化」判断",
+      "en": "Japan Economy, Nikkei 225 Plunge, Yen (JPY) Weakness: BoJ Faces Policy Dilemma Amid Oil Shock and Revised GDP Growth"
+    },
+    "descriptions": {
+      "ja": "2026年3月10日、日本経済は「賃金上昇とGDP上方修正」というポジティブな内需回復と、「中東情勢緊迫による原油高・株安」という外部ショックの板挟みにあります。日経平均は5.2%下落し、円安は158円台へ。投資家は日銀の3月利上げ見送りの可能性と、エネルギーコスト増によるスタグフレーションのリスクを注視しています。",
+      "en": "Japan Economy, Nikkei 225, Yen (JPY), BoJ, Inflation: Markets reel as Brent oil hits $115+ following Middle East escalation. Despite a positive Q4 GDP revision to 0.3%, the Nikkei 225 crashed 5.2% on stagflation fears. Investors focus on BoJ Governor Ueda's next move as real wages finally turn positive while import costs soar."
+    },
+    "contents": {
+      "ja": "【日経編集者視点：経済の深層】\n本日発表される2025年10-12月期GDP改定値は、設備投資の堅調さを背景に速報値の0.1%から0.3%（年率1.2%）へ上方修正される見通しです。1月の実質賃金も13カ月ぶりにプラス（+1.4%）へ転じ、日本経済は長らく待ち望んだ「賃金と物価の好循環」の入り口に立っています。しかし、喜びも束の間、中東での米・イスラエル対イラン衝突という「ブラックスワン」が市場を直撃しました。原油価格の急騰は、エネルギーの9割を輸入に頼る日本にとって致命的なコストプッシュ・インフレを招きます。高市早苗政権は緊急予備費の投入を検討していますが、日銀にとっては「景気配慮の据え置き」か「円安阻止の利上げ」か、極めて困難な判断を迫られています。\n\n【投資家への影響と推奨アクション】\n1. **為替（USD/JPY）**: 159円〜160円ラインは政府・日銀の介入警戒ゾーンです。短期的には円安が進みやすいですが、介入による急落リスクを想定し、159円台後半でのロングポジションは慎重に。\n2. **株式（Nikkei 225）**: 50日移動平均線を割り込み、テクニカル的には調整局面です。エネルギー価格に敏感な化学・輸送株は避け、内需型で価格転嫁力の強い銘柄へのシフトを推奨します。\n3. **債券**: 原油高によるインフレ期待から長期金利に上昇圧力がかかりますが、日銀の利上げ慎重論が強まればJGB（日本国債）は買い戻される可能性があります。\n\n【報道比較：米・中との差異】\n*   **米国**: 2月の雇用統計が予想を下回り（9.2万人減）、景気後退懸念が先行。利下げ期待と原油高のジレンマにあります。\n*   **中国**: 春節効果でCPIは1.0%に上昇。内需回復を強調する一方、中東有事による物流混乱（ホルムズ海峡閉鎖リスク）への警戒感は日本以上に強い報道が見られます。",
+      "en": "[Nikkei Editor's Perspective: Economic Depth]\nToday's revised Q4 2025 GDP data is expected to be upgraded to 0.3% (1.2% annualized) from the preliminary 0.1%, driven by robust capital expenditure. January's real wages also turned positive (+1.4%) for the first time in 13 months, signaling the long-awaited 'virtuous cycle' of wages and prices. However, this optimism is overshadowed by a 'Black Swan' event: the US-Israel-Iran conflict. For resource-poor Japan, the oil spike to $115+ represents a severe supply-side shock. While PM Sanae Takaichi considers emergency subsidies, BoJ Governor Ueda faces a brutal choice between pausing normalization to protect growth or hiking rates to defend the Yen from a 160-level collapse.\n\n[Investor Impact & Actionable Insights]\n1. **Forex (JPY)**: The 159-160 range is the 'Intervention Zone.' While the trend is bearish for JPY, avoid chasing USD/JPY longs at these levels due to the high risk of MoF dollar-selling intervention.\n2. **Equities (Nikkei 225)**: The index is in a correction phase (-11% from peak). Investors should hedge with Nikkei puts or rotate into defensive domestic sectors with high pricing power, avoiding energy-intensive manufacturing.\n3. **Bonds**: Expect volatility in JGB yields. If the BoJ signals a delay in the March hike due to 'geopolitical uncertainty,' bond prices may see a short-term rebound.\n\n[Global Comparison]\n*   **USA**: Focuses on the weak February jobs report (-92k), balancing recession fears with energy-driven inflation.\n*   **China**: CPI rose to 1.0% post-Lunar New Year. State media highlights export resilience while quietly preparing for supply chain disruptions in the Strait of Hormuz."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[中東紛争の激化] --> B[原油価格 $115超に急騰]\n    B --> C{日本経済への影響}\n    C --> D[輸入コスト増/インフレ再燃]\n    C --> E[日経平均 5.2%急落]\n    F[1月実質賃金 +1.4%] --> G[内需回復の兆し]\n    G --> H{日銀の判断}\n    D --> H\n    H --> I[利上げ継続か?]\n    H --> J[景気配慮で据え置きか?]\n    J --> K[円安 160円への圧力]",
+      "en": "graph TD\n    A[Middle East Escalation] --> B[Oil Price Spikes $115+]\n    B --> C{Impact on Japan}\n    C --> D[Import Costs Rise / Inflation]\n    C --> E[Nikkei 225 Crashes 5.2%]\n    F[Jan Real Wages +1.4%] --> G[Domestic Recovery Signal]\n    G --> H{BoJ Decision}\n    D --> H\n    H --> I[Continue Rate Hike?]\n    H --> J[Pause for Stability?]\n    J --> K[Yen Pressure toward 160]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "実質賃金",
+          "en": "Real Wages"
+        },
+        "def": {
+          "ja": "物価変動の影響を除いた賃金。プラス転換は消費者の購買力向上を意味し、日銀利上げの重要指標となる。",
+          "en": "Wages adjusted for inflation. A positive turn indicates increased consumer purchasing power, a key metric for BoJ policy normalization."
+        }
+      },
+      {
+        "term": {
+          "ja": "スタグフレーション",
+          "en": "Stagflation"
+        },
+        "def": {
+          "ja": "景気停滞（Stagnation）と物価上昇（Inflation）が同時に進行すること。原油高が主因となる場合が多い。",
+          "en": "A combination of stagnant economic growth and high inflation, often triggered by supply-side shocks like rising oil prices."
+        }
+      },
+      {
+        "term": {
+          "ja": "介入警戒ゾーン",
+          "en": "Intervention Zone"
+        },
+        "def": {
+          "ja": "為替レートが急激に変動した際、財務省・日銀が円買い介入を行う可能性が高い水準（現在は159-160円付近）。",
+          "en": "Specific currency levels where the Ministry of Finance is highly likely to conduct yen-buying intervention to curb volatility."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260309_062449",
     "date": "2026-03-09",
     "titles": {
