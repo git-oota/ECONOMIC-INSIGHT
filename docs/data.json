@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260311_063011",
+    "date": "2026-03-11",
+    "titles": {
+      "ja": "日本経済：GDP上方修正で日経平均が反発、日銀の追加利上げ観測強まる",
+      "en": "Japan Economy: Nikkei 225 Rebounds as Strong GDP Revision Fuels BoJ Rate Hike Bets"
+    },
+    "descriptions": {
+      "ja": "Japan Economy, Nikkei 225, BoJを軸に分析。10-12月期GDPが年率1.3%増へ大幅上方修正。設備投資の強さが鮮明となり、日経平均は54,000円台を回復。地政学リスクを抱えつつも、国内需要主導の成長が投資家心理を支えています。",
+      "en": "Japan Economy, Nikkei 225, Yen (JPY), BoJ, Inflation: Japan's Q4 GDP was revised up to 1.3% on robust capex. Nikkei 225 surges past 54,000 as markets price in a potential BoJ hike, despite Middle East oil volatility."
+    },
+    "contents": {
+      "ja": "【日経視点の分析】内閣府が発表した2025年10-12月期の実質国内総生産（GDP）改定値は、前期比年率で1.3%増となり、速報値の0.2%増から大幅に引き上げられた。特に設備投資が1.3%増と、データセンターや半導体製造装置への投資を背景に力強い伸びを示した。高市政権が掲げる「17の戦略分野」への重点投資が民間企業の背中を押している格好だ。\n\n【投資家への影響】日経平均株価は前日の急落から一転、54,200円台まで反発。好調なGDP統計を受け、市場では日銀が4月にも政策金利を1.0%へ引き上げるとの予測が7割を超えた。推奨アクションとしては、金利上昇の恩恵を受けるメガバンク等の金融株に加え、政府の支援対象となったAI・量子コンピューティング関連銘柄への長期投資が有効。一方で、中東情勢に伴う原油価格の変動には引き続き警戒が必要だ。\n\n【大学生・留学生向け背景】GDP改定値がこれほど上方修正されるのは稀であり、日本が「デフレ完全脱却」から「投資主導の成長」へ構造転換したことを意味する。かつての日本は円安による輸出頼みだったが、現在は国内の設備投資（Capex）が成長のエンジンとなっている。\n\n【国際比較】米国メディアはトランプ政権による関税圧力が日本車輸出に与える影響を注視する一方、中国メディアは日本が指定した「61の重要技術」を自国のAI・ロボット産業に対する直接的な競争力強化と捉え、警戒感を強めている。",
+      "en": "The Cabinet Office revised Japan’s Q4 2025 real GDP growth to an annualized 1.3%, up from the preliminary 0.2%. This surge was primarily driven by a 1.3% jump in capital expenditure (Capex), particularly in AI data centers and semiconductor equipment. Prime Minister Sanae Takaichi’s strategy to channel capital into 17 strategic sectors is yielding tangible results.\n\n[Investor Impact] The Nikkei 225 rebounded to the 54,200 level. Following the GDP data, market probability for a BoJ rate hike to 1.0% in April has climbed above 70%. Actionable Insight: Investors should favor major Japanese banks benefiting from higher margins, and long-term positions in AI/Quantum-tech firms designated for government support. However, maintain a hedge against oil price volatility linked to Middle East tensions.\n\n[Essential Context] Such a significant upward revision in GDP indicates that Japan has shifted from an export-reliant economy to one driven by domestic investment. For students, understanding 'Capex' is key: it shows that Japanese firms are finally spending their cash piles on future growth rather than just saving.\n\n[Global Comparison] US media (e.g., WSJ) focuses on the impact of 'Trump 2.0' tariffs on Japanese auto exports. Conversely, Chinese outlets (e.g., Caixin) view Japan's new list of 61 priority technologies as a strategic move to rival China’s dominance in robotics and physical AI."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[設備投資の拡大] --> B[GDP上方修正 1.3%]\n    B --> C[日経平均反発 54,000円台]\n    B --> D[日銀利上げ観測の強化]\n    D --> E[円の底堅い推移 153円台]\n    C --> F[投資家: 金融・AI銘柄へ資金シフト]",
+      "en": "graph TD\n    A[Strong Capex Growth] --> B[GDP Upward Revision 1.3%]\n    B --> C[Nikkei 225 Rebound 54k+]\n    B --> D[Hawkish BoJ Expectations]\n    D --> E[JPY Stabilization 153 range]\n    C --> F[Investors: Shift to Banks & AI Tech]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "設備投資 (Capex)",
+          "en": "Capital Expenditure (Capex)"
+        },
+        "def": {
+          "ja": "企業が将来の収益向上のために行う、工場や機械、ソフトウェアなどへの投資。今回のGDP押し上げの主因。",
+          "en": "Funds used by a company to acquire or upgrade physical assets such as property, industrial buildings, or equipment. The primary driver for the GDP revision."
+        }
+      },
+      {
+        "term": {
+          "ja": "タカ派 (Hawkish)",
+          "en": "Hawkish"
+        },
+        "def": {
+          "ja": "インフレ抑制のために利上げや金融引き締めに積極的な姿勢。現在の日銀の市場評価。",
+          "en": "An aggressive stance on raising interest rates to combat inflation. Currently describes the market's view of the BoJ."
+        }
+      },
+      {
+        "term": {
+          "ja": "17の戦略分野",
+          "en": "17 Strategic Sectors"
+        },
+        "def": {
+          "ja": "高市政権が指定した、AI、量子、ドローン、次世代半導体など、日本が重点的に投資を行う成長分野。",
+          "en": "Growth areas designated by the Takaichi administration for focused public-private investment, including AI, quantum computing, and semiconductors."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260310_063358",
     "date": "2026-03-10",
     "titles": {
