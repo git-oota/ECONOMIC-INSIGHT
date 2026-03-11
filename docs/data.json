@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260312_063439",
+    "date": "2026-03-12",
+    "titles": {
+      "ja": "Japan Economy: 円安158円台とBOJ利上げ停滞、高市総理の政治的圧力が焦点に",
+      "en": "Japan Economy, Yen (JPY) Hits 158: BoJ Rate Hike Uncertainty Grows Amid Political Pressure"
+    },
+    "descriptions": {
+      "ja": "120文字要約：中東情勢緊迫による原油高と円安158円台が進行。高市総理による日銀への利上げ牽制疑惑が浮上し、次週の金融政策決定会合を前に市場の不透明感が増大。GDP上方修正も個人消費は依然弱含み。",
+      "en": "Japan Economy: Yen (JPY) weakens to 158 as Nikkei 225 faces volatility. BoJ rate hike path clouded by PM Takaichi's dovish stance and Middle East conflict. Essential insights for investors on JPY, Inflation, and BoJ policy."
+    },
+    "contents": {
+      "ja": "【日経視点：政治と中央銀行の距離感】\n日本経済は今、外圧と内政の板挟みにあります。中東での「トランプ・イラン紛争」による原油高は、輸入物価を押し上げインフレ圧力を強める一方、景気後退懸念から日銀の追加利上げ（現在0.75%）を躊躇させています。特に注目すべきは、高市早苗総理による植田和男総裁への「利上げ慎制要請」疑惑です。中央銀行の独立性が揺らぐ懸念が海外投資家に伝わり、円売りを加速させています。\n\n【投資家への影響と推奨アクション】\n1. **為替（JPY）**: 158円台後半の抵抗線を突破した場合、160円台への再突入が現実味を帯びます。輸出株には追い風ですが、コストプッシュ型インフレによる国内消費関連株の下押しに注意。為替ヘッジの強化を推奨。\n2. **債券・金利**: 3月19日の日銀会合での「据え置き」期待が高まっており、JGB10年物利回りの上昇は一服。ただし、政治圧力への反発としてサプライズ利上げの可能性も排除できず、ボラティリティへの備えが必要です。\n\n【大学生・留学生向け背景解説】\nなぜ総理の発言がこれほど注目されるのでしょうか？日本銀行は「日本銀行法」により、政府から独立して金融政策を決める権利を持っています。しかし、景気浮揚を狙う政治家が低金利を求めるケースは歴史的に多く、この「独立性」が疑われると、通貨（円）への信頼が低下し、円安が進むというメカニズムを理解することが重要です。\n\n【米中報道の比較分析】\n*   **米国（CNBC/Reuters）**: トランプ政権の対外政策が日本経済に与える「二次的被害」として報道。円安を「日本への関税圧力の口実」にする可能性を示唆。\n*   **中国（新華社/Caixin）**: 高市総理の台湾支持姿勢への反発を背景に、日本経済の「脆弱なファンダメンタルズ」を強調。日中貿易の停滞リスクを警告しています。",
+      "en": "[Nikkei Perspective: The Tug-of-War Between Politics and BoJ]\nThe Japanese economy is currently caught between external geopolitical shocks and domestic political maneuvering. Surging oil prices driven by the US-Iran conflict under the Trump administration are fueling cost-push inflation, while simultaneously raising recession fears. This has complicated the Bank of Japan's path to normalizing rates from the current 0.75%. Markets are fixated on Prime Minister Sanae Takaichi's alleged pressure on Governor Kazuo Ueda to pause rate hikes. Any perceived erosion of BoJ independence is a major 'Sell Japan' signal for global funds.\n\n[Investor Impact & Actionable Insights]\n1. **Currency (JPY)**: With the Yen testing the 158.50 level, a break toward 160 is possible if the BoJ remains passive next week. While beneficial for exporters, the negative impact on real wages and domestic consumption is significant. Strategy: Increase currency hedging for JPY-denominated assets.\n2. **Equities (Nikkei 225)**: Volatility is expected to remain high. Energy-intensive sectors (utilities, transport) are under pressure, while defense and semiconductor-related stocks may see idiosyncratic growth due to Takaichi's security-focused fiscal spending.\n\n[Essential Context for Students]\nWhy does the PM's stance matter? Under the Bank of Japan Act, the BoJ is legally independent. However, when a Prime Minister publicly or privately suggests a policy direction (like avoiding rate hikes), it creates 'political risk.' Global investors hate uncertainty regarding the rule of law and central bank autonomy, leading them to dump the Yen in favor of the Dollar.\n\n[Global Media Comparison]\n*   **US Media**: Views the JPY weakness as a byproduct of 'Trump 2.0' tariffs and Middle East escalation. Analysts warn that a weak Yen could trigger US retaliatory trade measures.\n*   **Chinese Media**: Focuses on the cooling of Sino-Japanese relations under the Takaichi administration, framing Japan's economic growth (1.3% GDP revision) as 'precarious' due to its heavy reliance on a volatile energy market."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[中東情勢緊迫/原油高] --> B(輸入インフレ増大)\n    A --> C(世界景気後退懸念)\n    D[高市総理の利上げ牽制] --> E{日銀の判断}\n    E -->|据え置き| F[さらなる円安 160円へ]\n    E -->|利上げ| G[円高転換/株価調整]\n    B --> H[個人消費の低迷]\n    C --> H",
+      "en": "graph TD\n    A[Middle East Tensions/Oil Spike] --> B(Rising Import Inflation)\n    A --> C(Global Recession Fears)\n    D[PM Takaichi Dovish Pressure] --> E{BoJ Decision}\n    E -->|Hold| F[Further Yen Weakness to 160]\n    E -->|Hike| G[Yen Reversal/Stock Correction]\n    B --> H[Sluggish Domestic Consumption]\n    C --> H"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "中央銀行の独立性",
+          "en": "Central Bank Independence"
+        },
+        "def": {
+          "ja": "政府の短期的な政治目標に左右されず、物価安定のために独自に金融政策を決定できる原則。",
+          "en": "The principle that a central bank should be free from political interference to pursue long-term price stability."
+        }
+      },
+      {
+        "term": {
+          "ja": "コストプッシュ・インフレ",
+          "en": "Cost-Push Inflation"
+        },
+        "def": {
+          "ja": "原材料費やエネルギー価格の上昇によって引き起こされる物価上昇。景気悪化を伴いやすい。",
+          "en": "Inflation caused by an increase in prices of inputs like energy and raw materials, often leading to stagflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "高市トレード",
+          "en": "Takaichi Trade"
+        },
+        "def": {
+          "ja": "積極的な財政出動と金融緩和継続を期待した、円安・株高を見込む投資行動。",
+          "en": "Market positioning expecting aggressive fiscal spending and loose monetary policy under PM Takaichi."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260311_063011",
     "date": "2026-03-11",
     "titles": {
