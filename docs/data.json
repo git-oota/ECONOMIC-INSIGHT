@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260313_063414",
+    "date": "2026-03-13",
+    "titles": {
+      "ja": "日本経済：日経平均は底堅く推移、日銀の1.0%利上げ観測強まる—33年ぶりの高水準な賃上げが支えに",
+      "en": "Japan Economy: Nikkei 225 Resilience as BoJ Eyes 1.0% Rate Hike Amid 33-Year High Wage Growth"
+    },
+    "descriptions": {
+      "ja": "日本経済、日経平均、円相場（JPY）が焦点。実質賃金のプラス転換を受け、日銀（BoJ）が政策金利を1.0%へ引き上げる観測が浮上。インフレと賃金の好循環が投資判断の鍵となります。",
+      "en": "Japan Economy, Nikkei 225, and Yen (JPY) trends shift as BoJ prepares for a potential 1.0% rate hike. Real wages have turned positive, signaling a structural victory over deflation and a new era for Inflation dynamics."
+    },
+    "contents": {
+      "ja": "2026年3月13日現在、日本経済は歴史的な転換点を迎えています。今週発表された1月の実質賃金は前年比1.4%増となり、13カ月ぶりにプラスへと転じました。これは1992年以来、約33年ぶりの高い伸び率です。この結果を受け、日本労働組合総連合会（連合）が今春闘で掲げた5.94%の賃上げ要求に対し、大手企業から満額回答が相次いでいます。\n\n【投資家への影響と推奨アクション】\n日銀（BoJ）は2025年12月に金利を0.75%に引き上げましたが、今回の強い賃金データにより、次回の決定会合で1.0%への追加利上げに踏み切る可能性が濃厚です。投資家は、利ざや改善が見込まれる銀行株へのウェイトを高める一方、輸入コスト低下の恩恵を受ける内需関連株に注目すべきです。円相場（JPY）は対ドルで150円台を維持していますが、日米金利差の縮小により円高方向への圧力が強まると予想されます。\n\n【グローバル比較】\n米国メディア（WSJ等）は「日本の正常化は成功」と称賛し、デフレ脱却のモデルケースとして報じています。対照的に中国メディアは、自国の不動産不況と対比させ、日本の構造改革の成果を警戒感を持って分析しています。地政学的には、トランプ政権下の米国による関税リスクが輸出企業への懸念材料として残ります。",
+      "en": "As of March 13, 2026, the Japan Economy has reached a historic milestone. Real wages in January climbed 1.4% year-on-year, marking the first positive growth in 13 months and the fastest pace since 1992. This surge has fueled expectations that the Bank of Japan (BoJ) will raise its policy rate from 0.75% to 1.0% in its upcoming meeting. \n\n【Investor Impact & Actions】\nThe virtuous cycle between wages and Inflation is finally manifesting. Investors should consider increasing exposure to the banking sector, which benefits from widening net interest margins, and domestic retail sectors that gain from recovered consumer purchasing power. While the Yen (JPY) remains near 157 per dollar, the narrowing yield gap with the US suggests a looming strengthening of the currency. \n\n【Essential Context for Students】\nFor international students, this represents the end of the 'Lost Decades.' Japan is transitioning from a 'cost-push' inflation (driven by energy prices) to 'demand-pull' inflation (driven by higher wages and spending). \n\n【International Media Comparison】\nUS media portrays Japan as a 'resurrected' market, focusing on the Nikkei 225's structural shift. Meanwhile, Chinese reporting highlights Japan's recovery as a challenge to its own regional economic dominance, often contrasting Japan's wage success with China's current deflationary pressures."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[高い賃上げ回答] --> B[実質賃金のプラス転換]\n    B --> C[個人消費の拡大期待]\n    C --> D[日銀の追加利上げ 1.0%]\n    D --> E[円相場 JPY の底堅さ]\n    E --> F[日経平均の銘柄選別局面]",
+      "en": "graph TD\n    A[High Wage Settlements] --> B[Positive Real Wage Growth]\n    B --> C[Increased Consumer Spending]\n    C --> D[BoJ Rate Hike to 1.0%]\n    D --> E[Yen JPY Strengthening]\n    E --> F[Nikkei 225 Sector Rotation]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる労働組合と企業による賃金交渉。日本経済の景気動向を占う重要指標。",
+          "en": "Annual spring wage negotiations between labor unions and employers, a key indicator for Japan's economic health."
+        }
+      },
+      {
+        "term": {
+          "ja": "実質賃金",
+          "en": "Real Wages"
+        },
+        "def": {
+          "ja": "名目賃金から物価変動の影響を除いた、実際の購買力を示す指標。",
+          "en": "Wages adjusted for inflation, reflecting the actual purchasing power of consumers."
+        }
+      },
+      {
+        "term": {
+          "ja": "企業物価指数 (CGPI)",
+          "en": "CGPI"
+        },
+        "def": {
+          "ja": "企業間で取引される商品の価格動向を示す指数。消費者物価の先行指標となる。",
+          "en": "Corporate Goods Price Index, measuring price trends for goods traded between companies; a leading indicator for CPI."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260312_063439",
     "date": "2026-03-12",
     "titles": {
