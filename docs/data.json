@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260314_063443",
+    "date": "2026-03-14",
+    "titles": {
+      "ja": "日本経済：春闘5%賃上げ回答で「正の循環」確信へ、日銀は追加利上げの最終調整",
+      "en": "Japan Economy: BoJ Eyes Rate Hike as Shunto 5% Wage Growth Sparks 'Virtuous Cycle'; Nikkei 225 Tests Record Highs"
+    },
+    "descriptions": {
+      "ja": "2026年春闘で連合が5%超の賃上げを要求し、実質賃金が13ヶ月ぶりにプラス転換。日銀は政策金利を0.75%から1.0%へ引き上げる検討に入りました。円安とエネルギー価格高騰がリスクとなる中、投資家は内需株へのシフトを強めています。",
+      "en": "Japan Economy, BoJ, Nikkei 225, Yen (JPY), Inflation: With Shunto wage hikes hitting 5% and real wages turning positive, the BoJ prepares for a potential rate hike to 1.0%. Investors pivot to domestic demand as the Nikkei 225 nears 59,000 amid energy-driven Yen volatility."
+    },
+    "contents": {
+      "ja": "【日経視点：デフレ完全脱却への最終章】\n2026年3月14日現在、日本経済は歴史的な転換点を迎えています。今年の春闘（Shunto）では、連合が5%以上の賃上げを維持し、1月発表の実質賃金が13ヶ月ぶりに前年比プラス（+1.4%）を記録しました。植田総裁率いる日銀は、これを「賃金と物価の好循環」の確固たる証拠と捉え、政策金利を現在の0.75%から1.0%へ引き上げる「正常化」の最終段階に入っています。\n\n【投資家への影響と推奨アクション】\n日経平均株価は2月下旬に58,000円台の最高値を更新後、現在は高値圏で推移。円安メリットを受ける輸出企業から、賃上げによる消費拡大の恩恵を受ける「小売・サービス」、利ざや改善が見込まれる「銀行」へのセクターローテーションが推奨されます。ただし、中東情勢によるエネルギー価格高騰が輸入インフレを加速させるリスクには注意が必要です。\n\n【大学生・留学生向け背景解説】\n「春闘」とは、毎年春に労働組合と企業が賃金交渉を行う日本独特の慣行です。長年、日本では「賃金が上がらないから物価も上がらない」という停滞が続いてきましたが、現在は「賃金が上がることで個人消費が増え、適度な物価上昇を招く」という欧米型の経済構造への移行を目指しています。\n\n【グローバル報道比較分析】\n・米国：ウォール・ストリート・ジャーナル等は、日米金利差の縮小による「円キャリートレード」の巻き戻しと、米ハイテク株との相関性に注目。\n・中国：新華社等は、高市政権下の経済安全保障政策と、日本の半導体素材輸出の価格動向を警戒感を持って報じています。",
+      "en": "### Nikkei Editor’s Take: The Final Chapter of Deflation Exit\nAs of March 14, 2026, the Japanese economy stands at a historic crossroads. This year’s Shunto (Spring Wage Offensive) saw labor unions securing wage hikes of over 5%, pushing real wages into positive territory (+1.4%) for the first time in 13 months. Governor Ueda’s Bank of Japan (BoJ) views this as definitive evidence of the 'virtuous cycle' between wages and prices, signaling a likely policy rate hike from 0.75% to 1.0%.\n\n### Investor Impact & Strategic Action\nThe Nikkei 225, having touched record highs near 58,583 in late February, remains in a volatile consolidation phase. **Recommended Action:** Investors should rotate from export-heavy sectors (vulnerable to JPY appreciation) toward domestic demand sectors like **Retail, Services, and Megabanks**, which benefit from higher consumer purchasing power and improved interest margins. Watch for energy price spikes as a primary risk factor to growth forecasts.\n\n### Essential Context for Students\nThe 'Shunto' is a uniquely Japanese tradition where unions and management negotiate wages every spring. For decades, Japan suffered from a 'deflationary mindset' where wages and prices remained stagnant. The current shift represents a transition to a standard global economic model where wage growth drives consumption and sustainable 2% inflation.\n\n### Comparative Global Media Analysis\n- **USA:** Media outlets like the WSJ focus on the narrowing interest rate differential and its impact on the 'Yen Carry Trade' and global liquidity.\n- **China:** Coverage highlights the Takaichi administration's fiscal discipline and the competitive dynamics of Japan's resurgent semiconductor industry vs. Chinese tech firms."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[春闘: 5%超の賃上げ回答] --> B[実質賃金がプラス転換]\n    B --> C[個人消費の拡大期待]\n    C --> D[日銀: 政策金利1.0%への利上げ検討]\n    D --> E[為替: 円高圧力]\n    E --> F[投資先: 輸出株から内需・銀行株へシフト]",
+      "en": "graph TD\n    A[Shunto: 5%+ Wage Growth] --> B[Real Wages Turn Positive]\n    B --> C[Rising Domestic Consumption]\n    C --> D[BoJ: Preparing 1.0% Rate Hike]\n    D --> E[Currency: Upward Pressure on JPY]\n    E --> F[Investment: Shift from Exporters to Domestic/Banks]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる日本独自の労使賃金交渉。マクロ経済の方向性を決める重要指標。",
+          "en": "Japan's annual spring wage negotiations between labor unions and employers; a key driver of inflation outlook."
+        }
+      },
+      {
+        "term": {
+          "ja": "正の循環",
+          "en": "Virtuous Cycle"
+        },
+        "def": {
+          "ja": "賃金上昇が消費を呼び、それが企業の収益改善とさらなる賃金増につながる好ましい経済状態。",
+          "en": "An economic state where wage increases drive consumption, leading to higher corporate profits and further wage hikes."
+        }
+      },
+      {
+        "term": {
+          "ja": "高市政権",
+          "en": "Takaichi Administration"
+        },
+        "def": {
+          "ja": "2026年時点の日本政府。経済安全保障と戦略的財政出動を重視する政策方針。",
+          "en": "The Japanese government in 2026, characterized by a focus on economic security and strategic fiscal spending."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260313_063414",
     "date": "2026-03-13",
     "titles": {
@@ -2570,44 +2622,6 @@
         "def": {
           "ja": "外国の通貨（ドルなど）に対して、日本円の価値が下がること。輸入品が高くなります。",
           "en": "A situation where the value of the Yen decreases against other currencies, making imports more expensive."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260112_122031",
-    "date": "2026-01-12",
-    "titles": {
-      "ja": "1ドル158円の円安と私たちの暮らし：物価高にどう向き合う？",
-      "en": "The 158 Yen Exchange Rate and Our Lives: Facing Rising Prices"
-    },
-    "contents": {
-      "ja": "【ニュース】\n2026年1月12日、為替市場では1ドル＝158円台まで円安が進んでいます。これは約1年ぶりの水準です。背景には、日本の政治の動きやアメリカの経済状況が関係しています。一方で、最新のデータでは働く人の「実質賃金（物価の影響を考えたお給料の力）」が11か月連続でマイナスとなっており、お給料の上がり方が物価の上昇に追いついていない厳しい状況が続いています。\n\n【中学生への解説】\n「円安」というのは、外国のお金に対して「円」の価値が下がることです。例えば、海外から輸入しているハンバーガーの材料が1ドルのとき、1ドル＝100円なら100円で買えますが、158円になると158円払わないと買えなくなります。お小遣いが増えても、それ以上に買うものの値段が上がってしまうと、結局買えるものが減ってしまいます。今の日本は、まさにこの「お財布の力が弱まっている」状態にあります。\n\n【生活への影響】\nこれから、電気代やガソリン代、そして輸入食品の値段がさらに上がる可能性があります。一方で、日本の製品を海外に売る会社にとっては利益が出やすくなるという良い面もあります。皆さんが将来働くときには、ただお給料の金額を見るだけでなく、世の中の物価がどう動いているかにも注目することが、自分たちの生活を守るためにとても大切になります。",
-      "en": "As of January 12, 2026, the Japanese yen has weakened to the 158 yen per dollar level, a one-year low. This is driven by domestic political shifts and U.S. economic trends. Meanwhile, 'real wages'—the actual purchasing power of earnings—have declined for 11 consecutive months, meaning price hikes are outpacing pay raises. For students, this is like having your allowance increase slightly while the price of your favorite snacks doubles, leaving you able to buy less than before. This trend may lead to higher costs for electricity and imported food, though it benefits Japanese companies selling goods abroad."
-    },
-    "mermaid": {
-      "ja": "graph TD\nA[円安が進む 1ドル158円]-->B[輸入コストが上がる]\nB-->C[お店の商品の値段が上がる]\nC-->D[お給料の伸びが追いつかない]\nD-->E[生活が苦しく感じる]",
-      "en": "graph TD\nA[Weak Yen 158 JPY/USD]-->B[Higher Import Costs]\nB-->C[Consumer Prices Rise]\nC-->D[Wages Lag Behind Inflation]\nD-->E[Decreased Purchasing Power]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "円安",
-          "en": "Weak Yen"
-        },
-        "def": {
-          "ja": "日本円の価値が他国の通貨（ドルなど）に対して下がること。輸入品が高くなる原因になります。",
-          "en": "A situation where the value of the Japanese yen decreases against other currencies, making imports more expensive."
-        }
-      },
-      {
-        "term": {
-          "ja": "実質賃金",
-          "en": "Real Wages"
-        },
-        "def": {
-          "ja": "受け取ったお給料で、実際にどれだけの物が買えるかを表す数字。物価が上がるとこの数字は下がります。",
-          "en": "Wages adjusted for inflation, representing the actual amount of goods and services that can be purchased."
         }
       }
     ]
