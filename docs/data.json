@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260315_062816",
+    "date": "2026-03-15",
+    "titles": {
+      "ja": "日本経済：原油高が招く「新価格転嫁」の試練、日銀は追加利上げへ舵を切るか",
+      "en": "Japan Economy: BoJ Faces Policy Crux as Oil Shock Tests Nikkei 225 and Inflation Targets"
+    },
+    "descriptions": {
+      "ja": "中東情勢緊迫化による原油高と円安が重なり、輸入インフレ懸念が再燃。日経平均は調整局面も、春闘の力強い賃上げが経済の下支えに。投資家は日銀のタカ派転換を注視。",
+      "en": "Japan Economy Alert: Rising oil prices and a weak JPY spark imported inflation fears. While Nikkei 225 faces volatility, strong Shunto wage gains offer a silver lining for BoJ's next move."
+    },
+    "contents": {
+      "ja": "【日経視点：構造的転換の正念場】日本経済は今、デフレ脱却後の「安定成長」へ向けた最大の試練に直面しています。2026年3月、中東情勢の悪化に伴う原油価格の高騰は、エネルギー自給率の低い日本にとって強力な逆風です。しかし、過去のオイルショックと異なるのは、国内で5%を超える力強い賃上げ（春闘）が実現しつつある点です。植田総裁は「輸入インフレ」への警戒を強めており、3月18-19日の金融政策決定会合では、政策金利を1.0%へ引き上げる『タカ派的サプライズ』の可能性が市場で囁かれています。\n\n【投資家への影響とアクション】日経平均は2月の史上最高値（59,332円）から調整局面入りしていますが、これは一時的な「押し目」か、あるいはスタグフレーションの予兆か。推奨アクション：1. 銀行・保険株の比重拡大（金利上昇メリット）、2. 輸出セクターは円高反転リスクを警戒しヘッジ検討、3. エネルギー効率の高いハイテク銘柄への選別投資。\n\n【留学生・学生向け解説】かつての日本は「物価が上がらない」ことが悩みでしたが、現在は「物価と賃金が共に上がる」正常な経済への移行期にあります。これを「経済の正常化」と呼びます。しかし、原油高のような外部要因で物価だけが上がると生活が苦しくなるため、政府と日銀は慎重に舵取りをしています。\n\n【米中報道との比較】米メディア（WSJ等）は「日本の利上げが世界のキャリートレードを巻き戻すリスク」を強調。一方、中国メディア（経済日報等）は「日本のエネルギー脆弱性と製造業のコスト増」に焦点を当て、競争力の変化を分析しています。",
+      "en": "【Nikkei Insight: A Structural Turning Point】The Japanese economy is facing a critical test in its transition to stable growth. As of March 15, 2026, surging crude oil prices driven by Middle East tensions are creating significant headwinds for the resource-poor nation. Unlike previous shocks, however, Japan now boasts robust wage growth exceeding 5% (Shunto results), providing a buffer for domestic demand. Governor Ueda has signaled heightened vigilance against 'imported inflation,' leading markets to price in a potential hawkish surprise—a rate hike to 1.0%—at the upcoming March 18-19 BoJ meeting.\n\n【Investor Impact & Strategic Actions】The Nikkei 225 has retreated from its February record high of 59,332. Is this a healthy correction or a stagflation warning? Recommended Actions: 1. Overweight Banking and Insurance (beneficiaries of higher rates), 2. Hedge export-heavy portfolios against a potential JPY rebound, 3. Focus on energy-efficient tech leaders with high pricing power.\n\n【Essential Context for Students】Japan is shifting from decades of deflation to a 'virtuous cycle' of rising prices and wages. This transition, known as 'Economic Normalization,' is historic. However, 'cost-push inflation' from oil prices remains a threat to purchasing power, making the BoJ's delicate balancing act a masterclass in modern monetary policy.\n\n【International Media Comparison】US outlets like the WSJ focus on the 'unwinding of the Yen carry trade' and its impact on global liquidity. In contrast, Chinese state media emphasizes Japan's 'energy vulnerability' and the rising operational costs for its manufacturing sector, viewing it through the lens of regional industrial competition."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[原油価格高騰] --> B{輸入インフレ}\n    B -->|コスト増| C[日経平均の下落圧力]\n    B -->|円安進行| D[日銀のタカ派転換示唆]\n    E[春闘: 5%超の賃上げ] --> F[実質消費の下支え]\n    D --> G[政策金利1.0%への期待]\n    G --> H[銀行セクターの収益改善]",
+      "en": "graph TD\n    A[Surging Oil Prices] --> B{Imported Inflation}\n    B -->|Cost Push| C[Downward Pressure on Nikkei 225]\n    B -->|Weak JPY| D[BoJ Hawkish Shift Signals]\n    E[Shunto: 5%+ Wage Growth] --> F[Support for Private Consumption]\n    D --> G[Expectations for 1.0% Policy Rate]\n    G --> H[Improved Margins for Banking Sector]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる労働組合と企業による賃金交渉。2026年は歴史的な高水準を維持。",
+          "en": "Annual spring wage negotiations between unions and enterprises; 2026 marks a historic high."
+        }
+      },
+      {
+        "term": {
+          "ja": "輸入インフレ",
+          "en": "Imported Inflation"
+        },
+        "def": {
+          "ja": "輸入価格の上昇（原油や原材料）によって国内物価が押し上げられる現象。",
+          "en": "Inflation caused by an increase in the cost of imported goods such as oil and raw materials."
+        }
+      },
+      {
+        "term": {
+          "ja": "利上げ (Rate Hike)",
+          "en": "Rate Hike"
+        },
+        "def": {
+          "ja": "中央銀行が政策金利を引き上げること。通貨価値の上昇や景気抑制の効果がある。",
+          "en": "An increase in policy interest rates by the central bank to control inflation or stabilize currency."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260314_063443",
     "date": "2026-03-14",
     "titles": {
@@ -2574,54 +2626,6 @@
         "def": {
           "ja": "任期が終わる前に議員全員の身分を失わせること。その後、国民が新しい議員を選ぶ総選挙が行われます。",
           "en": "Ending the term of all house members early, followed by a general election to choose new representatives."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260113_062245",
-    "date": "2026-01-13",
-    "titles": {
-      "ja": "日本の海で「お宝」探し？レアアース掘削と株価の動き",
-      "en": "Searching for \"Treasure\" in Japanese Waters: Rare Earth Drilling and Market Trends"
-    },
-    "contents": {
-      "ja": "【ニュース】\n2026年1月12日、日本の探査船「ちきゅう」が、南鳥島沖の海底にある「レアアース」という貴重な資源を掘り出す試験のために出発しました。レアアースはスマートフォンや電気自動車（EV）を作るのに欠かせない材料ですが、現在は多くを外国からの輸入に頼っています。一方、日本の株価は2026年に入ってから史上最高値を更新するなど勢いがありますが、為替市場では円安（1ドル＝158円台）が進んでおり、輸入品の値上がりが心配されています。\n\n【解説】\nレアアースの掘削は、自分たちの庭で「宝探し」をするようなものです。今までお店（外国）でしか買えなかった大切な材料を自分の家（日本）で見つけられれば、お店が急に値上げしたり売ってくれなくなったりしても困りません。これを「経済安全保障」と呼びます。また、株価が上がっているのは日本の会社が世界から応援されている証拠ですが、円安はお小遣いで買える海外のお菓子が少なくなってしまうような状態を指します。\n\n【生活への影響】\n日本で資源が取れるようになれば、将来的にハイテク製品が安く安定して手に入るようになるかもしれません。一方で、今の円安は家計にとって、電気代や食べ物の値段が上がる原因になります。世の中の動きが、自分の持ち物の値段にどうつながっているか注目してみましょう。",
-      "en": "On January 12, 2026, the Japanese research vessel 'Chikyu' set sail to test-drill for rare earth elements near Minami-Torishima. These materials are vital for smartphones and EVs, and domestic production would enhance Japan's economic security. Meanwhile, the Japanese stock market remains strong, hitting record highs, though the Yen has weakened to around 158 per dollar, raising concerns about the rising cost of imported goods and energy."
-    },
-    "mermaid": {
-      "ja": "graph TD\nA[海底の資源を掘る]-->B[外国に頼らず材料を確保]\nB-->C[日本の産業が強くなる]\nD[円安が進む]-->E[輸入品が高くなる]\nE-->F[生活費への影響]",
-      "en": "graph TD\nA[Drilling Seabed Resources]-->B[Securing Materials Domestically]\nB-->C[Strengthening Japan's Industry]\nD[Yen Weakens]-->E[Import Prices Rise]\nE-->F[Impact on Living Costs]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "レアアース",
-          "en": "Rare Earth"
-        },
-        "def": {
-          "ja": "スマートフォンなどのハイテク製品を作るのに欠かせない、貴重な金属の総称です。",
-          "en": "A group of rare metals essential for manufacturing high-tech products like smartphones and EVs."
-        }
-      },
-      {
-        "term": {
-          "ja": "経済安全保障",
-          "en": "Economic Security"
-        },
-        "def": {
-          "ja": "大切な材料やエネルギーを自分たちで確保し、国の経済や国民の生活を守ることです。",
-          "en": "Ensuring the supply of critical materials and energy to protect a nation's economy and its people's livelihoods."
-        }
-      },
-      {
-        "term": {
-          "ja": "円安",
-          "en": "Weak Yen"
-        },
-        "def": {
-          "ja": "外国の通貨（ドルなど）に対して、日本円の価値が下がること。輸入品が高くなります。",
-          "en": "A situation where the value of the Yen decreases against other currencies, making imports more expensive."
         }
       }
     ]
