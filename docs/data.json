@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260316_062917",
+    "date": "2026-03-16",
+    "titles": {
+      "ja": "日本経済：日経平均5万3000円台で攻防、原油高と160円目前の円安が招く『新・不透明感』",
+      "en": "Japan Economy: Nikkei 225 Battles Volatility as Oil Hits $110 and Yen (JPY) Nears 160"
+    },
+    "descriptions": {
+      "ja": "日本経済は正念場。中東情勢緊迫による原油高と円安の『ダブルパンチ』でスタグフレーション懸念が浮上。日銀の3月会合を前に、投資家が注視すべき日経平均の支持線と防衛策を日経視点で鋭く分析します。",
+      "en": "Japan Economy Update: Nikkei 225 faces pressure from surging oil prices and a weak Yen (JPY). BoJ signals caution amid inflation risks. Essential analysis for global investors on JPY volatility and Nikkei 225 support levels."
+    },
+    "contents": {
+      "ja": "【市況サマリー】2026年3月16日の東京株式市場は、中東情勢の緊迫化を受けた原油価格の急騰（110ドル超）と、1ドル＝159円台後半まで進行した円安の重圧に晒されています。日経平均株価は先週の急落から下げ止まりを模索しているものの、エネルギーコスト増による企業収益への圧迫が懸念されています。\n\n【投資家への影響と推奨アクション】\n1. 短期：エネルギー輸入依存度の高い製造業や輸送業には逆風。一方で、資源開発関連や防衛セクターへの資金シフトが鮮明です。\n2. 中長期：日銀（BoJ）が18-19日の金融政策決定会合で金利を0.75%に据え置くとの観測が強まっており、銀行株の過度な期待は一旦調整局面。輸出企業は円安メリットよりもコスト増が勝る「悪い円安」のリスクを警戒すべきです。\n\n【大学生・留学生向け背景知識】\n日本はエネルギー自給率が極めて低いため、原油高と円安が同時に進むと「輸入インフレ」が加速します。2024年にマイナス金利を解除して以降、日銀は段階的に利上げを行ってきましたが、現在の地政学リスクは「景気後退下の物価高（スタグフレーション）」を招く恐れがあり、政策判断を極めて難しくしています。\n\n【米中報道との比較】\n・米国：FRBの利下げ期待が後退する中、日本市場からのキャリートレード巻き戻しを警戒する論調が目立ちます。\n・中国：アジア全域のサプライチェーン混乱を懸念しつつ、日本株からの資金流出が中国市場へ回帰する可能性を注視しています。",
+      "en": "【Market Summary】As of March 16, 2026, the Tokyo market is grappling with a 'Double Punch': crude oil exceeding $110/barrel and the Yen (JPY) hovering near the 160 psychological barrier. The Nikkei 225 is struggling to find a floor following last week's 4,000-point plunge triggered by Middle East tensions.\n\n【Investor Impact & Actions】\n1. Short-term: Headwinds for energy-intensive sectors (Manufacturing, Logistics). Defensive rotation into energy explorers and defense-related stocks is evident.\n2. Mid-to-Long term: With the Bank of Japan (BoJ) expected to hold rates at 0.75% this week, the rally in financial stocks may pause. Investors should hedge against 'Bad Yen Weakness' where import costs outweigh export gains.\n\n【Essential Context for Students】\nJapan's structural reliance on energy imports makes it uniquely vulnerable to external shocks. Since exiting negative rates in 2024, the BoJ has aimed for 'normalization,' but the current threat of stagflation—rising prices coupled with stagnant growth—creates a policy dilemma that defines the 2026 economic landscape.\n\n【Global Media Comparison】\n- US Media: Focuses on the 'Yen Carry Trade' unwinding and how JPY volatility impacts global liquidity.\n- Chinese Media: Analyzes supply chain disruptions in Asia while monitoring potential capital shifts from Tokyo back to Shanghai/Shenzhen."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[中東情勢緊迫] --> B[原油価格 $110超]\n    A --> C[リスク回避のドル買い/円安]\n    B --> D[輸入コスト上昇]\n    C --> D\n    D --> E[スタグフレーション懸念]\n    E --> F[日経平均 下落圧力]\n    E --> G[日銀 政策据え置き観測]",
+      "en": "graph TD\n    A[Middle East Tensions] --> B[Oil Prices >$110]\n    A --> C[Risk-off USD Buying/Weak JPY]\n    B --> D[Rising Import Costs]\n    C --> D\n    D --> E[Stagflation Risks]\n    E --> F[Nikkei 225 Downward Pressure]\n    E --> G[BoJ Rate Hold Expectations]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "スタグフレーション",
+          "en": "Stagflation"
+        },
+        "def": {
+          "ja": "不況（Stagnation）とインフレ（Inflation）が同時に進行する現象。購買力が低下し、政策対応が困難になる。",
+          "en": "A period of slow economic growth and relatively high unemployment accompanied by rising prices."
+        }
+      },
+      {
+        "term": {
+          "ja": "円キャリートレード",
+          "en": "Yen Carry Trade"
+        },
+        "def": {
+          "ja": "低金利の円を借りて、より利回りの高い外貨資産に投資する手法。円高局面で急速に解消（巻き戻し）される傾向がある。",
+          "en": "A strategy where investors borrow Yen at low interest rates to invest in higher-yielding foreign assets."
+        }
+      },
+      {
+        "term": {
+          "ja": "政策金利 0.75%",
+          "en": "Policy Rate 0.75%"
+        },
+        "def": {
+          "ja": "2026年現在の日本銀行の短期政策金利水準。2024年のマイナス金利解除後の「金利のある世界」の到達点の一つ。",
+          "en": "The BoJ's short-term interest rate as of 2026, marking a significant shift from the decade-long ultra-easy era."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260315_062816",
     "date": "2026-03-15",
     "titles": {
@@ -2578,54 +2630,6 @@
         "def": {
           "ja": "ハイテク製品の製造に不可欠な希少金属。中国が世界シェアの多くを握る。",
           "en": "Rare minerals essential for high-tech manufacturing, where China holds a dominant global share."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260114_062246",
-    "date": "2026-01-14",
-    "titles": {
-      "ja": "日経平均株価が史上最高値を更新、5万3000円台に",
-      "en": "Nikkei Stock Average Hits Historic High Above 53,000 Yen"
-    },
-    "contents": {
-      "ja": "【ニュース】\n2026年1月13日の東京株式市場で、日経平均株価が前日より1,600円以上も値上がりし、5万3,549円という史上最高値を記録しました。これは、政府が衆議院を解散して総選挙を行うのではないかという観測が強まり、新しい経済政策への期待から投資家が積極的に株を買ったためです。また、外国為替市場で1ドル＝159円台まで円安が進んだことも、海外で製品を売る日本の大きな企業の業績を後押しすると期待され、株価を押し上げる要因となりました。\n\n【解説】\n例えば、学校の行事で「これからもっと楽しいルールができるかもしれない」という噂が流れると、みんなのやる気が一気に上がるのに似ています。投資家という「経済の応援団」が、日本の将来がもっと良くなることを期待して、企業の応援券である「株」をたくさん買ったことで、その値段が過去最高の記録を塗り替えました。\n\n【生活への影響】\n株価が上がることは日本の経済が元気であるサインですが、一方で「円安」が進むと、海外から輸入するガソリンや食べ物の値段が上がってしまいます。家計にとっては、買い物で支払うお金が増える可能性があるため、生活費の負担が重くなるかもしれません。世の中の動きが、自分たちの買うものの値段や将来の仕事にどうつながるのかを考えることが大切になります。",
-      "en": "On January 13, 2026, the Nikkei Stock Average surged by over 1,600 yen, reaching a historic high of 53,549 yen. This rally was driven by expectations of a snap election and potential new economic policies. Additionally, the yen weakened to nearly 160 per dollar, boosting export-oriented companies. While high stock prices indicate economic optimism, the weak yen may lead to higher costs for imported goods, impacting household budgets. Understanding these global financial trends is essential for navigating future economic changes."
-    },
-    "mermaid": {
-      "ja": "graph TD\nA[選挙への期待] --> B[新しい政策への関心]\nB --> C[株を買う動きが加速]\nC --> D[株価が史上最高値を更新]\nE[円安の進行] --> F[輸出企業の利益増加期待]\nF --> C\nE --> G[輸入製品の値上がり]\nG --> H[家計の負担増]",
-      "en": "graph TD\nA[Election Expectations] --> B[Interest in New Policies]\nB --> C[Accelerated Stock Buying]\nC --> D[Record High Stock Prices]\nE[Weak Yen] --> F[Higher Export Profits]\nF --> C\nE --> G[Higher Import Costs]\nG --> H[Household Burden]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "日経平均株価",
-          "en": "Nikkei Stock Average"
-        },
-        "def": {
-          "ja": "日本を代表する225社の株価を平均した、日本の景気を測るための指標。",
-          "en": "An index representing the average stock price of 225 leading Japanese companies, used to gauge the economy."
-        }
-      },
-      {
-        "term": {
-          "ja": "円安",
-          "en": "Weak Yen"
-        },
-        "def": {
-          "ja": "他の国の通貨（ドルなど）に対して、円の価値が下がること。輸出には有利ですが、輸入には不利になります。",
-          "en": "A situation where the value of the yen decreases against other currencies, benefiting exports but making imports more expensive."
-        }
-      },
-      {
-        "term": {
-          "ja": "衆議院の解散",
-          "en": "Dissolution of the House of Representatives"
-        },
-        "def": {
-          "ja": "任期が終わる前に議員全員の身分を失わせること。その後、国民が新しい議員を選ぶ総選挙が行われます。",
-          "en": "Ending the term of all house members early, followed by a general election to choose new representatives."
         }
       }
     ]
