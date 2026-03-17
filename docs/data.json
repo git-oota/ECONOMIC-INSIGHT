@@ -1,5 +1,66 @@
 [
   {
+    "id": "20260318_063917",
+    "date": "2026-03-18",
+    "titles": {
+      "ja": "日本経済：日経平均5万4000円目前、春闘回答と日銀会合にらみ円安160円台を警戒",
+      "en": "Japan Economy: Nikkei 225 Resilience Amid Shunto Wage Hikes | Yen (JPY) Nears 160 as BoJ Eyes Policy Shift"
+    },
+    "descriptions": {
+      "ja": "日経平均は5万4000円前後で推移。2026年春闘の集中回答日を迎え、5%超の賃上げ継続が焦点。中東情勢緊迫化による原油高と160円に迫る円安を受け、日銀植田総裁は慎重ながらも2%目標達成に自信。投資家は銀行株と輸出関連の選別に動く。",
+      "en": "Japan Economy: Nikkei 225 stabilizes near 54,000 as historic Shunto wage results loom. With Yen (JPY) at 160, the BoJ signals inflation progress despite geopolitical risks. Essential insights for investors on BoJ's hawkish shift and structural wage growth."
+    },
+    "contents": {
+      "ja": "2026年3月18日、日本経済は重要な分岐点を迎えています。本日は主要企業の春闘回答が集中し、連合（Rengo）が要求する5.94%の賃上げが3年連続で5%の大台を超えるかが焦点です。日経平均株価は、中東での米イラン緊張に伴う原油高を嫌気しつつも、54,000円台で底堅く推移。日銀の植田総裁は国会答弁で「2%目標の持続的達成が視野に入りつつある」と述べ、政策金利0.75%の維持と将来的な追加利上げの可能性を示唆しました。一方で、高市政権のハト派的な姿勢や、1ドル160円に迫る円安への為替介入リスクが市場の不透明感を強めています。投資家は、賃上げによる内需拡大を期待する一方、輸入インフレが消費を冷やすリスクを注視すべきです。",
+      "en": "As of March 18, 2026, the Japanese economy stands at a structural crossroads. Today marks the climax of the 'Shunto' spring wage negotiations, where labor unions are demanding a 5.94% hike. Achieving a 5%+ increase for the third consecutive year is seen as the final piece for the BoJ to exit its decades-long deflationary mindset. The Nikkei 225 remains resilient near 54,000, balancing optimism over domestic demand against fears of $100+ oil prices driven by Middle East conflicts. BoJ Governor Ueda signaled confidence in the 2% inflation target, even as the Yen (JPY) flirts with the 160-per-dollar psychological barrier. While the Takaichi administration remains dovish, the market is pricing in a potential rate hike to 1.0% by July. Investors should prioritize 'Japan Rebirth' themes, focusing on financial sectors benefiting from higher yields and high-margin exporters."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[2026年春闘: 5.94%要求] --> B{賃上げ5%超達成?}\n    B -- Yes --> C[実質賃金のプラス転換]\n    C --> D[持続的インフレ 2%]\n    D --> E[日銀: 追加利上げ 1.0%へ]\n    B -- No --> F[内需停滞リスク]\n    G[中東情勢/原油高] --> H[コストプッシュ・インフレ]\n    H --> D\n    I[円安 160円] --> J[為替介入警戒]",
+      "en": "graph TD\n    A[2026 Shunto: 5.94% Demand] --> B{Wage Hike >5%?}\n    B -- Yes --> C[Positive Real Wage Growth]\n    C --> D[Sustainable 2% Inflation]\n    D -- Decisive Factor --> E[BoJ: Rate Hike to 1.0%]\n    B -- No --> F[Domestic Demand Stagnation]\n    G[Middle East Conflict/Oil] --> H[Cost-Push Inflation]\n    H --> D\n    I[Yen at 160/USD] --> J[Currency Intervention Risk]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる労働組合と経営側の賃金交渉。2026年は3年連続の5%超えが焦点。",
+          "en": "Annual spring wage negotiations. In 2026, the focus is on maintaining >5% growth to secure a wage-price spiral."
+        }
+      },
+      {
+        "term": {
+          "ja": "植田和男 (Kazuo Ueda)",
+          "en": "Kazuo Ueda"
+        },
+        "def": {
+          "ja": "第32代日銀総裁。マイナス金利解除後の「金利のある世界」への正常化を主導。",
+          "en": "The 32nd BoJ Governor, leading the normalization of monetary policy into a 'positive interest rate' era."
+        }
+      },
+      {
+        "term": {
+          "ja": "実質賃金 (Real Wages)",
+          "en": "Real Wages"
+        },
+        "def": {
+          "ja": "物価上昇分を差し引いた賃金。日本は4年連続のマイナスからプラス圏への回復が待望されている。",
+          "en": "Wages adjusted for inflation. Japan is fighting to bring this into positive territory after 4 years of decline."
+        }
+      }
+    ],
+    "investor_insights": {
+      "impact": "The convergence of high wage growth and potential BoJ hawkishness favors Mega-banks (MUFG, SMFG) and insurance companies. However, the 160 JPY/USD level increases the risk of sudden MoF intervention, creating volatility for exporters.",
+      "action": "Overweight on domestic financial sectors. Hedge USD/JPY positions as the 160 level is a 'red line' for the Takaichi administration. Monitor tomorrow's Rengo announcement for a confirmed 5%+ average."
+    },
+    "global_comparison": {
+      "US": "The Fed is holding at 3.50-3.75%, focusing on a 'soft landing' while Japan is just beginning its tightening cycle, narrowing the yield gap.",
+      "China": "Economic recovery remains sluggish due to property sector woes, making Japan's equity market a preferred 'safe haven' for Asian capital despite geopolitical tensions.",
+      "Japan": "Uniquely positioned with structural wage growth, shifting from a 'cost-cutting' economy to a 'value-adding' economy for the first time in 30 years."
+    }
+  },
+  {
     "id": "20260317_064121",
     "date": "2026-03-17",
     "titles": {
@@ -2576,54 +2637,6 @@
         "def": {
           "ja": "債券（国などへの借金）に対する利息の割合。一般的に、金利が上がると債券の価格は下がる性質がある。",
           "en": "The amount of return an investor realizes on a bond. Generally, when interest rates rise, bond prices fall."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260117_062229",
-    "date": "2026-01-17",
-    "titles": {
-      "ja": "日経平均5万3000円台で足踏み、円安158円と長期金利2.1%超えが投資判断の分水嶺に",
-      "en": "Nikkei 225 Hovers at 53k: 158 Yen and 2.1% Interest Rates Become Critical Investment Pivot Points"
-    },
-    "contents": {
-      "ja": "【ニュース】\n2026年1月17日現在、日本経済は歴史的な転換点にあります。前日の東京株式市場で日経平均株価は5万3936円で取引を終え、史上最高値圏での足踏みが続いています。背景にあるのは、1ドル＝158円台まで進んだ円安と、約28年ぶりの水準となる長期金利（10年債利回り）2.1%への上昇です。来週に控える日本銀行の金融政策決定会合では、さらなる利上げ（政策金利の引き上げ）が意識されており、市場には緊張感が走っています。また、高市総理大臣による衆議院解散の意向報道も、政治的な不透明感を強めています。\n\n【投資家目線での影響とアクション】\n投資家にとっては「金利上昇」が最大のテーマです。金利が上がると、企業の借金返済負担が増えるため、特に成長期待で買われていたハイテク株には逆風となります。一方で、金利上昇は銀行などの金融株には追い風です。現在は「グロース（成長株）からバリュー（割安株・金融株）」への資金シフトを検討すべき局面です。また、円安が158円まで進んでいるため、これ以上の円安が進まない（介入や利上げによる円高への揺り戻し）リスクを考慮し、外貨建て資産の利益確定も視野に入れるべきでしょう。\n\n【大学生が知っておくべき背景知識】\n「なぜ金利が上がると株価が下がるのか？」を理解しましょう。金利が上がると、投資家は「リスクのある株」よりも「安全で利回りの良い債券」に魅力を感じます。また、企業が新しい工場を建てるためのローン利息も高くなるため、将来の利益予想が下がります。現在、日本は長年続いた「ゼロ金利」を脱し、世界標準の「金利がある世界」に戻ろうとしています。これは経済の正常化を意味しますが、同時に借金が多い主体（国や一部の企業）にとっては厳しい試練となります。\n\n【国際的な視点と解釈の比較】\n・アメリカ：米市場は、日本の金利上昇を「デフレ脱却の成功」とポジティブに捉えつつ、円キャリートレード（安い円を借りてドルで運用する手法）の解消による米株への資金引き揚げを警戒しています。\n・中国：日本の製造業のコスト増（金利上昇による）を注視しています。円安が是正されれば中国製品の価格競争力が相対的に高まるため、日中間の貿易バランスの変化に敏感になっています。\n\n【資産防衛のヒント】\nインフレ（物価高）と金利上昇が同時に進む局面では、現金の価値が目減りします。銀行預金だけでなく、物価上昇に強い「実物資産（金や不動産）」や、金利上昇の恩恵を受ける「変動利付債」などを組み合わせた分散投資が、あなたの資産を守る鍵となります。\n\n【生活への影響】\n留学生にとって、1ドル158円の円安は二律背反です。母国からの送金を受け取る際は円が多く手に入りますが、日本国内の物価（特に輸入品の食品や燃料）はさらに上昇します。また、金利上昇により、将来日本で家を借りたりローンを組んだりする際のコストが上がる可能性があるため、今のうちに固定金利の仕組みを学んでおくことが重要です。",
-      "en": "【News Summary】\nAs of January 17, 2026, the Japanese economy is at a historic crossroads. The Nikkei 225 closed at 53,936 yen, maintaining its position near record highs. The key drivers are the yen's depreciation to the 158 level per dollar and the 10-year bond yield hitting 2.1%, a level not seen in 28 years. Investors are on edge ahead of next week's Bank of Japan (BOJ) meeting, where further interest rate hikes are expected. Additionally, reports of Prime Minister Takaichi's intent to dissolve the Lower House have introduced political uncertainty.\n\n【Investor Perspective & Actions】\n\"Rising interest rates\" is the dominant theme. Higher rates increase corporate borrowing costs, creating headwinds for high-growth tech stocks. Conversely, this environment benefits financial stocks like banks. Investors should consider shifting capital from 'Growth' to 'Value' (financials/stable sectors). With the yen at 158, the risk of a reversal (yen strengthening due to intervention or rate hikes) is high; thus, taking profits on foreign currency assets might be a prudent move.\n\n【Background for Students】\nUnderstand why stock prices often fall when interest rates rise: Higher rates make 'safe' government bonds more attractive than 'risky' stocks. Furthermore, the cost of loans for companies to build factories or develop products increases, lowering future profit expectations. Japan is currently transitioning from a decades-long 'zero-interest' era to a 'world with interest,' signaling economic normalization but posing a challenge for entities with high debt.\n\n【International Perspectives】\n- USA: Markets view Japan's rate hike as a successful exit from deflation but fear a reversal of the 'yen carry trade,' which could trigger a sell-off in US equities as capital returns to Japan.\n- China: Closely monitoring the rising costs for Japanese manufacturers. A stronger yen would improve the relative price competitiveness of Chinese exports, shifting the trade balance.\n\n【Asset Protection Tips】\nIn a period of simultaneous inflation and rising rates, the value of cash diminishes. Diversifying beyond simple bank deposits into 'real assets' like gold or 'floating-rate notes' that benefit from higher interest is key to protecting your wealth.\n\n【Impact on Daily Life】\nFor international students, 158 JPY/USD is a double-edged sword. While your home currency buys more yen, the cost of living (food, utilities) in Japan continues to rise. Also, rising interest rates mean future costs for housing loans or credit in Japan will increase, making it essential to understand how fixed vs. variable rates work now."
-    },
-    "mermaid": {
-      "ja": "graph TD\n    A[日銀利上げ観測] --> B(長期金利上昇 2.1%)\n    B --> C{投資家判断}\n    C -->|マイナス影響| D[ハイテク・グロース株]\n    C -->|プラス影響| E[銀行・金融株]\n    F[円安 158円台] --> G[輸出企業の利益増]\n    G --> H[日経平均5.3万円維持]\n    B --> I[輸入物価の上昇]\n    I --> J[留学生の生活費増]",
-      "en": "graph TD\n    A[BOJ Rate Hike Specs] --> B(Long-term Rate Up 2.1%)\n    B --> C{Investor Decision}\n    C -->|Negative Impact| D[Tech/Growth Stocks]\n    C -->|Positive Impact| E[Banking/Financials]\n    F[Yen Weakness 158] --> G[Export Profit Boost]\n    G --> H[Nikkei 225 at 53k]\n    B --> I[Import Price Inflation]\n    I --> J[Higher Living Costs for Students]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "長期金利",
-          "en": "Long-term Interest Rate"
-        },
-        "def": {
-          "ja": "一般的に10年物国債の利回りを指し、住宅ローンや企業の借入金利の基準となる。",
-          "en": "Typically refers to the yield on 10-year government bonds, serving as a benchmark for mortgage and corporate loan rates."
-        }
-      },
-      {
-        "term": {
-          "ja": "円キャリートレード",
-          "en": "Yen Carry Trade"
-        },
-        "def": {
-          "ja": "低金利の円を借りて、より金利の高いドルなどで運用し、その差額で利益を得る投資手法。",
-          "en": "An investment strategy where one borrows yen at low rates to invest in higher-yielding currencies like the dollar."
-        }
-      },
-      {
-        "term": {
-          "ja": "バリュー株",
-          "en": "Value Stocks"
-        },
-        "def": {
-          "ja": "企業の利益や資産に対して、現在の株価が割安な水準にある銘柄。金利上昇局面で選好されやすい。",
-          "en": "Stocks that are undervalued relative to their earnings or assets; often preferred during periods of rising interest rates."
         }
       }
     ]
