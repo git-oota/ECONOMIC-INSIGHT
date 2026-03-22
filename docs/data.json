@@ -1,5 +1,66 @@
 [
   {
+    "id": "20260323_062750",
+    "date": "2026-03-23",
+    "titles": {
+      "ja": "日本経済：日経平均は春闘回答を注視、日銀タカ派台頭で円（JPY）安抑制なるか",
+      "en": "Japan Economy: Nikkei 225 Braces for Shunto Results; Yen (JPY) Volatility Amid BoJ Hawkish Dissents"
+    },
+    "descriptions": {
+      "ja": "2026年3月23日、日本市場は春闘の第1回回答集計に注目。日銀政策委員のタカ派姿勢と中東情勢による原油高が、日経平均とドル円相場に緊張感をもたらしています。",
+      "en": "Japan Economy focus shifts to Shunto wage results today. Nikkei 225 remains sensitive to BoJ hawkish shifts and energy spikes from the Middle East conflict, impacting Yen (JPY) trends."
+    },
+    "contents": {
+      "ja": "本日、2026年3月23日は日本の労働市場と金融政策にとって極めて重要な局面です。連合が発表する春闘の第1回回答集計は、日銀が掲げる「賃金と物価の好循環」の成否を占う試金石となります。先週19日の金融政策決定会合では、政策金利が0.75%に据え置かれたものの、高田審議委員が1.0%への利上げを主張し反対票を投じるなど、タカ派的な火種が燻っています。市場では、高い賃上げ率が確認されれば4月の追加利上げ観測が強まり、円高・株安の圧力がかかると予想されています。また、中東での紛争激化に伴う原油価格の上昇は、輸入物価を押し上げ、日本経済にとって「悪いインフレ」の再燃リスクとなっています。投資家は、賃上げによる内需拡大への期待と、コストプッシュ型インフレによる収益圧迫の二面性を注視すべきです。",
+      "en": "On March 23, 2026, the Japanese market is hyper-focused on the first tally of 'Shunto' (spring wage) negotiations. This data is the ultimate litmus test for the BoJ's 'virtuous cycle' between wages and prices. While the BoJ held rates at 0.75% last week, the 8-1 vote—with Hajime Takata dissenting in favor of a 1.0% hike—signals growing hawkish pressure within the board. Robust wage growth today could solidify expectations for an April rate hike, potentially strengthening the Yen (JPY) and pressuring the Nikkei 225. Furthermore, the escalation of the Middle East conflict has pushed Brent crude higher, reviving fears of 'bad' imported inflation. Investors must navigate the duality of structural domestic growth via wages versus the margin squeeze from rising energy costs. Strategic action involves balancing holdings between domestic-demand sectors and hedging against JPY volatility."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[春闘回答集計] -->|高い賃上げ率| B(日銀4月利上げ期待)\n    A -->|期待外れ| C(緩和継続・円安進行)\n    B --> D{市場反応}\n    D -->|円相場| E[円高/JPY上昇]\n    D -->|日経平均| F[一時的調整/内需株物色]\n    G[中東情勢/原油高] -->|輸入物価上昇| B",
+      "en": "graph TD\n    A[Shunto Wage Tally] -->|High Wage Growth| B(BoJ April Hike Bets)\n    A -->|Low Wage Growth| C(Continued Easing/Weak JPY)\n    B --> D{Market Reaction}\n    D -->|FX Market| E[Yen Strengthening]\n    D -->|Nikkei 225| F[Short-term Correction/Domestic Play]\n    G[Middle East Conflict/Oil] -->|Import Inflation| B"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる労働組合と経営側の賃金交渉。日本経済の消費動向を左右する最重要指標の一つ。",
+          "en": "Annual spring wage negotiations between labor unions and employers; a key driver of Japan's domestic consumption."
+        }
+      },
+      {
+        "term": {
+          "ja": "タカ派 (Hawkish)",
+          "en": "Hawkish"
+        },
+        "def": {
+          "ja": "インフレ抑制のために金利引き上げや金融引き締めに前向きな姿勢。",
+          "en": "A policy stance favoring higher interest rates to curb inflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "コストプッシュ・インフレ",
+          "en": "Cost-Push Inflation"
+        },
+        "def": {
+          "ja": "原材料や燃料価格の上昇によって引き起こされる物価高。消費者の購買力を奪う傾向がある。",
+          "en": "Inflation caused by rising costs of production (e.g., oil), which can dampen consumer purchasing power."
+        }
+      }
+    ],
+    "analysis": {
+      "investor_impact": "Short-term: High JPY volatility around the Shunto announcement (typically mid-afternoon JST). Recommended Action: Consider increasing exposure to banking stocks (benefit from higher rates) while reducing reliance on energy-intensive manufacturing.",
+      "student_context": "For international students, the 'Shunto' is unique to Japan's corporate culture. It represents a coordinated effort to raise national income. Understanding this helps explain why the BoJ doesn't just look at inflation numbers, but specifically at 'wage-driven' inflation.",
+      "global_comparison": {
+        "US": "Focus remains on the Fed's response to 'sticky' service inflation and geopolitical oil shocks.",
+        "China": "Markets are watching if global energy spikes derail the fragile recovery in industrial profits.",
+        "Japan": "Uniquely balancing the transition from a 'deflationary mindset' to a structural growth phase driven by the first significant wage hikes in decades."
+      }
+    }
+  },
+  {
     "id": "20260322_062643",
     "date": "2026-03-22",
     "titles": {
@@ -2578,58 +2639,6 @@
         "def": {
           "ja": "中央銀行が短期金融市場の誘導目標とする金利。現在は0.75%。",
           "en": "The short-term interest rate target set by the central bank; currently 0.75% in Japan."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260123_062441",
-    "date": "2026-01-23",
-    "titles": {
-      "ja": "Japan Economy: 日銀、金利0.75%据え置き濃厚も「タカ派的維持」に注目—日経225は5万4000円台で推移",
-      "en": "Japan Economy & Nikkei 225: BoJ Eyes 'Hawkish Hold' at 0.75% Amid Yen Weakness; Nikkei Scales 54,000"
-    },
-    "descriptions": {
-      "ja": "2026年1月23日、日銀は金融政策決定会合で金利据え置きを決定する見通し。12月のCPI鈍化予想と高市首相による衆院解散・総選挙（2月8日投開票）が焦点。円安158円台とJGB利回り上昇が投資家心理を揺さぶる中、日経平均は世界をアウトパフォームしています。",
-      "en": "Japan Economy, BoJ, Nikkei 225, Yen (JPY), Inflation: Markets brace for the BoJ's Jan 23 decision. While a hold at 0.75% is expected, focus shifts to Governor Ueda’s guidance and PM Takaichi's snap election. Nikkei 225 hits 54,000 as exports prove resilient against global tariff pressures."
-    },
-    "contents": {
-      "ja": "【市場概況】2026年1月23日の東京市場は、日銀（BoJ）の金融政策決定会合の結果発表を控え、緊迫感に包まれています。市場コンセンサスは政策金利0.75%の据え置きですが、焦点は植田総裁の「タカ派的」なトーンの維持にあります。円安（USD/JPY 158円台）が進行する中、追加利上げの示唆がなければ円売りが加速するリスクも孕んでいます。\n\n【投資家への影響】日経平均株価（Nikkei 225）は54,000円の節目を突破し、年初来で約8%上昇と米欧市場を凌駕。企業収益の改善と、高市早苗首相による「2月8日投開票の衆院解散・総選挙」を受けた追加財政出動への期待が買いを支えています。投資家は、JGB（日本国債）10年物利回りが2.38%と27年ぶりの高水準にある点に注意が必要で、金利上昇によるグロース株への影響を注視すべきです。\n\n【背景知識】大学生・留学生向け：日本は長年のゼロ金利政策を終え、現在は「金利のある世界」へと完全に移行しました。0.75%という金利は、1995年以来の最高水準です。これは、賃金と物価が共に上昇する「正の循環」が定着しつつあることを示しています。\n\n【国際比較】米トランプ政権の関税政策に対し、中国は内需拡大と景気刺激策で対抗していますが、日本は電子部品や食品輸出の好調により、2025年の輸出額が前年比3.1%増と健闘。欧米メディアは「日本の輸出回復の持続性」に懐疑的ですが、国内では「高市ノミクス」によるリフレ期待が先行しています。",
-      "en": "Decision Day: The Bank of Japan (BoJ) concludes its two-day meeting on January 23, 2026. While a consensus points to a rate hold at 0.75%, the primary focus is whether Governor Ueda delivers a 'Hawkish Hold' to support the struggling Yen (JPY), currently hovering near 158 per dollar. \n\nInvestor Impact: The Nikkei 225 has demonstrated remarkable resilience, scaling the 54,000 level. This rally is fueled by strong corporate earnings revisions and optimism surrounding PM Sanae Takaichi’s announcement of a snap election for February 8. Investors should monitor the 10-year JGB yield, which recently touched a 27-year high of 2.38%, potentially increasing volatility in interest-rate-sensitive sectors.\n\nEssential Context: For students and international observers, Japan has successfully exited its 'Lost Decades.' The current 0.75% rate—the highest since 1995—marks a normalization of monetary policy driven by stable inflation and wage growth. \n\nComparative Analysis: While U.S. media remains fixated on the impact of Trump’s 2026 tariffs on global trade, and Chinese reports focus on domestic stimulus to combat deflation, Japan is standing out. Despite a 4.1% drop in car exports to the US, Japan’s overall exports grew by 3.1% in 2025, led by high-tech components, showcasing a strategic pivot in its trade dependencies."
-    },
-    "mermaid": {
-      "ja": "graph TD\n    A[日銀会合 1/23] --> B{金利 0.75% 据置}\n    B --> C[タカ派的示唆]\n    B --> D[ハト派的示唆]\n    C --> E[円高/債券安]\n    D --> F[円安/株高]\n    G[高市首相 総選挙発表] --> H[財政出動期待]\n    H --> I[日経225 54,000維持]\n    I --> J[投資家アクション: 日本株ホールド]",
-      "en": "graph TD\n    A[BoJ Meeting Jan 23] --> B{Rate Hold at 0.75%}\n    B --> C[Hawkish Guidance]\n    B --> D[Dovish Guidance]\n    C --> E[Yen Strength/JGB Yield Up]\n    D --> F[Yen Weakness/Stocks Up]\n    G[PM Takaichi Snap Election] --> H[Fiscal Stimulus Hope]\n    H --> I[Nikkei 225 @ 54,000]\n    I --> J[Investor Action: Hold Japanese Equities]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "タカ派的維持 (Hawkish Hold)",
-          "en": "Hawkish Hold"
-        },
-        "def": {
-          "ja": "金利は据え置くものの、将来的な利上げに対して前向きな姿勢を示すこと。",
-          "en": "Maintaining current interest rates while signaling a bias toward future increases."
-        }
-      },
-      {
-        "term": {
-          "ja": "JGB (日本国債)",
-          "en": "JGB (Japanese Government Bond)"
-        },
-        "def": {
-          "ja": "日本政府が発行する債券。10年物利回りは国内長期金利の指標となる。",
-          "en": "Debt securities issued by the Government of Japan; the 10-year yield is a key benchmark for long-term rates."
-        }
-      },
-      {
-        "term": {
-          "ja": "高市ノミクス",
-          "en": "Takaichinomics"
-        },
-        "def": {
-          "ja": "高市早苗首相が掲げる、機動的な財政出動と大胆な金融緩和を柱とする経済政策の通称。",
-          "en": "Economic policies associated with PM Sanae Takaichi, focusing on fiscal stimulus and strategic growth."
         }
       }
     ]
