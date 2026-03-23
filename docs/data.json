@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260324_063735",
+    "date": "2026-03-24",
+    "titles": {
+      "ja": "日本経済：日経平均が急落、日銀は金利0.75%に据え置き。原油高と円安(JPY)のダブルパンチを分析",
+      "en": "Japan Economy: Nikkei 225 Volatility as BoJ Holds 0.75% Rate Amid Yen (JPY) Intervention Risk and Oil Shock"
+    },
+    "descriptions": {
+      "ja": "日銀は政策金利を0.75%で維持。地政学リスクに伴う原油高がスタグフレーション懸念を呼び、日経平均は最高値から9%下落。160円目前の円安介入への警戒が続く。",
+      "en": "Japan Economy update: Nikkei 225 faces pressure from rising oil prices as BoJ maintains 0.75% interest rate. Analyze Yen (JPY) intervention risks and inflation trends."
+    },
+    "contents": {
+      "ja": "【日経視点】日本銀行は3月の金融政策決定会合において、政策金利を0.75%に据え置くことを全会一致で決定した。2024年からの「金利のある世界」への回帰は着実に進んでいるが、足元では中東情勢の緊迫化による原油価格の高騰が輸入物価を押し上げ、景気停滞とインフレが併存するスタグフレーションのリスクが浮上している。日経平均株価は2月の史上最高値58,850円から約9%下落し、投資家心理は冷え込んでいる。植田総裁は記者会見で「物価目標2%の安定達成には慎重な見極めが必要」と述べ、追加利上げへのハードルを示唆した。一方で、米連邦準備制度理事会（FRB）との政策金利差からドル円は160円の介入ラインに迫っており、政府・日銀による実弾介入のタイミングが市場の焦点となっている。\n\n【投資家への影響とアクション】地政学リスクに伴うエネルギー価格上昇は、製造業のコスト増に直結する。推奨アクション：1. 短期的なボラティリティを避け、エネルギー高に強い商社やディフェンシブな電力株へのシフト。2. 円安介入発動時の急激な円高に備え、輸出企業の利益確定売りを検討。3. 日本国債10年物利回りの上昇を見据えた金融株のホールド。\n\n【グローバル比較】米国ではFRBが利下げサイクルに入りつつあるが、日本は「正常化の踊り場」にあり、日米の金利差縮小のペースが想定より遅い。中国経済は不動産不況から脱しきれず、アジア全体の投資資金が日本から流出する「リスクオフ」の動きが強まっている。",
+      "en": "The Bank of Japan (BoJ) concluded its March meeting by keeping the short-term interest rate steady at 0.75%. While the path toward monetary normalization remains intact, the 'Oil Shock' triggered by geopolitical tensions has introduced significant stagflation risks. The Nikkei 225 has retreated 9% from its February peak of 58,850, signaling a shift in market sentiment from euphoria to caution. Governor Ueda emphasized the need for 'extremely cautious monitoring' of domestic demand as energy-driven inflation threatens to dampen real consumption. \n\n**Investor Impact & Strategy:** The current environment favors a defensive posture. Investors should monitor the 160 JPY/USD threshold, as a breach will likely trigger direct BoJ intervention. Recommended Action: Diversify into energy-resilient sectors (Trading Houses) and maintain exposure to major banks that benefit from a non-zero interest rate environment. \n\n**Global Context:** Unlike the US, where the Fed is navigating a 'soft landing' with potential rate cuts, Japan is fighting a 'cost-push' inflation spike that limits the BoJ's room for further hikes without hurting growth. Compared to China's deflationary struggles, Japan's problem is now 'bad inflation' from imported energy costs, making it a unique outlier in the G7."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[原油価格高騰] --> B{日本経済への影響}\n    B --> C[輸入物価上昇/インフレ]\n    B --> D[企業収益の圧迫]\n    C --> E[日銀: 金利0.75%据え置き]\n    D --> F[日経平均の下落]\n    E --> G[円安進行 160円付近]\n    G --> H[政府・日銀の介入警戒]",
+      "en": "graph TD\n    A[Surge in Oil Prices] --> B{Impact on Japan}\n    B --> C[Rising Import Costs / Inflation]\n    B --> D[Pressure on Corporate Margins]\n    C --> E[BoJ: Holds Rate at 0.75%]\n    D --> F[Nikkei 225 Slump]\n    E --> G[Yen Weakness near 160]\n    G --> H[Currency Intervention Risk]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "スタグフレーション",
+          "en": "Stagflation"
+        },
+        "def": {
+          "ja": "経済活動の停滞（Stagnation）と物価の上昇（Inflation）が同時に進行する現象。",
+          "en": "A situation where the inflation rate is high, the economic growth rate slows, and unemployment remains steadily high."
+        }
+      },
+      {
+        "term": {
+          "ja": "政策正常化",
+          "en": "Policy Normalization"
+        },
+        "def": {
+          "ja": "異次元の金融緩和から脱却し、金利機能を活用する通常の金融政策に戻すプロセス。",
+          "en": "The process of returning monetary policy to a standard framework after a period of unconventional measures like negative rates."
+        }
+      },
+      {
+        "term": {
+          "ja": "介入ライン",
+          "en": "Intervention Zone"
+        },
+        "def": {
+          "ja": "為替相場の過度な変動を抑えるため、通貨当局が市場介入を実施すると予想される価格帯。",
+          "en": "The specific exchange rate level where central banks are expected to buy/sell currency to stabilize the market."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260323_062750",
     "date": "2026-03-23",
     "titles": {
@@ -2587,58 +2639,6 @@
         "def": {
           "ja": "食料（生鮮除く）とエネルギーを除いた消費者物価指数。真のインフレ傾向を示す。",
           "en": "Consumer Price Index excluding fresh food and energy, representing underlying inflation trends."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260124_062245",
-    "date": "2026-01-24",
-    "titles": {
-      "ja": "日本経済：日銀の据え置きと「強気」の成長予測で日経平均は高値圏、円相場は乱高下",
-      "en": "Japan Economy: BoJ Rate Hold & Hawkish Growth Upgrades Fuel Nikkei 225 as Yen Jitters Persist"
-    },
-    "descriptions": {
-      "ja": "日本経済最新：日銀は金利を0.75%に据え置くも、成長率見通しを上方修正。日経平均は53,800円台で堅調に推移。植田総裁は追加利上げに含みを持たせ、円安への警戒感を強調。投資家が注視すべき「賃金と物価の好循環」の行方を徹底分析。",
-      "en": "Japan Economy Update: BoJ maintains 0.75% rate while upgrading growth forecasts. Nikkei 225 remains near record highs at 53,846. Governor Ueda signals potential future hikes amid JPY volatility and the upcoming general election, highlighting a shift in the inflation narrative."
-    },
-    "contents": {
-      "ja": "【日経視点の分析】日本銀行は2026年最初の金融政策決定会合で、政策金利を0.75%で据え置くことを決定しました。しかし、中身は極めて「タカ派的」です。2025年度・2026年度の成長率見通しを引き上げ、コアインフレ率が目標の2%近傍で推移するとの確信を深めています。市場では、2月の衆院選（高市政権初陣）を前にした一時的な「静観」と捉えられていますが、委員の1人が利上げを主張して反対票を投じるなど、正常化への圧力は強まっています。投資家は、円安による輸入インフレが企業収益を圧迫するリスクと、金利上昇の恩恵を受ける金融株の買い場を天秤にかける局面です。米国メディアはトランプ政権の関税リスクと日米金利差に焦点を当てる一方、中国メディアはサプライチェーンの日本回帰と製造業PMIの回復を注視しています。",
-      "en": "The Bank of Japan (BoJ) concluded its January 2026 meeting by holding the short-term rate at 0.75%, yet the underlying tone was decidedly hawkish. By upgrading GDP growth forecasts for FY2025 and FY2026, the BoJ signaled that the 'virtuous cycle' between wages and prices is finally taking root. While the market expected a pause ahead of the February 8 general election under PM Sanae Takaichi, a dissenting vote for an immediate hike to 1% underscores the growing momentum for normalization. Investor Action: Strategic buying in domestic mega-banks is recommended as net interest margins improve, while exporters face volatility from a potential yen rebound. US media outlets are zeroing in on the 'yield gap' and the impact of potential US tariffs on Japanese autos, whereas Chinese reports are analyzing the 17-month high in Japan's Flash PMI as a sign of regional manufacturing resilience. For students, this marks the end of Japan's era of 'cheap money,' shifting the economic focus from survival to sustainable growth."
-    },
-    "mermaid": {
-      "ja": "graph TD\n    A[日銀: 金利0.75%据え置き] --> B{成長率見通し上方修正}\n    B --> C[日経平均: 5.3万円台維持]\n    B --> D[追加利上げ期待の継続]\n    D --> E[円相場: 157-158円で乱高下]\n    E --> F[輸出企業の利益確定売り]\n    D --> G[銀行・金融セクターへの資金流入]\n    H[2月衆院選の不透明感] --> C",
-      "en": "graph TD\n    A[BoJ: Rate Hold at 0.75%] --> B{Growth Outlook Upgraded}\n    B --> C[Nikkei 225: Holds 53k level]\n    B --> D[Expectations of Future Hikes]\n    D --> E[Yen Volatility: JPY 157-158 range]\n    E --> F[Profit-taking in Exporters]\n    D --> G[Capital Inflow to Financial Sector]\n    H[Feb General Election Uncertainty] --> C"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "賃金と物価の好循環",
-          "en": "Virtuous Cycle of Wages and Prices"
-        },
-        "def": {
-          "ja": "賃金の上昇が消費を促し、それが物価の緩やかな上昇と企業収益の拡大につながる理想的な経済状態。",
-          "en": "An economic state where wage increases drive consumption, leading to moderate price rises and expanded corporate profits."
-        }
-      },
-      {
-        "term": {
-          "ja": "コアCPI",
-          "en": "Core CPI"
-        },
-        "def": {
-          "ja": "生鮮食品を除いた消費者物価指数。日銀が金融政策を判断する際の主要な指標。",
-          "en": "The Consumer Price Index excluding volatile fresh food; the primary gauge used by the BoJ for monetary policy decisions."
-        }
-      },
-      {
-        "term": {
-          "ja": "政策金利",
-          "en": "Policy Interest Rate"
-        },
-        "def": {
-          "ja": "中央銀行が短期金融市場の誘導目標とする金利。現在は0.75%。",
-          "en": "The short-term interest rate target set by the central bank; currently 0.75% in Japan."
         }
       }
     ]
