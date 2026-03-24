@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260325_063901",
+    "date": "2026-03-25",
+    "titles": {
+      "ja": "日本経済：日経平均5万2000円突破、日銀利上げ据え置きも『新物価指標』で追加引き締め示唆",
+      "en": "Japan Economy: Nikkei 225 Hits Record 52,785 as BoJ Holds Rates; Yen (JPY) Volatility Amid Oil Spikes"
+    },
+    "descriptions": {
+      "ja": "日経平均は5万2785円の最高値を更新。日銀は金利を0.75%で据え置きましたが、中東情勢によるインフレ再燃を警戒。夏の新指標導入で追加利上げの道筋を探る局面です。",
+      "en": "Japan Economy: Nikkei 225 reaches record highs as BoJ maintains 0.75% rate. Investors eye new inflation metrics as Yen (JPY) remains weak amid rising global energy costs."
+    },
+    "contents": {
+      "ja": "【日経新聞編集者の視点】\n日本経済は「デフレ完全脱却」の最終章にあります。日経平均株価が5万2785円という未踏の領域に達した背景には、企業の稼ぐ力の向上と、日銀の緩やかな正常化への信頼があります。今回、日銀は政策金利を0.75%で据え置きましたが、注目すべきは「新物価指標」の導入予告です。政府の補助金効果を除いた真のインフレ率を可視化することで、追加利上げの正当性を確保しようとする狙いが見て取れます。\n\n【投資家への影響と推奨アクション】\n日銀のタカ派姿勢（利上げ継続）が維持されているため、利ざや改善が見込まれる国内銀行株は引き続き「買い」です。一方で、1ドル160円に迫る円安と原油高は輸入コストを押し上げています。投資家は、為替ヘッジ付きの外債や、価格転嫁力の強い内需セクターへの分散投資を検討すべきです。\n\n【大学生・留学生向け解説】\n現在の0.75%という金利は、1995年以来約30年ぶりの高水準です。日本は長らく「お金を借りるのがほぼ無料」の時代が続いてきましたが、今後は「金利のある世界」が当たり前になります。これは皆さんの預金に利息がつくメリットがある反面、住宅ローンや奨学金の利息負担が増える可能性を意味します。\n\n【米・中との比較分析】\n米国（FRB）が高金利を維持しインフレ抑制に苦戦する中、日本は「ようやくインフレが定着し始めた」という逆のフェーズにあります。一方、不動産不況からの回復を急ぐ中国は大規模な金融緩和を継続しており、日本はアジアにおける「安定したリターンが見込める成長市場」として、欧米マネーの受け皿となっています。",
+      "en": "### Nikkei Editor's Perspective\nThe Japanese economy is entering the final chapter of its exit from deflation. The Nikkei 225's surge to 52,785 reflects improved corporate profitability and market confidence in the BoJ's normalization path. While the BoJ held rates at 0.75% today, the announcement of a 'new inflation indicator' to be released this summer is pivotal. It aims to reveal underlying inflation stripped of government subsidies, justifying future rate hikes.\n\n### Investor Impact & Actions\nWith the BoJ maintaining a hawkish bias, domestic mega-banks remain a 'Buy' due to expanding net interest margins. However, with the Yen (JPY) hovering near 160 per dollar and oil prices rising due to Middle East tensions, import costs are a risk. Investors should consider currency-hedged international bonds and domestic sectors with strong pricing power.\n\n### Essential Context for Students\nA policy rate of 0.75% is the highest Japan has seen since 1995. For decades, Japan lived in a 'zero-interest' era where borrowing was virtually free. We are now transitioning to a 'world with interest rates,' meaning your bank savings will finally earn interest, but the cost of future loans or mortgages will also rise.\n\n### Global Comparison (US & China)\nWhile the US Fed struggles to cool a stubborn economy with high rates, Japan is in the opposite phase, welcoming stable inflation. Meanwhile, China continues aggressive easing to combat its property crisis. Consequently, Japan has become a primary destination for global capital seeking stable growth within the Asian market."
+    },
+    "mermaid": {
+      "ja": "graph TD\n  A[中東情勢・原油高] --> B[輸入インフレの継続]\n  B --> C[日銀: 新指標でインフレ分析]\n  C --> D[追加利上げ示唆/タカ派継続]\n  D --> E[日経平均: 最高値圏での乱高下]\n  E --> F[円安 JPY 160円近辺の推移]",
+      "en": "graph TD\n  A[Geopolitical Risks/Oil Spikes] --> B[Persistent Import Inflation]\n  B --> C[BoJ: New Underlying Inflation Metrics]\n  C --> D[Hawkish Signal/Future Rate Hikes]\n  D --> E[Nikkei 225: Volatility at Record Highs]\n  E --> F[Yen JPY: Trading near 160 level]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "政策金利 (0.75%)",
+          "en": "Policy Rate (0.75%)"
+        },
+        "def": {
+          "ja": "日銀が民間銀行に貸し出す際の基準金利。30年ぶりの高水準。",
+          "en": "The benchmark interest rate set by the BoJ; currently at a 30-year high."
+        }
+      },
+      {
+        "term": {
+          "ja": "新物価指標",
+          "en": "New Inflation Indicator"
+        },
+        "def": {
+          "ja": "政府補助金の影響を除き、真の物価上昇を測定する日銀の新しい試み。",
+          "en": "A new BoJ metric designed to gauge underlying inflation by excluding temporary subsidies."
+        }
+      },
+      {
+        "term": {
+          "ja": "タカ派 (Hawkish)",
+          "en": "Hawkish"
+        },
+        "def": {
+          "ja": "物価抑制のために利上げや金融引き締めに前向きな姿勢のこと。",
+          "en": "An economic stance favoring higher interest rates to combat inflation."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260324_063735",
     "date": "2026-03-24",
     "titles": {
@@ -2587,58 +2639,6 @@
         "def": {
           "ja": "生鮮食品とエネルギーを除いた消費者物価指数。日銀が基調的なインフレを判断する際に最も重視する指標の一つ。",
           "en": "Consumer Price Index excluding fresh food and energy, used by the BoJ to gauge underlying long-term inflation trends."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260126_062013",
-    "date": "2026-01-26",
-    "titles": {
-      "ja": "日本経済：日経平均5万4000円台目前、日銀金利据え置きと高市総理の解散総選挙で市場激動",
-      "en": "Japan Economy: Nikkei 225 Eyes 54k as BoJ Holds Rates Amid Takaichi’s Snap Election Call"
-    },
-    "descriptions": {
-      "ja": "日本経済：日銀が政策金利を0.75%で据え置く一方、景気判断を上方修正。高市総理の衆院解散と大型減税案を受け、日経平均（Nikkei 225）は高値圏で推移。円（JPY）安とインフレ（Inflation）の行方に投資家の注目が集まっています。",
-      "en": "Japan Economy: Nikkei 225 remains bullish as BoJ holds rates at 0.75% while upgrading growth outlook. Yen (JPY) faces pressure from PM Takaichi’s fiscal stimulus and snap election. Vital insights on Inflation and market strategy for global investors."
-    },
-    "contents": {
-      "ja": "【日経編集者部視点】日本市場は今、「金融正常化」と「積極財政」の交差点に立っています。日銀（BoJ）は1月の会合で金利を0.75%に据え置きましたが、展望レポートでは2026年度の成長率見通しを1.0%に引き上げ、ハト派的な据え置きの中にもタカ派的な火種を残しました。一方、高市総理は2月8日の投開票に向け衆院を解散。食料品への消費税一時停止という劇薬を提示しており、これが財政赤字拡大懸念から長期金利（JGB 10年）を27年ぶりの高水準（2.3%台）へ押し上げています。\n\n【投資家への影響と推奨アクション】高金利環境への移行は銀行株に追い風ですが、急激な金利上昇はグロース株の重石となります。推奨：①利ざや改善が見込まれる大手金融株のホールド。②円安メリットが薄れる中、内需型優良株へのシフト検討。③選挙結果によるボラティリティに備えた為替ヘッジの徹底。\n\n【グローバル比較】米国（Fed）が利下げサイクルに入る中、日本は逆行する利上げ局面。中国が構造的不況からの脱却に苦戦する中、日本は30年来のデフレ脱却をかけた「最後の審判」を迎えています。",
-      "en": "【Nikkei Editorial Perspective】The Japanese market is currently at a crossroads between monetary normalization and aggressive fiscal expansion. While the Bank of Japan (BoJ) kept its short-term rate at 0.75% this January, it upgraded its FY2026 growth forecast to 1.0%, signaling a persistent 'hawkish undercurrent.' Simultaneously, PM Sanae Takaichi’s decision to dissolve the Lower House for a Feb 8 election—coupled with a proposal to suspend sales tax on food—has rattled bond markets, pushing 10-year JGB yields to a 27-year high of 2.3%.\n\n【Investor Impact & Action】Rising yields favor mega-banks but pose a threat to high-valuation growth stocks. Actions: 1) Maintain exposure to financial sectors benefiting from wider net interest margins. 2) Re-evaluate exporters as Yen (JPY) sensitivity increases. 3) Prepare for high volatility leading up to the snap election by utilizing currency hedges.\n\n【Global Comparison】While the US Fed pivots toward rate cuts to ensure a soft landing, Japan is moving in the opposite direction. Unlike China’s struggle with structural deflation, Japan is navigating a 'Great Normalization' that makes it a unique outlier in the 2026 global macro landscape."
-    },
-    "mermaid": {
-      "ja": "graph TD\n    A[日銀: 金利0.75%据え置き] --> B{市場の反応}\n    B --> C[日経平均: 54,000円台維持]\n    B --> D[円相場: 158円台の円安継続]\n    E[高市総理: 衆院解散・減税案] --> F[長期金利上昇 2.3%]\n    F --> G[銀行株への資金流入]\n    C --> H[投資家: 選挙結果を注視]",
-      "en": "graph TD\n    A[BoJ: Rates Held at 0.75%] --> B{Market Reaction}\n    B --> C[Nikkei 225: Staying near 54k]\n    B --> D[Yen: Weakness at 158/USD]\n    E[PM Takaichi: Snap Election & Tax Cuts] --> F[JGB Yields Spike to 2.3%]\n    F --> G[Inflow to Financial Stocks]\n    C --> H[Investors: Eyeing Feb 8 Election]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "政策金利据え置き",
-          "en": "Policy Rate Hold"
-        },
-        "def": {
-          "ja": "中央銀行が現在の金利水準を維持すること。今回は0.75%で据え置かれた。",
-          "en": "The decision by a central bank to keep interest rates at current levels; held at 0.75%."
-        }
-      },
-      {
-        "term": {
-          "ja": "解散総選挙",
-          "en": "Snap Election"
-        },
-        "def": {
-          "ja": "任期満了前に衆議院を解散して行う選挙。政治的空白や政策変更のリスクを伴う。",
-          "en": "An election called earlier than expected, often creating market volatility and policy shifts."
-        }
-      },
-      {
-        "term": {
-          "ja": "コアコアCPI",
-          "en": "Core-Core CPI"
-        },
-        "def": {
-          "ja": "食料（生鮮除く）とエネルギーを除いた消費者物価指数。真のインフレ傾向を示す。",
-          "en": "Consumer Price Index excluding fresh food and energy, representing underlying inflation trends."
         }
       }
     ]
