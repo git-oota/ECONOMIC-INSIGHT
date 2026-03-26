@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260327_063304",
+    "date": "2026-03-27",
+    "titles": {
+      "ja": "日本経済：日経平均5万4000円台の攻防、日銀は金利0.75%維持も「円安160円」と中東リスクが投資家を直撃",
+      "en": "Japan Economy: Nikkei 225 Tests 54k as BoJ Holds Rates at 0.75% Amid Yen (JPY) Weakness and Global Geopolitical Risks"
+    },
+    "descriptions": {
+      "ja": "日経平均は54,000円台で推移するも、中東情勢の緊迫化を受け海外勢が2.5兆円の巨額売り越し。日銀は金利を0.75%に据え置き、インフレ再燃と160円目前の円安に警戒感。投資家が取るべき防衛策を解説。",
+      "en": "Japan Economy and Nikkei 225 face high volatility. BoJ maintains rates at 0.75% while Yen (JPY) nears the 160 psychological barrier. Analyze the impact of Middle East tensions on inflation and why foreign investors sold 2.5tn yen in equities this week."
+    },
+    "contents": {
+      "ja": "【日経視点：デフレ脱却の最終章、試される「金利のある世界」】\n2026年3月27日現在の日本経済は、歴史的な転換点にあります。日銀は3月の金融政策決定会合で政策金利を0.75%に据え置きましたが、これは2024年のマイナス金利解除から始まった正常化プロセスの到達点の一つです。しかし、足元ではイラン・イスラエル間の緊張による原油高が「コストプッシュ型インフレ」を再燃させており、サービス価格指数（2.7%上昇）に見られる「良いインフレ」との間で日銀は難しい舵取りを迫られています。\n\n【投資家への影響と推奨アクション】\n1. **円安160円の壁**: 160円ラインは実質的な介入ラインとして意識されています。輸出関連株には追い風ですが、輸入コスト増による内需株の収益圧迫に注意。ドル建て資産のヘッジ検討が推奨されます。\n2. **海外勢の資金引き揚げ**: 直近1週間で2.5兆円の売り越しが確認されました。地政学リスクを嫌気した「リスクオフ」の動きであり、短期的には日経平均の調整局面を想定すべきです。\n3. **セクター戦略**: 金利上昇局面で恩恵を受ける銀行株（三菱UFJ等）や、インフレ耐性のあるエネルギー・商社株へのウェイト調整が有効です。\n\n【米・中との比較分析】\n米国はインフレ再燃によりFRBが「Higher for Longer（高金利維持）」を継続しており、日米金利差が縮小しにくい構造です。一方、中国は中東情勢の仲裁を試みつつも、エネルギー価格高騰による製造業への打撃を懸念。日本は「賃金と物価の好循環」を維持できるかの瀬戸際にあり、欧米に比べれば緩やかな引き締め姿勢が投資の魅力となっています。",
+      "en": "【Nikkei Editor's Insight: The Final Chapter of Deflation and the 'World with Interest Rates'】\nAs of March 27, 2026, Japan's economy stands at a historic crossroads. The Bank of Japan (BoJ) maintained its policy rate at 0.75%, a significant level reached after the normalization process began in 2024. However, the resurgence of 'cost-push inflation' driven by Middle East tensions is complicating the 'virtuous cycle' of wages and prices. While service-sector inflation remains robust at 2.7%, external shocks threaten to erode consumer purchasing power.\n\n【Investor Impact & Strategic Actions】\n1. **The 160 Yen Barrier**: With the JPY approaching 160 per USD, intervention risks are at a multi-year high. While beneficial for exporters, investors should be wary of domestic demand sectors facing margin compression. Consider increasing exposure to USD-denominated assets as a hedge.\n2. **Foreign Capital Outflow**: The record 2.5 trillion yen sell-off by foreign investors signals a global shift toward 'risk-off' sentiment. Expect short-term volatility in the Nikkei 225 despite strong corporate fundamentals.\n3. **Sector Strategy**: Focus on the financial sector (mega-banks) which benefits from a 0.75% rate environment, and inflation-linked assets like general trading companies (Sogo Shosha).\n\n【Comparative Analysis: US vs. China】\nWhile the US Fed maintains high rates due to sticky inflation, keeping the yield gap wide, China is struggling with the impact of energy costs on its manufacturing base. Japan remains a unique 'Goldilocks' case—normalizing slowly enough to avoid a recession but fast enough to combat inflation, making it a defensive play compared to more volatile emerging markets."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[中東地政学リスク] -->|原油価格上昇| B[コストプッシュ・インフレ]\n    B --> C{日銀の判断}\n    C -->|0.75%金利維持| D[円安進行 160円目前]\n    C -->|追加利上げ示唆| E[日経平均の調整]\n    D --> F[輸出企業の利益増]\n    E --> G[海外投資家の売り越し]\n    F --> H[日本経済の二極化]",
+      "en": "graph TD\n    A[Mideast Geopolitical Risk] -->|Oil Price Spike| B[Cost-push Inflation]\n    B --> C{BoJ Decision}\n    C -->|Keep Rate at 0.75%| D[Yen Weakens near 160]\n    C -->|Signal Future Hike| E[Nikkei 225 Correction]\n    D --> F[Exporter Profit Growth]\n    E --> G[Foreign Equity Outflow]\n    F --> H[Economic Bifurcation]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "サービス価格指数 (SPPI)",
+          "en": "Services Producer Price Index (SPPI)"
+        },
+        "def": {
+          "ja": "企業間で取引されるサービスの価格水準。人件費の影響を受けやすく、日銀が「賃金と物価の好循環」を測る重要指標。",
+          "en": "Measures prices of services traded among companies. Highly sensitive to labor costs and used by BoJ to track the wage-price virtuous cycle."
+        }
+      },
+      {
+        "term": {
+          "ja": "コストプッシュ・インフレ",
+          "en": "Cost-push Inflation"
+        },
+        "def": {
+          "ja": "原材料やエネルギー価格の上昇によって引き起こされる物価高。消費者の購買力を奪うため、経済には悪影響とされる。",
+          "en": "Inflation caused by rising costs of production, such as raw materials and energy, often viewed as detrimental to consumer purchasing power."
+        }
+      },
+      {
+        "term": {
+          "ja": "売り越し",
+          "en": "Net Selling / Outflow"
+        },
+        "def": {
+          "ja": "一定期間の売買において、売った金額が買った金額を上回ること。海外勢の売り越しは市場の冷え込みを示唆する。",
+          "en": "When the total value of sales exceeds the total value of purchases over a period. Large foreign outflows signal bearish sentiment."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260326_064020",
     "date": "2026-03-26",
     "titles": {
@@ -2587,58 +2639,6 @@
         "def": {
           "ja": "高市政権が掲げる食品税率0%案。物価高対策として期待される一方、5兆円規模の財源確保が課題です。",
           "en": "A proposal by the Takaichi cabinet to cut food tax to 0% to combat inflation, requiring ¥5 trillion in alternative funding."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260128_091850",
-    "date": "2026-01-28",
-    "titles": {
-      "ja": "日本経済：日経平均が史上最高値を射程、日銀の利上げ示唆と2月総選挙が市場を揺さぶる",
-      "en": "Japan Economy: Nikkei 225 Nears Record Highs as BoJ Signals Hikes Amid Election Volatility"
-    },
-    "descriptions": {
-      "ja": "日経平均株価は53,000円台で推移し史上最高値を伺う。日銀は政策金利を0.75%に据え置くも、インフレ継続を受け追加利上げに含み。2月8日の投開票を前に円高が進行中。",
-      "en": "Japan Economy and Nikkei 225 face a pivotal moment as the index hits 53,000+. BoJ holds rates at 0.75% but hints at future hikes. JPY strengthens ahead of the Feb 8 snap election."
-    },
-    "contents": {
-      "ja": "【日経視点：デフレ脱却の最終章】日本市場は現在、歴史的な転換点にある。日経平均株価は1月に54,499円の史上最高値を記録し、現在は53,000円台で堅調に推移。背景にはAI半導体需要によるテック株の牽引がある。一方、日銀は1月の会合で金利を0.75%に据え置いたが、審議委員からは1.0%への引き上げを求める声も上がり、タカ派へのシフトは鮮明だ。2月8日の衆議院総選挙を控え、高市政権（想定）による財政出動への期待と、通貨介入への警戒感が交錯し、ドル円は154円台まで円高が進行。投資家は輸出株から内需・金融株へのシフトを検討すべき局面だ。\n\n【報道比較分析】米国メディアは「トランプ関税」が日本の製造業に与える負の影響を強調する一方、中国メディアは日本のAI・半導体分野での独走を警戒。日本国内では選挙公約である「食料品への消費税減税」の財源議論が焦点となっている。",
-      "en": "[Nikkei Analysis: The Final Chapter of Deflation] The Japanese market is at a historic crossroads. The Nikkei 225 hit an all-time high of 54,499 in January, currently stabilizing in the 53,000 range driven by AI-related semiconductor demand (e.g., Advantest, Tokyo Electron). The Bank of Japan (BoJ) maintained its policy rate at 0.75% in the January meeting, but a hawkish undertone prevails with board members eyeing 1.0% to combat 2.5% inflation. With the snap election on February 8, the Yen (JPY) has strengthened to the 154 level against the USD as markets weigh fiscal expansion against potential intervention. Investors should pivot from export-heavy giants to domestic financial institutions benefiting from higher margins.\n\n[Comparative Media Analysis] US outlets focus on the 'Tariff Risk' to Japanese automakers, while Chinese media highlight Japan's resurgence in the global AI supply chain. Domestically, the debate centers on the feasibility of proposed consumption tax cuts on food."
-    },
-    "mermaid": {
-      "ja": "graph TD\n    A[AI半導体需要] --> B[日経平均史上最高値]\n    C[日銀0.75%維持・利上げ示唆] --> D[円高進行 154円台]\n    E[2月8日 総選挙] --> F[市場ボラティリティ上昇]\n    B --> G[投資アクション: 金融・内需株へのシフト]\n    D --> G",
-      "en": "graph TD\n    A[AI Semiconductor Demand] --> B[Nikkei 225 All-Time High]\n    C[BoJ Policy 0.75% + Hawkish Signal] --> D[JPY Strength at 154 Level]\n    E[Feb 8 Snap Election] --> F[Increased Market Volatility]\n    B --> G[Action: Shift to Financials/Domestic Stocks]\n    D --> G"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "出口戦略 (Exit Strategy)",
-          "en": "Normalization"
-        },
-        "def": {
-          "ja": "長年の超低金利政策を終え、金利のある「普通の経済」に戻す日銀のプロセス。",
-          "en": "The process by which the BoJ ends ultra-loose monetary policy to return to a standard interest-rate environment."
-        }
-      },
-      {
-        "term": {
-          "ja": "解散総選挙 (Snap Election)",
-          "en": "Snap Election"
-        },
-        "def": {
-          "ja": "任期満了を待たずに衆議院を解散して行う選挙。2026年2月8日に投開票予定。",
-          "en": "An election called earlier than expected, scheduled for Feb 8, 2026, creating short-term policy uncertainty."
-        }
-      },
-      {
-        "term": {
-          "ja": "コアコアCPI (Core-Core CPI)",
-          "en": "Core-Core CPI"
-        },
-        "def": {
-          "ja": "生鮮食品及びエネルギーを除く消費者物価指数。日銀が物価安定を判断する最重要指標。",
-          "en": "Consumer Price Index excluding fresh food and energy, used by the BoJ to gauge underlying inflation trends."
         }
       }
     ]
