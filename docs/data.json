@@ -1,5 +1,57 @@
 [
   {
+    "id": "20260330_063323",
+    "date": "2026-03-30",
+    "titles": {
+      "ja": "日本経済: 東京CPIと春闘5.26%賃上げで利上げ観測再燃、日経平均はエネルギー不安で5.3万円台維持",
+      "en": "Japan Economy: BoJ Rate Hike Odds Surge on 5.26% Wage Gains; Nikkei 225 Resilient Amid Energy Shock"
+    },
+    "descriptions": {
+      "ja": "Japan Economy, BoJ, Inflation: 東京CPIと35年ぶりの高水準となった春闘結果を受け、市場は4月利上げを6割超で織り込み。中東情勢緊迫化による石炭火力解禁などエネルギー政策の転換が投資判断の鍵に。",
+      "en": "Japan Economy, Nikkei 225, BoJ: Tokyo CPI and record 5.26% Shunto wage hikes fuel April rate hike bets. Investors eye financials as BoJ nears 1% target while energy security shifts to coal amid Middle East conflict."
+    },
+    "contents": {
+      "ja": "【日経視点】日本経済は「デフレ脱却」の最終局面にあります。本日発表の東京CPIは、政府の補助金を除けば日銀の2%目標を安定的に上回る推移を示しました。特に今年の春闘回答（5.26%）は、長年続いた「賃金と物価の停滞」を打破する決定打となります。しかし、中東情勢の悪化によるホルムズ海峡封鎖のリスクが、輸入物価を押し上げる「悪い物価上昇」を招く懸念も浮上しています。高市政権はエネルギー供給不安に対応するため、低効率な石炭火力の再稼働を容認する異例の措置を決定しました。\n\n【投資家への推奨】日銀の利上げ（0.75%から1.0%へ）は秒読み段階です。利回り改善が見込まれる大手銀行株や、エネルギー安全保障関連（原子力・石炭）への配分を推奨します。一方で、コストプッシュ型インフレに弱い内需企業には注意が必要です。\n\n【背景知識】「春闘（Shunto）」とは、毎年春に行われる労働組合と経営陣の賃金交渉です。これが日本全体の個人消費と、日銀の金融政策決定に最も大きな影響を与えます。\n\n【国際比較】米国は「ソフトランディング」を確信し雇用統計を注視、中国はデフレ脱却のため大規模な景気刺激策を継続中です。対照的に日本は、30年ぶりに「金利のある世界」への回帰という独自の構造変化に直面しています。",
+      "en": "Editor's Analysis: Japan's economy has reached a historic inflection point. Today's Tokyo CPI data, paired with the preliminary Shunto wage results showing a 35-year high of 5.26%, confirms the 'virtuous cycle' between wages and prices that the Bank of Japan (BoJ) has long sought. However, the macro outlook is clouded by the Middle East conflict, prompting Prime Minister Sanae Takaichi to pivot energy policy toward coal-fired power to mitigate the 'Hormuz risk.'\n\nInvestor Impact & Action: With an April or June rate hike to 1% increasingly likely, we recommend overweighting Japanese mega-banks (MUFG, SMFG) to capture expanding net interest margins. Energy security plays, particularly in nuclear and coal-related services, offer a hedge against supply shocks. Avoid highly leveraged domestic retail stocks vulnerable to rising input costs.\n\nEssential Context: The 'Shunto' (Spring Wage Offensive) is the cornerstone of Japan's macro-stability. A 5%+ result for three consecutive years signals the end of the 'Lost Decades' and justifies the BoJ's move toward a neutral interest rate.\n\nGlobal Comparison: While the US Fed focuses on a soft landing and the ECB weighs the timing of cuts, Japan is the only major economy actively tightening. This divergence is stabilizing the Yen (JPY) around the 145-150 range, providing a breather for importers compared to the volatility of 2024-25."
+    },
+    "mermaid": {
+      "ja": "graph TD\n    A[春闘 5.26% 賃上げ] --> B{日銀の判断}\n    B -->|利上げ示唆| C[銀行株の上昇]\n    B -->|円安修正| D[輸入コスト低下]\n    E[中東情勢緊迫] --> F[エネルギー価格高騰]\n    F --> G[石炭火力再稼働容認]\n    G --> H[エネルギー関連株の物色]",
+      "en": "graph TD\n    A[Shunto 5.26% Wage Hike] --> B{BoJ Decision}\n    B -->|Rate Hike Signal| C[Bank Stocks Rally]\n    B -->|JPY Recovery| D[Lower Import Costs]\n    E[Middle East Conflict] --> F[Energy Price Surge]\n    F --> G[Coal Power Restrictions Lifted]\n    G --> H[Energy Sector Interest]"
+    },
+    "glossary": [
+      {
+        "term": {
+          "ja": "春闘 (Shunto)",
+          "en": "Shunto"
+        },
+        "def": {
+          "ja": "毎年春に行われる日本独自の労使交渉。全国的な賃金水準の指標となる。",
+          "en": "Japan's annual spring labor-management wage negotiations, setting the national pay trend."
+        }
+      },
+      {
+        "term": {
+          "ja": "東京CPI",
+          "en": "Tokyo CPI"
+        },
+        "def": {
+          "ja": "東京都区部の消費者物価指数。全国指標の先行指標として重視される。",
+          "en": "Consumer Price Index for the Tokyo region, serving as a leading indicator for national inflation."
+        }
+      },
+      {
+        "term": {
+          "ja": "タカ派 (Hawkish)",
+          "en": "Hawkish"
+        },
+        "def": {
+          "ja": "インフレ抑制のために利上げや金融引き締めに前向きな姿勢。",
+          "en": "A policy stance favoring higher interest rates to combat inflation."
+        }
+      }
+    ]
+  },
+  {
     "id": "20260329_063056",
     "date": "2026-03-29",
     "titles": {
@@ -2587,58 +2639,6 @@
         "def": {
           "ja": "毎年春に行われる賃金交渉。2026年は物価高を上回る賃上げが維持されるかが焦点。",
           "en": "Annual spring wage negotiations. In 2026, the focus is on whether wage hikes will continue to outpace inflation."
-        }
-      }
-    ]
-  },
-  {
-    "id": "20260130_062844",
-    "date": "2026-01-30",
-    "titles": {
-      "ja": "日本経済と日経平均：日銀のタカ派姿勢と解散総選挙で円（JPY）ボラティリティ急増",
-      "en": "Japan Economy & Nikkei 225: BoJ Hawkish Signal and Yen (JPY) Volatility Drive Market Sentiment"
-    },
-    "descriptions": {
-      "ja": "2026年1月30日の日本市場は、日銀の追加利上げ示唆と高市首相による衆議院解散を受けた「政治リスク」が交錯。日経平均は53,000円台で推移し、投資家は銀行株へのシフトを強めています。",
-      "en": "Japan Economy Update: Nikkei 225 stabilizes near 53,400 as BoJ hints at rate hikes. JPY faces volatility amid PM Takaichi's snap election call. Investors pivot to financials as inflation forecasts rise."
-    },
-    "contents": {
-      "ja": "【日経新聞編集者の視点】\n2026年1月の金融政策決定会合を経て、日本経済は「金利のある世界」への完全移行を鮮明にしています。植田総裁は0.75%の金利維持を決定したものの、1.0%への利上げを求める反対票が投じられたことは、市場に強いタカ派的メッセージとして伝わりました。さらに、高市総理による2月8日の投開票に向けた衆議院解散は、大規模な財政出動への期待と、日本の債務持続性への懸念という二面性を市場に突きつけています。\n\n【投資家への影響と推奨アクション】\n利上げ局面の恩恵を受ける「メガバンク・地方銀行」のウェイト引き上げを推奨。一方で、円安メリットが薄れる輸出企業や、借入コスト増が重荷となる不動産セクターは慎重な見極めが必要です。総選挙の結果次第で財政赤字拡大懸念からJGB（日本国債）利回りが急騰するリスクがあるため、債券ポートフォリオのデュレーション短縮を検討すべきです。\n\n【大学生・留学生向け解説】\n「衆議院解散（Snap Election）」とは、任期満了を待たずに首相が議会を解散し、国民の信を問うことです。現在は高市首相が自らの経済政策（高市トレード）への支持を固めるために行っています。これが経済に与える影響として、選挙前の景気刺激策（バラマキ）への期待から株価が上がりやすい反面、国の借金が増える懸念から円が売られることもあります。\n\n【米・中との比較】\n米国がインフレ沈静化により利下げサイクルへの移行を模索する中、日本は逆行して利上げサイクルにあります。この「金利差縮小」が2026年の円安是正の鍵となります。一方、中国との比較では、AI半導体需要の恩恵を日本企業（アドバンテスト等）が享受しており、地政学リスクを背景とした「日本シフト」の資金流入が日経平均を下支えしています。",
-      "en": "### Nikkei Editorial Perspective\nFollowing the January 2026 BoJ meeting, the Japanese economy has firmly entered a 'world with interest rates.' While Governor Ueda maintained the short-term rate at 0.75%, the 8-1 vote—with a dissent calling for 1.0%—sent a hawkish signal to global markets. Simultaneously, PM Sanae Takaichi’s call for a snap election on February 8 has introduced 'political risk,' balancing hopes for fiscal expansion against fears over Japan’s debt sustainability.\n\n### Investor Impact & Actionable Insights\n- **Sector Rotation:** Overweight 'Financials' (Mega-banks) as net interest margins improve with rising rates.\n- **Risk Management:** Exercise caution in 'Real Estate' due to rising borrowing costs. \n- **JPY Strategy:** Expect volatility. Hedge JPY exposure as the 'Takaichi Trade' may lead to temporary Yen weakness before BoJ-driven strengthening.\n\n### Essential Context for Students\nA **'Snap Election'** occurs when the Prime Minister dissolves the lower house early to seek a fresh mandate. Currently, PM Takaichi aims to solidify her 'reflationary' economic agenda. For international students, this explains why Tokyo's atmosphere is charged: markets rally on stimulus hopes, but long-term bond yields may rise due to debt concerns.\n\n### Global Comparative Analysis\n- **vs. USA:** While the Fed considers a pause/cut cycle, the BoJ is moving in the opposite direction (normalization). This narrowing interest rate gap is the primary driver for JPY recovery in 2026.\n- **vs. China:** Japan is positioning itself as a stable alternative in the AI supply chain. Unlike China's regulatory uncertainty, Japan's tech sector (e.g., Advantest) is seeing sustained capital inflows from global funds seeking 'China+1' exposure."
-    },
-    "mermaid": {
-      "ja": "graph TD\n    A[日銀タカ派姿勢] --> B(利上げ観測)\n    B --> C{市場反応}\n    C -->|ポジティブ| D[銀行株上昇]\n    C -->|ネガティブ| E[不動産株下落]\n    F[衆議院解散] --> G(財政拡大期待)\n    G --> H[日経平均下支え]\n    G --> I[国債利回り上昇]",
-      "en": "graph TD\n    A[BoJ Hawkish Tone] --> B(Rate Hike Expectations)\n    B --> C{Market Reaction}\n    C -->|Positive| D[Financial Stocks Rally]\n    C -->|Negative| E[Real Estate Pressure]\n    F[Snap Election Call] --> G(Fiscal Expansion Hopes)\n    G --> H[Nikkei 225 Support]\n    G --> I[Rising JGB Yields]"
-    },
-    "glossary": [
-      {
-        "term": {
-          "ja": "タカ派 (Hawkish)",
-          "en": "Hawkish"
-        },
-        "def": {
-          "ja": "インフレ抑制のために利上げや金融引き締めに積極的な姿勢。",
-          "en": "A policy stance that favors higher interest rates to combat inflation."
-        }
-      },
-      {
-        "term": {
-          "ja": "解散総選挙 (Snap Election)",
-          "en": "Snap Election"
-        },
-        "def": {
-          "ja": "任期満了前に議会を解散して行われる選挙。政治的空白や政策変更のリスクを伴う。",
-          "en": "An election called earlier than expected, often to capitalize on high approval ratings or resolve policy deadlocks."
-        }
-      },
-      {
-        "term": {
-          "ja": "高市トレード (Takaichi Trade)",
-          "en": "Takaichi Trade"
-        },
-        "def": {
-          "ja": "高市首相の積極財政・金融緩和継続（または緩やかな移行）を期待した株買い・円売りの動き。",
-          "en": "Market movements based on PM Takaichi's reflationary policies, typically involving buying stocks and selling Yen."
         }
       }
     ]
